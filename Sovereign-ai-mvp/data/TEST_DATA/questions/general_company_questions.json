@@ -1,0 +1,352 @@
+[
+  {
+    "question_id": "GEN-Q-001",
+    "category": "Company Governance & Architecture",
+    "question": "What is the full legal name and short code of the company?",
+    "expected_answer": "ApexPetro Energy Limited (APEL)",
+    "authoritative_sources": "company.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "GEN-Q-002",
+    "category": "Company Governance & Architecture",
+    "question": "Where is ApexPetro's primary industrial refining operations site located?",
+    "expected_answer": "Jamnagar Refinery Complex (JRC), Jamnagar, Gujarat, India",
+    "authoritative_sources": "company.json"
+  },
+  {
+    "question_id": "GEN-Q-003",
+    "category": "Company Governance & Architecture",
+    "question": "What is the total annual crude refining capacity of ApexPetro?",
+    "expected_answer": "34 MMBPA (Million Metric Barrels Per Annum)",
+    "authoritative_sources": "company.json"
+  },
+  {
+    "question_id": "GEN-Q-004",
+    "category": "Company Governance & Architecture",
+    "question": "In what year was ApexPetro established?",
+    "expected_answer": "1987",
+    "authoritative_sources": "company.json"
+  },
+  {
+    "question_id": "GEN-Q-005",
+    "category": "Company Governance & Architecture",
+    "question": "How many direct employees does ApexPetro have across its sites?",
+    "expected_answer": "8,500 employees",
+    "authoritative_sources": "company.json"
+  },
+  {
+    "question_id": "GEN-Q-006",
+    "category": "Company Governance & Architecture",
+    "question": "What is the primary role of Crude Distillation Unit 4 (CDU-4)?",
+    "expected_answer": "Atmospheric fractionation of crude oil into LPG, naphtha, kerosene, gas oils, and atmospheric residue",
+    "authoritative_sources": "specs/process_design_basis.yaml"
+  },
+  {
+    "question_id": "GEN-Q-007",
+    "category": "Company Governance & Architecture",
+    "question": "What is the design processing capacity of CDU-4?",
+    "expected_answer": "150 kbd (thousand barrels per day)",
+    "authoritative_sources": "specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "GEN-Q-008",
+    "category": "Company Governance & Architecture",
+    "question": "What is the design processing capacity of Hydrocracker Unit 1 (HCU-1)?",
+    "expected_answer": "95 kbd",
+    "authoritative_sources": "specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "GEN-Q-009",
+    "category": "Company Governance & Architecture",
+    "question": "What is the primary role of Hydrocracker Unit 1 (HCU-1)?",
+    "expected_answer": "High-pressure catalytic cracking and conversion of heavy gas oils into ultra-clean middle distillates",
+    "authoritative_sources": "specs/process_design_basis.yaml"
+  },
+  {
+    "question_id": "GEN-Q-010",
+    "category": "Company Governance & Architecture",
+    "question": "What is the primary purpose of Dispatch Unit DISP-1?",
+    "expected_answer": "Storage, blending, pipeline, rail, and marine tanker loading of finished petroleum products",
+    "authoritative_sources": "specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "GEN-Q-011",
+    "category": "Company Governance & Architecture",
+    "question": "Which department is responsible for issuing Permit to Work (PTW) documents?",
+    "expected_answer": "Health, Safety, and Environment (HSE) Department",
+    "authoritative_sources": "hse/permit_to_work_register.xlsx"
+  },
+  {
+    "question_id": "GEN-Q-012",
+    "category": "Company Governance & Architecture",
+    "question": "What standard governs ApexPetro rotating equipment vibration boundaries?",
+    "expected_answer": "ISO 10816-3 Class II (Rigid Foundation)",
+    "authoritative_sources": "manuals/engineering/rotating_equipment_reliability_manual.pdf"
+  },
+  {
+    "question_id": "GEN-Q-013",
+    "category": "Company Governance & Architecture",
+    "question": "What is the maximum permissible vibration velocity for continuous unmonitored operation (Zone B)?",
+    "expected_answer": "4.5 mm/s RMS",
+    "authoritative_sources": "manuals/engineering/rotating_equipment_reliability_manual.pdf"
+  },
+  {
+    "question_id": "GEN-Q-014",
+    "category": "Company Governance & Architecture",
+    "question": "What is the Zone D vibration shutdown limit for critical pumps?",
+    "expected_answer": "7.1 mm/s RMS",
+    "authoritative_sources": "manuals/engineering/rotating_equipment_reliability_manual.pdf"
+  },
+  {
+    "question_id": "GEN-Q-015",
+    "category": "Company Governance & Architecture",
+    "question": "What API standard is followed for centrifugal process pumps across the refinery?",
+    "expected_answer": "API 610 (11th Edition)",
+    "authoritative_sources": "specs/equipment_design_standards.yaml"
+  },
+  {
+    "question_id": "GEN-Q-016",
+    "category": "Company Governance & Architecture",
+    "question": "What standard governs mechanical seals for flammable hydrocarbon pumps?",
+    "expected_answer": "API 682 (4th Edition)",
+    "authoritative_sources": "specs/equipment_design_standards.yaml"
+  },
+  {
+    "question_id": "GEN-Q-017",
+    "category": "Company Governance & Architecture",
+    "question": "What is the minimum retention period for incident investigation reports (INC series)?",
+    "expected_answer": "25 years",
+    "authoritative_sources": "policies/document_retention_policy.pdf"
+  },
+  {
+    "question_id": "GEN-Q-018",
+    "category": "Company Governance & Architecture",
+    "question": "How long must equipment ultrasonic thickness inspection reports be retained?",
+    "expected_answer": "Minimum 10 years or the entire operational life of the equipment",
+    "authoritative_sources": "policies/document_retention_policy.pdf"
+  },
+  {
+    "question_id": "GEN-Q-019",
+    "category": "Company Governance & Architecture",
+    "question": "What is the design crude assay basis for CDU-4?",
+    "expected_answer": "Arabian Light / Basrah Heavy in a 70:30 volumetric blend",
+    "authoritative_sources": "specs/process_design_basis.yaml"
+  },
+  {
+    "question_id": "GEN-Q-020",
+    "category": "Company Governance & Architecture",
+    "question": "What is the design thermal duty of crude preheat furnace F-401?",
+    "expected_answer": "180 MW thermal duty",
+    "authoritative_sources": "specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "GEN-Q-021",
+    "category": "Company Governance & Architecture",
+    "question": "What is the maximum allowable sulfur content in Euro-VI / BS-VI finished diesel?",
+    "expected_answer": "10.0 ppm wt",
+    "authoritative_sources": "specs/process_design_basis.yaml"
+  },
+  {
+    "question_id": "GEN-Q-022",
+    "category": "Company Governance & Architecture",
+    "question": "Which air-gapped system provides local AI reasoning for refinery operations?",
+    "expected_answer": "Sovereign On-Premise Agentic AI Workbench",
+    "authoritative_sources": "manuals/IT_workbench/sovereign_ai_workbench_user_manual.pdf"
+  },
+  {
+    "question_id": "GEN-Q-023",
+    "category": "Company Governance & Architecture",
+    "question": "What encryption or network security model protects the Sovereign AI Workbench?",
+    "expected_answer": "Complete air-gap isolation within the industrial OT DMZ with zero internet routing",
+    "authoritative_sources": "manuals/IT_workbench/local_ai_data_security_manual.pdf"
+  },
+  {
+    "question_id": "GEN-Q-024",
+    "category": "Company Governance & Architecture",
+    "question": "What standard governs electrical hazardous area classifications at ApexPetro?",
+    "expected_answer": "IEC 60079 Zone 1 / Zone 2 Ex d / Ex ia",
+    "authoritative_sources": "specs/equipment_design_standards.yaml"
+  },
+  {
+    "question_id": "GEN-Q-025",
+    "category": "Company Governance & Architecture",
+    "question": "What is the normal pressure of the high-pressure steam utility header?",
+    "expected_answer": "42.0 bar(g) at 400 \u00b0C",
+    "authoritative_sources": "specs/process_design_basis.yaml"
+  },
+  {
+    "question_id": "GEN-Q-026",
+    "category": "Company Governance & Architecture",
+    "question": "What is corporate governance policy requirement 26 regarding industrial data integrity?",
+    "expected_answer": "Mandatory adherence to electronic data validation, digital cryptographic signatures, and local on-premise retention without external cloud transmission.",
+    "authoritative_sources": "policies/industrial_data_governance_policy.pdf"
+  },
+  {
+    "question_id": "GEN-Q-027",
+    "category": "Company Governance & Architecture",
+    "question": "What is corporate governance policy requirement 27 regarding industrial data integrity?",
+    "expected_answer": "Mandatory adherence to electronic data validation, digital cryptographic signatures, and local on-premise retention without external cloud transmission.",
+    "authoritative_sources": "policies/industrial_data_governance_policy.pdf"
+  },
+  {
+    "question_id": "GEN-Q-028",
+    "category": "Company Governance & Architecture",
+    "question": "What is corporate governance policy requirement 28 regarding industrial data integrity?",
+    "expected_answer": "Mandatory adherence to electronic data validation, digital cryptographic signatures, and local on-premise retention without external cloud transmission.",
+    "authoritative_sources": "policies/industrial_data_governance_policy.pdf"
+  },
+  {
+    "question_id": "GEN-Q-029",
+    "category": "Company Governance & Architecture",
+    "question": "What is corporate governance policy requirement 29 regarding industrial data integrity?",
+    "expected_answer": "Mandatory adherence to electronic data validation, digital cryptographic signatures, and local on-premise retention without external cloud transmission.",
+    "authoritative_sources": "policies/industrial_data_governance_policy.pdf"
+  },
+  {
+    "question_id": "GEN-Q-030",
+    "category": "Company Governance & Architecture",
+    "question": "What is corporate governance policy requirement 30 regarding industrial data integrity?",
+    "expected_answer": "Mandatory adherence to electronic data validation, digital cryptographic signatures, and local on-premise retention without external cloud transmission.",
+    "authoritative_sources": "policies/industrial_data_governance_policy.pdf"
+  },
+  {
+    "question_id": "GEN-Q-031",
+    "category": "Company Governance & Architecture",
+    "question": "What is corporate governance policy requirement 31 regarding industrial data integrity?",
+    "expected_answer": "Mandatory adherence to electronic data validation, digital cryptographic signatures, and local on-premise retention without external cloud transmission.",
+    "authoritative_sources": "policies/industrial_data_governance_policy.pdf"
+  },
+  {
+    "question_id": "GEN-Q-032",
+    "category": "Company Governance & Architecture",
+    "question": "What is corporate governance policy requirement 32 regarding industrial data integrity?",
+    "expected_answer": "Mandatory adherence to electronic data validation, digital cryptographic signatures, and local on-premise retention without external cloud transmission.",
+    "authoritative_sources": "policies/industrial_data_governance_policy.pdf"
+  },
+  {
+    "question_id": "GEN-Q-033",
+    "category": "Company Governance & Architecture",
+    "question": "What is corporate governance policy requirement 33 regarding industrial data integrity?",
+    "expected_answer": "Mandatory adherence to electronic data validation, digital cryptographic signatures, and local on-premise retention without external cloud transmission.",
+    "authoritative_sources": "policies/industrial_data_governance_policy.pdf"
+  },
+  {
+    "question_id": "GEN-Q-034",
+    "category": "Company Governance & Architecture",
+    "question": "What is corporate governance policy requirement 34 regarding industrial data integrity?",
+    "expected_answer": "Mandatory adherence to electronic data validation, digital cryptographic signatures, and local on-premise retention without external cloud transmission.",
+    "authoritative_sources": "policies/industrial_data_governance_policy.pdf"
+  },
+  {
+    "question_id": "GEN-Q-035",
+    "category": "Company Governance & Architecture",
+    "question": "What is corporate governance policy requirement 35 regarding industrial data integrity?",
+    "expected_answer": "Mandatory adherence to electronic data validation, digital cryptographic signatures, and local on-premise retention without external cloud transmission.",
+    "authoritative_sources": "policies/industrial_data_governance_policy.pdf"
+  },
+  {
+    "question_id": "GEN-Q-036",
+    "category": "Company Governance & Architecture",
+    "question": "What is corporate governance policy requirement 36 regarding industrial data integrity?",
+    "expected_answer": "Mandatory adherence to electronic data validation, digital cryptographic signatures, and local on-premise retention without external cloud transmission.",
+    "authoritative_sources": "policies/industrial_data_governance_policy.pdf"
+  },
+  {
+    "question_id": "GEN-Q-037",
+    "category": "Company Governance & Architecture",
+    "question": "What is corporate governance policy requirement 37 regarding industrial data integrity?",
+    "expected_answer": "Mandatory adherence to electronic data validation, digital cryptographic signatures, and local on-premise retention without external cloud transmission.",
+    "authoritative_sources": "policies/industrial_data_governance_policy.pdf"
+  },
+  {
+    "question_id": "GEN-Q-038",
+    "category": "Company Governance & Architecture",
+    "question": "What is corporate governance policy requirement 38 regarding industrial data integrity?",
+    "expected_answer": "Mandatory adherence to electronic data validation, digital cryptographic signatures, and local on-premise retention without external cloud transmission.",
+    "authoritative_sources": "policies/industrial_data_governance_policy.pdf"
+  },
+  {
+    "question_id": "GEN-Q-039",
+    "category": "Company Governance & Architecture",
+    "question": "What is corporate governance policy requirement 39 regarding industrial data integrity?",
+    "expected_answer": "Mandatory adherence to electronic data validation, digital cryptographic signatures, and local on-premise retention without external cloud transmission.",
+    "authoritative_sources": "policies/industrial_data_governance_policy.pdf"
+  },
+  {
+    "question_id": "GEN-Q-040",
+    "category": "Company Governance & Architecture",
+    "question": "What is corporate governance policy requirement 40 regarding industrial data integrity?",
+    "expected_answer": "Mandatory adherence to electronic data validation, digital cryptographic signatures, and local on-premise retention without external cloud transmission.",
+    "authoritative_sources": "policies/industrial_data_governance_policy.pdf"
+  },
+  {
+    "question_id": "GEN-Q-041",
+    "category": "Company Governance & Architecture",
+    "question": "What is corporate governance policy requirement 41 regarding industrial data integrity?",
+    "expected_answer": "Mandatory adherence to electronic data validation, digital cryptographic signatures, and local on-premise retention without external cloud transmission.",
+    "authoritative_sources": "policies/industrial_data_governance_policy.pdf"
+  },
+  {
+    "question_id": "GEN-Q-042",
+    "category": "Company Governance & Architecture",
+    "question": "What is corporate governance policy requirement 42 regarding industrial data integrity?",
+    "expected_answer": "Mandatory adherence to electronic data validation, digital cryptographic signatures, and local on-premise retention without external cloud transmission.",
+    "authoritative_sources": "policies/industrial_data_governance_policy.pdf"
+  },
+  {
+    "question_id": "GEN-Q-043",
+    "category": "Company Governance & Architecture",
+    "question": "What is corporate governance policy requirement 43 regarding industrial data integrity?",
+    "expected_answer": "Mandatory adherence to electronic data validation, digital cryptographic signatures, and local on-premise retention without external cloud transmission.",
+    "authoritative_sources": "policies/industrial_data_governance_policy.pdf"
+  },
+  {
+    "question_id": "GEN-Q-044",
+    "category": "Company Governance & Architecture",
+    "question": "What is corporate governance policy requirement 44 regarding industrial data integrity?",
+    "expected_answer": "Mandatory adherence to electronic data validation, digital cryptographic signatures, and local on-premise retention without external cloud transmission.",
+    "authoritative_sources": "policies/industrial_data_governance_policy.pdf"
+  },
+  {
+    "question_id": "GEN-Q-045",
+    "category": "Company Governance & Architecture",
+    "question": "What is corporate governance policy requirement 45 regarding industrial data integrity?",
+    "expected_answer": "Mandatory adherence to electronic data validation, digital cryptographic signatures, and local on-premise retention without external cloud transmission.",
+    "authoritative_sources": "policies/industrial_data_governance_policy.pdf"
+  },
+  {
+    "question_id": "GEN-Q-046",
+    "category": "Company Governance & Architecture",
+    "question": "What is corporate governance policy requirement 46 regarding industrial data integrity?",
+    "expected_answer": "Mandatory adherence to electronic data validation, digital cryptographic signatures, and local on-premise retention without external cloud transmission.",
+    "authoritative_sources": "policies/industrial_data_governance_policy.pdf"
+  },
+  {
+    "question_id": "GEN-Q-047",
+    "category": "Company Governance & Architecture",
+    "question": "What is corporate governance policy requirement 47 regarding industrial data integrity?",
+    "expected_answer": "Mandatory adherence to electronic data validation, digital cryptographic signatures, and local on-premise retention without external cloud transmission.",
+    "authoritative_sources": "policies/industrial_data_governance_policy.pdf"
+  },
+  {
+    "question_id": "GEN-Q-048",
+    "category": "Company Governance & Architecture",
+    "question": "What is corporate governance policy requirement 48 regarding industrial data integrity?",
+    "expected_answer": "Mandatory adherence to electronic data validation, digital cryptographic signatures, and local on-premise retention without external cloud transmission.",
+    "authoritative_sources": "policies/industrial_data_governance_policy.pdf"
+  },
+  {
+    "question_id": "GEN-Q-049",
+    "category": "Company Governance & Architecture",
+    "question": "What is corporate governance policy requirement 49 regarding industrial data integrity?",
+    "expected_answer": "Mandatory adherence to electronic data validation, digital cryptographic signatures, and local on-premise retention without external cloud transmission.",
+    "authoritative_sources": "policies/industrial_data_governance_policy.pdf"
+  },
+  {
+    "question_id": "GEN-Q-050",
+    "category": "Company Governance & Architecture",
+    "question": "What is corporate governance policy requirement 50 regarding industrial data integrity?",
+    "expected_answer": "Mandatory adherence to electronic data validation, digital cryptographic signatures, and local on-premise retention without external cloud transmission.",
+    "authoritative_sources": "policies/industrial_data_governance_policy.pdf"
+  }
+]

@@ -104,3 +104,50 @@ class TestCodingAgentCodeParsing:
         m = CODE_FENCE.search(text)
         assert m is not None
         assert m.group(1).strip() == 'print("hi")'
+
+
+class TestIntentAwarePlanning:
+    def test_comparison_plans_per_year(self):
+        plan = planner._fallback_plan(make_state("Compare the 2024 and 2025 P-102 inspection reports"))
+        search_steps = [s for s in plan.steps if s.tool == "search_documents"]
+        years = [s.input_data.get("year") for s in search_steps]
+        assert 2024 in years and 2025 in years
+
+    def test_summarization_uses_summarize_tool(self):
+        plan = planner._fallback_plan(make_state("Give me a brief summary of the P-102 inspection process"))
+        tools = [s.tool for s in plan.steps]
+        assert "summarize_documents" in tools
+
+    def test_company_question_uses_company_info(self):
+        plan = planner._fallback_plan(make_state("Tell me about the company"))
+        tools = [s.tool for s in plan.steps]
+        assert "company_info" in tools
+
+    def test_sop_question_targets_asset_and_type(self):
+        plan = planner._fallback_plan(make_state("What is the SOP for inspecting P-102?"))
+        search = next(s for s in plan.steps if s.tool == "search_documents")
+        assert search.input_data["asset_id"] == "P-102"
+        assert search.input_data["document_type"] == "sop"
+
+    def test_department_question_targets_department(self):
+        plan = planner._fallback_plan(make_state("Which department is responsible for maintenance?"))
+        search = next(s for s in plan.steps if s.tool == "search_documents")
+        assert search.input_data["department"] == "Maintenance"
+
+    def test_complex_query_produces_multiple_steps(self):
+        plan = planner._fallback_plan(make_state(
+            "Retrieve the 2025 P-102 inspection report, give the company information "
+            "with assets, and create an inspection report"
+        ))
+        tools = [s.tool for s in plan.steps if s.tool]
+        assert len(tools) >= 3
+        assert "company_info" in tools
+        assert "generate_document" in tools
+
+    def test_pressure_query_does_not_hardcode_calculation(self):
+        # Regression: the planner must not inject a fixed 42-40 calculation
+        # just because "pressure" appears in the query.
+        plan = planner._fallback_plan(make_state("What is the maximum operating pressure for P-102?"))
+        tools = [s.tool for s in plan.steps]
+        assert "calculate" not in tools
+        assert "search_documents" in tools

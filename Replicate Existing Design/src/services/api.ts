@@ -168,12 +168,17 @@ export interface ChatEvent {
   model?: string;
   reason?: string;
   steps?: string[];
+  step_index?: number;
+  success?: boolean;
   error?: string;
   verified?: boolean;
   answer?: string;
   evidence?: Array<{
     source: string;
     document_id: string;
+    document_name?: string;
+    document_type?: string;
+    year?: number;
     content: string;
     page: number;
     section: string;
@@ -190,6 +195,7 @@ export interface ChatEvent {
     format?: string;
     download_url?: string;
   }>;
+  steps_status?: Array<{ label: string; tool?: string; status: string; error?: string }>;
 }
 
 export interface KnowledgeSearchRequest {
@@ -392,14 +398,23 @@ export interface UploadResponse {
   status: string;
 }
 
-export interface ChatAttachmentResponse {
+export interface ChatAttachmentRecord {
+  document_id: string;
   attachment_id: string;
   filename: string;
   ext: string;
   size: number;
   summary: string;
-  content_excerpt: string;
+  content_excerpt?: string | null;
+  page_count: number;
+  chunk_count: number;
+  status: string;
+  ocr_used: boolean;
+  created_at: string;
+  updated_at: string;
 }
+
+export interface ChatAttachmentResponse extends ChatAttachmentRecord {}
 
 export interface ArtifactPreview {
   artifact_id: string;
@@ -454,6 +469,15 @@ export const api = {
       form.append("file", file);
       return fetchForm<ChatAttachmentResponse>("/api/chat/attachments", { method: "POST", body: form });
     },
+    listAttachments: (conversationId: string) =>
+      fetchJson<{ conversation_id: string; attachments: ChatAttachmentRecord[]; total: number }>(
+        `/api/chat/attachments?conversation_id=${encodeURIComponent(conversationId)}`
+      ),
+    deleteAttachment: (conversationId: string, documentId: string) =>
+      fetchJson<{ document_id: string; deleted: boolean }>(
+        `/api/chat/attachments/${documentId}?conversation_id=${encodeURIComponent(conversationId)}`,
+        { method: "DELETE" }
+      ),
   },
 
   knowledge: {

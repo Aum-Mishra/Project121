@@ -1,0 +1,106 @@
+{
+  "categories": [
+    {
+      "category": "02_Scanned_PDF",
+      "file": "P-102_Scanned_Inspection_Record.pdf",
+      "status": "PASS",
+      "processing_status": "success",
+      "ocr_used": true,
+      "pages": 1,
+      "tables": 1,
+      "chars": 1062,
+      "warnings": [],
+      "error": null,
+      "elapsed_ms": 139566.7,
+      "preview": "ApexPetro Refining Complex Coastal Refinery - Unit 2 INSPECTION RECORD Document ID: INS-P102-2026-0307 Equipment ID: P-102 (Feed Transfer Pump) Location: Pump Bay 2 / Unit 2 Inspection Date: 07 March "
+    },
+    {
+      "category": "03_Mixed_PDF",
+      "file": "P-102_Mixed_Inspection_and_Maintenance_Report.pdf",
+      "status": "PASS",
+      "processing_status": "success",
+      "ocr_used": true,
+      "pages": 5,
+      "tables": 4,
+      "chars": 2625,
+      "warnings": [],
+      "error": null,
+      "elapsed_ms": 24386.0,
+      "preview": "ApexPetro Refining Complex Coastal Refinery - Unit 2 P-102 Mixed Inspection and Maintenance Report This report combines native digital pages with scanned inspection and maintenance sign-off pages, for"
+    },
+    {
+      "category": "04_Images",
+      "file": "P-102_Inspection_Nameplate_and_Readings.png",
+      "status": "PASS",
+      "processing_status": "success",
+      "ocr_used": true,
+      "pages": 1,
+      "tables": 0,
+      "chars": 269,
+      "warnings": [],
+      "error": null,
+      "elapsed_ms": 2470.3,
+      "preview": "ApexPetro Refining Complex Coastal Refinery \u2013 Unit 2 EQUIPMENT TAG: P-102 Feed Transfer Pump Unit 2 | Pump Bay 2 Motor: 315 kW Speed: 1485 RPM Design Flow: 475 m3/h INSPECTION / READINGS Asset: P-102 "
+    },
+    {
+      "category": "12_Handwritten",
+      "file": "P-102_Handwritten_Inspection_Note.png",
+      "status": "PASS",
+      "processing_status": "success",
+      "ocr_used": true,
+      "pages": 1,
+      "tables": 0,
+      "chars": 249,
+      "warnings": [],
+      "error": null,
+      "elapsed_ms": 1932.3,
+      "preview": "Inspection Note \" P-102 Date: 07 Mar 2026 Asset: P-102 DE vibration: 5.6 mm/s Limit: 4.5 mm/s Repeat check: Above limit Maintenance inspection requested Coupling alignment checked Alignment corrected "
+    },
+    {
+      "category": "13_Engineering_Drawing",
+      "file": "P-102_Pump_Bay_2_Engineering_Drawing.png",
+      "status": "PASS",
+      "processing_status": "success",
+      "ocr_used": true,
+      "pages": 1,
+      "tables": 0,
+      "chars": 471,
+      "warnings": [],
+      "error": null,
+      "elapsed_ms": 2085.6,
+      "preview": "P-102 Feed Transfer Pump - Pump Bay 2 Layout NOT TO SCALE For document-intelligence testing purposes only Discharge Line DV-102 Suction Line Coupling P-102 Motor SV-102 Feed Transfer Pump 315 kW / 148"
+    },
+    {
+      "category": "14_Charts",
+      "file": "P-102_Vibration_Trend_Chart.png",
+      "status": "PASS",
+      "processing_status": "success",
+      "ocr_used": true,
+      "pages": 1,
+      "tables": 0,
+      "chars": 300,
+      "warnings": [],
+      "error": null,
+      "elapsed_ms": 2051.8,
+      "preview": "P-102 DE Vibration Trend 7 Mar 2026 6 5.6 mm/s 18 Apr 2025 4.8 mm/s 5 Operating Threshold: 4.5 mm/s Post-majntenance 3.9 mm/s DE Vibration (mm/s) 4 3 2 1 0 01 May 2025 01 Jun 2025 01 Jul 2025 01 Aug 2"
+    },
+    {
+      "category": "15_Photographs",
+      "file": "P-102_Coupling_Alignment_Inspection.png",
+      "status": "PASS",
+      "processing_status": "success",
+      "ocr_used": true,
+      "pages": 1,
+      "tables": 0,
+      "chars": 44,
+      "warnings": [],
+      "error": null,
+      "elapsed_ms": 1268.5,
+      "preview": "P-102 Unit 2 Coupling Inspection 07-Mar-2026"
+    }
+  ],
+  "summary": {
+    "pass": 7,
+    "fail": 0
+  }
+}

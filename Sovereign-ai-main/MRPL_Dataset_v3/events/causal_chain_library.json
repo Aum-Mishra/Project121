@@ -1,0 +1,79 @@
+{
+  "causal_chains": [
+    {
+      "Scenario": "Crude Charge Pump P-102A Bearing Failure Cascade",
+      "Preconditions": [
+        "Continuous high crude processing rate (>102% nameplate capacity)",
+        "Lubrication particle contamination due to aging reservoir breather",
+        "Preventative maintenance overhaul deferred due to production quota targets"
+      ],
+      "Weak Signals": [
+        "Slight high-frequency vibration demodulation increase (0.45 to 1.2 gE)",
+        "Subtle bearing metal temperature rise (+6 C above seasonal baseline)",
+        "ISO cleanliness code degrading from 15/13/10 to 19/17/14"
+      ],
+      "Abnormal Conditions": [
+        "Overall vibration velocity RMS crosses 4.5 mm/s warning threshold",
+        "Audible cavitation and slight mechanical rubbing at suction eye"
+      ],
+      "Escalation": [
+        "Unmitigated run under high vibration causes bearing cage fracture",
+        "Axial shaft play destroys mechanical seal faces"
+      ],
+      "Potential Outcome": "Crude hydrocarbon leak, fire hazard, emergency unit shutdown",
+      "Preventive Opportunities": [
+        "Immediate lubrication reservoir filtration upon particle count alert",
+        "Controlled load derate and transfer to standby pump P-102B within 7-day window",
+        "Enforced maintenance overhaul execution without commercial deferral"
+      ]
+    },
+    {
+      "Scenario": "Wet Gas Compressor Seal Degradation Under Utility Perturbation",
+      "Preconditions": [
+        "Summer ambient heatwave elevating cooling water supply temperature to 34 C",
+        "High gas throughput demand from FCC and CDU fractionator"
+      ],
+      "Weak Signals": [
+        "Primary seal gas vent flow creeping upward (+0.1 Nm3/h per week)",
+        "Buffer nitrogen differential pressure regulator hunting"
+      ],
+      "Abnormal Conditions": [
+        "Primary vent flow exceeds alarm threshold (2.5 Nm3/h)",
+        "Secondary seal face temperature reaches 74 C"
+      ],
+      "Escalation": [
+        "Failure to boost buffer nitrogen pressure causes hydrocarbon migration into secondary vent",
+        "LEL gas detector GD-601 initiates unit shutdown alert"
+      ],
+      "Potential Outcome": "Toxic and flammable gas release to compressor shelter, emergency flare blowdown",
+      "Preventive Opportunities": [
+        "Automated auxiliary cooling booster pump start",
+        "Proactive seal gas filter cartridge replacement and regulator tuning"
+      ]
+    },
+    {
+      "Scenario": "Crude Column Overpressure via Cooling Water Loss & Operator Overload",
+      "Preconditions": [
+        "Cooling water pump electrical feed voltage sag trips running pump",
+        "Control room operator handling simultaneous alarm flood from 2 units"
+      ],
+      "Weak Signals": [
+        "Cooling water header pressure dips by 0.6 bar",
+        "Column overhead vapor temperature creeps upward (+4 C in 3 mins)"
+      ],
+      "Abnormal Conditions": [
+        "Column overhead pressure rises from 1.8 to 2.9 barg",
+        "Reflux accumulator drum liquid level approaches low-level trip"
+      ],
+      "Escalation": [
+        "Delayed manual startup of diesel standby CW pump due to task saturation",
+        "Pressure relief valves PSV-101A/B lift to flare header"
+      ],
+      "Potential Outcome": "Major flare emission event, off-spec product, column tray mechanical damage",
+      "Preventive Opportunities": [
+        "Automated fast-bus transfer and auto-start for standby utility pumps",
+        "Dynamic alarm suppression during electrical transient events"
+      ]
+    }
+  ]
+}

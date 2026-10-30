@@ -1,0 +1,57 @@
+safe_operating_envelopes:
+  P-102:
+    service: Crude Transfer Centrifugal Pump
+    unit: CDU-4
+    suction_pressure:
+      design_min_bar: 2.0
+      alarm_low_bar: 3.5
+      normal_bar: 5.0
+      design_max_bar: 12.0
+    discharge_pressure:
+      design_max_bar: 50.0
+      trip_limit_bar: 45.0
+      alarm_high_bar: 40.0
+      normal_bar: 35.0
+      re_rated_cap_bar: 40.0
+    discharge_temperature:
+      normal_c: 180
+      alarm_high_c: 205
+      trip_limit_c: 230
+      design_max_c: 250
+    casing_vibration_velocity:
+      normal_mm_s: 2.8
+      alarm_high_mm_s: 4.5
+      trip_limit_mm_s: 7.1
+    casing_thickness:
+      original_mm: 16.0
+      measured_2024_mm: 12.8
+      measured_2025_mm: 8.2
+      measured_2026_mm: 3.8
+      retirement_minimum_mm: 3.5
+  C-301:
+    service: Hydrogen Recycle Compressor
+    unit: HCU-1
+    suction_pressure:
+      normal_bar: 60.0
+      alarm_low_bar: 48.0
+      trip_limit_bar: 42.0
+    shaft_vibration:
+      normal_um: 22.0
+      alarm_high_um: 35.0
+      trip_limit_um: 55.0
+    seal_gas_differential:
+      normal_bar: 5.5
+      alarm_low_bar: 3.0
+      trip_limit_bar: 1.5
+  E-301:
+    service: Crude Preheat Heat Exchanger
+    unit: CDU-4
+    crude_outlet_temp:
+      design_c: 225
+      normal_c: 215
+      alarm_low_c: 195
+      alarm_high_c: 235
+    shell_side_pressure_drop:
+      clean_bar: 0.6
+      alarm_high_fouled_bar: 1.5
+      trip_warning_bar: 2.0

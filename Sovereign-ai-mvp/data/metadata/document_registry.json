@@ -1,0 +1,554 @@
+{
+  "company_id": "apexpetro",
+  "documents": [
+    {
+      "document_id": "APEL-SEC-101",
+      "path": "policies/information_security_policy.pdf",
+      "type": "pdf",
+      "owner": "IT Security",
+      "revision": "7.4",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-SEC-102",
+      "path": "policies/data_classification_policy.pdf",
+      "type": "pdf",
+      "owner": "IT Security",
+      "revision": "6.1",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-DOC-103",
+      "path": "policies/document_control_policy.pdf",
+      "type": "pdf",
+      "owner": "Document Control",
+      "revision": "5.6",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-AI-104",
+      "path": "policies/ai_usage_policy.pdf",
+      "type": "pdf",
+      "owner": "AI Governance",
+      "revision": "2.3",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-SEC-101",
+      "path": "policies/information_security_policy.pdf",
+      "type": "pdf",
+      "owner": "IT Security",
+      "revision": "7.4",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-SEC-102",
+      "path": "policies/data_classification_policy.pdf",
+      "type": "pdf",
+      "owner": "IT Security",
+      "revision": "6.1",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-DOC-103",
+      "path": "policies/document_control_policy.pdf",
+      "type": "pdf",
+      "owner": "Document Control",
+      "revision": "5.6",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-AI-104",
+      "path": "policies/ai_usage_policy.pdf",
+      "type": "pdf",
+      "owner": "AI Governance",
+      "revision": "2.3",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-DOC-105",
+      "path": "policies/records_retention_policy.pdf",
+      "type": "pdf",
+      "owner": "Document Control",
+      "revision": "4.0",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-PROC-106",
+      "path": "policies/procurement_policy.pdf",
+      "type": "pdf",
+      "owner": "Procurement",
+      "revision": "8.2",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-SOP-OPS-201",
+      "path": "sops/operations/cdu4_startup.pdf",
+      "type": "pdf",
+      "owner": "Operations",
+      "revision": "9.1",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-SOP-OPS-202",
+      "path": "sops/operations/cdu4_shutdown.pdf",
+      "type": "pdf",
+      "owner": "Operations",
+      "revision": "8.4",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-SOP-OPS-203",
+      "path": "sops/operations/shift_handover.pdf",
+      "type": "pdf",
+      "owner": "Operations",
+      "revision": "5.7",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-SOP-OPS-204",
+      "path": "sops/operations/abnormal_operation_response.pdf",
+      "type": "pdf",
+      "owner": "Operations",
+      "revision": "7.1",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-SOP-MNT-211",
+      "path": "sops/maintenance/pump_maintenance.pdf",
+      "type": "pdf",
+      "owner": "Maintenance",
+      "revision": "6.9",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-SOP-MNT-212",
+      "path": "sops/maintenance/motor_inspection.pdf",
+      "type": "pdf",
+      "owner": "Electrical",
+      "revision": "4.8",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-SOP-MNT-213",
+      "path": "sops/maintenance/work_order_management.pdf",
+      "type": "pdf",
+      "owner": "Maintenance",
+      "revision": "5.5",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-SOP-INS-221",
+      "path": "sops/inspection/pump_condition_monitoring.pdf",
+      "type": "pdf",
+      "owner": "Inspection & Integrity",
+      "revision": "5.3",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-SOP-INS-222",
+      "path": "sops/inspection/corrosion_thickness.pdf",
+      "type": "pdf",
+      "owner": "Inspection & Integrity",
+      "revision": "7.0",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-SOP-HSE-231",
+      "path": "sops/safety/permit_to_work.pdf",
+      "type": "pdf",
+      "owner": "HSE",
+      "revision": "10.2",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-SOP-HSE-232",
+      "path": "sops/safety/energy_isolation.pdf",
+      "type": "pdf",
+      "owner": "HSE",
+      "revision": "8.7",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-SOP-ENG-241",
+      "path": "sops/engineering/technical_review.pdf",
+      "type": "pdf",
+      "owner": "Process Engineering",
+      "revision": "6.2",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-SOP-HSE-233",
+      "path": "sops/hse/incident_management.pdf",
+      "type": "pdf",
+      "owner": "HSE",
+      "revision": "4.4",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-MAN-301",
+      "path": "manuals/engineering/rotating_equipment_manual.pdf",
+      "type": "pdf",
+      "owner": "Process Engineering",
+      "revision": "3.9",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-MAN-302",
+      "path": "manuals/engineering/mechanical_integrity_manual.pdf",
+      "type": "pdf",
+      "owner": "Inspection & Integrity",
+      "revision": "5.1",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-MAN-303",
+      "path": "manuals/operations/refinery_operations_manual.pdf",
+      "type": "pdf",
+      "owner": "Operations",
+      "revision": "6.8",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-MAN-304",
+      "path": "manuals/hse/process_safety_manual.pdf",
+      "type": "pdf",
+      "owner": "HSE",
+      "revision": "4.7",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-MAN-305",
+      "path": "manuals/it/sovereign_ai_workbench_manual.pdf",
+      "type": "pdf",
+      "owner": "IT / AI Governance",
+      "revision": "2.0",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-AS-P-102-001",
+      "path": "assets/CDU-4/equipment/P-102/P-102_equipment_record.pdf",
+      "type": "pdf",
+      "owner": "Asset Management",
+      "revision": "1.0",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-AS-P-201-001",
+      "path": "assets/HCU-1/equipment/P-201/P-201_equipment_record.pdf",
+      "type": "pdf",
+      "owner": "Asset Management",
+      "revision": "1.0",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-AS-V-201-001",
+      "path": "assets/CDU-4/equipment/V-201/V-201_equipment_record.pdf",
+      "type": "pdf",
+      "owner": "Asset Management",
+      "revision": "1.0",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-AS-V-220-001",
+      "path": "assets/CDU-4/equipment/V-220/V-220_equipment_record.pdf",
+      "type": "pdf",
+      "owner": "Asset Management",
+      "revision": "1.0",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-AS-E-301-001",
+      "path": "assets/CDU-4/equipment/E-301/E-301_equipment_record.pdf",
+      "type": "pdf",
+      "owner": "Asset Management",
+      "revision": "1.0",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-AS-F-401-001",
+      "path": "assets/CDU-4/equipment/F-401/F-401_equipment_record.pdf",
+      "type": "pdf",
+      "owner": "Asset Management",
+      "revision": "1.0",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-AS-C-301-001",
+      "path": "assets/HCU-1/equipment/C-301/C-301_equipment_record.pdf",
+      "type": "pdf",
+      "owner": "Asset Management",
+      "revision": "1.0",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-AS-D-410-001",
+      "path": "assets/CDU-4/equipment/D-410/D-410_equipment_record.pdf",
+      "type": "pdf",
+      "owner": "Asset Management",
+      "revision": "1.0",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-AS-P-601-001",
+      "path": "assets/DISP-1/equipment/P-601/P-601_equipment_record.pdf",
+      "type": "pdf",
+      "owner": "Asset Management",
+      "revision": "1.0",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-AS-P102-002",
+      "path": "assets/CDU-4/equipment/P-102/P-102_detailed_datasheet.pdf",
+      "type": "pdf",
+      "owner": "Process Engineering",
+      "revision": "4.2",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-DRG-P102-010",
+      "path": "assets/CDU-4/engineering/P-102_process_diagram.pdf",
+      "type": "pdf",
+      "owner": "Process Engineering",
+      "revision": "1.6",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-INS-P102-2024",
+      "path": "historical_records/inspection/P-102_inspection_2024.pdf",
+      "type": "pdf",
+      "owner": "Inspection & Integrity",
+      "revision": "1.4",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-INS-P102-2025",
+      "path": "historical_records/inspection/P-102_inspection_2025.pdf",
+      "type": "pdf",
+      "owner": "Inspection & Integrity",
+      "revision": "2.1",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-INS-P102-2026",
+      "path": "historical_records/inspection/P-102_inspection_2026.pdf",
+      "type": "pdf",
+      "owner": "Inspection & Integrity",
+      "revision": "1.0",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-MNT-P102-401",
+      "path": "maintenance/P-102_maintenance_history.pdf",
+      "type": "pdf",
+      "owner": "Maintenance",
+      "revision": "3.0",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-MNT-403",
+      "path": "maintenance/CDU4_maintenance_backlog.pdf",
+      "type": "pdf",
+      "owner": "Maintenance",
+      "revision": "5.2",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-INC-2025-017",
+      "path": "hse/incidents/INC-2025-017_P102_seal_leakage.pdf",
+      "type": "pdf",
+      "owner": "HSE",
+      "revision": "1.8",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-INC-2026-004",
+      "path": "hse/incidents/INC-2026-004_PT102_disagreement.pdf",
+      "type": "pdf",
+      "owner": "HSE / Instrumentation",
+      "revision": "1.2",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-VND-P102-501",
+      "path": "vendors/P-102_vendor_technical_report_2026.pdf",
+      "type": "pdf",
+      "owner": "Procurement",
+      "revision": "1.0",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-PRJ-CDU4-601",
+      "path": "projects/CDU4_reliability_improvement_plan.pdf",
+      "type": "pdf",
+      "owner": "Projects",
+      "revision": "1.3",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-OPS-251",
+      "path": "operations/production_planning_procedure.pdf",
+      "type": "pdf",
+      "owner": "Operations",
+      "revision": "3.5",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-HSE-311",
+      "path": "hse/emergency_response_plan.pdf",
+      "type": "pdf",
+      "owner": "HSE",
+      "revision": "6.0",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-HSE-312",
+      "path": "hse/environmental_management_plan.pdf",
+      "type": "pdf",
+      "owner": "HSE",
+      "revision": "3.6",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-PROC-321",
+      "path": "procurement/vendor_evaluation_procedure.pdf",
+      "type": "pdf",
+      "owner": "Procurement",
+      "revision": "4.5",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-PROC-322",
+      "path": "procurement/spare_parts_catalogue.pdf",
+      "type": "pdf",
+      "owner": "Procurement",
+      "revision": "2.7",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-I&C-331",
+      "path": "instrumentation/PT102_calibration_procedure.pdf",
+      "type": "pdf",
+      "owner": "Instrumentation",
+      "revision": "3.3",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-QA-341",
+      "path": "quality/management_of_change_procedure.pdf",
+      "type": "pdf",
+      "owner": "Process Engineering",
+      "revision": "4.1",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "APEL-QA-342",
+      "path": "quality/document_review_checklist.pdf",
+      "type": "pdf",
+      "owner": "Quality",
+      "revision": "2.9",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "ASSET_REGISTER",
+      "path": "assets/asset_register.xlsx",
+      "type": "xlsx",
+      "owner": "Enterprise Data",
+      "revision": "1.0",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "WORK_ORDER_REGISTER",
+      "path": "maintenance/work_order_register.xlsx",
+      "type": "xlsx",
+      "owner": "Enterprise Data",
+      "revision": "1.0",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "SHIFT_LOG_2026",
+      "path": "operations/shift_log_2026.xlsx",
+      "type": "xlsx",
+      "owner": "Enterprise Data",
+      "revision": "1.0",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "PRODUCTION_MONTHLY_SUMMARY_2026",
+      "path": "operations/production_monthly_summary_2026.xlsx",
+      "type": "xlsx",
+      "owner": "Enterprise Data",
+      "revision": "1.0",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    },
+    {
+      "document_id": "TEST-P102-001",
+      "path": "TEST_DATA_REMOVE_LATER/documents/test_p102_condition_package.pdf",
+      "type": "pdf",
+      "owner": "TEST SUITE",
+      "revision": "1.0",
+      "classification": "CONFIDENTIAL",
+      "status": "ACTIVE"
+    }
+  ]
+}

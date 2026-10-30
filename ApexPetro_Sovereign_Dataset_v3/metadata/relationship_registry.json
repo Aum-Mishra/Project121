@@ -1,0 +1,146 @@
+{
+  "schema_version": "2.0",
+  "company": "ApexPetro Energy Limited",
+  "relationship_types": [
+    "Asset_to_Instrument",
+    "Asset_to_SOP",
+    "Asset_to_WorkOrder",
+    "Asset_to_Inspection",
+    "Asset_to_Incident",
+    "Instrument_to_Alarm",
+    "Alarm_to_WorkOrder",
+    "Inspection_to_Maintenance",
+    "Maintenance_to_SparePart",
+    "Incident_to_CorrectiveAction"
+  ],
+  "relationships": [
+    {
+      "type": "Asset_to_Instrument",
+      "asset_id": "P-102",
+      "instruments": [
+        "PT-102",
+        "TT-102",
+        "FT-210",
+        "VT-102A",
+        "VT-102B",
+        "GD-102",
+        "PSV-102"
+      ]
+    },
+    {
+      "type": "Asset_to_SOP",
+      "asset_id": "P-102",
+      "sops": [
+        "SOP-OPS-01",
+        "SOP-OPS-201",
+        "SOP-OPS-203",
+        "SOP-MAINT-02"
+      ]
+    },
+    {
+      "type": "Asset_to_WorkOrder",
+      "asset_id": "P-102",
+      "work_orders": [
+        "WO-4102",
+        "WO-5012",
+        "WO-6021"
+      ]
+    },
+    {
+      "type": "Asset_to_Inspection",
+      "asset_id": "P-102",
+      "inspections": [
+        "IR-2024-0102",
+        "IR-2025-0102",
+        "IR-2026-0102"
+      ]
+    },
+    {
+      "type": "Asset_to_Incident",
+      "asset_id": "P-102",
+      "incidents": [
+        "INC-2025-017",
+        "INC-2026-004"
+      ]
+    },
+    {
+      "type": "Instrument_to_Alarm",
+      "instrument_tag": "VT-102A",
+      "alarms": [
+        "ALM-2025-0104",
+        "ALM-2026-0520"
+      ]
+    },
+    {
+      "type": "Instrument_to_Alarm",
+      "instrument_tag": "PT-102",
+      "alarms": [
+        "ALM-2026-0041",
+        "ALM-2026-0042"
+      ]
+    },
+    {
+      "type": "Alarm_to_WorkOrder",
+      "alarm_id": "ALM-2025-0104",
+      "work_order_id": "WO-5012"
+    },
+    {
+      "type": "Alarm_to_WorkOrder",
+      "alarm_id": "ALM-2026-0520",
+      "work_order_id": "WO-6021"
+    },
+    {
+      "type": "Inspection_to_Maintenance",
+      "inspection_id": "IR-2024-0102",
+      "maintenance_event": "MR-2024-0102",
+      "work_order_id": "WO-4102"
+    },
+    {
+      "type": "Inspection_to_Maintenance",
+      "inspection_id": "IR-2025-0102",
+      "maintenance_event": "MR-2025-0240",
+      "work_order_id": "WO-5012"
+    },
+    {
+      "type": "Inspection_to_Maintenance",
+      "inspection_id": "IR-2026-0102",
+      "maintenance_event": "MR-2026-0150",
+      "work_order_id": "WO-6021"
+    },
+    {
+      "type": "Maintenance_to_SparePart",
+      "maintenance_event": "MR-2025-0088",
+      "spare_parts": [
+        "SP-MECH-1001",
+        "SP-MECH-1003"
+      ]
+    },
+    {
+      "type": "Maintenance_to_SparePart",
+      "maintenance_event": "MR-2026-0150",
+      "spare_parts": [
+        "SP-MECH-1002",
+        "SP-MECH-1004",
+        "SP-MECH-1005"
+      ]
+    },
+    {
+      "type": "Incident_to_CorrectiveAction",
+      "incident_id": "INC-2025-017",
+      "corrective_actions": [
+        "Replaced dual cartridge mechanical seal cartridge",
+        "Upgraded Plan 53B barrier fluid accumulator monitoring",
+        "Revised SOP-OPS-01 pump swap checklist"
+      ]
+    },
+    {
+      "type": "Incident_to_CorrectiveAction",
+      "incident_id": "INC-2026-004",
+      "corrective_actions": [
+        "Replaced PT-102 Hastelloy diaphragm sensing capsule",
+        "Installed vibration dampening capillary bracket on transmitter stand",
+        "Mandated 40.0 bar discharge pressure cap pending casing replacement"
+      ]
+    }
+  ]
+}

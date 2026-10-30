@@ -1,0 +1,49 @@
+ApexPetro Refining Complex - Coastal Refinery, Unit 2
+Maintenance Notes - Asset P-102 (Feed Transfer Pump)
+Location: Pump Bay 2 / Unit 2
+Department: Maintenance / Inspection & Integrity
+
+Date: 07 March 2026
+
+Note:
+
+During routine condition monitoring on 07 March 2026, the driven-end (DE) vibration
+reading on P-102 was recorded at 5.6 mm/s. This exceeds the applicable action
+threshold of 4.5 mm/s for this pump.
+
+Given the exceedance, a repeat measurement was taken on the same shift to rule out
+a spurious reading. The repeat measurement remained above the 4.5 mm/s limit,
+confirming a genuine high-vibration condition rather than a sensor or measurement
+error.
+
+Following confirmation of the sustained high reading, a maintenance inspection was
+requested through the work-order system. The Maintenance team, supported by
+Inspection & Integrity, carried out a physical inspection of the pump-motor set.
+
+Inspection finding: the inspection identified a coupling alignment issue between the
+P-102 pump shaft and the driving motor. Misalignment of this kind is a common root
+cause of elevated DE-side vibration on centrifugal pump trains.
+
+Corrective action: the coupling alignment was corrected using standard shaft
+alignment procedures (laser alignment check against OEM tolerances).
+
+Post-maintenance verification: following the alignment correction, DE vibration was
+re-measured and found to be 3.9 mm/s, which is within the 4.5 mm/s operating limit.
+
+Disposition: P-102 was returned to service. A monitoring period was put in place to
+confirm the vibration trend remains stable following the coupling alignment
+correction, with follow-up condition-monitoring readings scheduled per the standard
+inspection cadence.
+
+Reference operating limits for P-102:
+- Discharge pressure: 18-22 bar
+- DE vibration: <= 4.5 mm/s
+- Bearing temperature: <= 85 degC
+- Flow rate: 450-500 m3/h
+
+Asset reference data:
+- Motor: 315 kW
+- Speed: 1485 RPM
+- Design flow: 475 m3/h
+
+End of note.

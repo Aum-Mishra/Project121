@@ -1,0 +1,422 @@
+[
+  {
+    "task_id": "AGENT-TASK-001",
+    "task_name": "Triage Abnormal Vibration on P-102 (Run 1)",
+    "instruction": "Ingest sensor reading VT-102A (7.2 mm/s), compare against ISO 10816-3 Zone D limit, query failure mode library FML-PUMP-03, and draft emergency shutdown recommendation.",
+    "target_artifact": "Word (.docx) Approval Note",
+    "priority": "CRITICAL",
+    "expected_steps": [
+      "Step 1: Ingest source telemetry and historical records",
+      "Step 2: Check domain operating limits in specs/operating_limits.yaml",
+      "Step 3: Correlate with FMEA failure library and spare parts availability",
+      "Step 4: Populate official company document template",
+      "Step 5: Verify zero empty fields and sign-off compliance"
+    ]
+  },
+  {
+    "task_id": "AGENT-TASK-002",
+    "task_name": "Generate Incident Investigation Report for INC-2026-004 (Run 2)",
+    "instruction": "Synthesize upset log UPS-2026-003, alarm record ALM-2026-0041, and work order WO-6021 into formal incident investigation document.",
+    "target_artifact": "DOCX Template",
+    "priority": "HIGH",
+    "expected_steps": [
+      "Step 1: Ingest source telemetry and historical records",
+      "Step 2: Check domain operating limits in specs/operating_limits.yaml",
+      "Step 3: Correlate with FMEA failure library and spare parts availability",
+      "Step 4: Populate official company document template",
+      "Step 5: Verify zero empty fields and sign-off compliance"
+    ]
+  },
+  {
+    "task_id": "AGENT-TASK-003",
+    "task_name": "Monthly Maintenance Backlog Review Briefing (Run 3)",
+    "instruction": "Analyze backlog aging, identify P1/P2 items requiring turnaround isolation, and generate management executive presentation.",
+    "target_artifact": "PowerPoint (.pptx)",
+    "priority": "MEDIUM",
+    "expected_steps": [
+      "Step 1: Ingest source telemetry and historical records",
+      "Step 2: Check domain operating limits in specs/operating_limits.yaml",
+      "Step 3: Correlate with FMEA failure library and spare parts availability",
+      "Step 4: Populate official company document template",
+      "Step 5: Verify zero empty fields and sign-off compliance"
+    ]
+  },
+  {
+    "task_id": "AGENT-TASK-004",
+    "task_name": "Technical Justification for P-102 Casing Re-rating (Run 4)",
+    "instruction": "Evaluate 3-year ultrasonic thickness trend (12.8 mm -> 8.2 mm -> 3.8 mm), calculate remaining corrosion life, and verify MAWP cap of 40 bar.",
+    "target_artifact": "Technical Analysis (.pptx)",
+    "priority": "HIGH",
+    "expected_steps": [
+      "Step 1: Ingest source telemetry and historical records",
+      "Step 2: Check domain operating limits in specs/operating_limits.yaml",
+      "Step 3: Correlate with FMEA failure library and spare parts availability",
+      "Step 4: Populate official company document template",
+      "Step 5: Verify zero empty fields and sign-off compliance"
+    ]
+  },
+  {
+    "task_id": "AGENT-TASK-005",
+    "task_name": "Exchanger E-301 Thermal Fouling Assessment (Run 5)",
+    "instruction": "Calculate log mean temperature difference from TT-301 telemetry and recommend optimal solvent cleaning schedule.",
+    "target_artifact": "DOCX Technical Review",
+    "priority": "MEDIUM",
+    "expected_steps": [
+      "Step 1: Ingest source telemetry and historical records",
+      "Step 2: Check domain operating limits in specs/operating_limits.yaml",
+      "Step 3: Correlate with FMEA failure library and spare parts availability",
+      "Step 4: Populate official company document template",
+      "Step 5: Verify zero empty fields and sign-off compliance"
+    ]
+  },
+  {
+    "task_id": "AGENT-TASK-006",
+    "task_name": "Triage Abnormal Vibration on P-102 (Run 6)",
+    "instruction": "Ingest sensor reading VT-102A (7.2 mm/s), compare against ISO 10816-3 Zone D limit, query failure mode library FML-PUMP-03, and draft emergency shutdown recommendation.",
+    "target_artifact": "Word (.docx) Approval Note",
+    "priority": "CRITICAL",
+    "expected_steps": [
+      "Step 1: Ingest source telemetry and historical records",
+      "Step 2: Check domain operating limits in specs/operating_limits.yaml",
+      "Step 3: Correlate with FMEA failure library and spare parts availability",
+      "Step 4: Populate official company document template",
+      "Step 5: Verify zero empty fields and sign-off compliance"
+    ]
+  },
+  {
+    "task_id": "AGENT-TASK-007",
+    "task_name": "Generate Incident Investigation Report for INC-2026-004 (Run 7)",
+    "instruction": "Synthesize upset log UPS-2026-003, alarm record ALM-2026-0041, and work order WO-6021 into formal incident investigation document.",
+    "target_artifact": "DOCX Template",
+    "priority": "HIGH",
+    "expected_steps": [
+      "Step 1: Ingest source telemetry and historical records",
+      "Step 2: Check domain operating limits in specs/operating_limits.yaml",
+      "Step 3: Correlate with FMEA failure library and spare parts availability",
+      "Step 4: Populate official company document template",
+      "Step 5: Verify zero empty fields and sign-off compliance"
+    ]
+  },
+  {
+    "task_id": "AGENT-TASK-008",
+    "task_name": "Monthly Maintenance Backlog Review Briefing (Run 8)",
+    "instruction": "Analyze backlog aging, identify P1/P2 items requiring turnaround isolation, and generate management executive presentation.",
+    "target_artifact": "PowerPoint (.pptx)",
+    "priority": "MEDIUM",
+    "expected_steps": [
+      "Step 1: Ingest source telemetry and historical records",
+      "Step 2: Check domain operating limits in specs/operating_limits.yaml",
+      "Step 3: Correlate with FMEA failure library and spare parts availability",
+      "Step 4: Populate official company document template",
+      "Step 5: Verify zero empty fields and sign-off compliance"
+    ]
+  },
+  {
+    "task_id": "AGENT-TASK-009",
+    "task_name": "Technical Justification for P-102 Casing Re-rating (Run 9)",
+    "instruction": "Evaluate 3-year ultrasonic thickness trend (12.8 mm -> 8.2 mm -> 3.8 mm), calculate remaining corrosion life, and verify MAWP cap of 40 bar.",
+    "target_artifact": "Technical Analysis (.pptx)",
+    "priority": "HIGH",
+    "expected_steps": [
+      "Step 1: Ingest source telemetry and historical records",
+      "Step 2: Check domain operating limits in specs/operating_limits.yaml",
+      "Step 3: Correlate with FMEA failure library and spare parts availability",
+      "Step 4: Populate official company document template",
+      "Step 5: Verify zero empty fields and sign-off compliance"
+    ]
+  },
+  {
+    "task_id": "AGENT-TASK-010",
+    "task_name": "Exchanger E-301 Thermal Fouling Assessment (Run 10)",
+    "instruction": "Calculate log mean temperature difference from TT-301 telemetry and recommend optimal solvent cleaning schedule.",
+    "target_artifact": "DOCX Technical Review",
+    "priority": "MEDIUM",
+    "expected_steps": [
+      "Step 1: Ingest source telemetry and historical records",
+      "Step 2: Check domain operating limits in specs/operating_limits.yaml",
+      "Step 3: Correlate with FMEA failure library and spare parts availability",
+      "Step 4: Populate official company document template",
+      "Step 5: Verify zero empty fields and sign-off compliance"
+    ]
+  },
+  {
+    "task_id": "AGENT-TASK-011",
+    "task_name": "Triage Abnormal Vibration on P-102 (Run 11)",
+    "instruction": "Ingest sensor reading VT-102A (7.2 mm/s), compare against ISO 10816-3 Zone D limit, query failure mode library FML-PUMP-03, and draft emergency shutdown recommendation.",
+    "target_artifact": "Word (.docx) Approval Note",
+    "priority": "CRITICAL",
+    "expected_steps": [
+      "Step 1: Ingest source telemetry and historical records",
+      "Step 2: Check domain operating limits in specs/operating_limits.yaml",
+      "Step 3: Correlate with FMEA failure library and spare parts availability",
+      "Step 4: Populate official company document template",
+      "Step 5: Verify zero empty fields and sign-off compliance"
+    ]
+  },
+  {
+    "task_id": "AGENT-TASK-012",
+    "task_name": "Generate Incident Investigation Report for INC-2026-004 (Run 12)",
+    "instruction": "Synthesize upset log UPS-2026-003, alarm record ALM-2026-0041, and work order WO-6021 into formal incident investigation document.",
+    "target_artifact": "DOCX Template",
+    "priority": "HIGH",
+    "expected_steps": [
+      "Step 1: Ingest source telemetry and historical records",
+      "Step 2: Check domain operating limits in specs/operating_limits.yaml",
+      "Step 3: Correlate with FMEA failure library and spare parts availability",
+      "Step 4: Populate official company document template",
+      "Step 5: Verify zero empty fields and sign-off compliance"
+    ]
+  },
+  {
+    "task_id": "AGENT-TASK-013",
+    "task_name": "Monthly Maintenance Backlog Review Briefing (Run 13)",
+    "instruction": "Analyze backlog aging, identify P1/P2 items requiring turnaround isolation, and generate management executive presentation.",
+    "target_artifact": "PowerPoint (.pptx)",
+    "priority": "MEDIUM",
+    "expected_steps": [
+      "Step 1: Ingest source telemetry and historical records",
+      "Step 2: Check domain operating limits in specs/operating_limits.yaml",
+      "Step 3: Correlate with FMEA failure library and spare parts availability",
+      "Step 4: Populate official company document template",
+      "Step 5: Verify zero empty fields and sign-off compliance"
+    ]
+  },
+  {
+    "task_id": "AGENT-TASK-014",
+    "task_name": "Technical Justification for P-102 Casing Re-rating (Run 14)",
+    "instruction": "Evaluate 3-year ultrasonic thickness trend (12.8 mm -> 8.2 mm -> 3.8 mm), calculate remaining corrosion life, and verify MAWP cap of 40 bar.",
+    "target_artifact": "Technical Analysis (.pptx)",
+    "priority": "HIGH",
+    "expected_steps": [
+      "Step 1: Ingest source telemetry and historical records",
+      "Step 2: Check domain operating limits in specs/operating_limits.yaml",
+      "Step 3: Correlate with FMEA failure library and spare parts availability",
+      "Step 4: Populate official company document template",
+      "Step 5: Verify zero empty fields and sign-off compliance"
+    ]
+  },
+  {
+    "task_id": "AGENT-TASK-015",
+    "task_name": "Exchanger E-301 Thermal Fouling Assessment (Run 15)",
+    "instruction": "Calculate log mean temperature difference from TT-301 telemetry and recommend optimal solvent cleaning schedule.",
+    "target_artifact": "DOCX Technical Review",
+    "priority": "MEDIUM",
+    "expected_steps": [
+      "Step 1: Ingest source telemetry and historical records",
+      "Step 2: Check domain operating limits in specs/operating_limits.yaml",
+      "Step 3: Correlate with FMEA failure library and spare parts availability",
+      "Step 4: Populate official company document template",
+      "Step 5: Verify zero empty fields and sign-off compliance"
+    ]
+  },
+  {
+    "task_id": "AGENT-TASK-016",
+    "task_name": "Triage Abnormal Vibration on P-102 (Run 16)",
+    "instruction": "Ingest sensor reading VT-102A (7.2 mm/s), compare against ISO 10816-3 Zone D limit, query failure mode library FML-PUMP-03, and draft emergency shutdown recommendation.",
+    "target_artifact": "Word (.docx) Approval Note",
+    "priority": "CRITICAL",
+    "expected_steps": [
+      "Step 1: Ingest source telemetry and historical records",
+      "Step 2: Check domain operating limits in specs/operating_limits.yaml",
+      "Step 3: Correlate with FMEA failure library and spare parts availability",
+      "Step 4: Populate official company document template",
+      "Step 5: Verify zero empty fields and sign-off compliance"
+    ]
+  },
+  {
+    "task_id": "AGENT-TASK-017",
+    "task_name": "Generate Incident Investigation Report for INC-2026-004 (Run 17)",
+    "instruction": "Synthesize upset log UPS-2026-003, alarm record ALM-2026-0041, and work order WO-6021 into formal incident investigation document.",
+    "target_artifact": "DOCX Template",
+    "priority": "HIGH",
+    "expected_steps": [
+      "Step 1: Ingest source telemetry and historical records",
+      "Step 2: Check domain operating limits in specs/operating_limits.yaml",
+      "Step 3: Correlate with FMEA failure library and spare parts availability",
+      "Step 4: Populate official company document template",
+      "Step 5: Verify zero empty fields and sign-off compliance"
+    ]
+  },
+  {
+    "task_id": "AGENT-TASK-018",
+    "task_name": "Monthly Maintenance Backlog Review Briefing (Run 18)",
+    "instruction": "Analyze backlog aging, identify P1/P2 items requiring turnaround isolation, and generate management executive presentation.",
+    "target_artifact": "PowerPoint (.pptx)",
+    "priority": "MEDIUM",
+    "expected_steps": [
+      "Step 1: Ingest source telemetry and historical records",
+      "Step 2: Check domain operating limits in specs/operating_limits.yaml",
+      "Step 3: Correlate with FMEA failure library and spare parts availability",
+      "Step 4: Populate official company document template",
+      "Step 5: Verify zero empty fields and sign-off compliance"
+    ]
+  },
+  {
+    "task_id": "AGENT-TASK-019",
+    "task_name": "Technical Justification for P-102 Casing Re-rating (Run 19)",
+    "instruction": "Evaluate 3-year ultrasonic thickness trend (12.8 mm -> 8.2 mm -> 3.8 mm), calculate remaining corrosion life, and verify MAWP cap of 40 bar.",
+    "target_artifact": "Technical Analysis (.pptx)",
+    "priority": "HIGH",
+    "expected_steps": [
+      "Step 1: Ingest source telemetry and historical records",
+      "Step 2: Check domain operating limits in specs/operating_limits.yaml",
+      "Step 3: Correlate with FMEA failure library and spare parts availability",
+      "Step 4: Populate official company document template",
+      "Step 5: Verify zero empty fields and sign-off compliance"
+    ]
+  },
+  {
+    "task_id": "AGENT-TASK-020",
+    "task_name": "Exchanger E-301 Thermal Fouling Assessment (Run 20)",
+    "instruction": "Calculate log mean temperature difference from TT-301 telemetry and recommend optimal solvent cleaning schedule.",
+    "target_artifact": "DOCX Technical Review",
+    "priority": "MEDIUM",
+    "expected_steps": [
+      "Step 1: Ingest source telemetry and historical records",
+      "Step 2: Check domain operating limits in specs/operating_limits.yaml",
+      "Step 3: Correlate with FMEA failure library and spare parts availability",
+      "Step 4: Populate official company document template",
+      "Step 5: Verify zero empty fields and sign-off compliance"
+    ]
+  },
+  {
+    "task_id": "AGENT-TASK-021",
+    "task_name": "Triage Abnormal Vibration on P-102 (Run 21)",
+    "instruction": "Ingest sensor reading VT-102A (7.2 mm/s), compare against ISO 10816-3 Zone D limit, query failure mode library FML-PUMP-03, and draft emergency shutdown recommendation.",
+    "target_artifact": "Word (.docx) Approval Note",
+    "priority": "CRITICAL",
+    "expected_steps": [
+      "Step 1: Ingest source telemetry and historical records",
+      "Step 2: Check domain operating limits in specs/operating_limits.yaml",
+      "Step 3: Correlate with FMEA failure library and spare parts availability",
+      "Step 4: Populate official company document template",
+      "Step 5: Verify zero empty fields and sign-off compliance"
+    ]
+  },
+  {
+    "task_id": "AGENT-TASK-022",
+    "task_name": "Generate Incident Investigation Report for INC-2026-004 (Run 22)",
+    "instruction": "Synthesize upset log UPS-2026-003, alarm record ALM-2026-0041, and work order WO-6021 into formal incident investigation document.",
+    "target_artifact": "DOCX Template",
+    "priority": "HIGH",
+    "expected_steps": [
+      "Step 1: Ingest source telemetry and historical records",
+      "Step 2: Check domain operating limits in specs/operating_limits.yaml",
+      "Step 3: Correlate with FMEA failure library and spare parts availability",
+      "Step 4: Populate official company document template",
+      "Step 5: Verify zero empty fields and sign-off compliance"
+    ]
+  },
+  {
+    "task_id": "AGENT-TASK-023",
+    "task_name": "Monthly Maintenance Backlog Review Briefing (Run 23)",
+    "instruction": "Analyze backlog aging, identify P1/P2 items requiring turnaround isolation, and generate management executive presentation.",
+    "target_artifact": "PowerPoint (.pptx)",
+    "priority": "MEDIUM",
+    "expected_steps": [
+      "Step 1: Ingest source telemetry and historical records",
+      "Step 2: Check domain operating limits in specs/operating_limits.yaml",
+      "Step 3: Correlate with FMEA failure library and spare parts availability",
+      "Step 4: Populate official company document template",
+      "Step 5: Verify zero empty fields and sign-off compliance"
+    ]
+  },
+  {
+    "task_id": "AGENT-TASK-024",
+    "task_name": "Technical Justification for P-102 Casing Re-rating (Run 24)",
+    "instruction": "Evaluate 3-year ultrasonic thickness trend (12.8 mm -> 8.2 mm -> 3.8 mm), calculate remaining corrosion life, and verify MAWP cap of 40 bar.",
+    "target_artifact": "Technical Analysis (.pptx)",
+    "priority": "HIGH",
+    "expected_steps": [
+      "Step 1: Ingest source telemetry and historical records",
+      "Step 2: Check domain operating limits in specs/operating_limits.yaml",
+      "Step 3: Correlate with FMEA failure library and spare parts availability",
+      "Step 4: Populate official company document template",
+      "Step 5: Verify zero empty fields and sign-off compliance"
+    ]
+  },
+  {
+    "task_id": "AGENT-TASK-025",
+    "task_name": "Exchanger E-301 Thermal Fouling Assessment (Run 25)",
+    "instruction": "Calculate log mean temperature difference from TT-301 telemetry and recommend optimal solvent cleaning schedule.",
+    "target_artifact": "DOCX Technical Review",
+    "priority": "MEDIUM",
+    "expected_steps": [
+      "Step 1: Ingest source telemetry and historical records",
+      "Step 2: Check domain operating limits in specs/operating_limits.yaml",
+      "Step 3: Correlate with FMEA failure library and spare parts availability",
+      "Step 4: Populate official company document template",
+      "Step 5: Verify zero empty fields and sign-off compliance"
+    ]
+  },
+  {
+    "task_id": "AGENT-TASK-026",
+    "task_name": "Triage Abnormal Vibration on P-102 (Run 26)",
+    "instruction": "Ingest sensor reading VT-102A (7.2 mm/s), compare against ISO 10816-3 Zone D limit, query failure mode library FML-PUMP-03, and draft emergency shutdown recommendation.",
+    "target_artifact": "Word (.docx) Approval Note",
+    "priority": "CRITICAL",
+    "expected_steps": [
+      "Step 1: Ingest source telemetry and historical records",
+      "Step 2: Check domain operating limits in specs/operating_limits.yaml",
+      "Step 3: Correlate with FMEA failure library and spare parts availability",
+      "Step 4: Populate official company document template",
+      "Step 5: Verify zero empty fields and sign-off compliance"
+    ]
+  },
+  {
+    "task_id": "AGENT-TASK-027",
+    "task_name": "Generate Incident Investigation Report for INC-2026-004 (Run 27)",
+    "instruction": "Synthesize upset log UPS-2026-003, alarm record ALM-2026-0041, and work order WO-6021 into formal incident investigation document.",
+    "target_artifact": "DOCX Template",
+    "priority": "HIGH",
+    "expected_steps": [
+      "Step 1: Ingest source telemetry and historical records",
+      "Step 2: Check domain operating limits in specs/operating_limits.yaml",
+      "Step 3: Correlate with FMEA failure library and spare parts availability",
+      "Step 4: Populate official company document template",
+      "Step 5: Verify zero empty fields and sign-off compliance"
+    ]
+  },
+  {
+    "task_id": "AGENT-TASK-028",
+    "task_name": "Monthly Maintenance Backlog Review Briefing (Run 28)",
+    "instruction": "Analyze backlog aging, identify P1/P2 items requiring turnaround isolation, and generate management executive presentation.",
+    "target_artifact": "PowerPoint (.pptx)",
+    "priority": "MEDIUM",
+    "expected_steps": [
+      "Step 1: Ingest source telemetry and historical records",
+      "Step 2: Check domain operating limits in specs/operating_limits.yaml",
+      "Step 3: Correlate with FMEA failure library and spare parts availability",
+      "Step 4: Populate official company document template",
+      "Step 5: Verify zero empty fields and sign-off compliance"
+    ]
+  },
+  {
+    "task_id": "AGENT-TASK-029",
+    "task_name": "Technical Justification for P-102 Casing Re-rating (Run 29)",
+    "instruction": "Evaluate 3-year ultrasonic thickness trend (12.8 mm -> 8.2 mm -> 3.8 mm), calculate remaining corrosion life, and verify MAWP cap of 40 bar.",
+    "target_artifact": "Technical Analysis (.pptx)",
+    "priority": "HIGH",
+    "expected_steps": [
+      "Step 1: Ingest source telemetry and historical records",
+      "Step 2: Check domain operating limits in specs/operating_limits.yaml",
+      "Step 3: Correlate with FMEA failure library and spare parts availability",
+      "Step 4: Populate official company document template",
+      "Step 5: Verify zero empty fields and sign-off compliance"
+    ]
+  },
+  {
+    "task_id": "AGENT-TASK-030",
+    "task_name": "Exchanger E-301 Thermal Fouling Assessment (Run 30)",
+    "instruction": "Calculate log mean temperature difference from TT-301 telemetry and recommend optimal solvent cleaning schedule.",
+    "target_artifact": "DOCX Technical Review",
+    "priority": "MEDIUM",
+    "expected_steps": [
+      "Step 1: Ingest source telemetry and historical records",
+      "Step 2: Check domain operating limits in specs/operating_limits.yaml",
+      "Step 3: Correlate with FMEA failure library and spare parts availability",
+      "Step 4: Populate official company document template",
+      "Step 5: Verify zero empty fields and sign-off compliance"
+    ]
+  }
+]

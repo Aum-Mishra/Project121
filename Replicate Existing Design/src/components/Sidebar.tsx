@@ -1,6 +1,6 @@
-import { MessageSquare, FolderOpen, Files, BookOpen, CheckSquare, Package, ClipboardCheck, Cpu, ShieldCheck, Zap, ChevronRight } from "lucide-react";
+import { MessageSquare, FolderOpen, Files, BookOpen, CheckSquare, Package, ClipboardCheck, Cpu, ShieldCheck, Zap, ChevronRight, Terminal } from "lucide-react";
 
-type View = "chat"|"projects"|"files"|"knowledge"|"tasks"|"artifacts"|"approvals"|"models"|"security";
+type View = "chat"|"projects"|"files"|"knowledge"|"tasks"|"artifacts"|"approvals"|"models"|"security"|"coding-agent";
 
 interface SidebarProps {
   currentView: View;
@@ -21,6 +21,7 @@ const NAV: { label: string; items: { id: View; name: string; Icon: React.Element
   {
     label: "WORK",
     items: [
+      { id: "coding-agent", name: "Coding Agent", Icon: Terminal },
       { id: "tasks",     name: "Tasks",     Icon: CheckSquare, badge: 2 },
       { id: "artifacts", name: "Artifacts", Icon: Package },
       { id: "approvals", name: "Approvals", Icon: ClipboardCheck, badge: 1 },

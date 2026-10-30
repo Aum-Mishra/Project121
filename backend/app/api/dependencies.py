@@ -35,6 +35,28 @@ async def get_current_user(
     return user
 
 
+async def get_optional_current_user(
+    authorization: Optional[str] = Header(None),
+    db: Session = Depends(get_db_session),
+) -> Optional[User]:
+    """Like get_current_user but anonymous requests get None instead of a 401.
+
+    Chat endpoints use this so existing unauthenticated/legacy flows keep
+    working with default (company_id, user 1), while authenticated requests are
+    scoped and enforced server-side.
+    """
+    if not authorization or not authorization.startswith("Bearer "):
+        return None
+    token = authorization.split(" ")[1]
+    token_data = decode_token(token)
+    if not token_data:
+        return None
+    user = db.query(User).filter(User.id == int(token_data.user_id)).first()
+    if not user or not user.is_active:
+        return None
+    return user
+
+
 async def get_current_company(
     current_user: User = Depends(get_current_user),
 ) -> str:

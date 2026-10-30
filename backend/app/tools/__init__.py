@@ -8,6 +8,9 @@ from app.tools.code_executor import CodeExecutorTool
 from app.tools.data_analysis import AnalyzeDataTool
 from app.tools.document_generation_tool import GenerateDocumentTool, UpdateArtifactTool, ConvertArtifactTool
 from app.tools.coding_agent import CodingAgentTool
+from app.tools.company_info import CompanyInfoTool
+from app.tools.summarize_documents import SummarizeDocumentsTool
+from app.tools.chat_document_search import ChatDocumentSearchTool
 
 __all__ = [
     "tool_registry",
@@ -22,4 +25,7 @@ __all__ = [
     "UpdateArtifactTool",
     "ConvertArtifactTool",
     "CodingAgentTool",
+    "CompanyInfoTool",
+    "SummarizeDocumentsTool",
+    "ChatDocumentSearchTool",
 ]

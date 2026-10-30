@@ -1,0 +1,40 @@
+{
+  "anomaly_types": [
+    {
+      "type": "Point anomaly",
+      "definition": "Single telemetry reading exceeding physical or operational threshold outside allowable noise margin"
+    },
+    {
+      "type": "Contextual anomaly",
+      "definition": "Reading normal in isolation but abnormal given external context (e.g. high motor current at zero flow)"
+    },
+    {
+      "type": "Collective anomaly",
+      "definition": "Sequence of values individually plausible but collectively indicating systematic degradation"
+    },
+    {
+      "type": "Trend anomaly",
+      "definition": "Monotonic upward or downward drift exceeding expected seasonal or process ramp rate"
+    },
+    {
+      "type": "Rate-of-change anomaly",
+      "definition": "Unusually rapid acceleration in temperature, vibration or differential pressure"
+    },
+    {
+      "type": "Cross-sensor anomaly",
+      "definition": "Discrepancy between redundant or physically coupled sensor channels (e.g. FT-101 vs FT-210)"
+    },
+    {
+      "type": "Cross-domain anomaly",
+      "definition": "Simultaneous emergence of subtle abnormalities across equipment, human workload and utilities"
+    },
+    {
+      "type": "Behavioral anomaly",
+      "definition": "Operator bypass or manual setpoint bump without documented operational rationale"
+    },
+    {
+      "type": "Organizational anomaly",
+      "definition": "Abnormal compression of turnaround schedule coincident with budget freeze and deferred PMs"
+    }
+  ]
+}

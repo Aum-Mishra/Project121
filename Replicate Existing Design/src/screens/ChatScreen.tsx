@@ -6,7 +6,7 @@ import {
   Zap, Eye, Shield, Loader, ChevronRight, Loader2, Plus, MessageSquare,
   FileSpreadsheet, RefreshCw, Download, Package, File, Pencil, Trash2,
 } from "lucide-react";
-import { api, ChatEvent, MessageRecord, ConversationSummary, ChatSource, ChatArtifact } from "../services/api";
+import { api, ChatEvent, MessageRecord, ConversationSummary, ChatSource, ChatArtifact, ChatAttachmentRecord } from "../services/api";
 import AnalysisView, { AnalysisEnvelope } from "../components/AnalysisView";
 
 type Mode = "ask" | "code";
@@ -26,7 +26,8 @@ type EvidenceItem = ChatSource;
 
 interface AgentStepView {
   label: string;
-  done: boolean;
+  status: "pending" | "running" | "completed" | "failed";
+  error?: string;
 }
 
 interface ArtifactLink {
@@ -145,7 +146,10 @@ function EvidenceDrawer({ source, index, onClose }: {
 
 function AgentPlanCard({ steps, running }: { steps: AgentStepView[]; running: boolean }) {
   const [expanded, setExpanded] = useState(true);
-  const done = steps.filter((s) => s.done).length;
+  const done = steps.filter((s) => s.status === "completed").length;
+  const failed = steps.filter((s) => s.status === "failed").length;
+  const runningIndex = steps.findIndex((s) => s.status === "running");
+  const terminal = running || failed > 0 || (steps.length > 0 && done === steps.length);
 
   return (
     <div className="rounded-[8px] bg-[#141E2F] border border-[#253248] overflow-hidden">
@@ -154,15 +158,17 @@ function AgentPlanCard({ steps, running }: { steps: AgentStepView[]; running: bo
         className="w-full flex items-center gap-3 px-4 py-3 hover:bg-[#182337] transition-colors text-left"
       >
         <div className={`w-7 h-7 rounded-[6px] flex items-center justify-center flex-none ${
-          running ? "bg-[#8B5CF6]/15" : "bg-[#14B8A6]/12"
+          running ? "bg-[#8B5CF6]/15" : failed > 0 ? "bg-[#EF4444]/15" : "bg-[#14B8A6]/12"
         }`}>
           {running
             ? <Loader size={13} className="text-[#8B5CF6] animate-spin-slow" />
+            : failed > 0
+            ? <X size={13} className="text-[#EF4444]" />
             : <Check size={13} className="text-[#14B8A6]" />}
         </div>
         <div className="flex-1">
           <p className="text-[12.5px] font-semibold text-[#F5F7FA]">Knowledge Agent</p>
-          <p className="text-[10px] text-[#667386]">Agent · {steps.length} steps</p>
+          <p className="text-[10px] text-[#667386]">Agent · {steps.length} steps{failed > 0 ? " · an issue occurred" : ""}</p>
         </div>
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-2">
@@ -171,6 +177,8 @@ function AgentPlanCard({ steps, running }: { steps: AgentStepView[]; running: bo
                 className={`h-full rounded-full transition-all duration-700 ${
                   running
                     ? "bg-gradient-to-r from-[#8B5CF6] to-[#8B5CF6]/60"
+                    : failed > 0
+                    ? "bg-gradient-to-r from-[#EF4444] to-[#EF4444]/60"
                     : "bg-gradient-to-r from-[#8B5CF6] to-[#14B8A6]"
                 }`}
                 style={{ width: `${steps.length ? (done / steps.length) * 100 : 0}%` }}
@@ -187,11 +195,15 @@ function AgentPlanCard({ steps, running }: { steps: AgentStepView[]; running: bo
           {steps.map((step, i) => (
             <div key={i} className="flex items-start gap-3 py-1.5 px-2 rounded-[5px]">
               <div className="flex-none mt-px">
-                {step.done ? (
+                {step.status === "completed" ? (
                   <div className="w-[14px] h-[14px] rounded-full bg-[#14B8A6]/15 flex items-center justify-center">
                     <Check size={8} className="text-[#14B8A6]" />
                   </div>
-                ) : running && i === done ? (
+                ) : step.status === "failed" ? (
+                  <div className="w-[14px] h-[14px] rounded-full bg-[#EF4444]/15 flex items-center justify-center">
+                    <X size={8} className="text-[#EF4444]" />
+                  </div>
+                ) : step.status === "running" ? (
                   <div className="w-[14px] h-[14px] rounded-full bg-[#8B5CF6]/25 flex items-center justify-center">
                     <span className="w-[5px] h-[5px] rounded-full bg-[#8B5CF6] animate-pulse-dot" />
                   </div>
@@ -201,18 +213,25 @@ function AgentPlanCard({ steps, running }: { steps: AgentStepView[]; running: bo
                   </div>
                 )}
               </div>
-              <span className={`flex-1 text-[11.5px] leading-snug ${
-                step.done
-                  ? "text-[#9AA6B5]"
-                  : running && i === done
-                  ? "text-[#A78BFA] font-medium"
-                  : "text-[#3a4a60]"
-              }`}>
-                {step.label}
-                {running && i === done && (
-                  <span className="ml-2 text-[9px] text-[#8B5CF6]/60 font-mono animate-blink">running…</span>
+              <div className="flex-1 min-w-0">
+                <span className={`flex-1 text-[11.5px] leading-snug ${
+                  step.status === "failed"
+                    ? "text-[#F87171] line-through decoration-[#F87171]/50"
+                    : step.status === "completed"
+                    ? "text-[#9AA6B5]"
+                    : step.status === "running"
+                    ? "text-[#A78BFA] font-medium"
+                    : "text-[#3a4a60]"
+                }`}>
+                  {step.label}
+                  {step.status === "running" && (
+                    <span className="ml-2 text-[9px] text-[#8B5CF6]/60 font-mono animate-blink">running…</span>
+                  )}
+                </span>
+                {step.status === "failed" && step.error && (
+                  <p className="text-[10px] text-[#EF4444]/80 mt-0.5 font-mono">{step.error}</p>
                 )}
-              </span>
+              </div>
             </div>
           ))}
         </div>
@@ -223,10 +242,11 @@ function AgentPlanCard({ steps, running }: { steps: AgentStepView[]; running: bo
 
 // ── AiBubble with persistent sources ─────────────────────────────────────────
 
-function AiBubble({ message, index, onViewSource }: {
+function AiBubble({ message, index, onViewSource, onNavigate }: {
   message: ChatMessage;
   index: number;
   onViewSource: (e: EvidenceItem, i: number) => void;
+  onNavigate?: (view: string) => void;
 }) {
   const [sourcesOpen, setSourcesOpen] = useState(false);
   const srcs = message.sources || [];
@@ -301,7 +321,7 @@ function AiBubble({ message, index, onViewSource }: {
         {!!arts.length && <GeneratedArtifactsCard artifacts={arts as ArtifactLink[]} />}
 
         {message.analysis && Object.keys(message.analysis).length > 0 && (
-          <AnalysisView analysis={message.analysis} />
+          <AnalysisView analysis={message.analysis} onNavigate={onNavigate} />
         )}
       </div>
     </div>
@@ -560,8 +580,9 @@ function ConversationSidebar({ conversations, activeId, onSelect, onNew, onRenam
 
 interface ComposerAttachment {
   name: string;
-  status: "uploading" | "ready" | "error";
+  status: "uploading" | "processing" | "ready" | "error";
   error?: string;
+  documentId?: string;
 }
 
 function Composer({ message, setMessage, onSend, running, attachments, onAttach, onRemoveAttachment }: {
@@ -570,7 +591,7 @@ function Composer({ message, setMessage, onSend, running, attachments, onAttach,
   onSend: () => void;
   running: boolean;
   attachments: ComposerAttachment[];
-  onAttach: (file: File) => void;
+  onAttach: (files: FileList) => void;
   onRemoveAttachment: (name: string) => void;
 }) {
   const fileInputRef = useRef<HTMLInputElement | null>(null);
@@ -593,7 +614,7 @@ function Composer({ message, setMessage, onSend, running, attachments, onAttach,
               <div key={a.name} className="flex items-center gap-2 rounded-md bg-[#141E2F] border border-[#253248] px-2.5 py-1.5">
                 <File size={12} className="text-[#8B5CF6]" />
                 <span className="text-[11px] text-[#F5F7FA] max-w-[180px] truncate">{a.name}</span>
-                {a.status === "uploading" ? (
+                {a.status === "uploading" || a.status === "processing" ? (
                   <Loader2 size={11} className="text-[#667386] animate-spin" />
                 ) : a.status === "error" ? (
                   <span className="text-[9px] text-[#FCA5A5]">{a.error}</span>
@@ -625,8 +646,10 @@ function Composer({ message, setMessage, onSend, running, attachments, onAttach,
           <input
             ref={fileInputRef}
             type="file"
+            multiple
+            accept=".pdf,.png,.jpg,.jpeg,.tif,.tiff,.bmp,.webp,.docx,.pptx,.xlsx,.csv,.txt,.md,.markdown,.html,.htm"
             className="hidden"
-            onChange={(e) => { const f = e.target.files?.[0]; if (f) onAttach(f); e.target.value = ""; }}
+            onChange={(e) => { if (e.target.files && e.target.files.length > 0) onAttach(e.target.files); e.target.value = ""; }}
           />
           <button
             onClick={onSend}
@@ -694,7 +717,7 @@ function formatTime(iso: string | undefined): string {
   return d.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", second: "2-digit" });
 }
 
-export default function ChatScreen({ onOpenModelDrawer }: { onOpenModelDrawer: () => void }) {
+export default function ChatScreen({ onOpenModelDrawer, onNavigate }: { onOpenModelDrawer: () => void; onNavigate?: (view: string) => void }) {
   const [mode, setMode] = useState<Mode>("ask");
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState<ChatMessage[]>([]);
@@ -707,6 +730,8 @@ export default function ChatScreen({ onOpenModelDrawer }: { onOpenModelDrawer: (
   const messagesEndRef = useRef<HTMLDivElement | null>(null);
   const [loadingHistory, setLoadingHistory] = useState(false);
   const [attachments, setAttachments] = useState<ComposerAttachment[]>([]);
+  const attachmentsRef = useRef<ComposerAttachment[]>([]);
+  useEffect(() => { attachmentsRef.current = attachments; }, [attachments]);
 
   const scrollToBottom = useCallback(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -735,6 +760,7 @@ export default function ChatScreen({ onOpenModelDrawer }: { onOpenModelDrawer: (
     setSteps([]);
     setError(null);
     setAttachments([]);
+    attachmentsRef.current = [];
   }, []);
 
   const handleRenameConversation = useCallback(async (id: string, title: string) => {
@@ -780,6 +806,24 @@ export default function ChatScreen({ onOpenModelDrawer }: { onOpenModelDrawer: (
     } finally {
       setLoadingHistory(false);
     }
+
+    // BUG 2 fix: reload the attachments that were uploaded to this conversation
+    // so the chips persist across conversation switches / reopen. Chips stay
+    // until the user removes them; they are NOT cleared on send.
+    try {
+      const atts = await api.chat.listAttachments(id);
+      const loaded: ComposerAttachment[] = (atts.attachments || []).map((a) => ({
+        name: a.filename,
+        status: a.status === "READY" ? "ready" : ("processing" as const),
+        documentId: a.document_id,
+      }));
+      setAttachments(loaded);
+      attachmentsRef.current = loaded;
+    } catch (e) {
+      console.error("Failed to load conversation attachments", e);
+      setAttachments([]);
+      attachmentsRef.current = [];
+    }
   }, [newChat]);
 
   async function runQuery(query: string) {
@@ -805,14 +849,23 @@ export default function ChatScreen({ onOpenModelDrawer }: { onOpenModelDrawer: (
 
     try {
       const res = await api.chat.stream({ query, conversation_id: convId });
-      const planSteps: string[] = [];
       const artifactLinks: ArtifactLink[] = [];
       let runVerified: boolean | null = null;
+      let stepCount = 0;
+
+      const applyStepStatus = (index: number, status: AgentStepView["status"], error?: string) =>
+        setSteps((prev) =>
+          prev.map((s, i) => (i === index ? { ...s, status, error } : s))
+        );
 
       for await (const ev of streamEvents(res)) {
         if (ev.event === "plan_created" && ev.steps) {
-          planSteps.push(...ev.steps);
-          setSteps(planSteps.map((s) => ({ label: s, done: false })));
+          stepCount = ev.steps.length;
+          setSteps((ev.steps as string[]).map((s) => ({ label: s, status: "pending" as const })));
+        } else if (ev.event === "tool_started" && typeof ev.step_index === "number") {
+          applyStepStatus(ev.step_index, "running");
+        } else if (ev.event === "tool_completed" && typeof ev.step_index === "number") {
+          applyStepStatus(ev.step_index, ev.success ? "completed" : "failed", ev.error || undefined);
         } else if (ev.event === "verification_completed") {
           runVerified = ev.verified !== undefined ? ev.verified : null;
         } else if (ev.event === "artifact_created" && ev.artifact) {
@@ -821,7 +874,22 @@ export default function ChatScreen({ onOpenModelDrawer }: { onOpenModelDrawer: (
             artifactLinks.push(a);
           }
         } else if (ev.event === "run_completed") {
-          setSteps(planSteps.map((s) => ({ label: s, done: true })));
+          const finalSteps = (ev.steps_status as { label: string; status: string; error?: string }[] | undefined);
+          if (finalSteps && finalSteps.length > 0) {
+            setSteps(
+              finalSteps.map((s) => ({
+                label: s.label,
+                status: (["completed", "failed", "running", "pending"].includes(s.status)
+                  ? s.status
+                  : "completed") as AgentStepView["status"],
+                error: s.error || undefined,
+              }))
+            );
+          } else if (stepCount > 0) {
+            setSteps(
+              Array.from({ length: stepCount }, (_, i) => ({ label: `Step ${i + 1}`, status: "completed" as const }))
+            );
+          }
           for (const a of ev.artifacts || []) {
             if (a?.artifact_id && !artifactLinks.some((x) => x.artifact_id === a.artifact_id)) {
               artifactLinks.push(a);
@@ -847,6 +915,16 @@ export default function ChatScreen({ onOpenModelDrawer }: { onOpenModelDrawer: (
             }]);
           }
         } else if (ev.event === "run_failed") {
+          const failedSteps = (ev.steps_status as { label: string; status: string; error?: string }[] | undefined);
+          if (failedSteps && failedSteps.length > 0) {
+            setSteps(
+              failedSteps.map((s) => ({
+                label: s.label,
+                status: s.status === "failed" ? "failed" : s.status === "completed" ? "completed" : "pending",
+                error: s.error || undefined,
+              }))
+            );
+          }
           setError(`The agent could not complete the request. ${ev.error || ""}`.trim());
         }
       }
@@ -859,9 +937,37 @@ export default function ChatScreen({ onOpenModelDrawer }: { onOpenModelDrawer: (
     }
   }
 
-  async function handleAttach(file: File) {
-    const name = file.name;
-    setAttachments((prev) => [...prev, { name, status: "uploading" }]);
+  async function pollAttachmentStatus(convId: string) {
+    const sleep = (ms: number) => new Promise<void>((r) => setTimeout(r, ms));
+    for (let i = 0; i < 300; i++) {
+      await sleep(2000);
+      let records: ChatAttachmentRecord[] = [];
+      try {
+        records = (await api.chat.listAttachments(convId)).attachments;
+      } catch {
+        return;
+      }
+      const byId = new Map(records.map((r) => [r.document_id, r]));
+      setAttachments((prev) => prev.map((a) => {
+        if (!a.documentId || a.status === "error") return a;
+        const rec = byId.get(a.documentId);
+        if (rec?.status === "READY") return { ...a, status: "ready" as const };
+        if (rec?.status === "ERROR") return { ...a, status: "error" as const, error: "Processing failed" };
+        return a.status === "uploading" ? a : { ...a, status: "processing" as const };
+      }));
+      const pending = attachmentsRef.current.some((a) => {
+        if (!a.documentId || a.status === "error") return false;
+        const rec = byId.get(a.documentId);
+        return !rec || (rec.status !== "READY" && rec.status !== "ERROR");
+      });
+      if (!pending) return;
+    }
+  }
+
+  async function handleAttach(files: FileList) {
+    const list = Array.from(files);
+    if (list.length === 0) return;
+    setAttachments((prev) => [...prev, ...list.map((f) => ({ name: f.name, status: "uploading" as const }))]);
     let convId = activeId;
     if (!convId) {
       try {
@@ -869,27 +975,38 @@ export default function ChatScreen({ onOpenModelDrawer }: { onOpenModelDrawer: (
         convId = created.conversation_id;
         setActiveId(convId);
       } catch (e) {
-        setAttachments((prev) => prev.map((a) => a.name === name ? { name, status: "error", error: "Failed to start conversation" } : a));
+        const names = list.map((f) => f.name);
+        setAttachments((prev) => prev.map((a) => names.includes(a.name) ? { name: a.name, status: "error", error: "Failed to start conversation" } : a));
         return;
       }
     }
-    try {
-      await api.chat.uploadAttachment(convId, file);
-      setAttachments((prev) => prev.map((a) => a.name === name ? { name, status: "ready" } : a));
-    } catch (e) {
-      setAttachments((prev) => prev.map((a) => a.name === name ? { name, status: "error", error: "Upload failed" } : a));
+    for (const file of list) {
+      try {
+        const res = await api.chat.uploadAttachment(convId, file);
+        setAttachments((prev) => prev.map((a) => a.name === file.name ? { ...a, status: "processing" as const, documentId: res.document_id } : a));
+      } catch (e) {
+        setAttachments((prev) => prev.map((a) => a.name === file.name ? { ...a, status: "error" as const, error: "Upload failed" } : a));
+      }
     }
+    void pollAttachmentStatus(convId);
   }
 
-  function handleRemoveAttachment(name: string) {
+  async function handleRemoveAttachment(name: string) {
+    const target = attachmentsRef.current.find((a) => a.name === name);
     setAttachments((prev) => prev.filter((a) => a.name !== name));
+    if (target?.documentId && activeId) {
+      try {
+        await api.chat.deleteAttachment(activeId, target.documentId);
+      } catch {
+        /* backend cleanup already best-effort */
+      }
+    }
   }
 
   function handleSend() {
     const q = message.trim();
     if (!q || running) return;
     setMessage("");
-    setAttachments([]);
     void runQuery(q);
   }
 
@@ -950,7 +1067,7 @@ export default function ChatScreen({ onOpenModelDrawer }: { onOpenModelDrawer: (
             {messages.map((m, i) =>
               m.role === "user"
                 ? <UserBubble key={i} message={m} />
-                : <AiBubble key={i} message={m} index={i} onViewSource={(item, j) => setEvidenceSource({ item, index: j })} />
+                : <AiBubble key={i} message={m} index={i} onViewSource={(item, j) => setEvidenceSource({ item, index: j })} onNavigate={onNavigate} />
             )}
 
             {running && (

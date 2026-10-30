@@ -1,0 +1,3 @@
+# HR Demo Questions
+
+1. How many employees are active? 2. Who is the HR Manager? 3. What is APEL0001's role and grade? 4. What department is APEL0019 in? 5. What is APEL0005's leave balance? 6. List HR employees. 7. Who works at Jamnagar Refinery Complex? 8. Summarize recruitment. 9. Which requisitions are at interview? 10. What training is recorded for APEL0010? 11. Create department headcount. 12. Create employee-role table. 13. Find L4 employees. 14. Prepare onboarding checklist. 15. Explain leave policy. 16. Draft Process Engineer requisition. 17. Create training compliance summary. 18. Generate HR report. 19. Extract employee JSON. 20. What HR data must be restricted?

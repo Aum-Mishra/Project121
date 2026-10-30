@@ -1,0 +1,71 @@
+{
+  "bowties": [
+    {
+      "BowTie_ID": "BT-001",
+      "Top_Event": "Loss of Primary Containment on Crude Distillation Column V-101",
+      "Hazard": "High-temperature hydrocarbon liquid and volatile flammable vapor at 350 C and 2.5 barg",
+      "Threats": [
+        {
+          "Threat_ID": "TH-01",
+          "Description": "Overhead condenser cooling water loss causing rapid column pressure surge",
+          "Preventive_Barriers": [
+            "Cooling water low flow alarm PIC-101",
+            "Automated reflux flow increase",
+            "Furnace F-101 automatic firing cutback"
+          ]
+        },
+        {
+          "Threat_ID": "TH-02",
+          "Description": "Crude feed water slugging creating sudden steam flashing expansion",
+          "Preventive_Barriers": [
+            "Crude feed tank de-watering SOP",
+            "Desalter water interface radar LIC-102",
+            "Charge preheat steam letdown trip"
+          ]
+        }
+      ],
+      "Mitigating_Barriers": [
+        "Pressure relief valves PSV-101A/B routed to closed flare system",
+        "Column bottom emergency quench oil injection",
+        "Perimeter hydrocarbon gas detection and deluge water curtain"
+      ],
+      "Consequences": [
+        "Atmospheric flammable cloud and vapor cloud explosion (VCE)",
+        "Emergency refinery shutdown and asset structural thermal damage"
+      ]
+    },
+    {
+      "BowTie_ID": "BT-002",
+      "Top_Event": "High-Pressure Hydrogen Release in Hydrocracker Reactor Circuit R-201",
+      "Hazard": "Hydrogen-rich hydrocarbon gas at 160 barg and 410 C with H2S toxicity",
+      "Threats": [
+        {
+          "Threat_ID": "TH-03",
+          "Description": "Catalyst bed temperature runaway exceeding design metallurgical limits",
+          "Preventive_Barriers": [
+            "Multi-point bed thermocouples TT-201",
+            "Automated hydrogen quench injection FV-202",
+            "Emergency depressurization system EDP"
+          ]
+        },
+        {
+          "Threat_ID": "TH-04",
+          "Description": "High-temperature hydrogen attack (HTHA) or creep cracking on vessel nozzle",
+          "Preventive_Barriers": [
+            "API 941 Nelson curve metallurgy selection (2.25Cr-1Mo-V)",
+            "Periodic ultrasonic phased-array NDT inspections"
+          ]
+        }
+      ],
+      "Mitigating_Barriers": [
+        "Automated high-speed blowdown to high-pressure flare",
+        "Remote isolation ESD valves at reactor inlet and outlet",
+        "Fixed fire fighting monitor towers with foam capability"
+      ],
+      "Consequences": [
+        "High-pressure jet fire and catastrophic vessel burst",
+        "Toxic H2S exposure to plant personnel"
+      ]
+    }
+  ]
+}

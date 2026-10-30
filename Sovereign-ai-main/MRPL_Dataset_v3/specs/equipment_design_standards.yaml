@@ -1,0 +1,16 @@
+equipment_design_standards:
+  pumps:
+    standard: API 610 11th Edition
+    type: OH2 / BB2 Centrifugal
+    mechanical_seals: API 682 4th Edition Plan 53B / Plan 11
+  pressure_vessels:
+    standard: ASME Boiler & Pressure Vessel Code Section VIII Division 1
+    inspection_code: API 510
+  piping_systems:
+    design_standard: ASME B31.3 Process Piping
+    inspection_standard: API 570
+  fired_heaters:
+    standard: API 560 Fired Heaters for General Refinery Service
+  instrumentation_safety:
+    safety_instrumented_systems: IEC 61511 / ISA 84
+    hazardous_area: IEC 60079 Zone 1/2 Ex d/ia

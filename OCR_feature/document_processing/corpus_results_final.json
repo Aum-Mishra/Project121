@@ -1,0 +1,40 @@
+{
+  "corpus": "E:\\SIH\\PS117\\OCR_feature\\ApexPetro_Test_Corpus\\ApexPetro_Test_Corpus",
+  "summary": {
+    "pass": 16,
+    "fail": 0,
+    "skipped": 0
+  },
+  "ground_truth": {
+    "status": "PASS",
+    "facts_found": {
+      "P-102": true,
+      "315": true,
+      "1485": true,
+      "475": true,
+      "4.5": true,
+      "5.6": true,
+      "3.9": true,
+      "438": true
+    },
+    "decimal_integrity_ok": true
+  },
+  "categories": [
+    {"category": "01_Digital_PDF", "status": "PASS", "ocr_used": false, "chars": 955, "tables": 6},
+    {"category": "02_Scanned_PDF", "status": "PASS", "ocr_used": true, "chars": 1062, "tables": 1},
+    {"category": "03_Mixed_PDF", "status": "PASS", "ocr_used": true, "chars": 2625, "tables": 4, "pages": 5},
+    {"category": "04_Images", "status": "PASS", "ocr_used": true, "chars": 269},
+    {"category": "05_DOCX", "status": "PASS", "ocr_used": false, "chars": 1768, "tables": 2},
+    {"category": "06_PPTX", "status": "PASS", "ocr_used": false, "chars": 1235, "tables": 5},
+    {"category": "07_XLSX", "status": "PASS", "ocr_used": false, "chars": 1766, "tables": 3},
+    {"category": "08_CSV", "status": "PASS", "ocr_used": false, "chars": 1170, "tables": 1},
+    {"category": "09_TXT", "status": "PASS", "ocr_used": false, "chars": 1974},
+    {"category": "10_Markdown", "status": "PASS", "ocr_used": false, "chars": 2681, "tables": 2},
+    {"category": "11_HTML", "status": "PASS", "ocr_used": false, "chars": 1411, "tables": 3},
+    {"category": "12_Handwritten", "status": "PASS", "ocr_used": true, "chars": 249},
+    {"category": "13_Engineering_Drawing", "status": "PASS", "ocr_used": true, "chars": 471},
+    {"category": "14_Charts", "status": "PASS", "ocr_used": true, "chars": 300},
+    {"category": "15_Photographs", "status": "PASS", "ocr_used": true, "chars": 44, "note": "limited printed text on photo"},
+    {"category": "16_URL_Test", "status": "PASS", "ocr_used": false, "chars": 1267, "tables": 3}
+  ]
+}

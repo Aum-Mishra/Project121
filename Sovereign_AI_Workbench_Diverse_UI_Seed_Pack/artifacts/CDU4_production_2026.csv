@@ -1,0 +1,8 @@
+Month,CDU1_kbd,CDU2_kbd,CDU3_kbd,CDU4_kbd,Constraint
+Jan,111,121,128,139,Routine maintenance
+Feb,113,122,131,142,Cooling-water recovery
+Mar,115,124,133,144,None material
+Apr,116,125,134,145,Feed variation
+May,114,123,132,143,Furnace inspection
+Jun,117,126,136,146,Stable
+Jul,116,125,134,141,P-102 condition review

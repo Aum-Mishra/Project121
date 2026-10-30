@@ -1,0 +1,24 @@
+{
+  "required": [
+    "company_id",
+    "document_id",
+    "type",
+    "owner",
+    "revision",
+    "classification",
+    "status",
+    "effective_date",
+    "asset_id",
+    "unit",
+    "department",
+    "page",
+    "section"
+  ],
+  "rules": [
+    "company isolation",
+    "active version preference",
+    "source authority",
+    "conflict surfacing",
+    "citation preservation"
+  ]
+}

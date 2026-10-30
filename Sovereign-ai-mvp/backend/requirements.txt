@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+pydantic
+sqlalchemy
+qdrant-client
+google-generativeai
+pandas
+python-dotenv
+matplotlib
+python-docx
+python-pptx
+openpyxl
+python-multipart

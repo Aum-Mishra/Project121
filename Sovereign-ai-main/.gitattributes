@@ -1,0 +1,12 @@
+# Git LFS tracking is intentionally disabled in this repository.
+#
+# The original Figma Make scaffold shipped 146 lines of `filter=lfs`
+# rules for images, PDFs, office documents, archives, databases and
+# native libraries. git-lfs is not installed in this environment and the
+# repo stores these assets directly, so those rules were removed to keep
+# `git add`/`git push` working without LFS.
+#
+# The original file is preserved at
+# /tmp/opencode/Sovereign-ai-main.gitattributes.lfs.bak on the machine that
+# generated this commit. If you want LFS later, install git-lfs, restore
+# those rules and run `git lfs migrate import`.

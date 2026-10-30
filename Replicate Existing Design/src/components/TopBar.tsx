@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Search, Bell, ChevronRight, X, Shield, Check } from "lucide-react";
 
-type View = "chat"|"projects"|"files"|"knowledge"|"tasks"|"artifacts"|"approvals"|"models"|"security";
+type View = "chat"|"projects"|"files"|"knowledge"|"tasks"|"artifacts"|"approvals"|"models"|"security"|"coding-agent";
 
 interface TopBarProps {
   view: View;
@@ -19,6 +19,7 @@ const CRUMBS: Record<View,string[]> = {
   approvals: ["Approvals"],
   models:    ["Models"],
   security:  ["Security"],
+  "coding-agent": ["Coding Agent"],
 };
 
 const NOTIFS = [

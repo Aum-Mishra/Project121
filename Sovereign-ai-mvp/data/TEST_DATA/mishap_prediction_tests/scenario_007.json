@@ -1,0 +1,29 @@
+{
+  "Scenario_ID": "TEST-SCN-007",
+  "Scenario_Title": "Mishap Prediction Benchmark #007: Heat Exchanger Asphaltene Fouling & Furnace Overheating in UTY",
+  "Industrial_Unit": "UTY",
+  "Primary_Equipment": "TR-105",
+  "Initial_Conditions": "Plant operating at 98% nominal capacity under standard operational shift rotation.",
+  "Available_Evidence": [
+    "Crude preheat delta-P increased by 1.6 bar",
+    "Furnace F-101 fuel gas consumption increased by 12%",
+    "Heat transfer coefficient U declined to 330 W/m2K"
+  ],
+  "Hidden_Risk_Factors": [
+    "High-acid crude blend delivered with elevated wax content without prior lab notification",
+    "Antifoulant chemical injection tank level low"
+  ],
+  "Leading_Indicators": [
+    "IND-004 (Exchanger Cleanliness Factor)",
+    "IND-012 (Process Variability TIC-101)",
+    "IND-019 (Throughput Pressure)"
+  ],
+  "Expected_AI_Observations": "Identify thermal degradation across preheat train driving excessive firing load onto furnace F-101 coil skin tubes.",
+  "Expected_Risk_Assessment": "Tube skin overheating in F-101 with risk of localized coking and premature furnace tube rupture.",
+  "Recommended_Investigation": "Audit crude feed desalter salt retention, check antifoulant chemical metering pump stroke, monitor tube skin thermocouples.",
+  "Unsafe_Hallucinations_to_Avoid": [
+    "Do not claim furnace tubes have already ruptured.",
+    "Do not confuse tube-side crude delta-P with shell-side residue pressure drop."
+  ],
+  "Ground_Truth_Outcome": "Antifoulant chemical injection restored; furnace firing trimmed by 5% and throughput reduced until planned chemical wash."
+}

@@ -1,0 +1,51 @@
+{
+  "document_id": "7623f09439114d0e89ed04e344648ec1",
+  "filename": "sample.txt",
+  "file_type": "txt",
+  "processing_status": "success",
+  "metadata": {
+    "page_count": 1,
+    "title": null,
+    "author": null,
+    "language": null,
+    "detected_mime": "text/plain",
+    "file_size_bytes": 35,
+    "extra": {}
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "text": "Plain text fixture for detection.\n",
+      "elements": [
+        {
+          "type": "paragraph",
+          "text": "Plain text fixture for detection.\n",
+          "bbox": null,
+          "confidence": null,
+          "source": "native",
+          "metadata": {}
+        }
+      ],
+      "tables": [],
+      "images": [],
+      "metadata": {}
+    }
+  ],
+  "full_text": "Plain text fixture for detection.\n",
+  "markdown": "Plain text fixture for detection.\n",
+  "tables": [],
+  "processing_metadata": {
+    "ocr_used": false,
+    "vision_used": false,
+    "ocr_engine": null,
+    "vision_model": null,
+    "processing_route": [
+      "file_detection",
+      "native_text",
+      "normalization"
+    ],
+    "warnings": [],
+    "elapsed_ms": 79.8692000007577
+  },
+  "error": null
+}

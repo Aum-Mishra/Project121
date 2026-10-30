@@ -1,0 +1,3000 @@
+{
+  "schema_version": "1.0",
+  "generated_from": "master_asset_register_updated_with_design_values.xlsx",
+  "purpose": "Physical and logical asset hierarchy for MRPL KNOVIA industrial AI prototype",
+  "company": {
+    "name": "MRPL Industries",
+    "site": "Primary Industrial Operations Site",
+    "asset_count": 112,
+    "domains": [
+      {
+        "name": "Electrical Systems",
+        "unit_count": 4,
+        "asset_count": 8,
+        "units": [
+          {
+            "name": "CDU-4",
+            "equipment_type_count": 2,
+            "asset_count": 2,
+            "equipment_types": [
+              {
+                "name": "MCC Panel",
+                "asset_count": 1,
+                "assets": [
+                  {
+                    "asset_id": "MCC-101",
+                    "asset_type": "MCC Panel",
+                    "unit": "CDU-4",
+                    "service": "CDU-4 Motor Control Center",
+                    "criticality": "HIGH",
+                    "manufacturer": "ControlGrid Automation",
+                    "model": "CG-MCC-01",
+                    "year": 2015,
+                    "design_pressure_bar_g": "N/A",
+                    "normal_pressure_bar_g": "N/A",
+                    "design_temperature_c": 50,
+                    "capacity": "Critical motor feeders"
+                  }
+                ]
+              },
+              {
+                "name": "Power Transformer",
+                "asset_count": 1,
+                "assets": [
+                  {
+                    "asset_id": "TR-103",
+                    "asset_type": "Power Transformer",
+                    "unit": "CDU-4",
+                    "service": "CDU-4 Transformer",
+                    "criticality": "HIGH",
+                    "manufacturer": "VoltGrid Systems",
+                    "model": "VG-25MVA",
+                    "year": 2015,
+                    "design_pressure_bar_g": "N/A",
+                    "normal_pressure_bar_g": "N/A",
+                    "design_temperature_c": 50,
+                    "capacity": "25 MVA"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "ELEC",
+            "equipment_type_count": 1,
+            "asset_count": 2,
+            "equipment_types": [
+              {
+                "name": "Power Transformer",
+                "asset_count": 2,
+                "assets": [
+                  {
+                    "asset_id": "TR-101",
+                    "asset_type": "Power Transformer",
+                    "unit": "ELEC",
+                    "service": "Main Refinery Transformer A",
+                    "criticality": "HIGH",
+                    "manufacturer": "VoltGrid Systems",
+                    "model": "VG-50MVA",
+                    "year": 2014,
+                    "design_pressure_bar_g": "N/A",
+                    "normal_pressure_bar_g": "N/A",
+                    "design_temperature_c": 50,
+                    "capacity": "50 MVA"
+                  },
+                  {
+                    "asset_id": "TR-102",
+                    "asset_type": "Power Transformer",
+                    "unit": "ELEC",
+                    "service": "Main Refinery Transformer B",
+                    "criticality": "HIGH",
+                    "manufacturer": "VoltGrid Systems",
+                    "model": "VG-50MVA",
+                    "year": 2014,
+                    "design_pressure_bar_g": "N/A",
+                    "normal_pressure_bar_g": "N/A",
+                    "design_temperature_c": 50,
+                    "capacity": "50 MVA"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "HDS-1",
+            "equipment_type_count": 2,
+            "asset_count": 2,
+            "equipment_types": [
+              {
+                "name": "MCC Panel",
+                "asset_count": 1,
+                "assets": [
+                  {
+                    "asset_id": "MCC-102",
+                    "asset_type": "MCC Panel",
+                    "unit": "HDS-1",
+                    "service": "HDS-1 Motor Control Center",
+                    "criticality": "HIGH",
+                    "manufacturer": "ControlGrid Automation",
+                    "model": "CG-MCC-02",
+                    "year": 2017,
+                    "design_pressure_bar_g": "N/A",
+                    "normal_pressure_bar_g": "N/A",
+                    "design_temperature_c": 50,
+                    "capacity": "Critical motor feeders"
+                  }
+                ]
+              },
+              {
+                "name": "Power Transformer",
+                "asset_count": 1,
+                "assets": [
+                  {
+                    "asset_id": "TR-104",
+                    "asset_type": "Power Transformer",
+                    "unit": "HDS-1",
+                    "service": "HDS-1 Transformer",
+                    "criticality": "HIGH",
+                    "manufacturer": "VoltGrid Systems",
+                    "model": "VG-20MVA",
+                    "year": 2017,
+                    "design_pressure_bar_g": "N/A",
+                    "normal_pressure_bar_g": "N/A",
+                    "design_temperature_c": 50,
+                    "capacity": "20 MVA"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "UTY",
+            "equipment_type_count": 2,
+            "asset_count": 2,
+            "equipment_types": [
+              {
+                "name": "MCC Panel",
+                "asset_count": 1,
+                "assets": [
+                  {
+                    "asset_id": "MCC-103",
+                    "asset_type": "MCC Panel",
+                    "unit": "UTY",
+                    "service": "Utility Motor Control Center",
+                    "criticality": "MEDIUM",
+                    "manufacturer": "ControlGrid Automation",
+                    "model": "CG-MCC-03",
+                    "year": 2015,
+                    "design_pressure_bar_g": "N/A",
+                    "normal_pressure_bar_g": "N/A",
+                    "design_temperature_c": 50,
+                    "capacity": "Utility feeders"
+                  }
+                ]
+              },
+              {
+                "name": "Power Transformer",
+                "asset_count": 1,
+                "assets": [
+                  {
+                    "asset_id": "TR-105",
+                    "asset_type": "Power Transformer",
+                    "unit": "UTY",
+                    "service": "Utility Transformer",
+                    "criticality": "MEDIUM",
+                    "manufacturer": "VoltGrid Systems",
+                    "model": "VG-15MVA",
+                    "year": 2015,
+                    "design_pressure_bar_g": "N/A",
+                    "normal_pressure_bar_g": "N/A",
+                    "design_temperature_c": 50,
+                    "capacity": "15 MVA"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Instrumentation & Control",
+        "unit_count": 5,
+        "asset_count": 33,
+        "units": [
+          {
+            "name": "CDU-4",
+            "equipment_type_count": 7,
+            "asset_count": 15,
+            "equipment_types": [
+              {
+                "name": "Flow Transmitter",
+                "asset_count": 3,
+                "assets": [
+                  {
+                    "asset_id": "FT-101",
+                    "asset_type": "Flow Transmitter",
+                    "unit": "CDU-4",
+                    "service": "CDU-4 Crude Feed Flow Transmitter",
+                    "criticality": "HIGH",
+                    "manufacturer": "FlowMetric Systems",
+                    "model": "FM-FT-700",
+                    "year": 2021,
+                    "design_pressure_bar_g": 50,
+                    "normal_pressure_bar_g": 35,
+                    "design_temperature_c": 220,
+                    "capacity": "0-600 m3/h"
+                  },
+                  {
+                    "asset_id": "FT-102",
+                    "asset_type": "Flow Transmitter",
+                    "unit": "CDU-4",
+                    "service": "CDU-4 Reflux Flow Transmitter",
+                    "criticality": "MEDIUM",
+                    "manufacturer": "FlowMetric Systems",
+                    "model": "FM-FT-400",
+                    "year": 2021,
+                    "design_pressure_bar_g": 12,
+                    "normal_pressure_bar_g": 8,
+                    "design_temperature_c": 180,
+                    "capacity": "0-300 m3/h"
+                  },
+                  {
+                    "asset_id": "FT-210",
+                    "asset_type": "Flow Transmitter",
+                    "unit": "CDU-4",
+                    "service": "Crude Flow",
+                    "criticality": "MEDIUM",
+                    "manufacturer": "FlowSense",
+                    "model": "FS-700",
+                    "year": 2020,
+                    "design_pressure_bar_g": 45,
+                    "normal_pressure_bar_g": 28,
+                    "design_temperature_c": 180,
+                    "capacity": "0–800 m3/h; ±0.50% reading"
+                  }
+                ]
+              },
+              {
+                "name": "Gas Detector",
+                "asset_count": 2,
+                "assets": [
+                  {
+                    "asset_id": "GD-101",
+                    "asset_type": "Gas Detector",
+                    "unit": "CDU-4",
+                    "service": "CDU-4 Hydrocarbon Gas Detector North",
+                    "criticality": "HIGH",
+                    "manufacturer": "SafeSense Detection",
+                    "model": "SS-GD-HC",
+                    "year": 2022,
+                    "design_pressure_bar_g": 8,
+                    "normal_pressure_bar_g": 3,
+                    "design_temperature_c": 60,
+                    "capacity": "0-100% LEL"
+                  },
+                  {
+                    "asset_id": "GD-102",
+                    "asset_type": "Gas Detector",
+                    "unit": "CDU-4",
+                    "service": "CDU-4 Hydrocarbon Gas Detector South",
+                    "criticality": "HIGH",
+                    "manufacturer": "SafeSense Detection",
+                    "model": "SS-GD-HC",
+                    "year": 2022,
+                    "design_pressure_bar_g": 8,
+                    "normal_pressure_bar_g": 3,
+                    "design_temperature_c": 60,
+                    "capacity": "0-100% LEL"
+                  }
+                ]
+              },
+              {
+                "name": "Level Transmitter",
+                "asset_count": 2,
+                "assets": [
+                  {
+                    "asset_id": "LT-101",
+                    "asset_type": "Level Transmitter",
+                    "unit": "CDU-4",
+                    "service": "CDU-4 Reflux Drum Level Transmitter",
+                    "criticality": "HIGH",
+                    "manufacturer": "LevelTech Controls",
+                    "model": "LT-RAD-250",
+                    "year": 2021,
+                    "design_pressure_bar_g": 12,
+                    "normal_pressure_bar_g": 7,
+                    "design_temperature_c": 180,
+                    "capacity": "0-100 %"
+                  },
+                  {
+                    "asset_id": "LT-102",
+                    "asset_type": "Level Transmitter",
+                    "unit": "CDU-4",
+                    "service": "CDU-4 Bottoms Drum Level Transmitter",
+                    "criticality": "MEDIUM",
+                    "manufacturer": "LevelTech Controls",
+                    "model": "LT-RAD-250",
+                    "year": 2021,
+                    "design_pressure_bar_g": 10,
+                    "normal_pressure_bar_g": 5,
+                    "design_temperature_c": 350,
+                    "capacity": "0-100 %"
+                  }
+                ]
+              },
+              {
+                "name": "Pressure Safety Valve",
+                "asset_count": 1,
+                "assets": [
+                  {
+                    "asset_id": "PSV-102",
+                    "asset_type": "Pressure Safety Valve",
+                    "unit": "CDU-4",
+                    "service": "P-102 Discharge Protection",
+                    "criticality": "HIGH",
+                    "manufacturer": "SafeRelief",
+                    "model": "SR-50",
+                    "year": 2018,
+                    "design_pressure_bar_g": 50,
+                    "normal_pressure_bar_g": 35,
+                    "design_temperature_c": 210,
+                    "capacity": "Set pressure 47.5 bar; J orifice"
+                  }
+                ]
+              },
+              {
+                "name": "Pressure Transmitter",
+                "asset_count": 2,
+                "assets": [
+                  {
+                    "asset_id": "PT-101",
+                    "asset_type": "Pressure Transmitter",
+                    "unit": "CDU-4",
+                    "service": "CDU-4 Column Overhead Pressure Transmitter",
+                    "criticality": "HIGH",
+                    "manufacturer": "SenseCore Instruments",
+                    "model": "SC-PT-500",
+                    "year": 2021,
+                    "design_pressure_bar_g": 8,
+                    "normal_pressure_bar_g": 3,
+                    "design_temperature_c": 180,
+                    "capacity": "0-5 bar"
+                  },
+                  {
+                    "asset_id": "PT-102",
+                    "asset_type": "Pressure Transmitter",
+                    "unit": "CDU-4",
+                    "service": "P-102 Discharge Pressure",
+                    "criticality": "HIGH",
+                    "manufacturer": "Instrumax",
+                    "model": "IM-PX7",
+                    "year": 2021,
+                    "design_pressure_bar_g": 60,
+                    "normal_pressure_bar_g": 35,
+                    "design_temperature_c": 85,
+                    "capacity": "0–60 bar; ±0.25% span"
+                  }
+                ]
+              },
+              {
+                "name": "Pressure Vessel",
+                "asset_count": 3,
+                "assets": [
+                  {
+                    "asset_id": "V-101",
+                    "asset_type": "Pressure Vessel",
+                    "unit": "CDU-4",
+                    "service": "CDU-4 Overhead Reflux Drum",
+                    "criticality": "HIGH",
+                    "manufacturer": "VesselTech Ltd",
+                    "model": "VT-PV-220",
+                    "year": 2014,
+                    "design_pressure_bar_g": 12,
+                    "normal_pressure_bar_g": 7,
+                    "design_temperature_c": 180,
+                    "capacity": "120 m3"
+                  },
+                  {
+                    "asset_id": "V-201",
+                    "asset_type": "Pressure Vessel",
+                    "unit": "CDU-4",
+                    "service": "Desalter Outlet Separation",
+                    "criticality": "HIGH",
+                    "manufacturer": "Bharat Vessel Works",
+                    "model": "BVW-18",
+                    "year": 2014,
+                    "design_pressure_bar_g": 18,
+                    "normal_pressure_bar_g": 10,
+                    "design_temperature_c": 160,
+                    "capacity": "38 m3"
+                  },
+                  {
+                    "asset_id": "V-220",
+                    "asset_type": "Pressure Vessel",
+                    "unit": "CDU-4",
+                    "service": "Overhead Accumulator",
+                    "criticality": "HIGH",
+                    "manufacturer": "Bharat Vessel Works",
+                    "model": "BVW-26",
+                    "year": 2014,
+                    "design_pressure_bar_g": 26,
+                    "normal_pressure_bar_g": 15,
+                    "design_temperature_c": 180,
+                    "capacity": "52 m3"
+                  }
+                ]
+              },
+              {
+                "name": "Temperature Transmitter",
+                "asset_count": 2,
+                "assets": [
+                  {
+                    "asset_id": "TT-101",
+                    "asset_type": "Temperature Transmitter",
+                    "unit": "CDU-4",
+                    "service": "CDU-4 Heater Outlet Temperature Transmitter",
+                    "criticality": "HIGH",
+                    "manufacturer": "ThermoSense Ltd",
+                    "model": "TS-TT-900",
+                    "year": 2021,
+                    "design_pressure_bar_g": 22,
+                    "normal_pressure_bar_g": 15,
+                    "design_temperature_c": 450,
+                    "capacity": "0-450 C"
+                  },
+                  {
+                    "asset_id": "TT-102",
+                    "asset_type": "Temperature Transmitter",
+                    "unit": "CDU-4",
+                    "service": "P-102 Discharge Temperature",
+                    "criticality": "MEDIUM",
+                    "manufacturer": "Instrumax",
+                    "model": "IM-TX4",
+                    "year": 2021,
+                    "design_pressure_bar_g": 40,
+                    "normal_pressure_bar_g": 15,
+                    "design_temperature_c": 300,
+                    "capacity": "0–300 °C; ±0.20% span"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "HCU-1",
+            "equipment_type_count": 1,
+            "asset_count": 1,
+            "equipment_types": [
+              {
+                "name": "Pressure Vessel",
+                "asset_count": 1,
+                "assets": [
+                  {
+                    "asset_id": "V-501",
+                    "asset_type": "Pressure Vessel",
+                    "unit": "HCU-1",
+                    "service": "Hydrogen Separator",
+                    "criticality": "HIGH",
+                    "manufacturer": "ProcessContain",
+                    "model": "PC-44",
+                    "year": 2016,
+                    "design_pressure_bar_g": 78,
+                    "normal_pressure_bar_g": 58,
+                    "design_temperature_c": 290,
+                    "capacity": "31 m3"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "HDS-1",
+            "equipment_type_count": 7,
+            "asset_count": 11,
+            "equipment_types": [
+              {
+                "name": "Flow Transmitter",
+                "asset_count": 2,
+                "assets": [
+                  {
+                    "asset_id": "FT-201",
+                    "asset_type": "Flow Transmitter",
+                    "unit": "HDS-1",
+                    "service": "HDS Feed Flow Transmitter",
+                    "criticality": "HIGH",
+                    "manufacturer": "FlowMetric Systems",
+                    "model": "FM-FT-500",
+                    "year": 2021,
+                    "design_pressure_bar_g": 125,
+                    "normal_pressure_bar_g": 105,
+                    "design_temperature_c": 420,
+                    "capacity": "0-400 m3/h"
+                  },
+                  {
+                    "asset_id": "FT-202",
+                    "asset_type": "Flow Transmitter",
+                    "unit": "HDS-1",
+                    "service": "HDS Hydrogen Flow Transmitter",
+                    "criticality": "HIGH",
+                    "manufacturer": "FlowMetric Systems",
+                    "model": "FM-FT-GAS",
+                    "year": 2021,
+                    "design_pressure_bar_g": 150,
+                    "normal_pressure_bar_g": 120,
+                    "design_temperature_c": 120,
+                    "capacity": "0-20000 Nm3/h"
+                  }
+                ]
+              },
+              {
+                "name": "Gas Detector",
+                "asset_count": 1,
+                "assets": [
+                  {
+                    "asset_id": "GD-103",
+                    "asset_type": "Gas Detector",
+                    "unit": "HDS-1",
+                    "service": "HDS Hydrogen Gas Detector",
+                    "criticality": "HIGH",
+                    "manufacturer": "SafeSense Detection",
+                    "model": "SS-GD-H2",
+                    "year": 2022,
+                    "design_pressure_bar_g": 125,
+                    "normal_pressure_bar_g": 105,
+                    "design_temperature_c": 60,
+                    "capacity": "0-100% LEL"
+                  }
+                ]
+              },
+              {
+                "name": "High Pressure Centrifugal Pump",
+                "asset_count": 1,
+                "assets": [
+                  {
+                    "asset_id": "P-202",
+                    "asset_type": "High Pressure Centrifugal Pump",
+                    "unit": "HDS-1",
+                    "service": "HDS-1 Feed Pump B",
+                    "criticality": "HIGH",
+                    "manufacturer": "HydroMach Systems",
+                    "model": "HM-HP300",
+                    "year": 2018,
+                    "design_pressure_bar_g": 120,
+                    "normal_pressure_bar_g": 95,
+                    "design_temperature_c": 380,
+                    "capacity": "300 m3/h"
+                  }
+                ]
+              },
+              {
+                "name": "Level Transmitter",
+                "asset_count": 2,
+                "assets": [
+                  {
+                    "asset_id": "LT-201",
+                    "asset_type": "Level Transmitter",
+                    "unit": "HDS-1",
+                    "service": "HDS High Pressure Separator Level Transmitter",
+                    "criticality": "HIGH",
+                    "manufacturer": "LevelTech Controls",
+                    "model": "LT-RAD-400",
+                    "year": 2021,
+                    "design_pressure_bar_g": 125,
+                    "normal_pressure_bar_g": 105,
+                    "design_temperature_c": 420,
+                    "capacity": "0-100 %"
+                  },
+                  {
+                    "asset_id": "LT-202",
+                    "asset_type": "Level Transmitter",
+                    "unit": "HDS-1",
+                    "service": "HDS Low Pressure Separator Level Transmitter",
+                    "criticality": "MEDIUM",
+                    "manufacturer": "LevelTech Controls",
+                    "model": "LT-RAD-400",
+                    "year": 2021,
+                    "design_pressure_bar_g": 40,
+                    "normal_pressure_bar_g": 25,
+                    "design_temperature_c": 300,
+                    "capacity": "0-100 %"
+                  }
+                ]
+              },
+              {
+                "name": "Pressure Transmitter",
+                "asset_count": 2,
+                "assets": [
+                  {
+                    "asset_id": "PT-201",
+                    "asset_type": "Pressure Transmitter",
+                    "unit": "HDS-1",
+                    "service": "HDS Reactor Pressure Transmitter",
+                    "criticality": "HIGH",
+                    "manufacturer": "SenseCore Instruments",
+                    "model": "SC-PT-800",
+                    "year": 2021,
+                    "design_pressure_bar_g": 125,
+                    "normal_pressure_bar_g": 105,
+                    "design_temperature_c": 420,
+                    "capacity": "0-100 bar"
+                  },
+                  {
+                    "asset_id": "PT-202",
+                    "asset_type": "Pressure Transmitter",
+                    "unit": "HDS-1",
+                    "service": "HDS Separator Pressure Transmitter",
+                    "criticality": "HIGH",
+                    "manufacturer": "SenseCore Instruments",
+                    "model": "SC-PT-800",
+                    "year": 2021,
+                    "design_pressure_bar_g": 40,
+                    "normal_pressure_bar_g": 25,
+                    "design_temperature_c": 300,
+                    "capacity": "0-100 bar"
+                  }
+                ]
+              },
+              {
+                "name": "Pressure Vessel",
+                "asset_count": 1,
+                "assets": [
+                  {
+                    "asset_id": "V-202",
+                    "asset_type": "Pressure Vessel",
+                    "unit": "HDS-1",
+                    "service": "Low Pressure Separator",
+                    "criticality": "MEDIUM",
+                    "manufacturer": "VesselTech Ltd",
+                    "model": "VT-LPS-150",
+                    "year": 2017,
+                    "design_pressure_bar_g": 38,
+                    "normal_pressure_bar_g": 24,
+                    "design_temperature_c": 300,
+                    "capacity": "65 m3"
+                  }
+                ]
+              },
+              {
+                "name": "Temperature Transmitter",
+                "asset_count": 2,
+                "assets": [
+                  {
+                    "asset_id": "TT-201",
+                    "asset_type": "Temperature Transmitter",
+                    "unit": "HDS-1",
+                    "service": "HDS Reactor Temperature Transmitter",
+                    "criticality": "HIGH",
+                    "manufacturer": "ThermoSense Ltd",
+                    "model": "TS-TT-600",
+                    "year": 2021,
+                    "design_pressure_bar_g": 125,
+                    "normal_pressure_bar_g": 105,
+                    "design_temperature_c": 500,
+                    "capacity": "0-500 C"
+                  },
+                  {
+                    "asset_id": "TT-202",
+                    "asset_type": "Temperature Transmitter",
+                    "unit": "HDS-1",
+                    "service": "HDS Effluent Temperature Transmitter",
+                    "criticality": "MEDIUM",
+                    "manufacturer": "ThermoSense Ltd",
+                    "model": "TS-TT-600",
+                    "year": 2021,
+                    "design_pressure_bar_g": 125,
+                    "normal_pressure_bar_g": 105,
+                    "design_temperature_c": 500,
+                    "capacity": "0-500 C"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "HGU-1",
+            "equipment_type_count": 3,
+            "asset_count": 3,
+            "equipment_types": [
+              {
+                "name": "Gas Detector",
+                "asset_count": 1,
+                "assets": [
+                  {
+                    "asset_id": "GD-104",
+                    "asset_type": "Gas Detector",
+                    "unit": "HGU-1",
+                    "service": "HGU Hydrogen Gas Detector",
+                    "criticality": "HIGH",
+                    "manufacturer": "SafeSense Detection",
+                    "model": "SS-GD-H2",
+                    "year": 2022,
+                    "design_pressure_bar_g": 150,
+                    "normal_pressure_bar_g": 120,
+                    "design_temperature_c": 60,
+                    "capacity": "0-100% LEL"
+                  }
+                ]
+              },
+              {
+                "name": "Pressure Transmitter",
+                "asset_count": 1,
+                "assets": [
+                  {
+                    "asset_id": "PT-301",
+                    "asset_type": "Pressure Transmitter",
+                    "unit": "HGU-1",
+                    "service": "HGU Hydrogen Header Pressure Transmitter",
+                    "criticality": "HIGH",
+                    "manufacturer": "SenseCore Instruments",
+                    "model": "SC-PT-1000",
+                    "year": 2022,
+                    "design_pressure_bar_g": 150,
+                    "normal_pressure_bar_g": 120,
+                    "design_temperature_c": 120,
+                    "capacity": "0-120 bar"
+                  }
+                ]
+              },
+              {
+                "name": "Temperature Transmitter",
+                "asset_count": 1,
+                "assets": [
+                  {
+                    "asset_id": "TT-301",
+                    "asset_type": "Temperature Transmitter",
+                    "unit": "HGU-1",
+                    "service": "HGU Reformer Outlet Temperature Transmitter",
+                    "criticality": "HIGH",
+                    "manufacturer": "ThermoSense Ltd",
+                    "model": "TS-TT-1200",
+                    "year": 2022,
+                    "design_pressure_bar_g": 38,
+                    "normal_pressure_bar_g": 28,
+                    "design_temperature_c": 1100,
+                    "capacity": "0-1100 C"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "UTY",
+            "equipment_type_count": 1,
+            "asset_count": 3,
+            "equipment_types": [
+              {
+                "name": "Oil-Free Screw Compressor",
+                "asset_count": 3,
+                "assets": [
+                  {
+                    "asset_id": "AC-101",
+                    "asset_type": "Oil-Free Screw Compressor",
+                    "unit": "UTY",
+                    "service": "Instrument Air Compressor A",
+                    "criticality": "HIGH",
+                    "manufacturer": "AirWorks Industrial",
+                    "model": "AW-OFS-900",
+                    "year": 2019,
+                    "design_pressure_bar_g": 10,
+                    "normal_pressure_bar_g": 7.5,
+                    "design_temperature_c": 55,
+                    "capacity": "900 Nm3/h"
+                  },
+                  {
+                    "asset_id": "AC-102",
+                    "asset_type": "Oil-Free Screw Compressor",
+                    "unit": "UTY",
+                    "service": "Instrument Air Compressor B",
+                    "criticality": "HIGH",
+                    "manufacturer": "AirWorks Industrial",
+                    "model": "AW-OFS-900",
+                    "year": 2019,
+                    "design_pressure_bar_g": 10,
+                    "normal_pressure_bar_g": 7.5,
+                    "design_temperature_c": 55,
+                    "capacity": "900 Nm3/h"
+                  },
+                  {
+                    "asset_id": "AC-103",
+                    "asset_type": "Oil-Free Screw Compressor",
+                    "unit": "UTY",
+                    "service": "Instrument Air Compressor C",
+                    "criticality": "MEDIUM",
+                    "manufacturer": "AirWorks Industrial",
+                    "model": "AW-OFS-900",
+                    "year": 2021,
+                    "design_pressure_bar_g": 10,
+                    "normal_pressure_bar_g": 7.5,
+                    "design_temperature_c": 55,
+                    "capacity": "900 Nm3/h"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Process & Production",
+        "unit_count": 8,
+        "asset_count": 44,
+        "units": [
+          {
+            "name": "CDU-4",
+            "equipment_type_count": 11,
+            "asset_count": 20,
+            "equipment_types": [
+              {
+                "name": "Centrifugal Process Pump",
+                "asset_count": 1,
+                "assets": [
+                  {
+                    "asset_id": "P-102",
+                    "asset_type": "Centrifugal Process Pump",
+                    "unit": "CDU-4",
+                    "service": "Crude Transfer",
+                    "criticality": "HIGH",
+                    "manufacturer": "ApexFlow",
+                    "model": "AF-450C",
+                    "year": 2018,
+                    "design_pressure_bar_g": 50,
+                    "normal_pressure_bar_g": 35,
+                    "design_temperature_c": 210,
+                    "capacity": "560 m3/h"
+                  }
+                ]
+              },
+              {
+                "name": "Centrifugal Pump",
+                "asset_count": 7,
+                "assets": [
+                  {
+                    "asset_id": "P-101",
+                    "asset_type": "Centrifugal Pump",
+                    "unit": "CDU-4",
+                    "service": "Crude Feed Transfer",
+                    "criticality": "MEDIUM",
+                    "manufacturer": "ApexFlow",
+                    "model": "AF-320B",
+                    "year": 2016,
+                    "design_pressure_bar_g": 38,
+                    "normal_pressure_bar_g": 27,
+                    "design_temperature_c": 170,
+                    "capacity": "420 m3/h"
+                  },
+                  {
+                    "asset_id": "P-103",
+                    "asset_type": "Centrifugal Pump",
+                    "unit": "CDU-4",
+                    "service": "Cooling Circuit",
+                    "criticality": "LOW",
+                    "manufacturer": "DeltaRotary",
+                    "model": "DR-210",
+                    "year": 2019,
+                    "design_pressure_bar_g": 18,
+                    "normal_pressure_bar_g": 11,
+                    "design_temperature_c": 90,
+                    "capacity": "280 m3/h"
+                  },
+                  {
+                    "asset_id": "P-104",
+                    "asset_type": "Centrifugal Pump",
+                    "unit": "CDU-4",
+                    "service": "Product Transfer",
+                    "criticality": "MEDIUM",
+                    "manufacturer": "ApexFlow",
+                    "model": "AF-280A",
+                    "year": 2020,
+                    "design_pressure_bar_g": 32,
+                    "normal_pressure_bar_g": 23,
+                    "design_temperature_c": 150,
+                    "capacity": "310 m3/h"
+                  },
+                  {
+                    "asset_id": "P-105",
+                    "asset_type": "Centrifugal Pump",
+                    "unit": "CDU-4",
+                    "service": "CDU-4 Reflux Pump B",
+                    "criticality": "HIGH",
+                    "manufacturer": "MechFlow Industries",
+                    "model": "MF-RP220",
+                    "year": 2017,
+                    "design_pressure_bar_g": 12,
+                    "normal_pressure_bar_g": 8,
+                    "design_temperature_c": 180,
+                    "capacity": "220 m3/h"
+                  },
+                  {
+                    "asset_id": "P-106",
+                    "asset_type": "Centrifugal Pump",
+                    "unit": "CDU-4",
+                    "service": "CDU-4 Bottoms Pump A",
+                    "criticality": "HIGH",
+                    "manufacturer": "Apex Pumps Pvt Ltd",
+                    "model": "AP-BP360",
+                    "year": 2016,
+                    "design_pressure_bar_g": 18,
+                    "normal_pressure_bar_g": 12,
+                    "design_temperature_c": 320,
+                    "capacity": "360 m3/h"
+                  },
+                  {
+                    "asset_id": "P-107",
+                    "asset_type": "Centrifugal Pump",
+                    "unit": "CDU-4",
+                    "service": "CDU-4 Bottoms Pump B",
+                    "criticality": "HIGH",
+                    "manufacturer": "Apex Pumps Pvt Ltd",
+                    "model": "AP-BP360",
+                    "year": 2016,
+                    "design_pressure_bar_g": 18,
+                    "normal_pressure_bar_g": 12,
+                    "design_temperature_c": 320,
+                    "capacity": "360 m3/h"
+                  },
+                  {
+                    "asset_id": "P-108",
+                    "asset_type": "Centrifugal Pump",
+                    "unit": "CDU-4",
+                    "service": "CDU-4 Product Transfer Pump",
+                    "criticality": "MEDIUM",
+                    "manufacturer": "MechFlow Industries",
+                    "model": "MF-PT280",
+                    "year": 2020,
+                    "design_pressure_bar_g": 14,
+                    "normal_pressure_bar_g": 9,
+                    "design_temperature_c": 180,
+                    "capacity": "280 m3/h"
+                  }
+                ]
+              },
+              {
+                "name": "Distillation Column",
+                "asset_count": 1,
+                "assets": [
+                  {
+                    "asset_id": "T-101",
+                    "asset_type": "Distillation Column",
+                    "unit": "CDU-4",
+                    "service": "CDU-4 Atmospheric Distillation Column",
+                    "criticality": "HIGH",
+                    "manufacturer": "ProcessFab Engineering",
+                    "model": "PF-ADC-01",
+                    "year": 2014,
+                    "design_pressure_bar_g": 8,
+                    "normal_pressure_bar_g": 3,
+                    "design_temperature_c": 400,
+                    "capacity": "165,000 BPD design unit basis"
+                  }
+                ]
+              },
+              {
+                "name": "Electrostatic Desalter",
+                "asset_count": 1,
+                "assets": [
+                  {
+                    "asset_id": "D-410",
+                    "asset_type": "Electrostatic Desalter",
+                    "unit": "CDU-4",
+                    "service": "Crude Pretreatment",
+                    "criticality": "HIGH",
+                    "manufacturer": "SepaTech",
+                    "model": "ST-90",
+                    "year": 2016,
+                    "design_pressure_bar_g": 20,
+                    "normal_pressure_bar_g": 12,
+                    "design_temperature_c": 175,
+                    "capacity": "150 kbd"
+                  }
+                ]
+              },
+              {
+                "name": "Motor",
+                "asset_count": 1,
+                "assets": [
+                  {
+                    "asset_id": "M-102",
+                    "asset_type": "Motor",
+                    "unit": "CDU-4",
+                    "service": "P-102 Drive",
+                    "criticality": "HIGH",
+                    "manufacturer": "ElectroPrime",
+                    "model": "EP-560",
+                    "year": 2018,
+                    "design_pressure_bar_g": 0,
+                    "normal_pressure_bar_g": 0,
+                    "design_temperature_c": 40,
+                    "capacity": "450 kW / 6.6 kV / 2980 rpm"
+                  }
+                ]
+              },
+              {
+                "name": "Motor Operated Valve",
+                "asset_count": 1,
+                "assets": [
+                  {
+                    "asset_id": "XV-410",
+                    "asset_type": "Motor Operated Valve",
+                    "unit": "CDU-4",
+                    "service": "Crude Feed Isolation",
+                    "criticality": "MEDIUM",
+                    "manufacturer": "ValveCraft",
+                    "model": "VC-MOV-18",
+                    "year": 2019,
+                    "design_pressure_bar_g": 50,
+                    "normal_pressure_bar_g": 35,
+                    "design_temperature_c": 210,
+                    "capacity": "18 in; Class 300"
+                  }
+                ]
+              },
+              {
+                "name": "Process Vessel",
+                "asset_count": 1,
+                "assets": [
+                  {
+                    "asset_id": "V-102",
+                    "asset_type": "Process Vessel",
+                    "unit": "CDU-4",
+                    "service": "CDU-4 Bottoms Surge Drum",
+                    "criticality": "MEDIUM",
+                    "manufacturer": "VesselTech Ltd",
+                    "model": "VT-PV-180",
+                    "year": 2014,
+                    "design_pressure_bar_g": 10,
+                    "normal_pressure_bar_g": 5,
+                    "design_temperature_c": 350,
+                    "capacity": "95 m3"
+                  }
+                ]
+              },
+              {
+                "name": "Shell and Tube Condenser",
+                "asset_count": 2,
+                "assets": [
+                  {
+                    "asset_id": "E-205",
+                    "asset_type": "Shell and Tube Condenser",
+                    "unit": "CDU-4",
+                    "service": "CDU-4 Overhead Condenser A",
+                    "criticality": "MEDIUM",
+                    "manufacturer": "Thermex Engineering",
+                    "model": "TX-OC-300",
+                    "year": 2018,
+                    "design_pressure_bar_g": 12,
+                    "normal_pressure_bar_g": 7,
+                    "design_temperature_c": 180,
+                    "capacity": "300 m2 area"
+                  },
+                  {
+                    "asset_id": "E-206",
+                    "asset_type": "Shell and Tube Condenser",
+                    "unit": "CDU-4",
+                    "service": "CDU-4 Overhead Condenser B",
+                    "criticality": "MEDIUM",
+                    "manufacturer": "Thermex Engineering",
+                    "model": "TX-OC-300",
+                    "year": 2018,
+                    "design_pressure_bar_g": 12,
+                    "normal_pressure_bar_g": 7,
+                    "design_temperature_c": 180,
+                    "capacity": "300 m2 area"
+                  }
+                ]
+              },
+              {
+                "name": "Shell and Tube Cooler",
+                "asset_count": 1,
+                "assets": [
+                  {
+                    "asset_id": "E-207",
+                    "asset_type": "Shell and Tube Cooler",
+                    "unit": "CDU-4",
+                    "service": "CDU-4 Product Cooler",
+                    "criticality": "MEDIUM",
+                    "manufacturer": "Thermex Engineering",
+                    "model": "TX-PC-180",
+                    "year": 2020,
+                    "design_pressure_bar_g": 18,
+                    "normal_pressure_bar_g": 12,
+                    "design_temperature_c": 200,
+                    "capacity": "180 m2 area"
+                  }
+                ]
+              },
+              {
+                "name": "Shell and Tube Heat Exchanger",
+                "asset_count": 2,
+                "assets": [
+                  {
+                    "asset_id": "E-203",
+                    "asset_type": "Shell and Tube Heat Exchanger",
+                    "unit": "CDU-4",
+                    "service": "CDU-4 Crude Preheater C",
+                    "criticality": "HIGH",
+                    "manufacturer": "Thermex Engineering",
+                    "model": "TX-ST-410",
+                    "year": 2015,
+                    "design_pressure_bar_g": 28,
+                    "normal_pressure_bar_g": 20,
+                    "design_temperature_c": 260,
+                    "capacity": "410 m2 area"
+                  },
+                  {
+                    "asset_id": "E-204",
+                    "asset_type": "Shell and Tube Heat Exchanger",
+                    "unit": "CDU-4",
+                    "service": "CDU-4 Crude Preheater D",
+                    "criticality": "HIGH",
+                    "manufacturer": "Thermex Engineering",
+                    "model": "TX-ST-410",
+                    "year": 2015,
+                    "design_pressure_bar_g": 28,
+                    "normal_pressure_bar_g": 20,
+                    "design_temperature_c": 260,
+                    "capacity": "410 m2 area"
+                  }
+                ]
+              },
+              {
+                "name": "Shell-and-Tube Heat Exchanger",
+                "asset_count": 2,
+                "assets": [
+                  {
+                    "asset_id": "E-301",
+                    "asset_type": "Shell-and-Tube Heat Exchanger",
+                    "unit": "CDU-4",
+                    "service": "Crude Preheat",
+                    "criticality": "MEDIUM",
+                    "manufacturer": "ThermoWorks",
+                    "model": "TW-900",
+                    "year": 2015,
+                    "design_pressure_bar_g": 34,
+                    "normal_pressure_bar_g": 24,
+                    "design_temperature_c": 235,
+                    "capacity": "920 m2 area"
+                  },
+                  {
+                    "asset_id": "E-315",
+                    "asset_type": "Shell-and-Tube Heat Exchanger",
+                    "unit": "CDU-4",
+                    "service": "Product Cooling",
+                    "criticality": "MEDIUM",
+                    "manufacturer": "ThermoWorks",
+                    "model": "TW-620",
+                    "year": 2019,
+                    "design_pressure_bar_g": 28,
+                    "normal_pressure_bar_g": 18,
+                    "design_temperature_c": 190,
+                    "capacity": "620 m2 area"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "DISP-1",
+            "equipment_type_count": 1,
+            "asset_count": 1,
+            "equipment_types": [
+              {
+                "name": "Product Pump",
+                "asset_count": 1,
+                "assets": [
+                  {
+                    "asset_id": "P-601",
+                    "asset_type": "Product Pump",
+                    "unit": "DISP-1",
+                    "service": "Diesel Dispatch",
+                    "criticality": "MEDIUM",
+                    "manufacturer": "ApexFlow",
+                    "model": "AF-250",
+                    "year": 2020,
+                    "design_pressure_bar_g": 25,
+                    "normal_pressure_bar_g": 15,
+                    "design_temperature_c": 80,
+                    "capacity": "360 m3/h"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "HCU-1",
+            "equipment_type_count": 2,
+            "asset_count": 2,
+            "equipment_types": [
+              {
+                "name": "Centrifugal Compressor",
+                "asset_count": 1,
+                "assets": [
+                  {
+                    "asset_id": "C-301",
+                    "asset_type": "Centrifugal Compressor",
+                    "unit": "HCU-1",
+                    "service": "Hydrogen Recycle",
+                    "criticality": "HIGH",
+                    "manufacturer": "Compressa",
+                    "model": "CR-70",
+                    "year": 2018,
+                    "design_pressure_bar_g": 82,
+                    "normal_pressure_bar_g": 61,
+                    "design_temperature_c": 240,
+                    "capacity": "18,000 Nm3/h"
+                  }
+                ]
+              },
+              {
+                "name": "Centrifugal Pump",
+                "asset_count": 1,
+                "assets": [
+                  {
+                    "asset_id": "P-201",
+                    "asset_type": "Centrifugal Pump",
+                    "unit": "HCU-1",
+                    "service": "Recycle Oil",
+                    "criticality": "HIGH",
+                    "manufacturer": "HydroDyn",
+                    "model": "HD-500",
+                    "year": 2017,
+                    "design_pressure_bar_g": 72,
+                    "normal_pressure_bar_g": 51,
+                    "design_temperature_c": 260,
+                    "capacity": "460 m3/h"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "HDS-1",
+            "equipment_type_count": 7,
+            "asset_count": 8,
+            "equipment_types": [
+              {
+                "name": "Air Cooler",
+                "asset_count": 1,
+                "assets": [
+                  {
+                    "asset_id": "E-302",
+                    "asset_type": "Air Cooler",
+                    "unit": "HDS-1",
+                    "service": "Reactor Effluent Cooler",
+                    "criticality": "HIGH",
+                    "manufacturer": "AirCool Industrial",
+                    "model": "ACI-REC-420",
+                    "year": 2017,
+                    "design_pressure_bar_g": 130,
+                    "normal_pressure_bar_g": 105,
+                    "design_temperature_c": 420,
+                    "capacity": "420 kW duty basis"
+                  }
+                ]
+              },
+              {
+                "name": "Centrifugal Compressor",
+                "asset_count": 1,
+                "assets": [
+                  {
+                    "asset_id": "C-201",
+                    "asset_type": "Centrifugal Compressor",
+                    "unit": "HDS-1",
+                    "service": "Recycle Gas Compressor",
+                    "criticality": "HIGH",
+                    "manufacturer": "TurboDyn Corp",
+                    "model": "TD-RGC-900",
+                    "year": 2017,
+                    "design_pressure_bar_g": 110,
+                    "normal_pressure_bar_g": 82,
+                    "design_temperature_c": 180,
+                    "capacity": "32,000 Nm3/h"
+                  }
+                ]
+              },
+              {
+                "name": "Centrifugal Pump",
+                "asset_count": 2,
+                "assets": [
+                  {
+                    "asset_id": "P-203",
+                    "asset_type": "Centrifugal Pump",
+                    "unit": "HDS-1",
+                    "service": "HDS-1 Product Pump A",
+                    "criticality": "MEDIUM",
+                    "manufacturer": "HydroMach Systems",
+                    "model": "HM-PP250",
+                    "year": 2019,
+                    "design_pressure_bar_g": 35,
+                    "normal_pressure_bar_g": 24,
+                    "design_temperature_c": 260,
+                    "capacity": "250 m3/h"
+                  },
+                  {
+                    "asset_id": "P-204",
+                    "asset_type": "Centrifugal Pump",
+                    "unit": "HDS-1",
+                    "service": "HDS-1 Product Pump B",
+                    "criticality": "MEDIUM",
+                    "manufacturer": "HydroMach Systems",
+                    "model": "HM-PP250",
+                    "year": 2019,
+                    "design_pressure_bar_g": 35,
+                    "normal_pressure_bar_g": 24,
+                    "design_temperature_c": 260,
+                    "capacity": "250 m3/h"
+                  }
+                ]
+              },
+              {
+                "name": "Fixed Bed Reactor",
+                "asset_count": 1,
+                "assets": [
+                  {
+                    "asset_id": "R-201",
+                    "asset_type": "Fixed Bed Reactor",
+                    "unit": "HDS-1",
+                    "service": "Hydrodesulfurization Reactor",
+                    "criticality": "HIGH",
+                    "manufacturer": "Catalytic Process Works",
+                    "model": "CPW-HDS-1",
+                    "year": 2017,
+                    "design_pressure_bar_g": 125,
+                    "normal_pressure_bar_g": 105,
+                    "design_temperature_c": 420,
+                    "capacity": "95 m3 catalyst volume"
+                  }
+                ]
+              },
+              {
+                "name": "Hydrotreating Reactor",
+                "asset_count": 1,
+                "assets": [
+                  {
+                    "asset_id": "R-501",
+                    "asset_type": "Hydrotreating Reactor",
+                    "unit": "HDS-1",
+                    "service": "Diesel Hydrotreating",
+                    "criticality": "HIGH",
+                    "manufacturer": "ReactaFab",
+                    "model": "RF-52",
+                    "year": 2011,
+                    "design_pressure_bar_g": 68,
+                    "normal_pressure_bar_g": 52,
+                    "design_temperature_c": 390,
+                    "capacity": "44 m3"
+                  }
+                ]
+              },
+              {
+                "name": "Reciprocating Compressor",
+                "asset_count": 1,
+                "assets": [
+                  {
+                    "asset_id": "C-202",
+                    "asset_type": "Reciprocating Compressor",
+                    "unit": "HDS-1",
+                    "service": "Hydrogen Booster Compressor",
+                    "criticality": "HIGH",
+                    "manufacturer": "GasForce Engineering",
+                    "model": "GF-HB-450",
+                    "year": 2020,
+                    "design_pressure_bar_g": 160,
+                    "normal_pressure_bar_g": 120,
+                    "design_temperature_c": 120,
+                    "capacity": "12,000 Nm3/h"
+                  }
+                ]
+              },
+              {
+                "name": "Shell and Tube Cooler",
+                "asset_count": 1,
+                "assets": [
+                  {
+                    "asset_id": "E-303",
+                    "asset_type": "Shell and Tube Cooler",
+                    "unit": "HDS-1",
+                    "service": "HDS Product Cooler",
+                    "criticality": "MEDIUM",
+                    "manufacturer": "Thermex Engineering",
+                    "model": "TX-PC-210",
+                    "year": 2019,
+                    "design_pressure_bar_g": 40,
+                    "normal_pressure_bar_g": 28,
+                    "design_temperature_c": 260,
+                    "capacity": "210 m2 area"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "HGU-1",
+            "equipment_type_count": 4,
+            "asset_count": 4,
+            "equipment_types": [
+              {
+                "name": "Catalytic Reactor",
+                "asset_count": 1,
+                "assets": [
+                  {
+                    "asset_id": "R-302",
+                    "asset_type": "Catalytic Reactor",
+                    "unit": "HGU-1",
+                    "service": "Shift Conversion Reactor",
+                    "criticality": "HIGH",
+                    "manufacturer": "Catalytic Process Works",
+                    "model": "CPW-SCR-300",
+                    "year": 2016,
+                    "design_pressure_bar_g": 35,
+                    "normal_pressure_bar_g": 25,
+                    "design_temperature_c": 450,
+                    "capacity": "300 m3"
+                  }
+                ]
+              },
+              {
+                "name": "Centrifugal Pump",
+                "asset_count": 1,
+                "assets": [
+                  {
+                    "asset_id": "P-302",
+                    "asset_type": "Centrifugal Pump",
+                    "unit": "HGU-1",
+                    "service": "Condensate Pump",
+                    "criticality": "MEDIUM",
+                    "manufacturer": "HydroMach Systems",
+                    "model": "HM-CON-120",
+                    "year": 2016,
+                    "design_pressure_bar_g": 18,
+                    "normal_pressure_bar_g": 10,
+                    "design_temperature_c": 160,
+                    "capacity": "120 m3/h"
+                  }
+                ]
+              },
+              {
+                "name": "Reciprocating Compressor",
+                "asset_count": 1,
+                "assets": [
+                  {
+                    "asset_id": "C-302",
+                    "asset_type": "Reciprocating Compressor",
+                    "unit": "HGU-1",
+                    "service": "Hydrogen Product Compressor",
+                    "criticality": "HIGH",
+                    "manufacturer": "GasForce Engineering",
+                    "model": "GF-H2-700",
+                    "year": 2019,
+                    "design_pressure_bar_g": 145,
+                    "normal_pressure_bar_g": 110,
+                    "design_temperature_c": 100,
+                    "capacity": "18,000 Nm3/h"
+                  }
+                ]
+              },
+              {
+                "name": "Shell and Tube Exchanger",
+                "asset_count": 1,
+                "assets": [
+                  {
+                    "asset_id": "E-401",
+                    "asset_type": "Shell and Tube Exchanger",
+                    "unit": "HGU-1",
+                    "service": "Reforming Feed Preheater",
+                    "criticality": "HIGH",
+                    "manufacturer": "Thermex Engineering",
+                    "model": "TX-RF-350",
+                    "year": 2016,
+                    "design_pressure_bar_g": 42,
+                    "normal_pressure_bar_g": 30,
+                    "design_temperature_c": 650,
+                    "capacity": "350 m2 area"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "TKF",
+            "equipment_type_count": 1,
+            "asset_count": 4,
+            "equipment_types": [
+              {
+                "name": "Centrifugal Pump",
+                "asset_count": 4,
+                "assets": [
+                  {
+                    "asset_id": "P-501",
+                    "asset_type": "Centrifugal Pump",
+                    "unit": "TKF",
+                    "service": "Crude Transfer Pump A",
+                    "criticality": "HIGH",
+                    "manufacturer": "MechFlow Industries",
+                    "model": "MF-CTP600",
+                    "year": 2018,
+                    "design_pressure_bar_g": 18,
+                    "normal_pressure_bar_g": 10,
+                    "design_temperature_c": 90,
+                    "capacity": "600 m3/h"
+                  },
+                  {
+                    "asset_id": "P-502",
+                    "asset_type": "Centrifugal Pump",
+                    "unit": "TKF",
+                    "service": "Crude Transfer Pump B",
+                    "criticality": "HIGH",
+                    "manufacturer": "MechFlow Industries",
+                    "model": "MF-CTP600",
+                    "year": 2018,
+                    "design_pressure_bar_g": 18,
+                    "normal_pressure_bar_g": 10,
+                    "design_temperature_c": 90,
+                    "capacity": "600 m3/h"
+                  },
+                  {
+                    "asset_id": "P-503",
+                    "asset_type": "Centrifugal Pump",
+                    "unit": "TKF",
+                    "service": "Diesel Transfer Pump",
+                    "criticality": "MEDIUM",
+                    "manufacturer": "MechFlow Industries",
+                    "model": "MF-DTP350",
+                    "year": 2019,
+                    "design_pressure_bar_g": 14,
+                    "normal_pressure_bar_g": 8,
+                    "design_temperature_c": 90,
+                    "capacity": "350 m3/h"
+                  },
+                  {
+                    "asset_id": "P-504",
+                    "asset_type": "Centrifugal Pump",
+                    "unit": "TKF",
+                    "service": "Naphtha Transfer Pump",
+                    "criticality": "HIGH",
+                    "manufacturer": "MechFlow Industries",
+                    "model": "MF-NTP300",
+                    "year": 2019,
+                    "design_pressure_bar_g": 16,
+                    "normal_pressure_bar_g": 9,
+                    "design_temperature_c": 70,
+                    "capacity": "300 m3/h"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "UTIL-1",
+            "equipment_type_count": 2,
+            "asset_count": 2,
+            "equipment_types": [
+              {
+                "name": "Centrifugal Pump",
+                "asset_count": 1,
+                "assets": [
+                  {
+                    "asset_id": "P-205",
+                    "asset_type": "Centrifugal Pump",
+                    "unit": "UTIL-1",
+                    "service": "Cooling Water",
+                    "criticality": "MEDIUM",
+                    "manufacturer": "WaterPrime",
+                    "model": "WP-400",
+                    "year": 2015,
+                    "design_pressure_bar_g": 16,
+                    "normal_pressure_bar_g": 9,
+                    "design_temperature_c": 55,
+                    "capacity": "900 m3/h"
+                  }
+                ]
+              },
+              {
+                "name": "Motor",
+                "asset_count": 1,
+                "assets": [
+                  {
+                    "asset_id": "M-205",
+                    "asset_type": "Motor",
+                    "unit": "UTIL-1",
+                    "service": "P-205 Drive",
+                    "criticality": "MEDIUM",
+                    "manufacturer": "ElectroPrime",
+                    "model": "EP-315",
+                    "year": 2015,
+                    "design_pressure_bar_g": 0,
+                    "normal_pressure_bar_g": 0,
+                    "design_temperature_c": 40,
+                    "capacity": "220 kW / 415 V / 1480 rpm"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "UTY",
+            "equipment_type_count": 1,
+            "asset_count": 3,
+            "equipment_types": [
+              {
+                "name": "Vertical Turbine Pump",
+                "asset_count": 3,
+                "assets": [
+                  {
+                    "asset_id": "P-401",
+                    "asset_type": "Vertical Turbine Pump",
+                    "unit": "UTY",
+                    "service": "Cooling Water Pump A",
+                    "criticality": "HIGH",
+                    "manufacturer": "AquaDrive Engineering",
+                    "model": "AD-VT-1500",
+                    "year": 2015,
+                    "design_pressure_bar_g": 10,
+                    "normal_pressure_bar_g": 6,
+                    "design_temperature_c": 55,
+                    "capacity": "1500 m3/h"
+                  },
+                  {
+                    "asset_id": "P-402",
+                    "asset_type": "Vertical Turbine Pump",
+                    "unit": "UTY",
+                    "service": "Cooling Water Pump B",
+                    "criticality": "HIGH",
+                    "manufacturer": "AquaDrive Engineering",
+                    "model": "AD-VT-1500",
+                    "year": 2015,
+                    "design_pressure_bar_g": 10,
+                    "normal_pressure_bar_g": 6,
+                    "design_temperature_c": 55,
+                    "capacity": "1500 m3/h"
+                  },
+                  {
+                    "asset_id": "P-403",
+                    "asset_type": "Vertical Turbine Pump",
+                    "unit": "UTY",
+                    "service": "Cooling Water Pump C",
+                    "criticality": "MEDIUM",
+                    "manufacturer": "AquaDrive Engineering",
+                    "model": "AD-VT-1500",
+                    "year": 2015,
+                    "design_pressure_bar_g": 10,
+                    "normal_pressure_bar_g": 6,
+                    "design_temperature_c": 55,
+                    "capacity": "1500 m3/h"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Safety & Emergency Systems",
+        "unit_count": 5,
+        "asset_count": 9,
+        "units": [
+          {
+            "name": "CDU-4",
+            "equipment_type_count": 1,
+            "asset_count": 2,
+            "equipment_types": [
+              {
+                "name": "Fired Heater",
+                "asset_count": 2,
+                "assets": [
+                  {
+                    "asset_id": "F-401",
+                    "asset_type": "Fired Heater",
+                    "unit": "CDU-4",
+                    "service": "Crude Preheat Furnace",
+                    "criticality": "HIGH",
+                    "manufacturer": "HeatCore",
+                    "model": "HC-180",
+                    "year": 2013,
+                    "design_pressure_bar_g": 22,
+                    "normal_pressure_bar_g": 12,
+                    "design_temperature_c": 430,
+                    "capacity": "180 MW duty"
+                  },
+                  {
+                    "asset_id": "H-101",
+                    "asset_type": "Fired Heater",
+                    "unit": "CDU-4",
+                    "service": "CDU-4 Charge Heater",
+                    "criticality": "HIGH",
+                    "manufacturer": "ThermoFire Systems",
+                    "model": "TF-CH-850",
+                    "year": 2014,
+                    "design_pressure_bar_g": 22,
+                    "normal_pressure_bar_g": 15,
+                    "design_temperature_c": 430,
+                    "capacity": "85 MW duty"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "FIRE",
+            "equipment_type_count": 2,
+            "asset_count": 3,
+            "equipment_types": [
+              {
+                "name": "Diesel Firewater Pump",
+                "asset_count": 1,
+                "assets": [
+                  {
+                    "asset_id": "FWP-103",
+                    "asset_type": "Diesel Firewater Pump",
+                    "unit": "FIRE",
+                    "service": "Diesel Firewater Pump",
+                    "criticality": "HIGH",
+                    "manufacturer": "FireSafe Engineering",
+                    "model": "FS-DFWP-1500",
+                    "year": 2016,
+                    "design_pressure_bar_g": 16,
+                    "normal_pressure_bar_g": 10,
+                    "design_temperature_c": 55,
+                    "capacity": "1500 m3/h"
+                  }
+                ]
+              },
+              {
+                "name": "Electric Firewater Pump",
+                "asset_count": 2,
+                "assets": [
+                  {
+                    "asset_id": "FWP-101",
+                    "asset_type": "Electric Firewater Pump",
+                    "unit": "FIRE",
+                    "service": "Firewater Pump A",
+                    "criticality": "HIGH",
+                    "manufacturer": "FireSafe Engineering",
+                    "model": "FS-FWP-1500",
+                    "year": 2016,
+                    "design_pressure_bar_g": 16,
+                    "normal_pressure_bar_g": 10,
+                    "design_temperature_c": 55,
+                    "capacity": "1500 m3/h"
+                  },
+                  {
+                    "asset_id": "FWP-102",
+                    "asset_type": "Electric Firewater Pump",
+                    "unit": "FIRE",
+                    "service": "Firewater Pump B",
+                    "criticality": "HIGH",
+                    "manufacturer": "FireSafe Engineering",
+                    "model": "FS-FWP-1500",
+                    "year": 2016,
+                    "design_pressure_bar_g": 16,
+                    "normal_pressure_bar_g": 10,
+                    "design_temperature_c": 55,
+                    "capacity": "1500 m3/h"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "HGU-1",
+            "equipment_type_count": 1,
+            "asset_count": 1,
+            "equipment_types": [
+              {
+                "name": "Fired Process Reformer",
+                "asset_count": 1,
+                "assets": [
+                  {
+                    "asset_id": "R-301",
+                    "asset_type": "Fired Process Reformer",
+                    "unit": "HGU-1",
+                    "service": "Steam Methane Reformer",
+                    "criticality": "HIGH",
+                    "manufacturer": "ReformTech International",
+                    "model": "RT-SMR-900",
+                    "year": 2016,
+                    "design_pressure_bar_g": 38,
+                    "normal_pressure_bar_g": 28,
+                    "design_temperature_c": 950,
+                    "capacity": "900 t/day equivalent duty basis"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "TKF",
+            "equipment_type_count": 1,
+            "asset_count": 1,
+            "equipment_types": [
+              {
+                "name": "Storage Tank",
+                "asset_count": 1,
+                "assets": [
+                  {
+                    "asset_id": "TK-110",
+                    "asset_type": "Storage Tank",
+                    "unit": "TKF",
+                    "service": "Firewater Storage Tank",
+                    "criticality": "HIGH",
+                    "manufacturer": "TankWorks Engineering",
+                    "model": "TW-FW-12000",
+                    "year": 2015,
+                    "design_pressure_bar_g": 0.5,
+                    "normal_pressure_bar_g": 0.05,
+                    "design_temperature_c": 55,
+                    "capacity": "12,000 m3"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "UTY",
+            "equipment_type_count": 1,
+            "asset_count": 2,
+            "equipment_types": [
+              {
+                "name": "Diesel Generator",
+                "asset_count": 2,
+                "assets": [
+                  {
+                    "asset_id": "DG-101",
+                    "asset_type": "Diesel Generator",
+                    "unit": "UTY",
+                    "service": "Emergency Diesel Generator A",
+                    "criticality": "HIGH",
+                    "manufacturer": "PowerGen India",
+                    "model": "PG-DG-2500",
+                    "year": 2018,
+                    "design_pressure_bar_g": "N/A",
+                    "normal_pressure_bar_g": "N/A",
+                    "design_temperature_c": 50,
+                    "capacity": "2.5 MW"
+                  },
+                  {
+                    "asset_id": "DG-102",
+                    "asset_type": "Diesel Generator",
+                    "unit": "UTY",
+                    "service": "Emergency Diesel Generator B",
+                    "criticality": "HIGH",
+                    "manufacturer": "PowerGen India",
+                    "model": "PG-DG-2500",
+                    "year": 2018,
+                    "design_pressure_bar_g": "N/A",
+                    "normal_pressure_bar_g": "N/A",
+                    "design_temperature_c": 50,
+                    "capacity": "2.5 MW"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Storage & Handling",
+        "unit_count": 2,
+        "asset_count": 11,
+        "units": [
+          {
+            "name": "TF-1",
+            "equipment_type_count": 1,
+            "asset_count": 2,
+            "equipment_types": [
+              {
+                "name": "Storage Tank",
+                "asset_count": 2,
+                "assets": [
+                  {
+                    "asset_id": "T-401",
+                    "asset_type": "Storage Tank",
+                    "unit": "TF-1",
+                    "service": "Crude Storage",
+                    "criticality": "HIGH",
+                    "manufacturer": "TankFab",
+                    "model": "TF-80",
+                    "year": 2012,
+                    "design_pressure_bar_g": 0.12,
+                    "normal_pressure_bar_g": 0.03,
+                    "design_temperature_c": 65,
+                    "capacity": "80,000 m3"
+                  },
+                  {
+                    "asset_id": "T-405",
+                    "asset_type": "Storage Tank",
+                    "unit": "TF-1",
+                    "service": "Intermediate Feed",
+                    "criticality": "MEDIUM",
+                    "manufacturer": "TankFab",
+                    "model": "TF-45",
+                    "year": 2017,
+                    "design_pressure_bar_g": 0.1,
+                    "normal_pressure_bar_g": 0.02,
+                    "design_temperature_c": 60,
+                    "capacity": "45,000 m3"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "TKF",
+            "equipment_type_count": 1,
+            "asset_count": 9,
+            "equipment_types": [
+              {
+                "name": "Storage Tank",
+                "asset_count": 9,
+                "assets": [
+                  {
+                    "asset_id": "TK-101",
+                    "asset_type": "Storage Tank",
+                    "unit": "TKF",
+                    "service": "Crude Oil Storage Tank A",
+                    "criticality": "HIGH",
+                    "manufacturer": "TankWorks Engineering",
+                    "model": "TW-CONE-60000",
+                    "year": 2013,
+                    "design_pressure_bar_g": 0.5,
+                    "normal_pressure_bar_g": 0.05,
+                    "design_temperature_c": 90,
+                    "capacity": "60,000 m3"
+                  },
+                  {
+                    "asset_id": "TK-102",
+                    "asset_type": "Storage Tank",
+                    "unit": "TKF",
+                    "service": "Crude Oil Storage Tank B",
+                    "criticality": "HIGH",
+                    "manufacturer": "TankWorks Engineering",
+                    "model": "TW-CONE-60000",
+                    "year": 2013,
+                    "design_pressure_bar_g": 0.5,
+                    "normal_pressure_bar_g": 0.05,
+                    "design_temperature_c": 90,
+                    "capacity": "60,000 m3"
+                  },
+                  {
+                    "asset_id": "TK-103",
+                    "asset_type": "Storage Tank",
+                    "unit": "TKF",
+                    "service": "Intermediate Product Tank",
+                    "criticality": "MEDIUM",
+                    "manufacturer": "TankWorks Engineering",
+                    "model": "TW-CONE-25000",
+                    "year": 2016,
+                    "design_pressure_bar_g": 0.5,
+                    "normal_pressure_bar_g": 0.05,
+                    "design_temperature_c": 100,
+                    "capacity": "25,000 m3"
+                  },
+                  {
+                    "asset_id": "TK-104",
+                    "asset_type": "Storage Tank",
+                    "unit": "TKF",
+                    "service": "Diesel Storage Tank A",
+                    "criticality": "HIGH",
+                    "manufacturer": "TankWorks Engineering",
+                    "model": "TW-CONE-30000",
+                    "year": 2017,
+                    "design_pressure_bar_g": 0.5,
+                    "normal_pressure_bar_g": 0.05,
+                    "design_temperature_c": 90,
+                    "capacity": "30,000 m3"
+                  },
+                  {
+                    "asset_id": "TK-105",
+                    "asset_type": "Storage Tank",
+                    "unit": "TKF",
+                    "service": "Diesel Storage Tank B",
+                    "criticality": "HIGH",
+                    "manufacturer": "TankWorks Engineering",
+                    "model": "TW-CONE-30000",
+                    "year": 2017,
+                    "design_pressure_bar_g": 0.5,
+                    "normal_pressure_bar_g": 0.05,
+                    "design_temperature_c": 90,
+                    "capacity": "30,000 m3"
+                  },
+                  {
+                    "asset_id": "TK-106",
+                    "asset_type": "Storage Tank",
+                    "unit": "TKF",
+                    "service": "Naphtha Storage Tank",
+                    "criticality": "HIGH",
+                    "manufacturer": "TankWorks Engineering",
+                    "model": "TW-IFR-20000",
+                    "year": 2018,
+                    "design_pressure_bar_g": 0.5,
+                    "normal_pressure_bar_g": 0.05,
+                    "design_temperature_c": 70,
+                    "capacity": "20,000 m3"
+                  },
+                  {
+                    "asset_id": "TK-107",
+                    "asset_type": "Storage Tank",
+                    "unit": "TKF",
+                    "service": "ATF Storage Tank",
+                    "criticality": "HIGH",
+                    "manufacturer": "TankWorks Engineering",
+                    "model": "TW-IFR-15000",
+                    "year": 2018,
+                    "design_pressure_bar_g": 0.5,
+                    "normal_pressure_bar_g": 0.05,
+                    "design_temperature_c": 65,
+                    "capacity": "15,000 m3"
+                  },
+                  {
+                    "asset_id": "TK-108",
+                    "asset_type": "Storage Tank",
+                    "unit": "TKF",
+                    "service": "Fuel Oil Storage Tank",
+                    "criticality": "MEDIUM",
+                    "manufacturer": "TankWorks Engineering",
+                    "model": "TW-HOT-20000",
+                    "year": 2014,
+                    "design_pressure_bar_g": 0.5,
+                    "normal_pressure_bar_g": 0.05,
+                    "design_temperature_c": 120,
+                    "capacity": "20,000 m3"
+                  },
+                  {
+                    "asset_id": "TK-109",
+                    "asset_type": "Storage Tank",
+                    "unit": "TKF",
+                    "service": "Slop Oil Tank",
+                    "criticality": "MEDIUM",
+                    "manufacturer": "TankWorks Engineering",
+                    "model": "TW-SLOP-8000",
+                    "year": 2015,
+                    "design_pressure_bar_g": 0.5,
+                    "normal_pressure_bar_g": 0.05,
+                    "design_temperature_c": 120,
+                    "capacity": "8,000 m3"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Utilities",
+        "unit_count": 2,
+        "asset_count": 7,
+        "units": [
+          {
+            "name": "HGU-1",
+            "equipment_type_count": 2,
+            "asset_count": 2,
+            "equipment_types": [
+              {
+                "name": "Multistage Centrifugal Pump",
+                "asset_count": 1,
+                "assets": [
+                  {
+                    "asset_id": "P-301",
+                    "asset_type": "Multistage Centrifugal Pump",
+                    "unit": "HGU-1",
+                    "service": "Boiler Feedwater Pump",
+                    "criticality": "HIGH",
+                    "manufacturer": "HydroMach Systems",
+                    "model": "HM-BFW-180",
+                    "year": 2016,
+                    "design_pressure_bar_g": 95,
+                    "normal_pressure_bar_g": 72,
+                    "design_temperature_c": 180,
+                    "capacity": "180 m3/h"
+                  }
+                ]
+              },
+              {
+                "name": "Waste Heat Boiler/Cooler",
+                "asset_count": 1,
+                "assets": [
+                  {
+                    "asset_id": "E-402",
+                    "asset_type": "Waste Heat Boiler/Cooler",
+                    "unit": "HGU-1",
+                    "service": "Syngas Cooler",
+                    "criticality": "HIGH",
+                    "manufacturer": "ThermoRecovery Systems",
+                    "model": "TR-SC-600",
+                    "year": 2016,
+                    "design_pressure_bar_g": 48,
+                    "normal_pressure_bar_g": 35,
+                    "design_temperature_c": 750,
+                    "capacity": "600 kW duty basis"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "UTY",
+            "equipment_type_count": 2,
+            "asset_count": 5,
+            "equipment_types": [
+              {
+                "name": "Induced Draft Cooling Tower",
+                "asset_count": 3,
+                "assets": [
+                  {
+                    "asset_id": "CT-101",
+                    "asset_type": "Induced Draft Cooling Tower",
+                    "unit": "UTY",
+                    "service": "Cooling Tower Cell A",
+                    "criticality": "MEDIUM",
+                    "manufacturer": "CoolFlow Systems",
+                    "model": "CF-CT-300",
+                    "year": 2015,
+                    "design_pressure_bar_g": 6,
+                    "normal_pressure_bar_g": 3,
+                    "design_temperature_c": 55,
+                    "capacity": "3000 m3/h"
+                  },
+                  {
+                    "asset_id": "CT-102",
+                    "asset_type": "Induced Draft Cooling Tower",
+                    "unit": "UTY",
+                    "service": "Cooling Tower Cell B",
+                    "criticality": "MEDIUM",
+                    "manufacturer": "CoolFlow Systems",
+                    "model": "CF-CT-300",
+                    "year": 2015,
+                    "design_pressure_bar_g": 6,
+                    "normal_pressure_bar_g": 3,
+                    "design_temperature_c": 55,
+                    "capacity": "3000 m3/h"
+                  },
+                  {
+                    "asset_id": "CT-103",
+                    "asset_type": "Induced Draft Cooling Tower",
+                    "unit": "UTY",
+                    "service": "Cooling Tower Cell C",
+                    "criticality": "MEDIUM",
+                    "manufacturer": "CoolFlow Systems",
+                    "model": "CF-CT-300",
+                    "year": 2015,
+                    "design_pressure_bar_g": 6,
+                    "normal_pressure_bar_g": 3,
+                    "design_temperature_c": 55,
+                    "capacity": "3000 m3/h"
+                  }
+                ]
+              },
+              {
+                "name": "Water Tube Boiler",
+                "asset_count": 2,
+                "assets": [
+                  {
+                    "asset_id": "B-101",
+                    "asset_type": "Water Tube Boiler",
+                    "unit": "UTY",
+                    "service": "Utility Boiler A",
+                    "criticality": "HIGH",
+                    "manufacturer": "SteamCore Systems",
+                    "model": "SC-WTB-120",
+                    "year": 2015,
+                    "design_pressure_bar_g": 55,
+                    "normal_pressure_bar_g": 42,
+                    "design_temperature_c": 480,
+                    "capacity": "120 TPH steam"
+                  },
+                  {
+                    "asset_id": "B-102",
+                    "asset_type": "Water Tube Boiler",
+                    "unit": "UTY",
+                    "service": "Utility Boiler B",
+                    "criticality": "HIGH",
+                    "manufacturer": "SteamCore Systems",
+                    "model": "SC-WTB-120",
+                    "year": 2015,
+                    "design_pressure_bar_g": 55,
+                    "normal_pressure_bar_g": 42,
+                    "design_temperature_c": 480,
+                    "capacity": "120 TPH steam"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "index": {
+    "by_asset_id": {
+      "P-101": {
+        "domain": "Process & Production",
+        "unit": "CDU-4",
+        "asset_type": "Centrifugal Pump",
+        "service": "Crude Feed Transfer",
+        "criticality": "MEDIUM"
+      },
+      "P-102": {
+        "domain": "Process & Production",
+        "unit": "CDU-4",
+        "asset_type": "Centrifugal Process Pump",
+        "service": "Crude Transfer",
+        "criticality": "HIGH"
+      },
+      "P-103": {
+        "domain": "Process & Production",
+        "unit": "CDU-4",
+        "asset_type": "Centrifugal Pump",
+        "service": "Cooling Circuit",
+        "criticality": "LOW"
+      },
+      "P-104": {
+        "domain": "Process & Production",
+        "unit": "CDU-4",
+        "asset_type": "Centrifugal Pump",
+        "service": "Product Transfer",
+        "criticality": "MEDIUM"
+      },
+      "P-201": {
+        "domain": "Process & Production",
+        "unit": "HCU-1",
+        "asset_type": "Centrifugal Pump",
+        "service": "Recycle Oil",
+        "criticality": "HIGH"
+      },
+      "P-205": {
+        "domain": "Process & Production",
+        "unit": "UTIL-1",
+        "asset_type": "Centrifugal Pump",
+        "service": "Cooling Water",
+        "criticality": "MEDIUM"
+      },
+      "V-201": {
+        "domain": "Instrumentation & Control",
+        "unit": "CDU-4",
+        "asset_type": "Pressure Vessel",
+        "service": "Desalter Outlet Separation",
+        "criticality": "HIGH"
+      },
+      "V-220": {
+        "domain": "Instrumentation & Control",
+        "unit": "CDU-4",
+        "asset_type": "Pressure Vessel",
+        "service": "Overhead Accumulator",
+        "criticality": "HIGH"
+      },
+      "V-501": {
+        "domain": "Instrumentation & Control",
+        "unit": "HCU-1",
+        "asset_type": "Pressure Vessel",
+        "service": "Hydrogen Separator",
+        "criticality": "HIGH"
+      },
+      "E-301": {
+        "domain": "Process & Production",
+        "unit": "CDU-4",
+        "asset_type": "Shell-and-Tube Heat Exchanger",
+        "service": "Crude Preheat",
+        "criticality": "MEDIUM"
+      },
+      "E-315": {
+        "domain": "Process & Production",
+        "unit": "CDU-4",
+        "asset_type": "Shell-and-Tube Heat Exchanger",
+        "service": "Product Cooling",
+        "criticality": "MEDIUM"
+      },
+      "T-401": {
+        "domain": "Storage & Handling",
+        "unit": "TF-1",
+        "asset_type": "Storage Tank",
+        "service": "Crude Storage",
+        "criticality": "HIGH"
+      },
+      "T-405": {
+        "domain": "Storage & Handling",
+        "unit": "TF-1",
+        "asset_type": "Storage Tank",
+        "service": "Intermediate Feed",
+        "criticality": "MEDIUM"
+      },
+      "F-401": {
+        "domain": "Safety & Emergency Systems",
+        "unit": "CDU-4",
+        "asset_type": "Fired Heater",
+        "service": "Crude Preheat Furnace",
+        "criticality": "HIGH"
+      },
+      "C-301": {
+        "domain": "Process & Production",
+        "unit": "HCU-1",
+        "asset_type": "Centrifugal Compressor",
+        "service": "Hydrogen Recycle",
+        "criticality": "HIGH"
+      },
+      "M-102": {
+        "domain": "Process & Production",
+        "unit": "CDU-4",
+        "asset_type": "Motor",
+        "service": "P-102 Drive",
+        "criticality": "HIGH"
+      },
+      "M-205": {
+        "domain": "Process & Production",
+        "unit": "UTIL-1",
+        "asset_type": "Motor",
+        "service": "P-205 Drive",
+        "criticality": "MEDIUM"
+      },
+      "PT-102": {
+        "domain": "Instrumentation & Control",
+        "unit": "CDU-4",
+        "asset_type": "Pressure Transmitter",
+        "service": "P-102 Discharge Pressure",
+        "criticality": "HIGH"
+      },
+      "TT-102": {
+        "domain": "Instrumentation & Control",
+        "unit": "CDU-4",
+        "asset_type": "Temperature Transmitter",
+        "service": "P-102 Discharge Temperature",
+        "criticality": "MEDIUM"
+      },
+      "FT-210": {
+        "domain": "Instrumentation & Control",
+        "unit": "CDU-4",
+        "asset_type": "Flow Transmitter",
+        "service": "Crude Flow",
+        "criticality": "MEDIUM"
+      },
+      "PSV-102": {
+        "domain": "Instrumentation & Control",
+        "unit": "CDU-4",
+        "asset_type": "Pressure Safety Valve",
+        "service": "P-102 Discharge Protection",
+        "criticality": "HIGH"
+      },
+      "XV-410": {
+        "domain": "Process & Production",
+        "unit": "CDU-4",
+        "asset_type": "Motor Operated Valve",
+        "service": "Crude Feed Isolation",
+        "criticality": "MEDIUM"
+      },
+      "D-410": {
+        "domain": "Process & Production",
+        "unit": "CDU-4",
+        "asset_type": "Electrostatic Desalter",
+        "service": "Crude Pretreatment",
+        "criticality": "HIGH"
+      },
+      "R-501": {
+        "domain": "Process & Production",
+        "unit": "HDS-1",
+        "asset_type": "Hydrotreating Reactor",
+        "service": "Diesel Hydrotreating",
+        "criticality": "HIGH"
+      },
+      "P-601": {
+        "domain": "Process & Production",
+        "unit": "DISP-1",
+        "asset_type": "Product Pump",
+        "service": "Diesel Dispatch",
+        "criticality": "MEDIUM"
+      },
+      "P-105": {
+        "domain": "Process & Production",
+        "unit": "CDU-4",
+        "asset_type": "Centrifugal Pump",
+        "service": "CDU-4 Reflux Pump B",
+        "criticality": "HIGH"
+      },
+      "P-106": {
+        "domain": "Process & Production",
+        "unit": "CDU-4",
+        "asset_type": "Centrifugal Pump",
+        "service": "CDU-4 Bottoms Pump A",
+        "criticality": "HIGH"
+      },
+      "P-107": {
+        "domain": "Process & Production",
+        "unit": "CDU-4",
+        "asset_type": "Centrifugal Pump",
+        "service": "CDU-4 Bottoms Pump B",
+        "criticality": "HIGH"
+      },
+      "P-108": {
+        "domain": "Process & Production",
+        "unit": "CDU-4",
+        "asset_type": "Centrifugal Pump",
+        "service": "CDU-4 Product Transfer Pump",
+        "criticality": "MEDIUM"
+      },
+      "E-203": {
+        "domain": "Process & Production",
+        "unit": "CDU-4",
+        "asset_type": "Shell and Tube Heat Exchanger",
+        "service": "CDU-4 Crude Preheater C",
+        "criticality": "HIGH"
+      },
+      "E-204": {
+        "domain": "Process & Production",
+        "unit": "CDU-4",
+        "asset_type": "Shell and Tube Heat Exchanger",
+        "service": "CDU-4 Crude Preheater D",
+        "criticality": "HIGH"
+      },
+      "E-205": {
+        "domain": "Process & Production",
+        "unit": "CDU-4",
+        "asset_type": "Shell and Tube Condenser",
+        "service": "CDU-4 Overhead Condenser A",
+        "criticality": "MEDIUM"
+      },
+      "E-206": {
+        "domain": "Process & Production",
+        "unit": "CDU-4",
+        "asset_type": "Shell and Tube Condenser",
+        "service": "CDU-4 Overhead Condenser B",
+        "criticality": "MEDIUM"
+      },
+      "E-207": {
+        "domain": "Process & Production",
+        "unit": "CDU-4",
+        "asset_type": "Shell and Tube Cooler",
+        "service": "CDU-4 Product Cooler",
+        "criticality": "MEDIUM"
+      },
+      "T-101": {
+        "domain": "Process & Production",
+        "unit": "CDU-4",
+        "asset_type": "Distillation Column",
+        "service": "CDU-4 Atmospheric Distillation Column",
+        "criticality": "HIGH"
+      },
+      "H-101": {
+        "domain": "Safety & Emergency Systems",
+        "unit": "CDU-4",
+        "asset_type": "Fired Heater",
+        "service": "CDU-4 Charge Heater",
+        "criticality": "HIGH"
+      },
+      "V-101": {
+        "domain": "Instrumentation & Control",
+        "unit": "CDU-4",
+        "asset_type": "Pressure Vessel",
+        "service": "CDU-4 Overhead Reflux Drum",
+        "criticality": "HIGH"
+      },
+      "V-102": {
+        "domain": "Process & Production",
+        "unit": "CDU-4",
+        "asset_type": "Process Vessel",
+        "service": "CDU-4 Bottoms Surge Drum",
+        "criticality": "MEDIUM"
+      },
+      "P-202": {
+        "domain": "Instrumentation & Control",
+        "unit": "HDS-1",
+        "asset_type": "High Pressure Centrifugal Pump",
+        "service": "HDS-1 Feed Pump B",
+        "criticality": "HIGH"
+      },
+      "P-203": {
+        "domain": "Process & Production",
+        "unit": "HDS-1",
+        "asset_type": "Centrifugal Pump",
+        "service": "HDS-1 Product Pump A",
+        "criticality": "MEDIUM"
+      },
+      "P-204": {
+        "domain": "Process & Production",
+        "unit": "HDS-1",
+        "asset_type": "Centrifugal Pump",
+        "service": "HDS-1 Product Pump B",
+        "criticality": "MEDIUM"
+      },
+      "C-201": {
+        "domain": "Process & Production",
+        "unit": "HDS-1",
+        "asset_type": "Centrifugal Compressor",
+        "service": "Recycle Gas Compressor",
+        "criticality": "HIGH"
+      },
+      "C-202": {
+        "domain": "Process & Production",
+        "unit": "HDS-1",
+        "asset_type": "Reciprocating Compressor",
+        "service": "Hydrogen Booster Compressor",
+        "criticality": "HIGH"
+      },
+      "R-201": {
+        "domain": "Process & Production",
+        "unit": "HDS-1",
+        "asset_type": "Fixed Bed Reactor",
+        "service": "Hydrodesulfurization Reactor",
+        "criticality": "HIGH"
+      },
+      "V-202": {
+        "domain": "Instrumentation & Control",
+        "unit": "HDS-1",
+        "asset_type": "Pressure Vessel",
+        "service": "Low Pressure Separator",
+        "criticality": "MEDIUM"
+      },
+      "E-302": {
+        "domain": "Process & Production",
+        "unit": "HDS-1",
+        "asset_type": "Air Cooler",
+        "service": "Reactor Effluent Cooler",
+        "criticality": "HIGH"
+      },
+      "E-303": {
+        "domain": "Process & Production",
+        "unit": "HDS-1",
+        "asset_type": "Shell and Tube Cooler",
+        "service": "HDS Product Cooler",
+        "criticality": "MEDIUM"
+      },
+      "C-302": {
+        "domain": "Process & Production",
+        "unit": "HGU-1",
+        "asset_type": "Reciprocating Compressor",
+        "service": "Hydrogen Product Compressor",
+        "criticality": "HIGH"
+      },
+      "R-301": {
+        "domain": "Safety & Emergency Systems",
+        "unit": "HGU-1",
+        "asset_type": "Fired Process Reformer",
+        "service": "Steam Methane Reformer",
+        "criticality": "HIGH"
+      },
+      "R-302": {
+        "domain": "Process & Production",
+        "unit": "HGU-1",
+        "asset_type": "Catalytic Reactor",
+        "service": "Shift Conversion Reactor",
+        "criticality": "HIGH"
+      },
+      "E-401": {
+        "domain": "Process & Production",
+        "unit": "HGU-1",
+        "asset_type": "Shell and Tube Exchanger",
+        "service": "Reforming Feed Preheater",
+        "criticality": "HIGH"
+      },
+      "E-402": {
+        "domain": "Utilities",
+        "unit": "HGU-1",
+        "asset_type": "Waste Heat Boiler/Cooler",
+        "service": "Syngas Cooler",
+        "criticality": "HIGH"
+      },
+      "P-301": {
+        "domain": "Utilities",
+        "unit": "HGU-1",
+        "asset_type": "Multistage Centrifugal Pump",
+        "service": "Boiler Feedwater Pump",
+        "criticality": "HIGH"
+      },
+      "P-302": {
+        "domain": "Process & Production",
+        "unit": "HGU-1",
+        "asset_type": "Centrifugal Pump",
+        "service": "Condensate Pump",
+        "criticality": "MEDIUM"
+      },
+      "B-101": {
+        "domain": "Utilities",
+        "unit": "UTY",
+        "asset_type": "Water Tube Boiler",
+        "service": "Utility Boiler A",
+        "criticality": "HIGH"
+      },
+      "B-102": {
+        "domain": "Utilities",
+        "unit": "UTY",
+        "asset_type": "Water Tube Boiler",
+        "service": "Utility Boiler B",
+        "criticality": "HIGH"
+      },
+      "DG-101": {
+        "domain": "Safety & Emergency Systems",
+        "unit": "UTY",
+        "asset_type": "Diesel Generator",
+        "service": "Emergency Diesel Generator A",
+        "criticality": "HIGH"
+      },
+      "DG-102": {
+        "domain": "Safety & Emergency Systems",
+        "unit": "UTY",
+        "asset_type": "Diesel Generator",
+        "service": "Emergency Diesel Generator B",
+        "criticality": "HIGH"
+      },
+      "CT-101": {
+        "domain": "Utilities",
+        "unit": "UTY",
+        "asset_type": "Induced Draft Cooling Tower",
+        "service": "Cooling Tower Cell A",
+        "criticality": "MEDIUM"
+      },
+      "CT-102": {
+        "domain": "Utilities",
+        "unit": "UTY",
+        "asset_type": "Induced Draft Cooling Tower",
+        "service": "Cooling Tower Cell B",
+        "criticality": "MEDIUM"
+      },
+      "CT-103": {
+        "domain": "Utilities",
+        "unit": "UTY",
+        "asset_type": "Induced Draft Cooling Tower",
+        "service": "Cooling Tower Cell C",
+        "criticality": "MEDIUM"
+      },
+      "P-401": {
+        "domain": "Process & Production",
+        "unit": "UTY",
+        "asset_type": "Vertical Turbine Pump",
+        "service": "Cooling Water Pump A",
+        "criticality": "HIGH"
+      },
+      "P-402": {
+        "domain": "Process & Production",
+        "unit": "UTY",
+        "asset_type": "Vertical Turbine Pump",
+        "service": "Cooling Water Pump B",
+        "criticality": "HIGH"
+      },
+      "P-403": {
+        "domain": "Process & Production",
+        "unit": "UTY",
+        "asset_type": "Vertical Turbine Pump",
+        "service": "Cooling Water Pump C",
+        "criticality": "MEDIUM"
+      },
+      "AC-101": {
+        "domain": "Instrumentation & Control",
+        "unit": "UTY",
+        "asset_type": "Oil-Free Screw Compressor",
+        "service": "Instrument Air Compressor A",
+        "criticality": "HIGH"
+      },
+      "AC-102": {
+        "domain": "Instrumentation & Control",
+        "unit": "UTY",
+        "asset_type": "Oil-Free Screw Compressor",
+        "service": "Instrument Air Compressor B",
+        "criticality": "HIGH"
+      },
+      "AC-103": {
+        "domain": "Instrumentation & Control",
+        "unit": "UTY",
+        "asset_type": "Oil-Free Screw Compressor",
+        "service": "Instrument Air Compressor C",
+        "criticality": "MEDIUM"
+      },
+      "TK-101": {
+        "domain": "Storage & Handling",
+        "unit": "TKF",
+        "asset_type": "Storage Tank",
+        "service": "Crude Oil Storage Tank A",
+        "criticality": "HIGH"
+      },
+      "TK-102": {
+        "domain": "Storage & Handling",
+        "unit": "TKF",
+        "asset_type": "Storage Tank",
+        "service": "Crude Oil Storage Tank B",
+        "criticality": "HIGH"
+      },
+      "TK-103": {
+        "domain": "Storage & Handling",
+        "unit": "TKF",
+        "asset_type": "Storage Tank",
+        "service": "Intermediate Product Tank",
+        "criticality": "MEDIUM"
+      },
+      "TK-104": {
+        "domain": "Storage & Handling",
+        "unit": "TKF",
+        "asset_type": "Storage Tank",
+        "service": "Diesel Storage Tank A",
+        "criticality": "HIGH"
+      },
+      "TK-105": {
+        "domain": "Storage & Handling",
+        "unit": "TKF",
+        "asset_type": "Storage Tank",
+        "service": "Diesel Storage Tank B",
+        "criticality": "HIGH"
+      },
+      "TK-106": {
+        "domain": "Storage & Handling",
+        "unit": "TKF",
+        "asset_type": "Storage Tank",
+        "service": "Naphtha Storage Tank",
+        "criticality": "HIGH"
+      },
+      "TK-107": {
+        "domain": "Storage & Handling",
+        "unit": "TKF",
+        "asset_type": "Storage Tank",
+        "service": "ATF Storage Tank",
+        "criticality": "HIGH"
+      },
+      "TK-108": {
+        "domain": "Storage & Handling",
+        "unit": "TKF",
+        "asset_type": "Storage Tank",
+        "service": "Fuel Oil Storage Tank",
+        "criticality": "MEDIUM"
+      },
+      "TK-109": {
+        "domain": "Storage & Handling",
+        "unit": "TKF",
+        "asset_type": "Storage Tank",
+        "service": "Slop Oil Tank",
+        "criticality": "MEDIUM"
+      },
+      "TK-110": {
+        "domain": "Safety & Emergency Systems",
+        "unit": "TKF",
+        "asset_type": "Storage Tank",
+        "service": "Firewater Storage Tank",
+        "criticality": "HIGH"
+      },
+      "P-501": {
+        "domain": "Process & Production",
+        "unit": "TKF",
+        "asset_type": "Centrifugal Pump",
+        "service": "Crude Transfer Pump A",
+        "criticality": "HIGH"
+      },
+      "P-502": {
+        "domain": "Process & Production",
+        "unit": "TKF",
+        "asset_type": "Centrifugal Pump",
+        "service": "Crude Transfer Pump B",
+        "criticality": "HIGH"
+      },
+      "P-503": {
+        "domain": "Process & Production",
+        "unit": "TKF",
+        "asset_type": "Centrifugal Pump",
+        "service": "Diesel Transfer Pump",
+        "criticality": "MEDIUM"
+      },
+      "P-504": {
+        "domain": "Process & Production",
+        "unit": "TKF",
+        "asset_type": "Centrifugal Pump",
+        "service": "Naphtha Transfer Pump",
+        "criticality": "HIGH"
+      },
+      "TR-101": {
+        "domain": "Electrical Systems",
+        "unit": "ELEC",
+        "asset_type": "Power Transformer",
+        "service": "Main Refinery Transformer A",
+        "criticality": "HIGH"
+      },
+      "TR-102": {
+        "domain": "Electrical Systems",
+        "unit": "ELEC",
+        "asset_type": "Power Transformer",
+        "service": "Main Refinery Transformer B",
+        "criticality": "HIGH"
+      },
+      "TR-103": {
+        "domain": "Electrical Systems",
+        "unit": "CDU-4",
+        "asset_type": "Power Transformer",
+        "service": "CDU-4 Transformer",
+        "criticality": "HIGH"
+      },
+      "TR-104": {
+        "domain": "Electrical Systems",
+        "unit": "HDS-1",
+        "asset_type": "Power Transformer",
+        "service": "HDS-1 Transformer",
+        "criticality": "HIGH"
+      },
+      "TR-105": {
+        "domain": "Electrical Systems",
+        "unit": "UTY",
+        "asset_type": "Power Transformer",
+        "service": "Utility Transformer",
+        "criticality": "MEDIUM"
+      },
+      "MCC-101": {
+        "domain": "Electrical Systems",
+        "unit": "CDU-4",
+        "asset_type": "MCC Panel",
+        "service": "CDU-4 Motor Control Center",
+        "criticality": "HIGH"
+      },
+      "MCC-102": {
+        "domain": "Electrical Systems",
+        "unit": "HDS-1",
+        "asset_type": "MCC Panel",
+        "service": "HDS-1 Motor Control Center",
+        "criticality": "HIGH"
+      },
+      "MCC-103": {
+        "domain": "Electrical Systems",
+        "unit": "UTY",
+        "asset_type": "MCC Panel",
+        "service": "Utility Motor Control Center",
+        "criticality": "MEDIUM"
+      },
+      "FWP-101": {
+        "domain": "Safety & Emergency Systems",
+        "unit": "FIRE",
+        "asset_type": "Electric Firewater Pump",
+        "service": "Firewater Pump A",
+        "criticality": "HIGH"
+      },
+      "FWP-102": {
+        "domain": "Safety & Emergency Systems",
+        "unit": "FIRE",
+        "asset_type": "Electric Firewater Pump",
+        "service": "Firewater Pump B",
+        "criticality": "HIGH"
+      },
+      "FWP-103": {
+        "domain": "Safety & Emergency Systems",
+        "unit": "FIRE",
+        "asset_type": "Diesel Firewater Pump",
+        "service": "Diesel Firewater Pump",
+        "criticality": "HIGH"
+      },
+      "PT-101": {
+        "domain": "Instrumentation & Control",
+        "unit": "CDU-4",
+        "asset_type": "Pressure Transmitter",
+        "service": "CDU-4 Column Overhead Pressure Transmitter",
+        "criticality": "HIGH"
+      },
+      "PT-201": {
+        "domain": "Instrumentation & Control",
+        "unit": "HDS-1",
+        "asset_type": "Pressure Transmitter",
+        "service": "HDS Reactor Pressure Transmitter",
+        "criticality": "HIGH"
+      },
+      "PT-202": {
+        "domain": "Instrumentation & Control",
+        "unit": "HDS-1",
+        "asset_type": "Pressure Transmitter",
+        "service": "HDS Separator Pressure Transmitter",
+        "criticality": "HIGH"
+      },
+      "PT-301": {
+        "domain": "Instrumentation & Control",
+        "unit": "HGU-1",
+        "asset_type": "Pressure Transmitter",
+        "service": "HGU Hydrogen Header Pressure Transmitter",
+        "criticality": "HIGH"
+      },
+      "TT-101": {
+        "domain": "Instrumentation & Control",
+        "unit": "CDU-4",
+        "asset_type": "Temperature Transmitter",
+        "service": "CDU-4 Heater Outlet Temperature Transmitter",
+        "criticality": "HIGH"
+      },
+      "TT-201": {
+        "domain": "Instrumentation & Control",
+        "unit": "HDS-1",
+        "asset_type": "Temperature Transmitter",
+        "service": "HDS Reactor Temperature Transmitter",
+        "criticality": "HIGH"
+      },
+      "TT-202": {
+        "domain": "Instrumentation & Control",
+        "unit": "HDS-1",
+        "asset_type": "Temperature Transmitter",
+        "service": "HDS Effluent Temperature Transmitter",
+        "criticality": "MEDIUM"
+      },
+      "TT-301": {
+        "domain": "Instrumentation & Control",
+        "unit": "HGU-1",
+        "asset_type": "Temperature Transmitter",
+        "service": "HGU Reformer Outlet Temperature Transmitter",
+        "criticality": "HIGH"
+      },
+      "FT-101": {
+        "domain": "Instrumentation & Control",
+        "unit": "CDU-4",
+        "asset_type": "Flow Transmitter",
+        "service": "CDU-4 Crude Feed Flow Transmitter",
+        "criticality": "HIGH"
+      },
+      "FT-102": {
+        "domain": "Instrumentation & Control",
+        "unit": "CDU-4",
+        "asset_type": "Flow Transmitter",
+        "service": "CDU-4 Reflux Flow Transmitter",
+        "criticality": "MEDIUM"
+      },
+      "FT-201": {
+        "domain": "Instrumentation & Control",
+        "unit": "HDS-1",
+        "asset_type": "Flow Transmitter",
+        "service": "HDS Feed Flow Transmitter",
+        "criticality": "HIGH"
+      },
+      "FT-202": {
+        "domain": "Instrumentation & Control",
+        "unit": "HDS-1",
+        "asset_type": "Flow Transmitter",
+        "service": "HDS Hydrogen Flow Transmitter",
+        "criticality": "HIGH"
+      },
+      "LT-101": {
+        "domain": "Instrumentation & Control",
+        "unit": "CDU-4",
+        "asset_type": "Level Transmitter",
+        "service": "CDU-4 Reflux Drum Level Transmitter",
+        "criticality": "HIGH"
+      },
+      "LT-102": {
+        "domain": "Instrumentation & Control",
+        "unit": "CDU-4",
+        "asset_type": "Level Transmitter",
+        "service": "CDU-4 Bottoms Drum Level Transmitter",
+        "criticality": "MEDIUM"
+      },
+      "LT-201": {
+        "domain": "Instrumentation & Control",
+        "unit": "HDS-1",
+        "asset_type": "Level Transmitter",
+        "service": "HDS High Pressure Separator Level Transmitter",
+        "criticality": "HIGH"
+      },
+      "LT-202": {
+        "domain": "Instrumentation & Control",
+        "unit": "HDS-1",
+        "asset_type": "Level Transmitter",
+        "service": "HDS Low Pressure Separator Level Transmitter",
+        "criticality": "MEDIUM"
+      },
+      "GD-101": {
+        "domain": "Instrumentation & Control",
+        "unit": "CDU-4",
+        "asset_type": "Gas Detector",
+        "service": "CDU-4 Hydrocarbon Gas Detector North",
+        "criticality": "HIGH"
+      },
+      "GD-102": {
+        "domain": "Instrumentation & Control",
+        "unit": "CDU-4",
+        "asset_type": "Gas Detector",
+        "service": "CDU-4 Hydrocarbon Gas Detector South",
+        "criticality": "HIGH"
+      },
+      "GD-103": {
+        "domain": "Instrumentation & Control",
+        "unit": "HDS-1",
+        "asset_type": "Gas Detector",
+        "service": "HDS Hydrogen Gas Detector",
+        "criticality": "HIGH"
+      },
+      "GD-104": {
+        "domain": "Instrumentation & Control",
+        "unit": "HGU-1",
+        "asset_type": "Gas Detector",
+        "service": "HGU Hydrogen Gas Detector",
+        "criticality": "HIGH"
+      }
+    }
+  },
+  "notes": [
+    "Hierarchy is generated from the current master asset register.",
+    "No new asset IDs were invented during hierarchy generation.",
+    "Domain grouping is a logical classification layer for navigation and retrieval.",
+    "This file can later be extended with parent-child dependencies, process streams and document relationships."
+  ]
+}

@@ -1,0 +1,25 @@
+Employee ID,Name,Department,Job Title,Function,Location,Employment Type,Join Date,Work Email,Grade,Status
+APEL0001,Arjun Mehta,Refinery Operations,Senior Process Engineer,Engineering,Jamnagar Refinery Complex,Permanent,2021-04-12,arjun.mehta@MRPL.example,L4,Active
+APEL0002,Priya Nair,Human Resources,HR Manager,HR,Corporate / Jamnagar,Permanent,2020-08-17,priya.nair@MRPL.example,L5,Active
+APEL0003,Rohan Shah,Maintenance,Maintenance Engineer,Maintenance,Jamnagar Refinery Complex,Permanent,2022-01-10,rohan.shah@MRPL.example,L4,Active
+APEL0004,Neha Iyer,Finance,Finance Analyst,Finance,Corporate / Mumbai,Permanent,2023-06-05,neha.iyer@MRPL.example,L3,Active
+APEL0005,Vikram Desai,Instrumentation & Control,Control Systems Engineer,Engineering,Jamnagar Refinery Complex,Permanent,2021-11-22,vikram.desai@MRPL.example,L4,Active
+APEL0006,Kavya Rao,"Health, Safety & Environment",HSE Specialist,HSE,Jamnagar Refinery Complex,Permanent,2022-09-19,kavya.rao@MRPL.example,L4,Active
+APEL0007,Sanjay Patel,Procurement,Procurement Lead,Supply Chain,Corporate / Jamnagar,Permanent,2019-03-25,sanjay.patel@MRPL.example,L5,Active
+APEL0008,Ananya Kapoor,Information Technology,IT Systems Administrator,IT,Corporate / Jamnagar,Permanent,2024-02-12,ananya.kapoor@MRPL.example,L3,Active
+APEL0009,Manish Joshi,Quality Assurance,QA Engineer,Quality,Jamnagar Refinery Complex,Permanent,2023-10-02,manish.joshi@MRPL.example,L3,Active
+APEL0010,Divya Menon,Laboratory Services,Senior Laboratory Analyst,Laboratory,Jamnagar Refinery Complex,Permanent,2020-12-07,divya.menon@MRPL.example,L4,Active
+APEL0011,Aditya Kulkarni,Project Engineering,Project Engineer,Projects,Jamnagar Refinery Complex,Permanent,2022-05-16,aditya.kulkarni@MRPL.example,L4,Active
+APEL0012,Meera Thomas,Corporate Legal,Legal Counsel,Legal,Corporate / Mumbai,Permanent,2021-07-26,meera.thomas@MRPL.example,L5,Active
+APEL0013,Rahul Verma,Supply Chain,Materials Planner,Supply Chain,Jamnagar Refinery Complex,Permanent,2024-07-01,rahul.verma@MRPL.example,L3,Active
+APEL0014,Ishita Bose,Corporate Communications,Communications Specialist,Corporate Affairs,Corporate / Mumbai,Permanent,2023-01-23,ishita.bose@MRPL.example,L3,Active
+APEL0015,Nitin Rao,Refinery Operations,Shift Operations Supervisor,Operations,Jamnagar Refinery Complex,Permanent,2018-10-15,nitin.rao@MRPL.example,L5,Active
+APEL0016,Pooja Singh,Talent & Learning,Learning & Development Specialist,HR,Corporate / Jamnagar,Permanent,2022-03-14,pooja.singh@MRPL.example,L3,Active
+APEL0017,Karan Malhotra,Cybersecurity,Security Analyst,IT,Corporate / Jamnagar,Permanent,2023-08-21,karan.malhotra@MRPL.example,L3,Active
+APEL0018,Sneha Reddy,Environmental Compliance,Environmental Engineer,HSE,Jamnagar Refinery Complex,Permanent,2021-09-13,sneha.reddy@MRPL.example,L4,Active
+APEL0019,Amit Sethi,Reliability Engineering,Reliability Engineer,Engineering,Jamnagar Refinery Complex,Permanent,2020-05-11,amit.sethi@MRPL.example,L4,Active
+APEL0020,Lakshmi Krishnan,Administration,Facilities Coordinator,Administration,Corporate / Jamnagar,Permanent,2024-01-08,lakshmi.krishnan@MRPL.example,L3,Active
+APEL0021,Farhan Ali,Turnaround Planning,Turnaround Planner,Projects,Jamnagar Refinery Complex,Permanent,2022-11-28,farhan.ali@MRPL.example,L4,Active
+APEL0022,Simran Kaur,Compensation & Benefits,Compensation Analyst,HR,Corporate / Jamnagar,Permanent,2023-04-17,simran.kaur@MRPL.example,L3,Active
+APEL0023,Devendra Rao,Rotating Equipment,Rotating Equipment Engineer,Maintenance,Jamnagar Refinery Complex,Permanent,2019-11-04,devendra.rao@MRPL.example,L4,Active
+APEL0024,Tanvi Shah,Recruitment,Talent Acquisition Specialist,HR,Corporate / Jamnagar,Permanent,2024-09-09,tanvi.shah@MRPL.example,L3,Active

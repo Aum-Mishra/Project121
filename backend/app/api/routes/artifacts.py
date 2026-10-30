@@ -117,10 +117,13 @@ async def download_artifact(artifact_id: str, db: Session = Depends(get_db)):
     elif artifact.artifact_type == ArtifactType.MD:
         media_type = "text/markdown"
 
+    safe_name = "".join(
+        c for c in artifact.name if c.isalnum() or c in (" ", "-", "_", ".")
+    ).strip() or artifact.artifact_id
     return Response(
         content=content,
         media_type=media_type,
-        headers={"Content-Disposition": f'attachment; filename="{artifact.name}.{artifact.artifact_type.value.lower()}"'}
+        headers={"Content-Disposition": f'attachment; filename="{safe_name}.{artifact.artifact_type.value.lower()}"'}
     )
 
 

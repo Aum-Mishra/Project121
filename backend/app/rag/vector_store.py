@@ -8,7 +8,7 @@ try:
     from qdrant_client import QdrantClient
     from qdrant_client.models import (
         Distance, VectorParams, PointStruct, Filter, FieldCondition,
-        MatchValue, PayloadSchemaType
+        MatchValue, MatchAny, PayloadSchemaType
     )
     QDRANT_AVAILABLE = True
 except ImportError:
@@ -66,6 +66,16 @@ class VectorStore:
                 field_name="classification",
                 field_schema=PayloadSchemaType.KEYWORD,
             )
+            self.client.create_payload_index(
+                collection_name=self.collection_name,
+                field_name="year",
+                field_schema=PayloadSchemaType.KEYWORD,
+            )
+            self.client.create_payload_index(
+                collection_name=self.collection_name,
+                field_name="department",
+                field_schema=PayloadSchemaType.KEYWORD,
+            )
         except Exception as e:
             logger.error("qdrant_create_collection_failed", error=str(e))
 
@@ -109,6 +119,16 @@ class VectorStore:
                     field_name="classification",
                     field_schema=PayloadSchemaType.KEYWORD,
                 )
+                self.client.create_payload_index(
+                    collection_name=self.collection_name,
+                    field_name="year",
+                    field_schema=PayloadSchemaType.KEYWORD,
+                )
+                self.client.create_payload_index(
+                    collection_name=self.collection_name,
+                    field_name="department",
+                    field_schema=PayloadSchemaType.KEYWORD,
+                )
             
             self.client.upsert(collection_name=self.collection_name, points=points)
             logger.info("points_upserted", count=len(points), collection=self.collection_name)
@@ -130,7 +150,13 @@ class VectorStore:
             filter_conditions = [FieldCondition(key="company_id", match=MatchValue(value=company_id))]
             if metadata_filter:
                 for key, value in metadata_filter.items():
-                    filter_conditions.append(FieldCondition(key=key, match=MatchValue(value=value)))
+                    if value is None:
+                        continue
+                    if isinstance(value, (list, tuple, set)):
+                        values = list(value)
+                        filter_conditions.append(FieldCondition(key=key, match=MatchAny(any=values)))
+                    else:
+                        filter_conditions.append(FieldCondition(key=key, match=MatchValue(value=value)))
 
             search_filter = Filter(must=filter_conditions) if filter_conditions else None
 

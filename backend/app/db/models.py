@@ -133,6 +133,38 @@ class User(Base):
     company = relationship("Company", back_populates="users")
 
 
+class ChatDocument(Base):
+    """Documents uploaded by a user into a specific conversation.
+
+    Scope is enforced server-side on (company_id, user_id, conversation_id) —
+    never trusted from the client. These documents live in a dedicated chat-only
+    Qdrant collection isolated from the permanent company RAG collection.
+    """
+    __tablename__ = "chat_documents"
+    id = Column(Integer, primary_key=True, index=True)
+    document_id = Column(String(100), unique=True, index=True, nullable=False)
+    company_id = Column(String(100), ForeignKey("companies.company_id"), nullable=False)
+    user_id = Column(Integer, ForeignKey("users.id"), nullable=False)
+    conversation_id = Column(String(100), index=True, nullable=False)
+    filename = Column(String(500), nullable=False)
+    file_size = Column(Integer, default=0)
+    file_type = Column(String(20))
+    mime_type = Column(String(120))
+    file_path = Column(String(1000))
+    page_count = Column(Integer, nullable=True)
+    chunk_count = Column(Integer, default=0)
+    status = Column(Enum(DocumentStatus), default=DocumentStatus.UPLOADING, nullable=False)
+    ocr_used = Column(Boolean, default=False)
+    preview = Column(Text, nullable=True)
+    error_message = Column(Text, nullable=True)
+    created_at = Column(DateTime, default=datetime.utcnow)
+    updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    __table_args__ = (
+        Index("ix_chat_documents_scope", "company_id", "user_id", "conversation_id"),
+    )
+
+
 class Company(Base):
     __tablename__ = "companies"
     company_id = Column(String(100), primary_key=True, index=True)

@@ -1,0 +1,76 @@
+{
+  "nodes": [
+    {
+      "id": "RC-ORG-01",
+      "name": "Commercial Production Quota Pressure",
+      "type": "Organizational"
+    },
+    {
+      "id": "RC-ORG-02",
+      "name": "Deferred Preventative Maintenance Policy",
+      "type": "Organizational"
+    },
+    {
+      "id": "RC-HUM-01",
+      "name": "Operator Alarm Fatigue & Cognitive Overload",
+      "type": "Human Factor"
+    },
+    {
+      "id": "RC-HUM-02",
+      "name": "Procedural Shortcut during Unit Switchover",
+      "type": "Human Factor"
+    },
+    {
+      "id": "RC-UTL-01",
+      "name": "External Grid Electrical Voltage Sag",
+      "type": "Utility"
+    },
+    {
+      "id": "RC-UTL-02",
+      "name": "Cooling Water Thermal Capacity Limitation",
+      "type": "Utility"
+    },
+    {
+      "id": "RC-ENV-01",
+      "name": "Severe Ambient Heatwave Excursion",
+      "type": "Environment"
+    },
+    {
+      "id": "RC-MCH-01",
+      "name": "Sub-surface Rolling Element Fatigue Spalling",
+      "type": "Physical Machinery"
+    },
+    {
+      "id": "RC-INS-01",
+      "name": "Instrument Impulse Line Clogging & Bias Drift",
+      "type": "Instrumentation"
+    }
+  ],
+  "edges": [
+    {
+      "source": "RC-ORG-01",
+      "target": "RC-ORG-02",
+      "relationship": "Drives"
+    },
+    {
+      "source": "RC-ORG-02",
+      "target": "RC-MCH-01",
+      "relationship": "Permits Acceleration of"
+    },
+    {
+      "source": "RC-ENV-01",
+      "target": "RC-UTL-02",
+      "relationship": "Imposes Heat Stress on"
+    },
+    {
+      "source": "RC-UTL-01",
+      "target": "RC-HUM-01",
+      "relationship": "Triggers Alarm Floods Inducing"
+    },
+    {
+      "source": "RC-HUM-01",
+      "target": "RC-HUM-02",
+      "relationship": "Increases Likelihood of"
+    }
+  ]
+}

@@ -1,0 +1,845 @@
+{
+  "total_scenarios": 105,
+  "scenarios": [
+    {
+      "Scenario_ID": "TEST-SCN-001",
+      "Title": "Mishap Prediction Benchmark #001: Pump Bearing Degradation & Seal Failure in CDU-4",
+      "Unit": "CDU-4",
+      "Asset": "TR-103",
+      "Archetype": "Pump Bearing Degradation & Seal Failure",
+      "File_Path": "scenario_001.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-002",
+      "Title": "Mishap Prediction Benchmark #002: Heat Exchanger Asphaltene Fouling & Furnace Overheating in ELEC",
+      "Unit": "ELEC",
+      "Asset": "TR-101",
+      "Archetype": "Heat Exchanger Asphaltene Fouling & Furnace Overheating",
+      "File_Path": "scenario_002.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-003",
+      "Title": "Mishap Prediction Benchmark #003: Wet Gas Compressor Secondary Seal Containment Threat in ELEC",
+      "Unit": "ELEC",
+      "Asset": "TR-102",
+      "Archetype": "Wet Gas Compressor Secondary Seal Containment Threat",
+      "File_Path": "scenario_003.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-004",
+      "Title": "Mishap Prediction Benchmark #004: Cooling Water Thermal Instability Cascade in HDS-1",
+      "Unit": "HDS-1",
+      "Asset": "MCC-102",
+      "Archetype": "Cooling Water Thermal Instability Cascade",
+      "File_Path": "scenario_004.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-005",
+      "Title": "Mishap Prediction Benchmark #005: Hydrocracker Catalyst Bed Thermal Runaway Precursor in HDS-1",
+      "Unit": "HDS-1",
+      "Asset": "TR-104",
+      "Archetype": "Hydrocracker Catalyst Bed Thermal Runaway Precursor",
+      "File_Path": "scenario_005.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-006",
+      "Title": "Mishap Prediction Benchmark #006: Pump Bearing Degradation & Seal Failure in UTY",
+      "Unit": "UTY",
+      "Asset": "MCC-103",
+      "Archetype": "Pump Bearing Degradation & Seal Failure",
+      "File_Path": "scenario_006.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-007",
+      "Title": "Mishap Prediction Benchmark #007: Heat Exchanger Asphaltene Fouling & Furnace Overheating in UTY",
+      "Unit": "UTY",
+      "Asset": "TR-105",
+      "Archetype": "Heat Exchanger Asphaltene Fouling & Furnace Overheating",
+      "File_Path": "scenario_007.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-008",
+      "Title": "Mishap Prediction Benchmark #008: Wet Gas Compressor Secondary Seal Containment Threat in CDU-4",
+      "Unit": "CDU-4",
+      "Asset": "FT-101",
+      "Archetype": "Wet Gas Compressor Secondary Seal Containment Threat",
+      "File_Path": "scenario_008.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-009",
+      "Title": "Mishap Prediction Benchmark #009: Cooling Water Thermal Instability Cascade in CDU-4",
+      "Unit": "CDU-4",
+      "Asset": "FT-102",
+      "Archetype": "Cooling Water Thermal Instability Cascade",
+      "File_Path": "scenario_009.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-010",
+      "Title": "Mishap Prediction Benchmark #010: Hydrocracker Catalyst Bed Thermal Runaway Precursor in CDU-4",
+      "Unit": "CDU-4",
+      "Asset": "FT-210",
+      "Archetype": "Hydrocracker Catalyst Bed Thermal Runaway Precursor",
+      "File_Path": "scenario_010.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-011",
+      "Title": "Mishap Prediction Benchmark #011: Pump Bearing Degradation & Seal Failure in CDU-4",
+      "Unit": "CDU-4",
+      "Asset": "GD-101",
+      "Archetype": "Pump Bearing Degradation & Seal Failure",
+      "File_Path": "scenario_011.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-012",
+      "Title": "Mishap Prediction Benchmark #012: Heat Exchanger Asphaltene Fouling & Furnace Overheating in CDU-4",
+      "Unit": "CDU-4",
+      "Asset": "GD-102",
+      "Archetype": "Heat Exchanger Asphaltene Fouling & Furnace Overheating",
+      "File_Path": "scenario_012.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-013",
+      "Title": "Mishap Prediction Benchmark #013: Wet Gas Compressor Secondary Seal Containment Threat in CDU-4",
+      "Unit": "CDU-4",
+      "Asset": "LT-101",
+      "Archetype": "Wet Gas Compressor Secondary Seal Containment Threat",
+      "File_Path": "scenario_013.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-014",
+      "Title": "Mishap Prediction Benchmark #014: Cooling Water Thermal Instability Cascade in CDU-4",
+      "Unit": "CDU-4",
+      "Asset": "LT-102",
+      "Archetype": "Cooling Water Thermal Instability Cascade",
+      "File_Path": "scenario_014.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-015",
+      "Title": "Mishap Prediction Benchmark #015: Hydrocracker Catalyst Bed Thermal Runaway Precursor in CDU-4",
+      "Unit": "CDU-4",
+      "Asset": "PSV-102",
+      "Archetype": "Hydrocracker Catalyst Bed Thermal Runaway Precursor",
+      "File_Path": "scenario_015.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-016",
+      "Title": "Mishap Prediction Benchmark #016: Pump Bearing Degradation & Seal Failure in CDU-4",
+      "Unit": "CDU-4",
+      "Asset": "PT-101",
+      "Archetype": "Pump Bearing Degradation & Seal Failure",
+      "File_Path": "scenario_016.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-017",
+      "Title": "Mishap Prediction Benchmark #017: Heat Exchanger Asphaltene Fouling & Furnace Overheating in CDU-4",
+      "Unit": "CDU-4",
+      "Asset": "PT-102",
+      "Archetype": "Heat Exchanger Asphaltene Fouling & Furnace Overheating",
+      "File_Path": "scenario_017.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-018",
+      "Title": "Mishap Prediction Benchmark #018: Wet Gas Compressor Secondary Seal Containment Threat in CDU-4",
+      "Unit": "CDU-4",
+      "Asset": "V-101",
+      "Archetype": "Wet Gas Compressor Secondary Seal Containment Threat",
+      "File_Path": "scenario_018.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-019",
+      "Title": "Mishap Prediction Benchmark #019: Cooling Water Thermal Instability Cascade in CDU-4",
+      "Unit": "CDU-4",
+      "Asset": "V-201",
+      "Archetype": "Cooling Water Thermal Instability Cascade",
+      "File_Path": "scenario_019.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-020",
+      "Title": "Mishap Prediction Benchmark #020: Hydrocracker Catalyst Bed Thermal Runaway Precursor in CDU-4",
+      "Unit": "CDU-4",
+      "Asset": "V-220",
+      "Archetype": "Hydrocracker Catalyst Bed Thermal Runaway Precursor",
+      "File_Path": "scenario_020.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-021",
+      "Title": "Mishap Prediction Benchmark #021: Pump Bearing Degradation & Seal Failure in CDU-4",
+      "Unit": "CDU-4",
+      "Asset": "TT-101",
+      "Archetype": "Pump Bearing Degradation & Seal Failure",
+      "File_Path": "scenario_021.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-022",
+      "Title": "Mishap Prediction Benchmark #022: Heat Exchanger Asphaltene Fouling & Furnace Overheating in CDU-4",
+      "Unit": "CDU-4",
+      "Asset": "TT-102",
+      "Archetype": "Heat Exchanger Asphaltene Fouling & Furnace Overheating",
+      "File_Path": "scenario_022.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-023",
+      "Title": "Mishap Prediction Benchmark #023: Wet Gas Compressor Secondary Seal Containment Threat in HCU-1",
+      "Unit": "HCU-1",
+      "Asset": "V-501",
+      "Archetype": "Wet Gas Compressor Secondary Seal Containment Threat",
+      "File_Path": "scenario_023.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-024",
+      "Title": "Mishap Prediction Benchmark #024: Cooling Water Thermal Instability Cascade in HDS-1",
+      "Unit": "HDS-1",
+      "Asset": "FT-201",
+      "Archetype": "Cooling Water Thermal Instability Cascade",
+      "File_Path": "scenario_024.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-025",
+      "Title": "Mishap Prediction Benchmark #025: Hydrocracker Catalyst Bed Thermal Runaway Precursor in HDS-1",
+      "Unit": "HDS-1",
+      "Asset": "FT-202",
+      "Archetype": "Hydrocracker Catalyst Bed Thermal Runaway Precursor",
+      "File_Path": "scenario_025.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-026",
+      "Title": "Mishap Prediction Benchmark #026: Pump Bearing Degradation & Seal Failure in HDS-1",
+      "Unit": "HDS-1",
+      "Asset": "GD-103",
+      "Archetype": "Pump Bearing Degradation & Seal Failure",
+      "File_Path": "scenario_026.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-027",
+      "Title": "Mishap Prediction Benchmark #027: Heat Exchanger Asphaltene Fouling & Furnace Overheating in HDS-1",
+      "Unit": "HDS-1",
+      "Asset": "P-202",
+      "Archetype": "Heat Exchanger Asphaltene Fouling & Furnace Overheating",
+      "File_Path": "scenario_027.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-028",
+      "Title": "Mishap Prediction Benchmark #028: Wet Gas Compressor Secondary Seal Containment Threat in HDS-1",
+      "Unit": "HDS-1",
+      "Asset": "LT-201",
+      "Archetype": "Wet Gas Compressor Secondary Seal Containment Threat",
+      "File_Path": "scenario_028.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-029",
+      "Title": "Mishap Prediction Benchmark #029: Cooling Water Thermal Instability Cascade in HDS-1",
+      "Unit": "HDS-1",
+      "Asset": "LT-202",
+      "Archetype": "Cooling Water Thermal Instability Cascade",
+      "File_Path": "scenario_029.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-030",
+      "Title": "Mishap Prediction Benchmark #030: Hydrocracker Catalyst Bed Thermal Runaway Precursor in HDS-1",
+      "Unit": "HDS-1",
+      "Asset": "PT-201",
+      "Archetype": "Hydrocracker Catalyst Bed Thermal Runaway Precursor",
+      "File_Path": "scenario_030.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-031",
+      "Title": "Mishap Prediction Benchmark #031: Pump Bearing Degradation & Seal Failure in HDS-1",
+      "Unit": "HDS-1",
+      "Asset": "PT-202",
+      "Archetype": "Pump Bearing Degradation & Seal Failure",
+      "File_Path": "scenario_031.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-032",
+      "Title": "Mishap Prediction Benchmark #032: Heat Exchanger Asphaltene Fouling & Furnace Overheating in HDS-1",
+      "Unit": "HDS-1",
+      "Asset": "V-202",
+      "Archetype": "Heat Exchanger Asphaltene Fouling & Furnace Overheating",
+      "File_Path": "scenario_032.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-033",
+      "Title": "Mishap Prediction Benchmark #033: Wet Gas Compressor Secondary Seal Containment Threat in HDS-1",
+      "Unit": "HDS-1",
+      "Asset": "TT-201",
+      "Archetype": "Wet Gas Compressor Secondary Seal Containment Threat",
+      "File_Path": "scenario_033.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-034",
+      "Title": "Mishap Prediction Benchmark #034: Cooling Water Thermal Instability Cascade in HDS-1",
+      "Unit": "HDS-1",
+      "Asset": "TT-202",
+      "Archetype": "Cooling Water Thermal Instability Cascade",
+      "File_Path": "scenario_034.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-035",
+      "Title": "Mishap Prediction Benchmark #035: Hydrocracker Catalyst Bed Thermal Runaway Precursor in HGU-1",
+      "Unit": "HGU-1",
+      "Asset": "GD-104",
+      "Archetype": "Hydrocracker Catalyst Bed Thermal Runaway Precursor",
+      "File_Path": "scenario_035.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-036",
+      "Title": "Mishap Prediction Benchmark #036: Pump Bearing Degradation & Seal Failure in HGU-1",
+      "Unit": "HGU-1",
+      "Asset": "PT-301",
+      "Archetype": "Pump Bearing Degradation & Seal Failure",
+      "File_Path": "scenario_036.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-037",
+      "Title": "Mishap Prediction Benchmark #037: Heat Exchanger Asphaltene Fouling & Furnace Overheating in HGU-1",
+      "Unit": "HGU-1",
+      "Asset": "TT-301",
+      "Archetype": "Heat Exchanger Asphaltene Fouling & Furnace Overheating",
+      "File_Path": "scenario_037.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-038",
+      "Title": "Mishap Prediction Benchmark #038: Wet Gas Compressor Secondary Seal Containment Threat in UTY",
+      "Unit": "UTY",
+      "Asset": "AC-101",
+      "Archetype": "Wet Gas Compressor Secondary Seal Containment Threat",
+      "File_Path": "scenario_038.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-039",
+      "Title": "Mishap Prediction Benchmark #039: Cooling Water Thermal Instability Cascade in UTY",
+      "Unit": "UTY",
+      "Asset": "AC-102",
+      "Archetype": "Cooling Water Thermal Instability Cascade",
+      "File_Path": "scenario_039.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-040",
+      "Title": "Mishap Prediction Benchmark #040: Hydrocracker Catalyst Bed Thermal Runaway Precursor in UTY",
+      "Unit": "UTY",
+      "Asset": "AC-103",
+      "Archetype": "Hydrocracker Catalyst Bed Thermal Runaway Precursor",
+      "File_Path": "scenario_040.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-041",
+      "Title": "Mishap Prediction Benchmark #041: Pump Bearing Degradation & Seal Failure in CDU-4",
+      "Unit": "CDU-4",
+      "Asset": "P-102",
+      "Archetype": "Pump Bearing Degradation & Seal Failure",
+      "File_Path": "scenario_041.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-042",
+      "Title": "Mishap Prediction Benchmark #042: Heat Exchanger Asphaltene Fouling & Furnace Overheating in CDU-4",
+      "Unit": "CDU-4",
+      "Asset": "P-101",
+      "Archetype": "Heat Exchanger Asphaltene Fouling & Furnace Overheating",
+      "File_Path": "scenario_042.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-043",
+      "Title": "Mishap Prediction Benchmark #043: Wet Gas Compressor Secondary Seal Containment Threat in CDU-4",
+      "Unit": "CDU-4",
+      "Asset": "P-103",
+      "Archetype": "Wet Gas Compressor Secondary Seal Containment Threat",
+      "File_Path": "scenario_043.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-044",
+      "Title": "Mishap Prediction Benchmark #044: Cooling Water Thermal Instability Cascade in CDU-4",
+      "Unit": "CDU-4",
+      "Asset": "P-104",
+      "Archetype": "Cooling Water Thermal Instability Cascade",
+      "File_Path": "scenario_044.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-045",
+      "Title": "Mishap Prediction Benchmark #045: Hydrocracker Catalyst Bed Thermal Runaway Precursor in CDU-4",
+      "Unit": "CDU-4",
+      "Asset": "P-105",
+      "Archetype": "Hydrocracker Catalyst Bed Thermal Runaway Precursor",
+      "File_Path": "scenario_045.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-046",
+      "Title": "Mishap Prediction Benchmark #046: Pump Bearing Degradation & Seal Failure in CDU-4",
+      "Unit": "CDU-4",
+      "Asset": "P-106",
+      "Archetype": "Pump Bearing Degradation & Seal Failure",
+      "File_Path": "scenario_046.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-047",
+      "Title": "Mishap Prediction Benchmark #047: Heat Exchanger Asphaltene Fouling & Furnace Overheating in CDU-4",
+      "Unit": "CDU-4",
+      "Asset": "P-107",
+      "Archetype": "Heat Exchanger Asphaltene Fouling & Furnace Overheating",
+      "File_Path": "scenario_047.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-048",
+      "Title": "Mishap Prediction Benchmark #048: Wet Gas Compressor Secondary Seal Containment Threat in CDU-4",
+      "Unit": "CDU-4",
+      "Asset": "P-108",
+      "Archetype": "Wet Gas Compressor Secondary Seal Containment Threat",
+      "File_Path": "scenario_048.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-049",
+      "Title": "Mishap Prediction Benchmark #049: Cooling Water Thermal Instability Cascade in CDU-4",
+      "Unit": "CDU-4",
+      "Asset": "T-101",
+      "Archetype": "Cooling Water Thermal Instability Cascade",
+      "File_Path": "scenario_049.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-050",
+      "Title": "Mishap Prediction Benchmark #050: Hydrocracker Catalyst Bed Thermal Runaway Precursor in CDU-4",
+      "Unit": "CDU-4",
+      "Asset": "D-410",
+      "Archetype": "Hydrocracker Catalyst Bed Thermal Runaway Precursor",
+      "File_Path": "scenario_050.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-051",
+      "Title": "Mishap Prediction Benchmark #051: Pump Bearing Degradation & Seal Failure in CDU-4",
+      "Unit": "CDU-4",
+      "Asset": "M-102",
+      "Archetype": "Pump Bearing Degradation & Seal Failure",
+      "File_Path": "scenario_051.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-052",
+      "Title": "Mishap Prediction Benchmark #052: Heat Exchanger Asphaltene Fouling & Furnace Overheating in CDU-4",
+      "Unit": "CDU-4",
+      "Asset": "XV-410",
+      "Archetype": "Heat Exchanger Asphaltene Fouling & Furnace Overheating",
+      "File_Path": "scenario_052.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-053",
+      "Title": "Mishap Prediction Benchmark #053: Wet Gas Compressor Secondary Seal Containment Threat in CDU-4",
+      "Unit": "CDU-4",
+      "Asset": "V-102",
+      "Archetype": "Wet Gas Compressor Secondary Seal Containment Threat",
+      "File_Path": "scenario_053.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-054",
+      "Title": "Mishap Prediction Benchmark #054: Cooling Water Thermal Instability Cascade in CDU-4",
+      "Unit": "CDU-4",
+      "Asset": "E-205",
+      "Archetype": "Cooling Water Thermal Instability Cascade",
+      "File_Path": "scenario_054.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-055",
+      "Title": "Mishap Prediction Benchmark #055: Hydrocracker Catalyst Bed Thermal Runaway Precursor in CDU-4",
+      "Unit": "CDU-4",
+      "Asset": "E-206",
+      "Archetype": "Hydrocracker Catalyst Bed Thermal Runaway Precursor",
+      "File_Path": "scenario_055.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-056",
+      "Title": "Mishap Prediction Benchmark #056: Pump Bearing Degradation & Seal Failure in CDU-4",
+      "Unit": "CDU-4",
+      "Asset": "E-207",
+      "Archetype": "Pump Bearing Degradation & Seal Failure",
+      "File_Path": "scenario_056.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-057",
+      "Title": "Mishap Prediction Benchmark #057: Heat Exchanger Asphaltene Fouling & Furnace Overheating in CDU-4",
+      "Unit": "CDU-4",
+      "Asset": "E-203",
+      "Archetype": "Heat Exchanger Asphaltene Fouling & Furnace Overheating",
+      "File_Path": "scenario_057.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-058",
+      "Title": "Mishap Prediction Benchmark #058: Wet Gas Compressor Secondary Seal Containment Threat in CDU-4",
+      "Unit": "CDU-4",
+      "Asset": "E-204",
+      "Archetype": "Wet Gas Compressor Secondary Seal Containment Threat",
+      "File_Path": "scenario_058.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-059",
+      "Title": "Mishap Prediction Benchmark #059: Cooling Water Thermal Instability Cascade in CDU-4",
+      "Unit": "CDU-4",
+      "Asset": "E-301",
+      "Archetype": "Cooling Water Thermal Instability Cascade",
+      "File_Path": "scenario_059.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-060",
+      "Title": "Mishap Prediction Benchmark #060: Hydrocracker Catalyst Bed Thermal Runaway Precursor in CDU-4",
+      "Unit": "CDU-4",
+      "Asset": "E-315",
+      "Archetype": "Hydrocracker Catalyst Bed Thermal Runaway Precursor",
+      "File_Path": "scenario_060.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-061",
+      "Title": "Mishap Prediction Benchmark #061: Pump Bearing Degradation & Seal Failure in DISP-1",
+      "Unit": "DISP-1",
+      "Asset": "P-601",
+      "Archetype": "Pump Bearing Degradation & Seal Failure",
+      "File_Path": "scenario_061.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-062",
+      "Title": "Mishap Prediction Benchmark #062: Heat Exchanger Asphaltene Fouling & Furnace Overheating in HCU-1",
+      "Unit": "HCU-1",
+      "Asset": "C-301",
+      "Archetype": "Heat Exchanger Asphaltene Fouling & Furnace Overheating",
+      "File_Path": "scenario_062.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-063",
+      "Title": "Mishap Prediction Benchmark #063: Wet Gas Compressor Secondary Seal Containment Threat in HCU-1",
+      "Unit": "HCU-1",
+      "Asset": "P-201",
+      "Archetype": "Wet Gas Compressor Secondary Seal Containment Threat",
+      "File_Path": "scenario_063.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-064",
+      "Title": "Mishap Prediction Benchmark #064: Cooling Water Thermal Instability Cascade in HDS-1",
+      "Unit": "HDS-1",
+      "Asset": "E-302",
+      "Archetype": "Cooling Water Thermal Instability Cascade",
+      "File_Path": "scenario_064.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-065",
+      "Title": "Mishap Prediction Benchmark #065: Hydrocracker Catalyst Bed Thermal Runaway Precursor in HDS-1",
+      "Unit": "HDS-1",
+      "Asset": "C-201",
+      "Archetype": "Hydrocracker Catalyst Bed Thermal Runaway Precursor",
+      "File_Path": "scenario_065.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-066",
+      "Title": "Mishap Prediction Benchmark #066: Pump Bearing Degradation & Seal Failure in HDS-1",
+      "Unit": "HDS-1",
+      "Asset": "P-203",
+      "Archetype": "Pump Bearing Degradation & Seal Failure",
+      "File_Path": "scenario_066.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-067",
+      "Title": "Mishap Prediction Benchmark #067: Heat Exchanger Asphaltene Fouling & Furnace Overheating in HDS-1",
+      "Unit": "HDS-1",
+      "Asset": "P-204",
+      "Archetype": "Heat Exchanger Asphaltene Fouling & Furnace Overheating",
+      "File_Path": "scenario_067.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-068",
+      "Title": "Mishap Prediction Benchmark #068: Wet Gas Compressor Secondary Seal Containment Threat in HDS-1",
+      "Unit": "HDS-1",
+      "Asset": "R-201",
+      "Archetype": "Wet Gas Compressor Secondary Seal Containment Threat",
+      "File_Path": "scenario_068.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-069",
+      "Title": "Mishap Prediction Benchmark #069: Cooling Water Thermal Instability Cascade in HDS-1",
+      "Unit": "HDS-1",
+      "Asset": "R-501",
+      "Archetype": "Cooling Water Thermal Instability Cascade",
+      "File_Path": "scenario_069.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-070",
+      "Title": "Mishap Prediction Benchmark #070: Hydrocracker Catalyst Bed Thermal Runaway Precursor in HDS-1",
+      "Unit": "HDS-1",
+      "Asset": "C-202",
+      "Archetype": "Hydrocracker Catalyst Bed Thermal Runaway Precursor",
+      "File_Path": "scenario_070.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-071",
+      "Title": "Mishap Prediction Benchmark #071: Pump Bearing Degradation & Seal Failure in HDS-1",
+      "Unit": "HDS-1",
+      "Asset": "E-303",
+      "Archetype": "Pump Bearing Degradation & Seal Failure",
+      "File_Path": "scenario_071.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-072",
+      "Title": "Mishap Prediction Benchmark #072: Heat Exchanger Asphaltene Fouling & Furnace Overheating in HGU-1",
+      "Unit": "HGU-1",
+      "Asset": "R-302",
+      "Archetype": "Heat Exchanger Asphaltene Fouling & Furnace Overheating",
+      "File_Path": "scenario_072.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-073",
+      "Title": "Mishap Prediction Benchmark #073: Wet Gas Compressor Secondary Seal Containment Threat in HGU-1",
+      "Unit": "HGU-1",
+      "Asset": "P-302",
+      "Archetype": "Wet Gas Compressor Secondary Seal Containment Threat",
+      "File_Path": "scenario_073.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-074",
+      "Title": "Mishap Prediction Benchmark #074: Cooling Water Thermal Instability Cascade in HGU-1",
+      "Unit": "HGU-1",
+      "Asset": "C-302",
+      "Archetype": "Cooling Water Thermal Instability Cascade",
+      "File_Path": "scenario_074.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-075",
+      "Title": "Mishap Prediction Benchmark #075: Hydrocracker Catalyst Bed Thermal Runaway Precursor in HGU-1",
+      "Unit": "HGU-1",
+      "Asset": "E-401",
+      "Archetype": "Hydrocracker Catalyst Bed Thermal Runaway Precursor",
+      "File_Path": "scenario_075.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-076",
+      "Title": "Mishap Prediction Benchmark #076: Pump Bearing Degradation & Seal Failure in TKF",
+      "Unit": "TKF",
+      "Asset": "P-501",
+      "Archetype": "Pump Bearing Degradation & Seal Failure",
+      "File_Path": "scenario_076.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-077",
+      "Title": "Mishap Prediction Benchmark #077: Heat Exchanger Asphaltene Fouling & Furnace Overheating in TKF",
+      "Unit": "TKF",
+      "Asset": "P-502",
+      "Archetype": "Heat Exchanger Asphaltene Fouling & Furnace Overheating",
+      "File_Path": "scenario_077.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-078",
+      "Title": "Mishap Prediction Benchmark #078: Wet Gas Compressor Secondary Seal Containment Threat in TKF",
+      "Unit": "TKF",
+      "Asset": "P-503",
+      "Archetype": "Wet Gas Compressor Secondary Seal Containment Threat",
+      "File_Path": "scenario_078.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-079",
+      "Title": "Mishap Prediction Benchmark #079: Cooling Water Thermal Instability Cascade in TKF",
+      "Unit": "TKF",
+      "Asset": "P-504",
+      "Archetype": "Cooling Water Thermal Instability Cascade",
+      "File_Path": "scenario_079.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-080",
+      "Title": "Mishap Prediction Benchmark #080: Hydrocracker Catalyst Bed Thermal Runaway Precursor in UTIL-1",
+      "Unit": "UTIL-1",
+      "Asset": "P-205",
+      "Archetype": "Hydrocracker Catalyst Bed Thermal Runaway Precursor",
+      "File_Path": "scenario_080.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-081",
+      "Title": "Mishap Prediction Benchmark #081: Pump Bearing Degradation & Seal Failure in UTIL-1",
+      "Unit": "UTIL-1",
+      "Asset": "M-205",
+      "Archetype": "Pump Bearing Degradation & Seal Failure",
+      "File_Path": "scenario_081.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-082",
+      "Title": "Mishap Prediction Benchmark #082: Heat Exchanger Asphaltene Fouling & Furnace Overheating in UTY",
+      "Unit": "UTY",
+      "Asset": "P-401",
+      "Archetype": "Heat Exchanger Asphaltene Fouling & Furnace Overheating",
+      "File_Path": "scenario_082.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-083",
+      "Title": "Mishap Prediction Benchmark #083: Wet Gas Compressor Secondary Seal Containment Threat in UTY",
+      "Unit": "UTY",
+      "Asset": "P-402",
+      "Archetype": "Wet Gas Compressor Secondary Seal Containment Threat",
+      "File_Path": "scenario_083.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-084",
+      "Title": "Mishap Prediction Benchmark #084: Cooling Water Thermal Instability Cascade in UTY",
+      "Unit": "UTY",
+      "Asset": "P-403",
+      "Archetype": "Cooling Water Thermal Instability Cascade",
+      "File_Path": "scenario_084.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-085",
+      "Title": "Mishap Prediction Benchmark #085: Hydrocracker Catalyst Bed Thermal Runaway Precursor in CDU-4",
+      "Unit": "CDU-4",
+      "Asset": "F-401",
+      "Archetype": "Hydrocracker Catalyst Bed Thermal Runaway Precursor",
+      "File_Path": "scenario_085.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-086",
+      "Title": "Mishap Prediction Benchmark #086: Pump Bearing Degradation & Seal Failure in CDU-4",
+      "Unit": "CDU-4",
+      "Asset": "H-101",
+      "Archetype": "Pump Bearing Degradation & Seal Failure",
+      "File_Path": "scenario_086.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-087",
+      "Title": "Mishap Prediction Benchmark #087: Heat Exchanger Asphaltene Fouling & Furnace Overheating in FIRE",
+      "Unit": "FIRE",
+      "Asset": "FWP-103",
+      "Archetype": "Heat Exchanger Asphaltene Fouling & Furnace Overheating",
+      "File_Path": "scenario_087.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-088",
+      "Title": "Mishap Prediction Benchmark #088: Wet Gas Compressor Secondary Seal Containment Threat in FIRE",
+      "Unit": "FIRE",
+      "Asset": "FWP-101",
+      "Archetype": "Wet Gas Compressor Secondary Seal Containment Threat",
+      "File_Path": "scenario_088.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-089",
+      "Title": "Mishap Prediction Benchmark #089: Cooling Water Thermal Instability Cascade in FIRE",
+      "Unit": "FIRE",
+      "Asset": "FWP-102",
+      "Archetype": "Cooling Water Thermal Instability Cascade",
+      "File_Path": "scenario_089.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-090",
+      "Title": "Mishap Prediction Benchmark #090: Hydrocracker Catalyst Bed Thermal Runaway Precursor in HGU-1",
+      "Unit": "HGU-1",
+      "Asset": "R-301",
+      "Archetype": "Hydrocracker Catalyst Bed Thermal Runaway Precursor",
+      "File_Path": "scenario_090.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-091",
+      "Title": "Mishap Prediction Benchmark #091: Pump Bearing Degradation & Seal Failure in TKF",
+      "Unit": "TKF",
+      "Asset": "TK-110",
+      "Archetype": "Pump Bearing Degradation & Seal Failure",
+      "File_Path": "scenario_091.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-092",
+      "Title": "Mishap Prediction Benchmark #092: Heat Exchanger Asphaltene Fouling & Furnace Overheating in UTY",
+      "Unit": "UTY",
+      "Asset": "DG-101",
+      "Archetype": "Heat Exchanger Asphaltene Fouling & Furnace Overheating",
+      "File_Path": "scenario_092.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-093",
+      "Title": "Mishap Prediction Benchmark #093: Wet Gas Compressor Secondary Seal Containment Threat in UTY",
+      "Unit": "UTY",
+      "Asset": "DG-102",
+      "Archetype": "Wet Gas Compressor Secondary Seal Containment Threat",
+      "File_Path": "scenario_093.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-094",
+      "Title": "Mishap Prediction Benchmark #094: Cooling Water Thermal Instability Cascade in TF-1",
+      "Unit": "TF-1",
+      "Asset": "T-401",
+      "Archetype": "Cooling Water Thermal Instability Cascade",
+      "File_Path": "scenario_094.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-095",
+      "Title": "Mishap Prediction Benchmark #095: Hydrocracker Catalyst Bed Thermal Runaway Precursor in TF-1",
+      "Unit": "TF-1",
+      "Asset": "T-405",
+      "Archetype": "Hydrocracker Catalyst Bed Thermal Runaway Precursor",
+      "File_Path": "scenario_095.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-096",
+      "Title": "Mishap Prediction Benchmark #096: Pump Bearing Degradation & Seal Failure in TKF",
+      "Unit": "TKF",
+      "Asset": "TK-101",
+      "Archetype": "Pump Bearing Degradation & Seal Failure",
+      "File_Path": "scenario_096.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-097",
+      "Title": "Mishap Prediction Benchmark #097: Heat Exchanger Asphaltene Fouling & Furnace Overheating in TKF",
+      "Unit": "TKF",
+      "Asset": "TK-102",
+      "Archetype": "Heat Exchanger Asphaltene Fouling & Furnace Overheating",
+      "File_Path": "scenario_097.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-098",
+      "Title": "Mishap Prediction Benchmark #098: Wet Gas Compressor Secondary Seal Containment Threat in TKF",
+      "Unit": "TKF",
+      "Asset": "TK-103",
+      "Archetype": "Wet Gas Compressor Secondary Seal Containment Threat",
+      "File_Path": "scenario_098.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-099",
+      "Title": "Mishap Prediction Benchmark #099: Cooling Water Thermal Instability Cascade in TKF",
+      "Unit": "TKF",
+      "Asset": "TK-104",
+      "Archetype": "Cooling Water Thermal Instability Cascade",
+      "File_Path": "scenario_099.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-100",
+      "Title": "Mishap Prediction Benchmark #100: Hydrocracker Catalyst Bed Thermal Runaway Precursor in TKF",
+      "Unit": "TKF",
+      "Asset": "TK-105",
+      "Archetype": "Hydrocracker Catalyst Bed Thermal Runaway Precursor",
+      "File_Path": "scenario_100.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-101",
+      "Title": "Mishap Prediction Benchmark #101: Pump Bearing Degradation & Seal Failure in TKF",
+      "Unit": "TKF",
+      "Asset": "TK-106",
+      "Archetype": "Pump Bearing Degradation & Seal Failure",
+      "File_Path": "scenario_101.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-102",
+      "Title": "Mishap Prediction Benchmark #102: Heat Exchanger Asphaltene Fouling & Furnace Overheating in TKF",
+      "Unit": "TKF",
+      "Asset": "TK-107",
+      "Archetype": "Heat Exchanger Asphaltene Fouling & Furnace Overheating",
+      "File_Path": "scenario_102.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-103",
+      "Title": "Mishap Prediction Benchmark #103: Wet Gas Compressor Secondary Seal Containment Threat in TKF",
+      "Unit": "TKF",
+      "Asset": "TK-108",
+      "Archetype": "Wet Gas Compressor Secondary Seal Containment Threat",
+      "File_Path": "scenario_103.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-104",
+      "Title": "Mishap Prediction Benchmark #104: Cooling Water Thermal Instability Cascade in TKF",
+      "Unit": "TKF",
+      "Asset": "TK-109",
+      "Archetype": "Cooling Water Thermal Instability Cascade",
+      "File_Path": "scenario_104.json"
+    },
+    {
+      "Scenario_ID": "TEST-SCN-105",
+      "Title": "Mishap Prediction Benchmark #105: Hydrocracker Catalyst Bed Thermal Runaway Precursor in HGU-1",
+      "Unit": "HGU-1",
+      "Asset": "P-301",
+      "Archetype": "Hydrocracker Catalyst Bed Thermal Runaway Precursor",
+      "File_Path": "scenario_105.json"
+    }
+  ]
+}

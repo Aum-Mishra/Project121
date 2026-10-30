@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
-import { Search, X, MessageSquare, FolderOpen, Files, BookOpen, CheckSquare, Package, ClipboardCheck, Cpu, ShieldCheck, Upload, Code, Plus, AlertTriangle } from "lucide-react";
+import { Search, X, MessageSquare, FolderOpen, Files, BookOpen, CheckSquare, Package, ClipboardCheck, Cpu, ShieldCheck, Upload, Code, Plus, AlertTriangle, Terminal } from "lucide-react";
 
-type View = "chat" | "projects" | "files" | "knowledge" | "tasks" | "artifacts" | "approvals" | "models" | "security" | "error-state";
+type View = "chat" | "projects" | "files" | "knowledge" | "tasks" | "artifacts" | "approvals" | "models" | "security" | "coding-agent" | "error-state";
 
 interface CommandPaletteProps {
   onClose: () => void;
@@ -41,6 +41,7 @@ export default function CommandPalette({ onClose, onNavigate }: CommandPalettePr
     { id: "tasks", label: "View My Tasks", icon: CheckSquare, category: "Navigate", action: () => { onNavigate("tasks"); onClose(); } },
     { id: "artifacts", label: "Open Artifacts", icon: Package, category: "Navigate", action: () => { onNavigate("artifacts"); onClose(); } },
     { id: "approvals", label: "View Approvals", icon: ClipboardCheck, category: "Navigate", action: () => { onNavigate("approvals"); onClose(); } },
+    { id: "coding-agent", label: "Open Coding Agent", icon: Terminal, category: "Navigate", action: () => { onNavigate("coding-agent"); onClose(); } },
     { id: "models", label: "Change Model", icon: Cpu, category: "Navigate", action: () => { onNavigate("models"); onClose(); } },
     { id: "security", label: "Open Security", icon: ShieldCheck, category: "Navigate", action: () => { onNavigate("security"); onClose(); } },
     { id: "error-state", label: "View Error States", icon: AlertTriangle, category: "Navigate", action: () => { onNavigate("error-state"); onClose(); } },

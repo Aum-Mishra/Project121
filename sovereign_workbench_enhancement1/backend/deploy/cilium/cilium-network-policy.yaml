@@ -1,0 +1,51 @@
+apiVersion: "cilium.io/v2"
+kind: CiliumNetworkPolicy
+metadata:
+  name: sovereign-workbench-airgap-policy
+  namespace: sovereign-ai
+  labels:
+    app.kubernetes.io/name: sovereign-ai-workbench
+    security.sovereign.io/tier: airgap-enforced
+spec:
+  endpointSelector:
+    matchLabels:
+      app: sovereign-workbench
+  ingress:
+    - fromEndpoints:
+        - matchLabels:
+            app: sovereign-frontend
+      toPorts:
+        - ports:
+            - port: "8000"
+              protocol: TCP
+  egress:
+    # 1. Allow CoreDNS for local service discovery
+    - toEndpoints:
+        - matchLabels:
+            k8s:io.kubernetes.pod.namespace: kube-system
+            k8s-app: kube-dns
+      toPorts:
+        - ports:
+            - port: "53"
+              protocol: ANY
+          rules:
+            dns:
+              - matchPattern: "*.cluster.local"
+    # 2. Allow communication to local Ollama LLM service only
+    - toEndpoints:
+        - matchLabels:
+            app: ollama-local
+      toPorts:
+        - ports:
+            - port: "11434"
+              protocol: TCP
+    # 3. Allow communication to local Qdrant Vector DB only
+    - toEndpoints:
+        - matchLabels:
+            app: qdrant-local
+      toPorts:
+        - ports:
+            - port: "6333"
+              protocol: TCP
+    # 4. Strict Deny: No external public IP or Cloud AI API destinations permitted!
+

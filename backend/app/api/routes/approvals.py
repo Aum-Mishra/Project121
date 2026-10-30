@@ -5,9 +5,31 @@ from typing import List, Optional
 from datetime import datetime
 import uuid
 from app.db.database import get_db
-from app.api.dependencies import get_current_user
+from app.api.dependencies import get_optional_current_user
 from app.db.models import Approval, ApprovalStatus, Artifact, Project, User, AuditEvent
 from app.core.config import settings
+
+
+def _resolve_user(db: Session, current_user: Optional[User]) -> User:
+    """Authenticated request uses the actor's identity/scoping.
+
+    Anonymous/local requests fall back to the default company's principal user
+    (same pattern as the chat endpoints) so the single-company on-prem app keeps
+    working without a token, while scoping stays correct per company.
+    """
+    if current_user:
+        return current_user
+    user = (
+        db.query(User)
+        .filter(User.company_id == settings.company_id)
+        .order_by(User.id.asc())
+        .first()
+    )
+    if not user:
+        user = db.query(User).order_by(User.id.asc()).first()
+    if not user:
+        raise HTTPException(status_code=401, detail="No user available")
+    return user
 
 router = APIRouter(prefix="/approvals", tags=["approvals"])
 
@@ -91,8 +113,9 @@ async def list_approvals(
     limit: int = Query(50, ge=1, le=200),
     offset: int = Query(0, ge=0),
     db: Session = Depends(get_db),
-    current_user: User = Depends(get_current_user),
+    current_user: User = Depends(get_optional_current_user),
 ):
+    current_user = _resolve_user(db, current_user)
     query = db.query(Approval).join(Artifact).join(Project, Artifact.project_id == Project.id, isouter=True).filter(
         (Project.company_id == current_user.company_id) | (Artifact.company_id == current_user.company_id)
     )
@@ -107,7 +130,7 @@ async def list_approvals(
 
 
 @router.get("/{approval_id}", response_model=ApprovalResponse)
-async def get_approval(approval_id: str, db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):
+async def get_approval(approval_id: str, db: Session = Depends(get_db), current_user: User = Depends(get_optional_current_user)):
     approval = db.query(Approval).filter(Approval.approval_id == approval_id).first()
     if not approval:
         raise HTTPException(status_code=404, detail="Approval not found")
@@ -118,8 +141,9 @@ async def get_approval(approval_id: str, db: Session = Depends(get_db), current_
 async def create_approval(
     payload: ApprovalCreate,
     db: Session = Depends(get_db),
-    current_user: User = Depends(get_current_user),
+    current_user: User = Depends(get_optional_current_user),
 ):
+    current_user = _resolve_user(db, current_user)
     artifact = db.query(Artifact).filter(Artifact.artifact_id == payload.artifact_id).first()
     if not artifact:
         raise HTTPException(status_code=404, detail="Artifact not found")
@@ -152,8 +176,9 @@ async def approve_approval(
     approval_id: str,
     action: ApprovalAction,
     db: Session = Depends(get_db),
-    current_user: User = Depends(get_current_user),
+    current_user: User = Depends(get_optional_current_user),
 ):
+    current_user = _resolve_user(db, current_user)
     approval = db.query(Approval).filter(Approval.approval_id == approval_id).first()
     if not approval:
         raise HTTPException(status_code=404, detail="Approval not found")
@@ -176,8 +201,9 @@ async def reject_approval(
     approval_id: str,
     action: ApprovalAction,
     db: Session = Depends(get_db),
-    current_user: User = Depends(get_current_user),
+    current_user: User = Depends(get_optional_current_user),
 ):
+    current_user = _resolve_user(db, current_user)
     approval = db.query(Approval).filter(Approval.approval_id == approval_id).first()
     if not approval:
         raise HTTPException(status_code=404, detail="Approval not found")

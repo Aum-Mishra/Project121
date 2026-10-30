@@ -1,0 +1,47 @@
+[
+  {
+    "test_case_id": "DOCGEN-TEST-001",
+    "scenario": "P-102 Overpressure and High Vibration Emergency Action Plan",
+    "source_documents": [
+      "historical_records/2026/equipment_inspection_summary_2026.xlsx",
+      "maintenance/maintenance_history/asset_maintenance_history.xlsx"
+    ],
+    "target_template": "templates/approval_note_template.docx",
+    "required_sections": [
+      "Document Control",
+      "Subject",
+      "Background",
+      "Evidence",
+      "Technical Assessment",
+      "Risk",
+      "Recommendation",
+      "Approval Requested"
+    ],
+    "validation_rubric": [
+      "Must cite 7.2 mm/s vibration and 3.8 mm casing wall thickness",
+      "Must reference WO-6021",
+      "No empty sections or placeholder values"
+    ]
+  },
+  {
+    "test_case_id": "DOCGEN-TEST-002",
+    "scenario": "INC-2026-004 Sensor Disagreement Investigation Synthesis",
+    "source_documents": [
+      "hse/incidents/INC-2026-004_PT102_disagreement.pdf",
+      "instrumentation/instrument_maintenance_history.xlsx"
+    ],
+    "target_template": "templates/incident_investigation_template.docx",
+    "required_sections": [
+      "1. Incident Summary & Metadata",
+      "2. Chronological Sequence of Events",
+      "3. Evidence and Telemetry Analysis",
+      "4. Root Cause Analysis",
+      "5. Corrective Actions"
+    ],
+    "validation_rubric": [
+      "Identifies diaphragm oil loss as root cause",
+      "Cites capillary dampener installation",
+      "Dates aligned with 2026-01-18"
+    ]
+  }
+]

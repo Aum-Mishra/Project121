@@ -8,6 +8,7 @@ from app.db.repositories import DocumentRepository, DocumentChunkRepository
 from app.rag.parser import parse_document
 from app.rag.ocr import ocr_engine, needs_ocr
 from app.rag.chunker import chunk_pages
+from app.rag.doc_metadata import doc_metadata_for_env, derive_document_metadata
 from app.rag.embeddings import get_embeddings_batch
 from app.rag.vector_store import vector_store
 from app.core.config import settings
@@ -42,15 +43,8 @@ async def ingest_document(db: Session, document_id: str, company_id: str) -> Dic
 
     doc_repo.update_status(doc.id, DocumentStatus.CHUNKING)
 
-    doc_metadata = {
-        "company_id": company_id,
-        "document_id": doc.document_id,
-        "file_name": doc.file_name,
-        "file_type": doc.file_type,
-        "classification": doc.classification,
-        "owner": doc.owner,
-        "revision": doc.revision,
-    }
+    doc_metadata = doc_metadata_for_env(doc)
+    derived = derive_document_metadata(doc)
 
     chunks_data = chunk_pages(pages, doc_metadata=doc_metadata)
 
@@ -90,12 +84,17 @@ async def ingest_document(db: Session, document_id: str, company_id: str) -> Dic
             payload={
                 "company_id": company_id,
                 "document_id": doc.document_id,
+                "document_name": doc.file_name,
                 "chunk_id": db_chunk.id,
                 "page_number": db_chunk.page_number,
                 "section": db_chunk.section,
                 "file_type": doc.file_type,
                 "classification": doc.classification,
-                "asset_id": db_chunk.chunk_metadata.get("asset_id"),
+                "asset_id": derived.get("asset_id"),
+                "document_type": derived.get("document_type"),
+                "year": derived.get("year"),
+                "department": derived.get("department"),
+                "revision": doc.revision,
             },
         )
         qdrant_points.append(point)

@@ -1,0 +1,30 @@
+{
+  "Scenario_ID": "TEST-SCN-026",
+  "Scenario_Title": "Mishap Prediction Benchmark #026: Pump Bearing Degradation & Seal Failure in HDS-1",
+  "Industrial_Unit": "HDS-1",
+  "Primary_Equipment": "GD-103",
+  "Initial_Conditions": "Plant operating at 98% nominal capacity under standard operational shift rotation.",
+  "Available_Evidence": [
+    "VT-102A vibration elevated to 4.8 mm/s",
+    "Bearing temperature TT-102A at 78 C",
+    "Lube oil ISO code 20/18/14",
+    "PM work order WO-4102 open for 18 days"
+  ],
+  "Hidden_Risk_Factors": [
+    "Turnaround schedule delay created reluctance to isolate pump",
+    "Critical replacement bearing 7314 lead time extended to 18 weeks"
+  ],
+  "Leading_Indicators": [
+    "IND-001 (Bearing Vibration RMS)",
+    "IND-002 (High-Frequency Demodulation gE)",
+    "IND-003 (ISO Cleanliness)"
+  ],
+  "Expected_AI_Observations": "Detect multi-parameter vibration-thermal signature indicating severe bearing cage fatigue and seal damage risk.",
+  "Expected_Risk_Assessment": "Elevated / Critical probability of pump seizure and containment breach within 48-72 hours if continuous run persists.",
+  "Recommended_Investigation": "Perform high-resolution spectral vibration analysis, inspect standby P-102B coupling alignment and lube oil reservoir.",
+  "Unsafe_Hallucinations_to_Avoid": [
+    "Do not predict spontaneous explosive column detonation without loss of containment.",
+    "Do not assume standby pump is already running without verifying motor status."
+  ],
+  "Ground_Truth_Outcome": "P-102A controlled shutdown initiated; load safely transferred to standby P-102B. Minor seal weep contained without fire."
+}

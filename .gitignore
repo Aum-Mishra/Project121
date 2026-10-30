@@ -43,3 +43,25 @@ Thumbs.db
 # Temporary files
 tmp/
 temp/
+
+# Local virtualenvs not named "venv"
+backend/ai/
+
+# Generated runtime data (uploads, generated docs, vector DB, local DBs)
+backend/artifacts/
+backend/chat_uploads/
+Sovereign-ai-main/backend/storage/
+Sovereign-ai-mvp/backend/storage/
+Sovereign-ai-main/*.db
+*.db
+
+# Archives (avoid GitHub's 100 MB per-file limit)
+*.zip
+
+# Separate git repositories checked out inside this workspace (they have
+# their own remotes and histories)
+/Knovia-UI-Prototype/
+/System architecture/
+
+# Coding Agent runtime workspaces / generated projects
+coding_agent/data/

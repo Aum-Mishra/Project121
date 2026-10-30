@@ -1,0 +1,4106 @@
+{
+  "schema_version": "1.0",
+  "company": "MRPL Industries",
+  "purpose": "Cross-folder relationship index connecting physical assets with company documents, records and datasets.",
+  "relationship_count": 112,
+  "relationship_types": [
+    "sops",
+    "maintenance",
+    "inspection",
+    "specifications",
+    "manuals",
+    "instrumentation",
+    "procurement",
+    "vendors",
+    "historical_records"
+  ],
+  "assets": {
+    "P-101": {
+      "asset_id": "P-101",
+      "asset_type": "Centrifugal Pump",
+      "unit": "CDU-4",
+      "service": "Crude Feed Transfer",
+      "criticality": "MEDIUM",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Rotating_Equipment_Startup.pdf",
+          "sops/SOP_Rotating_Equipment_Shutdown.pdf",
+          "sops/SOP_Rotating_Equipment_Abnormal_Operation.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/P-101_pm_schedule.xlsx",
+          "maintenance/work_orders/P-101_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/P-101_inspection_history.pdf"
+        ],
+        "specifications": [
+          "specs/P-101_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/rotating_equipment/P-101_operation_maintenance_manual.pdf"
+        ],
+        "instrumentation": [
+          "instrumentation/condition_monitoring/P-101_vibration_monitoring.csv",
+          "instrumentation/condition_monitoring/P-101_temperature_monitoring.csv"
+        ],
+        "procurement": [
+          "procurement/spare_parts/P-101_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/ApexFlow_vendor_profile.json"
+        ],
+        "historical_records": []
+      }
+    },
+    "P-102": {
+      "asset_id": "P-102",
+      "asset_type": "Centrifugal Process Pump",
+      "unit": "CDU-4",
+      "service": "Crude Transfer",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Rotating_Equipment_Startup.pdf",
+          "sops/SOP_Rotating_Equipment_Shutdown.pdf",
+          "sops/SOP_Rotating_Equipment_Abnormal_Operation.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/P-102_pm_schedule.xlsx",
+          "maintenance/work_orders/P-102_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/P-102_inspection_history.pdf",
+          "quality/risk_based_inspection/P-102_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/P-102_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/rotating_equipment/P-102_operation_maintenance_manual.pdf"
+        ],
+        "instrumentation": [
+          "instrumentation/condition_monitoring/P-102_vibration_monitoring.csv",
+          "instrumentation/condition_monitoring/P-102_temperature_monitoring.csv"
+        ],
+        "procurement": [
+          "procurement/spare_parts/P-102_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/ApexFlow_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/P-102_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "P-103": {
+      "asset_id": "P-103",
+      "asset_type": "Centrifugal Pump",
+      "unit": "CDU-4",
+      "service": "Cooling Circuit",
+      "criticality": "LOW",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Rotating_Equipment_Startup.pdf",
+          "sops/SOP_Rotating_Equipment_Shutdown.pdf",
+          "sops/SOP_Rotating_Equipment_Abnormal_Operation.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/P-103_pm_schedule.xlsx",
+          "maintenance/work_orders/P-103_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/P-103_inspection_history.pdf"
+        ],
+        "specifications": [
+          "specs/P-103_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/rotating_equipment/P-103_operation_maintenance_manual.pdf"
+        ],
+        "instrumentation": [
+          "instrumentation/condition_monitoring/P-103_vibration_monitoring.csv",
+          "instrumentation/condition_monitoring/P-103_temperature_monitoring.csv"
+        ],
+        "procurement": [
+          "procurement/spare_parts/P-103_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/DeltaRotary_vendor_profile.json"
+        ],
+        "historical_records": []
+      }
+    },
+    "P-104": {
+      "asset_id": "P-104",
+      "asset_type": "Centrifugal Pump",
+      "unit": "CDU-4",
+      "service": "Product Transfer",
+      "criticality": "MEDIUM",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Rotating_Equipment_Startup.pdf",
+          "sops/SOP_Rotating_Equipment_Shutdown.pdf",
+          "sops/SOP_Rotating_Equipment_Abnormal_Operation.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/P-104_pm_schedule.xlsx",
+          "maintenance/work_orders/P-104_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/P-104_inspection_history.pdf"
+        ],
+        "specifications": [
+          "specs/P-104_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/rotating_equipment/P-104_operation_maintenance_manual.pdf"
+        ],
+        "instrumentation": [
+          "instrumentation/condition_monitoring/P-104_vibration_monitoring.csv",
+          "instrumentation/condition_monitoring/P-104_temperature_monitoring.csv"
+        ],
+        "procurement": [
+          "procurement/spare_parts/P-104_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/ApexFlow_vendor_profile.json"
+        ],
+        "historical_records": []
+      }
+    },
+    "P-201": {
+      "asset_id": "P-201",
+      "asset_type": "Centrifugal Pump",
+      "unit": "HCU-1",
+      "service": "Recycle Oil",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Rotating_Equipment_Startup.pdf",
+          "sops/SOP_Rotating_Equipment_Shutdown.pdf",
+          "sops/SOP_Rotating_Equipment_Abnormal_Operation.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/P-201_pm_schedule.xlsx",
+          "maintenance/work_orders/P-201_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/P-201_inspection_history.pdf",
+          "quality/risk_based_inspection/P-201_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/P-201_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/rotating_equipment/P-201_operation_maintenance_manual.pdf"
+        ],
+        "instrumentation": [
+          "instrumentation/condition_monitoring/P-201_vibration_monitoring.csv",
+          "instrumentation/condition_monitoring/P-201_temperature_monitoring.csv"
+        ],
+        "procurement": [
+          "procurement/spare_parts/P-201_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/HydroDyn_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/P-201_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "P-205": {
+      "asset_id": "P-205",
+      "asset_type": "Centrifugal Pump",
+      "unit": "UTIL-1",
+      "service": "Cooling Water",
+      "criticality": "MEDIUM",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Rotating_Equipment_Startup.pdf",
+          "sops/SOP_Rotating_Equipment_Shutdown.pdf",
+          "sops/SOP_Rotating_Equipment_Abnormal_Operation.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/P-205_pm_schedule.xlsx",
+          "maintenance/work_orders/P-205_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/P-205_inspection_history.pdf"
+        ],
+        "specifications": [
+          "specs/P-205_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/rotating_equipment/P-205_operation_maintenance_manual.pdf"
+        ],
+        "instrumentation": [
+          "instrumentation/condition_monitoring/P-205_vibration_monitoring.csv",
+          "instrumentation/condition_monitoring/P-205_temperature_monitoring.csv"
+        ],
+        "procurement": [
+          "procurement/spare_parts/P-205_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/WaterPrime_vendor_profile.json"
+        ],
+        "historical_records": []
+      }
+    },
+    "V-201": {
+      "asset_id": "V-201",
+      "asset_type": "Pressure Vessel",
+      "unit": "CDU-4",
+      "service": "Desalter Outlet Separation",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Process_Unit_Startup.pdf",
+          "sops/SOP_Process_Unit_Shutdown.pdf",
+          "sops/SOP_Process_Upset_Response.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/V-201_pm_schedule.xlsx",
+          "maintenance/work_orders/V-201_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/V-201_inspection_history.pdf",
+          "quality/risk_based_inspection/V-201_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/V-201_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/process_equipment/V-201_operation_manual.pdf"
+        ],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/V-201_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/Bharat_Vessel_Works_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/V-201_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "V-220": {
+      "asset_id": "V-220",
+      "asset_type": "Pressure Vessel",
+      "unit": "CDU-4",
+      "service": "Overhead Accumulator",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Process_Unit_Startup.pdf",
+          "sops/SOP_Process_Unit_Shutdown.pdf",
+          "sops/SOP_Process_Upset_Response.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/V-220_pm_schedule.xlsx",
+          "maintenance/work_orders/V-220_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/V-220_inspection_history.pdf",
+          "quality/risk_based_inspection/V-220_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/V-220_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/process_equipment/V-220_operation_manual.pdf"
+        ],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/V-220_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/Bharat_Vessel_Works_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/V-220_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "V-501": {
+      "asset_id": "V-501",
+      "asset_type": "Pressure Vessel",
+      "unit": "HCU-1",
+      "service": "Hydrogen Separator",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Process_Unit_Startup.pdf",
+          "sops/SOP_Process_Unit_Shutdown.pdf",
+          "sops/SOP_Process_Upset_Response.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/V-501_pm_schedule.xlsx",
+          "maintenance/work_orders/V-501_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/V-501_inspection_history.pdf",
+          "quality/risk_based_inspection/V-501_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/V-501_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/process_equipment/V-501_operation_manual.pdf"
+        ],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/V-501_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/ProcessContain_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/V-501_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "E-301": {
+      "asset_id": "E-301",
+      "asset_type": "Shell-and-Tube Heat Exchanger",
+      "unit": "CDU-4",
+      "service": "Crude Preheat",
+      "criticality": "MEDIUM",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Heat_Exchanger_Operation.pdf",
+          "sops/SOP_Heat_Exchanger_Isolation_and_Cleaning.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/E-301_pm_schedule.xlsx",
+          "maintenance/work_orders/E-301_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/E-301_inspection_history.pdf"
+        ],
+        "specifications": [
+          "specs/E-301_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/static_equipment/E-301_technical_manual.pdf"
+        ],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/E-301_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/ThermoWorks_vendor_profile.json"
+        ],
+        "historical_records": []
+      }
+    },
+    "E-315": {
+      "asset_id": "E-315",
+      "asset_type": "Shell-and-Tube Heat Exchanger",
+      "unit": "CDU-4",
+      "service": "Product Cooling",
+      "criticality": "MEDIUM",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Heat_Exchanger_Operation.pdf",
+          "sops/SOP_Heat_Exchanger_Isolation_and_Cleaning.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/E-315_pm_schedule.xlsx",
+          "maintenance/work_orders/E-315_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/E-315_inspection_history.pdf"
+        ],
+        "specifications": [
+          "specs/E-315_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/static_equipment/E-315_technical_manual.pdf"
+        ],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/E-315_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/ThermoWorks_vendor_profile.json"
+        ],
+        "historical_records": []
+      }
+    },
+    "T-401": {
+      "asset_id": "T-401",
+      "asset_type": "Storage Tank",
+      "unit": "TF-1",
+      "service": "Crude Storage",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Tank_Operation_and_Inventory_Control.pdf",
+          "sops/SOP_Tank_Overfill_Prevention.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/T-401_pm_schedule.xlsx",
+          "maintenance/work_orders/T-401_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/T-401_inspection_history.pdf",
+          "quality/tank_integrity/T-401_tank_integrity_assessment.pdf",
+          "quality/risk_based_inspection/T-401_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/T-401_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/T-401_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/TankFab_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/T-401_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "T-405": {
+      "asset_id": "T-405",
+      "asset_type": "Storage Tank",
+      "unit": "TF-1",
+      "service": "Intermediate Feed",
+      "criticality": "MEDIUM",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Tank_Operation_and_Inventory_Control.pdf",
+          "sops/SOP_Tank_Overfill_Prevention.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/T-405_pm_schedule.xlsx",
+          "maintenance/work_orders/T-405_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/T-405_inspection_history.pdf",
+          "quality/tank_integrity/T-405_tank_integrity_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/T-405_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/T-405_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/TankFab_vendor_profile.json"
+        ],
+        "historical_records": []
+      }
+    },
+    "F-401": {
+      "asset_id": "F-401",
+      "asset_type": "Fired Heater",
+      "unit": "CDU-4",
+      "service": "Crude Preheat Furnace",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [],
+        "maintenance": [
+          "maintenance/preventive/F-401_pm_schedule.xlsx",
+          "maintenance/work_orders/F-401_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/F-401_inspection_history.pdf",
+          "quality/risk_based_inspection/F-401_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/F-401_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/F-401_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/HeatCore_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/F-401_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "C-301": {
+      "asset_id": "C-301",
+      "asset_type": "Centrifugal Compressor",
+      "unit": "HCU-1",
+      "service": "Hydrogen Recycle",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Rotating_Equipment_Startup.pdf",
+          "sops/SOP_Rotating_Equipment_Shutdown.pdf",
+          "sops/SOP_Rotating_Equipment_Abnormal_Operation.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/C-301_pm_schedule.xlsx",
+          "maintenance/work_orders/C-301_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/C-301_inspection_history.pdf",
+          "quality/risk_based_inspection/C-301_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/C-301_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/rotating_equipment/C-301_operation_maintenance_manual.pdf"
+        ],
+        "instrumentation": [
+          "instrumentation/condition_monitoring/C-301_vibration_monitoring.csv",
+          "instrumentation/condition_monitoring/C-301_temperature_monitoring.csv"
+        ],
+        "procurement": [
+          "procurement/spare_parts/C-301_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/Compressa_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/C-301_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "M-102": {
+      "asset_id": "M-102",
+      "asset_type": "Motor",
+      "unit": "CDU-4",
+      "service": "P-102 Drive",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [],
+        "maintenance": [
+          "maintenance/preventive/M-102_pm_schedule.xlsx",
+          "maintenance/work_orders/M-102_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/M-102_inspection_history.pdf",
+          "quality/risk_based_inspection/M-102_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/M-102_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/M-102_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/ElectroPrime_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/M-102_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "M-205": {
+      "asset_id": "M-205",
+      "asset_type": "Motor",
+      "unit": "UTIL-1",
+      "service": "P-205 Drive",
+      "criticality": "MEDIUM",
+      "relationships": {
+        "sops": [],
+        "maintenance": [
+          "maintenance/preventive/M-205_pm_schedule.xlsx",
+          "maintenance/work_orders/M-205_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/M-205_inspection_history.pdf"
+        ],
+        "specifications": [
+          "specs/M-205_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/M-205_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/ElectroPrime_vendor_profile.json"
+        ],
+        "historical_records": []
+      }
+    },
+    "PT-102": {
+      "asset_id": "PT-102",
+      "asset_type": "Pressure Transmitter",
+      "unit": "CDU-4",
+      "service": "P-102 Discharge Pressure",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Instrument_Calibration_and_Verification.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/PT-102_pm_schedule.xlsx",
+          "maintenance/work_orders/PT-102_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/PT-102_inspection_history.pdf",
+          "quality/risk_based_inspection/PT-102_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/PT-102_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [
+          "instrumentation/calibration/PT-102_calibration_history.xlsx"
+        ],
+        "procurement": [
+          "procurement/spare_parts/PT-102_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/Instrumax_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/PT-102_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "TT-102": {
+      "asset_id": "TT-102",
+      "asset_type": "Temperature Transmitter",
+      "unit": "CDU-4",
+      "service": "P-102 Discharge Temperature",
+      "criticality": "MEDIUM",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Instrument_Calibration_and_Verification.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/TT-102_pm_schedule.xlsx",
+          "maintenance/work_orders/TT-102_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/TT-102_inspection_history.pdf"
+        ],
+        "specifications": [
+          "specs/TT-102_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [
+          "instrumentation/calibration/TT-102_calibration_history.xlsx"
+        ],
+        "procurement": [
+          "procurement/spare_parts/TT-102_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/Instrumax_vendor_profile.json"
+        ],
+        "historical_records": []
+      }
+    },
+    "FT-210": {
+      "asset_id": "FT-210",
+      "asset_type": "Flow Transmitter",
+      "unit": "CDU-4",
+      "service": "Crude Flow",
+      "criticality": "MEDIUM",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Instrument_Calibration_and_Verification.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/FT-210_pm_schedule.xlsx",
+          "maintenance/work_orders/FT-210_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/FT-210_inspection_history.pdf"
+        ],
+        "specifications": [
+          "specs/FT-210_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [
+          "instrumentation/calibration/FT-210_calibration_history.xlsx"
+        ],
+        "procurement": [
+          "procurement/spare_parts/FT-210_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/FlowSense_vendor_profile.json"
+        ],
+        "historical_records": []
+      }
+    },
+    "PSV-102": {
+      "asset_id": "PSV-102",
+      "asset_type": "Pressure Safety Valve",
+      "unit": "CDU-4",
+      "service": "P-102 Discharge Protection",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Instrument_Calibration_and_Verification.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/PSV-102_pm_schedule.xlsx",
+          "maintenance/work_orders/PSV-102_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/PSV-102_inspection_history.pdf",
+          "quality/risk_based_inspection/PSV-102_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/PSV-102_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [
+          "instrumentation/calibration/PSV-102_calibration_history.xlsx"
+        ],
+        "procurement": [
+          "procurement/spare_parts/PSV-102_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/SafeRelief_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/PSV-102_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "XV-410": {
+      "asset_id": "XV-410",
+      "asset_type": "Motor Operated Valve",
+      "unit": "CDU-4",
+      "service": "Crude Feed Isolation",
+      "criticality": "MEDIUM",
+      "relationships": {
+        "sops": [],
+        "maintenance": [
+          "maintenance/preventive/XV-410_pm_schedule.xlsx",
+          "maintenance/work_orders/XV-410_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/XV-410_inspection_history.pdf"
+        ],
+        "specifications": [
+          "specs/XV-410_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/XV-410_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/ValveCraft_vendor_profile.json"
+        ],
+        "historical_records": []
+      }
+    },
+    "D-410": {
+      "asset_id": "D-410",
+      "asset_type": "Electrostatic Desalter",
+      "unit": "CDU-4",
+      "service": "Crude Pretreatment",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [],
+        "maintenance": [
+          "maintenance/preventive/D-410_pm_schedule.xlsx",
+          "maintenance/work_orders/D-410_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/D-410_inspection_history.pdf",
+          "quality/risk_based_inspection/D-410_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/D-410_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/D-410_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/SepaTech_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/D-410_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "R-501": {
+      "asset_id": "R-501",
+      "asset_type": "Hydrotreating Reactor",
+      "unit": "HDS-1",
+      "service": "Diesel Hydrotreating",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Process_Unit_Startup.pdf",
+          "sops/SOP_Process_Unit_Shutdown.pdf",
+          "sops/SOP_Process_Upset_Response.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/R-501_pm_schedule.xlsx",
+          "maintenance/work_orders/R-501_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/R-501_inspection_history.pdf",
+          "quality/risk_based_inspection/R-501_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/R-501_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/process_equipment/R-501_operation_manual.pdf"
+        ],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/R-501_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/ReactaFab_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/R-501_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "P-601": {
+      "asset_id": "P-601",
+      "asset_type": "Product Pump",
+      "unit": "DISP-1",
+      "service": "Diesel Dispatch",
+      "criticality": "MEDIUM",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Rotating_Equipment_Startup.pdf",
+          "sops/SOP_Rotating_Equipment_Shutdown.pdf",
+          "sops/SOP_Rotating_Equipment_Abnormal_Operation.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/P-601_pm_schedule.xlsx",
+          "maintenance/work_orders/P-601_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/P-601_inspection_history.pdf"
+        ],
+        "specifications": [
+          "specs/P-601_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/rotating_equipment/P-601_operation_maintenance_manual.pdf"
+        ],
+        "instrumentation": [
+          "instrumentation/condition_monitoring/P-601_vibration_monitoring.csv",
+          "instrumentation/condition_monitoring/P-601_temperature_monitoring.csv"
+        ],
+        "procurement": [
+          "procurement/spare_parts/P-601_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/ApexFlow_vendor_profile.json"
+        ],
+        "historical_records": []
+      }
+    },
+    "P-105": {
+      "asset_id": "P-105",
+      "asset_type": "Centrifugal Pump",
+      "unit": "CDU-4",
+      "service": "CDU-4 Reflux Pump B",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Rotating_Equipment_Startup.pdf",
+          "sops/SOP_Rotating_Equipment_Shutdown.pdf",
+          "sops/SOP_Rotating_Equipment_Abnormal_Operation.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/P-105_pm_schedule.xlsx",
+          "maintenance/work_orders/P-105_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/P-105_inspection_history.pdf",
+          "quality/risk_based_inspection/P-105_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/P-105_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/rotating_equipment/P-105_operation_maintenance_manual.pdf"
+        ],
+        "instrumentation": [
+          "instrumentation/condition_monitoring/P-105_vibration_monitoring.csv",
+          "instrumentation/condition_monitoring/P-105_temperature_monitoring.csv"
+        ],
+        "procurement": [
+          "procurement/spare_parts/P-105_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/MechFlow_Industries_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/P-105_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "P-106": {
+      "asset_id": "P-106",
+      "asset_type": "Centrifugal Pump",
+      "unit": "CDU-4",
+      "service": "CDU-4 Bottoms Pump A",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Rotating_Equipment_Startup.pdf",
+          "sops/SOP_Rotating_Equipment_Shutdown.pdf",
+          "sops/SOP_Rotating_Equipment_Abnormal_Operation.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/P-106_pm_schedule.xlsx",
+          "maintenance/work_orders/P-106_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/P-106_inspection_history.pdf",
+          "quality/risk_based_inspection/P-106_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/P-106_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/rotating_equipment/P-106_operation_maintenance_manual.pdf"
+        ],
+        "instrumentation": [
+          "instrumentation/condition_monitoring/P-106_vibration_monitoring.csv",
+          "instrumentation/condition_monitoring/P-106_temperature_monitoring.csv"
+        ],
+        "procurement": [
+          "procurement/spare_parts/P-106_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/Apex_Pumps_Pvt_Ltd_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/P-106_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "P-107": {
+      "asset_id": "P-107",
+      "asset_type": "Centrifugal Pump",
+      "unit": "CDU-4",
+      "service": "CDU-4 Bottoms Pump B",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Rotating_Equipment_Startup.pdf",
+          "sops/SOP_Rotating_Equipment_Shutdown.pdf",
+          "sops/SOP_Rotating_Equipment_Abnormal_Operation.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/P-107_pm_schedule.xlsx",
+          "maintenance/work_orders/P-107_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/P-107_inspection_history.pdf",
+          "quality/risk_based_inspection/P-107_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/P-107_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/rotating_equipment/P-107_operation_maintenance_manual.pdf"
+        ],
+        "instrumentation": [
+          "instrumentation/condition_monitoring/P-107_vibration_monitoring.csv",
+          "instrumentation/condition_monitoring/P-107_temperature_monitoring.csv"
+        ],
+        "procurement": [
+          "procurement/spare_parts/P-107_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/Apex_Pumps_Pvt_Ltd_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/P-107_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "P-108": {
+      "asset_id": "P-108",
+      "asset_type": "Centrifugal Pump",
+      "unit": "CDU-4",
+      "service": "CDU-4 Product Transfer Pump",
+      "criticality": "MEDIUM",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Rotating_Equipment_Startup.pdf",
+          "sops/SOP_Rotating_Equipment_Shutdown.pdf",
+          "sops/SOP_Rotating_Equipment_Abnormal_Operation.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/P-108_pm_schedule.xlsx",
+          "maintenance/work_orders/P-108_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/P-108_inspection_history.pdf"
+        ],
+        "specifications": [
+          "specs/P-108_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/rotating_equipment/P-108_operation_maintenance_manual.pdf"
+        ],
+        "instrumentation": [
+          "instrumentation/condition_monitoring/P-108_vibration_monitoring.csv",
+          "instrumentation/condition_monitoring/P-108_temperature_monitoring.csv"
+        ],
+        "procurement": [
+          "procurement/spare_parts/P-108_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/MechFlow_Industries_vendor_profile.json"
+        ],
+        "historical_records": []
+      }
+    },
+    "E-203": {
+      "asset_id": "E-203",
+      "asset_type": "Shell and Tube Heat Exchanger",
+      "unit": "CDU-4",
+      "service": "CDU-4 Crude Preheater C",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Heat_Exchanger_Operation.pdf",
+          "sops/SOP_Heat_Exchanger_Isolation_and_Cleaning.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/E-203_pm_schedule.xlsx",
+          "maintenance/work_orders/E-203_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/E-203_inspection_history.pdf",
+          "quality/risk_based_inspection/E-203_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/E-203_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/static_equipment/E-203_technical_manual.pdf"
+        ],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/E-203_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/Thermex_Engineering_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/E-203_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "E-204": {
+      "asset_id": "E-204",
+      "asset_type": "Shell and Tube Heat Exchanger",
+      "unit": "CDU-4",
+      "service": "CDU-4 Crude Preheater D",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Heat_Exchanger_Operation.pdf",
+          "sops/SOP_Heat_Exchanger_Isolation_and_Cleaning.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/E-204_pm_schedule.xlsx",
+          "maintenance/work_orders/E-204_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/E-204_inspection_history.pdf",
+          "quality/risk_based_inspection/E-204_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/E-204_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/static_equipment/E-204_technical_manual.pdf"
+        ],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/E-204_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/Thermex_Engineering_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/E-204_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "E-205": {
+      "asset_id": "E-205",
+      "asset_type": "Shell and Tube Condenser",
+      "unit": "CDU-4",
+      "service": "CDU-4 Overhead Condenser A",
+      "criticality": "MEDIUM",
+      "relationships": {
+        "sops": [],
+        "maintenance": [
+          "maintenance/preventive/E-205_pm_schedule.xlsx",
+          "maintenance/work_orders/E-205_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/E-205_inspection_history.pdf"
+        ],
+        "specifications": [
+          "specs/E-205_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/E-205_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/Thermex_Engineering_vendor_profile.json"
+        ],
+        "historical_records": []
+      }
+    },
+    "E-206": {
+      "asset_id": "E-206",
+      "asset_type": "Shell and Tube Condenser",
+      "unit": "CDU-4",
+      "service": "CDU-4 Overhead Condenser B",
+      "criticality": "MEDIUM",
+      "relationships": {
+        "sops": [],
+        "maintenance": [
+          "maintenance/preventive/E-206_pm_schedule.xlsx",
+          "maintenance/work_orders/E-206_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/E-206_inspection_history.pdf"
+        ],
+        "specifications": [
+          "specs/E-206_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/E-206_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/Thermex_Engineering_vendor_profile.json"
+        ],
+        "historical_records": []
+      }
+    },
+    "E-207": {
+      "asset_id": "E-207",
+      "asset_type": "Shell and Tube Cooler",
+      "unit": "CDU-4",
+      "service": "CDU-4 Product Cooler",
+      "criticality": "MEDIUM",
+      "relationships": {
+        "sops": [],
+        "maintenance": [
+          "maintenance/preventive/E-207_pm_schedule.xlsx",
+          "maintenance/work_orders/E-207_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/E-207_inspection_history.pdf"
+        ],
+        "specifications": [
+          "specs/E-207_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/E-207_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/Thermex_Engineering_vendor_profile.json"
+        ],
+        "historical_records": []
+      }
+    },
+    "T-101": {
+      "asset_id": "T-101",
+      "asset_type": "Distillation Column",
+      "unit": "CDU-4",
+      "service": "CDU-4 Atmospheric Distillation Column",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Process_Unit_Startup.pdf",
+          "sops/SOP_Process_Unit_Shutdown.pdf",
+          "sops/SOP_Process_Upset_Response.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/T-101_pm_schedule.xlsx",
+          "maintenance/work_orders/T-101_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/T-101_inspection_history.pdf",
+          "quality/risk_based_inspection/T-101_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/T-101_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/process_equipment/T-101_operation_manual.pdf"
+        ],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/T-101_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/ProcessFab_Engineering_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/T-101_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "H-101": {
+      "asset_id": "H-101",
+      "asset_type": "Fired Heater",
+      "unit": "CDU-4",
+      "service": "CDU-4 Charge Heater",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [],
+        "maintenance": [
+          "maintenance/preventive/H-101_pm_schedule.xlsx",
+          "maintenance/work_orders/H-101_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/H-101_inspection_history.pdf",
+          "quality/risk_based_inspection/H-101_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/H-101_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/H-101_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/ThermoFire_Systems_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/H-101_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "V-101": {
+      "asset_id": "V-101",
+      "asset_type": "Pressure Vessel",
+      "unit": "CDU-4",
+      "service": "CDU-4 Overhead Reflux Drum",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Process_Unit_Startup.pdf",
+          "sops/SOP_Process_Unit_Shutdown.pdf",
+          "sops/SOP_Process_Upset_Response.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/V-101_pm_schedule.xlsx",
+          "maintenance/work_orders/V-101_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/V-101_inspection_history.pdf",
+          "quality/risk_based_inspection/V-101_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/V-101_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/process_equipment/V-101_operation_manual.pdf"
+        ],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/V-101_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/VesselTech_Ltd_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/V-101_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "V-102": {
+      "asset_id": "V-102",
+      "asset_type": "Process Vessel",
+      "unit": "CDU-4",
+      "service": "CDU-4 Bottoms Surge Drum",
+      "criticality": "MEDIUM",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Process_Unit_Startup.pdf",
+          "sops/SOP_Process_Unit_Shutdown.pdf",
+          "sops/SOP_Process_Upset_Response.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/V-102_pm_schedule.xlsx",
+          "maintenance/work_orders/V-102_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/V-102_inspection_history.pdf"
+        ],
+        "specifications": [
+          "specs/V-102_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/process_equipment/V-102_operation_manual.pdf"
+        ],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/V-102_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/VesselTech_Ltd_vendor_profile.json"
+        ],
+        "historical_records": []
+      }
+    },
+    "P-202": {
+      "asset_id": "P-202",
+      "asset_type": "High Pressure Centrifugal Pump",
+      "unit": "HDS-1",
+      "service": "HDS-1 Feed Pump B",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Rotating_Equipment_Startup.pdf",
+          "sops/SOP_Rotating_Equipment_Shutdown.pdf",
+          "sops/SOP_Rotating_Equipment_Abnormal_Operation.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/P-202_pm_schedule.xlsx",
+          "maintenance/work_orders/P-202_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/P-202_inspection_history.pdf",
+          "quality/risk_based_inspection/P-202_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/P-202_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/rotating_equipment/P-202_operation_maintenance_manual.pdf"
+        ],
+        "instrumentation": [
+          "instrumentation/condition_monitoring/P-202_vibration_monitoring.csv",
+          "instrumentation/condition_monitoring/P-202_temperature_monitoring.csv"
+        ],
+        "procurement": [
+          "procurement/spare_parts/P-202_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/HydroMach_Systems_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/P-202_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "P-203": {
+      "asset_id": "P-203",
+      "asset_type": "Centrifugal Pump",
+      "unit": "HDS-1",
+      "service": "HDS-1 Product Pump A",
+      "criticality": "MEDIUM",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Rotating_Equipment_Startup.pdf",
+          "sops/SOP_Rotating_Equipment_Shutdown.pdf",
+          "sops/SOP_Rotating_Equipment_Abnormal_Operation.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/P-203_pm_schedule.xlsx",
+          "maintenance/work_orders/P-203_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/P-203_inspection_history.pdf"
+        ],
+        "specifications": [
+          "specs/P-203_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/rotating_equipment/P-203_operation_maintenance_manual.pdf"
+        ],
+        "instrumentation": [
+          "instrumentation/condition_monitoring/P-203_vibration_monitoring.csv",
+          "instrumentation/condition_monitoring/P-203_temperature_monitoring.csv"
+        ],
+        "procurement": [
+          "procurement/spare_parts/P-203_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/HydroMach_Systems_vendor_profile.json"
+        ],
+        "historical_records": []
+      }
+    },
+    "P-204": {
+      "asset_id": "P-204",
+      "asset_type": "Centrifugal Pump",
+      "unit": "HDS-1",
+      "service": "HDS-1 Product Pump B",
+      "criticality": "MEDIUM",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Rotating_Equipment_Startup.pdf",
+          "sops/SOP_Rotating_Equipment_Shutdown.pdf",
+          "sops/SOP_Rotating_Equipment_Abnormal_Operation.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/P-204_pm_schedule.xlsx",
+          "maintenance/work_orders/P-204_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/P-204_inspection_history.pdf"
+        ],
+        "specifications": [
+          "specs/P-204_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/rotating_equipment/P-204_operation_maintenance_manual.pdf"
+        ],
+        "instrumentation": [
+          "instrumentation/condition_monitoring/P-204_vibration_monitoring.csv",
+          "instrumentation/condition_monitoring/P-204_temperature_monitoring.csv"
+        ],
+        "procurement": [
+          "procurement/spare_parts/P-204_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/HydroMach_Systems_vendor_profile.json"
+        ],
+        "historical_records": []
+      }
+    },
+    "C-201": {
+      "asset_id": "C-201",
+      "asset_type": "Centrifugal Compressor",
+      "unit": "HDS-1",
+      "service": "Recycle Gas Compressor",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Rotating_Equipment_Startup.pdf",
+          "sops/SOP_Rotating_Equipment_Shutdown.pdf",
+          "sops/SOP_Rotating_Equipment_Abnormal_Operation.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/C-201_pm_schedule.xlsx",
+          "maintenance/work_orders/C-201_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/C-201_inspection_history.pdf",
+          "quality/risk_based_inspection/C-201_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/C-201_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/rotating_equipment/C-201_operation_maintenance_manual.pdf"
+        ],
+        "instrumentation": [
+          "instrumentation/condition_monitoring/C-201_vibration_monitoring.csv",
+          "instrumentation/condition_monitoring/C-201_temperature_monitoring.csv"
+        ],
+        "procurement": [
+          "procurement/spare_parts/C-201_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/TurboDyn_Corp_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/C-201_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "C-202": {
+      "asset_id": "C-202",
+      "asset_type": "Reciprocating Compressor",
+      "unit": "HDS-1",
+      "service": "Hydrogen Booster Compressor",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Rotating_Equipment_Startup.pdf",
+          "sops/SOP_Rotating_Equipment_Shutdown.pdf",
+          "sops/SOP_Rotating_Equipment_Abnormal_Operation.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/C-202_pm_schedule.xlsx",
+          "maintenance/work_orders/C-202_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/C-202_inspection_history.pdf",
+          "quality/risk_based_inspection/C-202_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/C-202_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/rotating_equipment/C-202_operation_maintenance_manual.pdf"
+        ],
+        "instrumentation": [
+          "instrumentation/condition_monitoring/C-202_vibration_monitoring.csv",
+          "instrumentation/condition_monitoring/C-202_temperature_monitoring.csv"
+        ],
+        "procurement": [
+          "procurement/spare_parts/C-202_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/GasForce_Engineering_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/C-202_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "R-201": {
+      "asset_id": "R-201",
+      "asset_type": "Fixed Bed Reactor",
+      "unit": "HDS-1",
+      "service": "Hydrodesulfurization Reactor",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Process_Unit_Startup.pdf",
+          "sops/SOP_Process_Unit_Shutdown.pdf",
+          "sops/SOP_Process_Upset_Response.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/R-201_pm_schedule.xlsx",
+          "maintenance/work_orders/R-201_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/R-201_inspection_history.pdf",
+          "quality/risk_based_inspection/R-201_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/R-201_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/process_equipment/R-201_operation_manual.pdf"
+        ],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/R-201_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/Catalytic_Process_Works_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/R-201_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "V-202": {
+      "asset_id": "V-202",
+      "asset_type": "Pressure Vessel",
+      "unit": "HDS-1",
+      "service": "Low Pressure Separator",
+      "criticality": "MEDIUM",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Process_Unit_Startup.pdf",
+          "sops/SOP_Process_Unit_Shutdown.pdf",
+          "sops/SOP_Process_Upset_Response.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/V-202_pm_schedule.xlsx",
+          "maintenance/work_orders/V-202_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/V-202_inspection_history.pdf"
+        ],
+        "specifications": [
+          "specs/V-202_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/process_equipment/V-202_operation_manual.pdf"
+        ],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/V-202_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/VesselTech_Ltd_vendor_profile.json"
+        ],
+        "historical_records": []
+      }
+    },
+    "E-302": {
+      "asset_id": "E-302",
+      "asset_type": "Air Cooler",
+      "unit": "HDS-1",
+      "service": "Reactor Effluent Cooler",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Heat_Exchanger_Operation.pdf",
+          "sops/SOP_Heat_Exchanger_Isolation_and_Cleaning.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/E-302_pm_schedule.xlsx",
+          "maintenance/work_orders/E-302_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/E-302_inspection_history.pdf",
+          "quality/risk_based_inspection/E-302_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/E-302_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/static_equipment/E-302_technical_manual.pdf"
+        ],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/E-302_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/AirCool_Industrial_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/E-302_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "E-303": {
+      "asset_id": "E-303",
+      "asset_type": "Shell and Tube Cooler",
+      "unit": "HDS-1",
+      "service": "HDS Product Cooler",
+      "criticality": "MEDIUM",
+      "relationships": {
+        "sops": [],
+        "maintenance": [
+          "maintenance/preventive/E-303_pm_schedule.xlsx",
+          "maintenance/work_orders/E-303_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/E-303_inspection_history.pdf"
+        ],
+        "specifications": [
+          "specs/E-303_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/E-303_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/Thermex_Engineering_vendor_profile.json"
+        ],
+        "historical_records": []
+      }
+    },
+    "C-302": {
+      "asset_id": "C-302",
+      "asset_type": "Reciprocating Compressor",
+      "unit": "HGU-1",
+      "service": "Hydrogen Product Compressor",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Rotating_Equipment_Startup.pdf",
+          "sops/SOP_Rotating_Equipment_Shutdown.pdf",
+          "sops/SOP_Rotating_Equipment_Abnormal_Operation.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/C-302_pm_schedule.xlsx",
+          "maintenance/work_orders/C-302_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/C-302_inspection_history.pdf",
+          "quality/risk_based_inspection/C-302_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/C-302_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/rotating_equipment/C-302_operation_maintenance_manual.pdf"
+        ],
+        "instrumentation": [
+          "instrumentation/condition_monitoring/C-302_vibration_monitoring.csv",
+          "instrumentation/condition_monitoring/C-302_temperature_monitoring.csv"
+        ],
+        "procurement": [
+          "procurement/spare_parts/C-302_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/GasForce_Engineering_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/C-302_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "R-301": {
+      "asset_id": "R-301",
+      "asset_type": "Fired Process Reformer",
+      "unit": "HGU-1",
+      "service": "Steam Methane Reformer",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Process_Unit_Startup.pdf",
+          "sops/SOP_Process_Unit_Shutdown.pdf",
+          "sops/SOP_Process_Upset_Response.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/R-301_pm_schedule.xlsx",
+          "maintenance/work_orders/R-301_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/R-301_inspection_history.pdf",
+          "quality/risk_based_inspection/R-301_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/R-301_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/process_equipment/R-301_operation_manual.pdf"
+        ],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/R-301_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/ReformTech_International_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/R-301_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "R-302": {
+      "asset_id": "R-302",
+      "asset_type": "Catalytic Reactor",
+      "unit": "HGU-1",
+      "service": "Shift Conversion Reactor",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Process_Unit_Startup.pdf",
+          "sops/SOP_Process_Unit_Shutdown.pdf",
+          "sops/SOP_Process_Upset_Response.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/R-302_pm_schedule.xlsx",
+          "maintenance/work_orders/R-302_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/R-302_inspection_history.pdf",
+          "quality/risk_based_inspection/R-302_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/R-302_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/process_equipment/R-302_operation_manual.pdf"
+        ],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/R-302_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/Catalytic_Process_Works_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/R-302_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "E-401": {
+      "asset_id": "E-401",
+      "asset_type": "Shell and Tube Exchanger",
+      "unit": "HGU-1",
+      "service": "Reforming Feed Preheater",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Heat_Exchanger_Operation.pdf",
+          "sops/SOP_Heat_Exchanger_Isolation_and_Cleaning.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/E-401_pm_schedule.xlsx",
+          "maintenance/work_orders/E-401_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/E-401_inspection_history.pdf",
+          "quality/risk_based_inspection/E-401_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/E-401_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/static_equipment/E-401_technical_manual.pdf"
+        ],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/E-401_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/Thermex_Engineering_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/E-401_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "E-402": {
+      "asset_id": "E-402",
+      "asset_type": "Waste Heat Boiler/Cooler",
+      "unit": "HGU-1",
+      "service": "Syngas Cooler",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Utility_System_Operation.pdf",
+          "sops/SOP_Utility_System_Emergency_Response.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/E-402_pm_schedule.xlsx",
+          "maintenance/work_orders/E-402_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/E-402_inspection_history.pdf",
+          "quality/risk_based_inspection/E-402_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/E-402_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/E-402_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/ThermoRecovery_Systems_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/E-402_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "P-301": {
+      "asset_id": "P-301",
+      "asset_type": "Multistage Centrifugal Pump",
+      "unit": "HGU-1",
+      "service": "Boiler Feedwater Pump",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Rotating_Equipment_Startup.pdf",
+          "sops/SOP_Rotating_Equipment_Shutdown.pdf",
+          "sops/SOP_Rotating_Equipment_Abnormal_Operation.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/P-301_pm_schedule.xlsx",
+          "maintenance/work_orders/P-301_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/P-301_inspection_history.pdf",
+          "quality/risk_based_inspection/P-301_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/P-301_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/rotating_equipment/P-301_operation_maintenance_manual.pdf"
+        ],
+        "instrumentation": [
+          "instrumentation/condition_monitoring/P-301_vibration_monitoring.csv",
+          "instrumentation/condition_monitoring/P-301_temperature_monitoring.csv"
+        ],
+        "procurement": [
+          "procurement/spare_parts/P-301_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/HydroMach_Systems_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/P-301_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "P-302": {
+      "asset_id": "P-302",
+      "asset_type": "Centrifugal Pump",
+      "unit": "HGU-1",
+      "service": "Condensate Pump",
+      "criticality": "MEDIUM",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Rotating_Equipment_Startup.pdf",
+          "sops/SOP_Rotating_Equipment_Shutdown.pdf",
+          "sops/SOP_Rotating_Equipment_Abnormal_Operation.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/P-302_pm_schedule.xlsx",
+          "maintenance/work_orders/P-302_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/P-302_inspection_history.pdf"
+        ],
+        "specifications": [
+          "specs/P-302_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/rotating_equipment/P-302_operation_maintenance_manual.pdf"
+        ],
+        "instrumentation": [
+          "instrumentation/condition_monitoring/P-302_vibration_monitoring.csv",
+          "instrumentation/condition_monitoring/P-302_temperature_monitoring.csv"
+        ],
+        "procurement": [
+          "procurement/spare_parts/P-302_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/HydroMach_Systems_vendor_profile.json"
+        ],
+        "historical_records": []
+      }
+    },
+    "B-101": {
+      "asset_id": "B-101",
+      "asset_type": "Water Tube Boiler",
+      "unit": "UTY",
+      "service": "Utility Boiler A",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Utility_System_Operation.pdf",
+          "sops/SOP_Utility_System_Emergency_Response.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/B-101_pm_schedule.xlsx",
+          "maintenance/work_orders/B-101_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/B-101_inspection_history.pdf",
+          "quality/risk_based_inspection/B-101_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/B-101_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/B-101_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/SteamCore_Systems_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/B-101_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "B-102": {
+      "asset_id": "B-102",
+      "asset_type": "Water Tube Boiler",
+      "unit": "UTY",
+      "service": "Utility Boiler B",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Utility_System_Operation.pdf",
+          "sops/SOP_Utility_System_Emergency_Response.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/B-102_pm_schedule.xlsx",
+          "maintenance/work_orders/B-102_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/B-102_inspection_history.pdf",
+          "quality/risk_based_inspection/B-102_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/B-102_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/B-102_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/SteamCore_Systems_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/B-102_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "DG-101": {
+      "asset_id": "DG-101",
+      "asset_type": "Diesel Generator",
+      "unit": "UTY",
+      "service": "Emergency Diesel Generator A",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Electrical_Equipment_Operation.pdf",
+          "sops/SOP_Electrical_Isolation_LOTO.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/DG-101_pm_schedule.xlsx",
+          "maintenance/work_orders/DG-101_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/DG-101_inspection_history.pdf",
+          "quality/electrical/DG-101_electrical_inspection_report.pdf",
+          "quality/risk_based_inspection/DG-101_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/DG-101_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/DG-101_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/PowerGen_India_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/DG-101_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "DG-102": {
+      "asset_id": "DG-102",
+      "asset_type": "Diesel Generator",
+      "unit": "UTY",
+      "service": "Emergency Diesel Generator B",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Electrical_Equipment_Operation.pdf",
+          "sops/SOP_Electrical_Isolation_LOTO.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/DG-102_pm_schedule.xlsx",
+          "maintenance/work_orders/DG-102_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/DG-102_inspection_history.pdf",
+          "quality/electrical/DG-102_electrical_inspection_report.pdf",
+          "quality/risk_based_inspection/DG-102_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/DG-102_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/DG-102_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/PowerGen_India_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/DG-102_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "CT-101": {
+      "asset_id": "CT-101",
+      "asset_type": "Induced Draft Cooling Tower",
+      "unit": "UTY",
+      "service": "Cooling Tower Cell A",
+      "criticality": "MEDIUM",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Utility_System_Operation.pdf",
+          "sops/SOP_Utility_System_Emergency_Response.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/CT-101_pm_schedule.xlsx",
+          "maintenance/work_orders/CT-101_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/CT-101_inspection_history.pdf"
+        ],
+        "specifications": [
+          "specs/CT-101_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/CT-101_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/CoolFlow_Systems_vendor_profile.json"
+        ],
+        "historical_records": []
+      }
+    },
+    "CT-102": {
+      "asset_id": "CT-102",
+      "asset_type": "Induced Draft Cooling Tower",
+      "unit": "UTY",
+      "service": "Cooling Tower Cell B",
+      "criticality": "MEDIUM",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Utility_System_Operation.pdf",
+          "sops/SOP_Utility_System_Emergency_Response.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/CT-102_pm_schedule.xlsx",
+          "maintenance/work_orders/CT-102_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/CT-102_inspection_history.pdf"
+        ],
+        "specifications": [
+          "specs/CT-102_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/CT-102_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/CoolFlow_Systems_vendor_profile.json"
+        ],
+        "historical_records": []
+      }
+    },
+    "CT-103": {
+      "asset_id": "CT-103",
+      "asset_type": "Induced Draft Cooling Tower",
+      "unit": "UTY",
+      "service": "Cooling Tower Cell C",
+      "criticality": "MEDIUM",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Utility_System_Operation.pdf",
+          "sops/SOP_Utility_System_Emergency_Response.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/CT-103_pm_schedule.xlsx",
+          "maintenance/work_orders/CT-103_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/CT-103_inspection_history.pdf"
+        ],
+        "specifications": [
+          "specs/CT-103_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/CT-103_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/CoolFlow_Systems_vendor_profile.json"
+        ],
+        "historical_records": []
+      }
+    },
+    "P-401": {
+      "asset_id": "P-401",
+      "asset_type": "Vertical Turbine Pump",
+      "unit": "UTY",
+      "service": "Cooling Water Pump A",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Rotating_Equipment_Startup.pdf",
+          "sops/SOP_Rotating_Equipment_Shutdown.pdf",
+          "sops/SOP_Rotating_Equipment_Abnormal_Operation.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/P-401_pm_schedule.xlsx",
+          "maintenance/work_orders/P-401_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/P-401_inspection_history.pdf",
+          "quality/risk_based_inspection/P-401_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/P-401_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/rotating_equipment/P-401_operation_maintenance_manual.pdf"
+        ],
+        "instrumentation": [
+          "instrumentation/condition_monitoring/P-401_vibration_monitoring.csv",
+          "instrumentation/condition_monitoring/P-401_temperature_monitoring.csv"
+        ],
+        "procurement": [
+          "procurement/spare_parts/P-401_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/AquaDrive_Engineering_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/P-401_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "P-402": {
+      "asset_id": "P-402",
+      "asset_type": "Vertical Turbine Pump",
+      "unit": "UTY",
+      "service": "Cooling Water Pump B",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Rotating_Equipment_Startup.pdf",
+          "sops/SOP_Rotating_Equipment_Shutdown.pdf",
+          "sops/SOP_Rotating_Equipment_Abnormal_Operation.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/P-402_pm_schedule.xlsx",
+          "maintenance/work_orders/P-402_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/P-402_inspection_history.pdf",
+          "quality/risk_based_inspection/P-402_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/P-402_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/rotating_equipment/P-402_operation_maintenance_manual.pdf"
+        ],
+        "instrumentation": [
+          "instrumentation/condition_monitoring/P-402_vibration_monitoring.csv",
+          "instrumentation/condition_monitoring/P-402_temperature_monitoring.csv"
+        ],
+        "procurement": [
+          "procurement/spare_parts/P-402_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/AquaDrive_Engineering_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/P-402_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "P-403": {
+      "asset_id": "P-403",
+      "asset_type": "Vertical Turbine Pump",
+      "unit": "UTY",
+      "service": "Cooling Water Pump C",
+      "criticality": "MEDIUM",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Rotating_Equipment_Startup.pdf",
+          "sops/SOP_Rotating_Equipment_Shutdown.pdf",
+          "sops/SOP_Rotating_Equipment_Abnormal_Operation.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/P-403_pm_schedule.xlsx",
+          "maintenance/work_orders/P-403_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/P-403_inspection_history.pdf"
+        ],
+        "specifications": [
+          "specs/P-403_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/rotating_equipment/P-403_operation_maintenance_manual.pdf"
+        ],
+        "instrumentation": [
+          "instrumentation/condition_monitoring/P-403_vibration_monitoring.csv",
+          "instrumentation/condition_monitoring/P-403_temperature_monitoring.csv"
+        ],
+        "procurement": [
+          "procurement/spare_parts/P-403_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/AquaDrive_Engineering_vendor_profile.json"
+        ],
+        "historical_records": []
+      }
+    },
+    "AC-101": {
+      "asset_id": "AC-101",
+      "asset_type": "Oil-Free Screw Compressor",
+      "unit": "UTY",
+      "service": "Instrument Air Compressor A",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Rotating_Equipment_Startup.pdf",
+          "sops/SOP_Rotating_Equipment_Shutdown.pdf",
+          "sops/SOP_Rotating_Equipment_Abnormal_Operation.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/AC-101_pm_schedule.xlsx",
+          "maintenance/work_orders/AC-101_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/AC-101_inspection_history.pdf",
+          "quality/risk_based_inspection/AC-101_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/AC-101_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/rotating_equipment/AC-101_operation_maintenance_manual.pdf"
+        ],
+        "instrumentation": [
+          "instrumentation/condition_monitoring/AC-101_vibration_monitoring.csv",
+          "instrumentation/condition_monitoring/AC-101_temperature_monitoring.csv"
+        ],
+        "procurement": [
+          "procurement/spare_parts/AC-101_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/AirWorks_Industrial_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/AC-101_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "AC-102": {
+      "asset_id": "AC-102",
+      "asset_type": "Oil-Free Screw Compressor",
+      "unit": "UTY",
+      "service": "Instrument Air Compressor B",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Rotating_Equipment_Startup.pdf",
+          "sops/SOP_Rotating_Equipment_Shutdown.pdf",
+          "sops/SOP_Rotating_Equipment_Abnormal_Operation.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/AC-102_pm_schedule.xlsx",
+          "maintenance/work_orders/AC-102_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/AC-102_inspection_history.pdf",
+          "quality/risk_based_inspection/AC-102_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/AC-102_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/rotating_equipment/AC-102_operation_maintenance_manual.pdf"
+        ],
+        "instrumentation": [
+          "instrumentation/condition_monitoring/AC-102_vibration_monitoring.csv",
+          "instrumentation/condition_monitoring/AC-102_temperature_monitoring.csv"
+        ],
+        "procurement": [
+          "procurement/spare_parts/AC-102_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/AirWorks_Industrial_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/AC-102_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "AC-103": {
+      "asset_id": "AC-103",
+      "asset_type": "Oil-Free Screw Compressor",
+      "unit": "UTY",
+      "service": "Instrument Air Compressor C",
+      "criticality": "MEDIUM",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Rotating_Equipment_Startup.pdf",
+          "sops/SOP_Rotating_Equipment_Shutdown.pdf",
+          "sops/SOP_Rotating_Equipment_Abnormal_Operation.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/AC-103_pm_schedule.xlsx",
+          "maintenance/work_orders/AC-103_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/AC-103_inspection_history.pdf"
+        ],
+        "specifications": [
+          "specs/AC-103_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/rotating_equipment/AC-103_operation_maintenance_manual.pdf"
+        ],
+        "instrumentation": [
+          "instrumentation/condition_monitoring/AC-103_vibration_monitoring.csv",
+          "instrumentation/condition_monitoring/AC-103_temperature_monitoring.csv"
+        ],
+        "procurement": [
+          "procurement/spare_parts/AC-103_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/AirWorks_Industrial_vendor_profile.json"
+        ],
+        "historical_records": []
+      }
+    },
+    "TK-101": {
+      "asset_id": "TK-101",
+      "asset_type": "Storage Tank",
+      "unit": "TKF",
+      "service": "Crude Oil Storage Tank A",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Tank_Operation_and_Inventory_Control.pdf",
+          "sops/SOP_Tank_Overfill_Prevention.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/TK-101_pm_schedule.xlsx",
+          "maintenance/work_orders/TK-101_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/TK-101_inspection_history.pdf",
+          "quality/tank_integrity/TK-101_tank_integrity_assessment.pdf",
+          "quality/risk_based_inspection/TK-101_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/TK-101_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/TK-101_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/TankWorks_Engineering_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/TK-101_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "TK-102": {
+      "asset_id": "TK-102",
+      "asset_type": "Storage Tank",
+      "unit": "TKF",
+      "service": "Crude Oil Storage Tank B",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Tank_Operation_and_Inventory_Control.pdf",
+          "sops/SOP_Tank_Overfill_Prevention.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/TK-102_pm_schedule.xlsx",
+          "maintenance/work_orders/TK-102_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/TK-102_inspection_history.pdf",
+          "quality/tank_integrity/TK-102_tank_integrity_assessment.pdf",
+          "quality/risk_based_inspection/TK-102_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/TK-102_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/TK-102_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/TankWorks_Engineering_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/TK-102_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "TK-103": {
+      "asset_id": "TK-103",
+      "asset_type": "Storage Tank",
+      "unit": "TKF",
+      "service": "Intermediate Product Tank",
+      "criticality": "MEDIUM",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Tank_Operation_and_Inventory_Control.pdf",
+          "sops/SOP_Tank_Overfill_Prevention.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/TK-103_pm_schedule.xlsx",
+          "maintenance/work_orders/TK-103_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/TK-103_inspection_history.pdf",
+          "quality/tank_integrity/TK-103_tank_integrity_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/TK-103_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/TK-103_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/TankWorks_Engineering_vendor_profile.json"
+        ],
+        "historical_records": []
+      }
+    },
+    "TK-104": {
+      "asset_id": "TK-104",
+      "asset_type": "Storage Tank",
+      "unit": "TKF",
+      "service": "Diesel Storage Tank A",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Tank_Operation_and_Inventory_Control.pdf",
+          "sops/SOP_Tank_Overfill_Prevention.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/TK-104_pm_schedule.xlsx",
+          "maintenance/work_orders/TK-104_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/TK-104_inspection_history.pdf",
+          "quality/tank_integrity/TK-104_tank_integrity_assessment.pdf",
+          "quality/risk_based_inspection/TK-104_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/TK-104_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/TK-104_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/TankWorks_Engineering_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/TK-104_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "TK-105": {
+      "asset_id": "TK-105",
+      "asset_type": "Storage Tank",
+      "unit": "TKF",
+      "service": "Diesel Storage Tank B",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Tank_Operation_and_Inventory_Control.pdf",
+          "sops/SOP_Tank_Overfill_Prevention.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/TK-105_pm_schedule.xlsx",
+          "maintenance/work_orders/TK-105_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/TK-105_inspection_history.pdf",
+          "quality/tank_integrity/TK-105_tank_integrity_assessment.pdf",
+          "quality/risk_based_inspection/TK-105_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/TK-105_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/TK-105_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/TankWorks_Engineering_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/TK-105_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "TK-106": {
+      "asset_id": "TK-106",
+      "asset_type": "Storage Tank",
+      "unit": "TKF",
+      "service": "Naphtha Storage Tank",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Tank_Operation_and_Inventory_Control.pdf",
+          "sops/SOP_Tank_Overfill_Prevention.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/TK-106_pm_schedule.xlsx",
+          "maintenance/work_orders/TK-106_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/TK-106_inspection_history.pdf",
+          "quality/tank_integrity/TK-106_tank_integrity_assessment.pdf",
+          "quality/risk_based_inspection/TK-106_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/TK-106_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/TK-106_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/TankWorks_Engineering_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/TK-106_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "TK-107": {
+      "asset_id": "TK-107",
+      "asset_type": "Storage Tank",
+      "unit": "TKF",
+      "service": "ATF Storage Tank",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Tank_Operation_and_Inventory_Control.pdf",
+          "sops/SOP_Tank_Overfill_Prevention.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/TK-107_pm_schedule.xlsx",
+          "maintenance/work_orders/TK-107_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/TK-107_inspection_history.pdf",
+          "quality/tank_integrity/TK-107_tank_integrity_assessment.pdf",
+          "quality/risk_based_inspection/TK-107_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/TK-107_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/TK-107_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/TankWorks_Engineering_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/TK-107_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "TK-108": {
+      "asset_id": "TK-108",
+      "asset_type": "Storage Tank",
+      "unit": "TKF",
+      "service": "Fuel Oil Storage Tank",
+      "criticality": "MEDIUM",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Tank_Operation_and_Inventory_Control.pdf",
+          "sops/SOP_Tank_Overfill_Prevention.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/TK-108_pm_schedule.xlsx",
+          "maintenance/work_orders/TK-108_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/TK-108_inspection_history.pdf",
+          "quality/tank_integrity/TK-108_tank_integrity_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/TK-108_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/TK-108_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/TankWorks_Engineering_vendor_profile.json"
+        ],
+        "historical_records": []
+      }
+    },
+    "TK-109": {
+      "asset_id": "TK-109",
+      "asset_type": "Storage Tank",
+      "unit": "TKF",
+      "service": "Slop Oil Tank",
+      "criticality": "MEDIUM",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Tank_Operation_and_Inventory_Control.pdf",
+          "sops/SOP_Tank_Overfill_Prevention.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/TK-109_pm_schedule.xlsx",
+          "maintenance/work_orders/TK-109_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/TK-109_inspection_history.pdf",
+          "quality/tank_integrity/TK-109_tank_integrity_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/TK-109_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/TK-109_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/TankWorks_Engineering_vendor_profile.json"
+        ],
+        "historical_records": []
+      }
+    },
+    "TK-110": {
+      "asset_id": "TK-110",
+      "asset_type": "Storage Tank",
+      "unit": "TKF",
+      "service": "Firewater Storage Tank",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Tank_Operation_and_Inventory_Control.pdf",
+          "sops/SOP_Tank_Overfill_Prevention.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/TK-110_pm_schedule.xlsx",
+          "maintenance/work_orders/TK-110_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/TK-110_inspection_history.pdf",
+          "quality/tank_integrity/TK-110_tank_integrity_assessment.pdf",
+          "quality/risk_based_inspection/TK-110_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/TK-110_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/TK-110_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/TankWorks_Engineering_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/TK-110_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "P-501": {
+      "asset_id": "P-501",
+      "asset_type": "Centrifugal Pump",
+      "unit": "TKF",
+      "service": "Crude Transfer Pump A",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Rotating_Equipment_Startup.pdf",
+          "sops/SOP_Rotating_Equipment_Shutdown.pdf",
+          "sops/SOP_Rotating_Equipment_Abnormal_Operation.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/P-501_pm_schedule.xlsx",
+          "maintenance/work_orders/P-501_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/P-501_inspection_history.pdf",
+          "quality/risk_based_inspection/P-501_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/P-501_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/rotating_equipment/P-501_operation_maintenance_manual.pdf"
+        ],
+        "instrumentation": [
+          "instrumentation/condition_monitoring/P-501_vibration_monitoring.csv",
+          "instrumentation/condition_monitoring/P-501_temperature_monitoring.csv"
+        ],
+        "procurement": [
+          "procurement/spare_parts/P-501_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/MechFlow_Industries_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/P-501_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "P-502": {
+      "asset_id": "P-502",
+      "asset_type": "Centrifugal Pump",
+      "unit": "TKF",
+      "service": "Crude Transfer Pump B",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Rotating_Equipment_Startup.pdf",
+          "sops/SOP_Rotating_Equipment_Shutdown.pdf",
+          "sops/SOP_Rotating_Equipment_Abnormal_Operation.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/P-502_pm_schedule.xlsx",
+          "maintenance/work_orders/P-502_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/P-502_inspection_history.pdf",
+          "quality/risk_based_inspection/P-502_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/P-502_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/rotating_equipment/P-502_operation_maintenance_manual.pdf"
+        ],
+        "instrumentation": [
+          "instrumentation/condition_monitoring/P-502_vibration_monitoring.csv",
+          "instrumentation/condition_monitoring/P-502_temperature_monitoring.csv"
+        ],
+        "procurement": [
+          "procurement/spare_parts/P-502_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/MechFlow_Industries_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/P-502_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "P-503": {
+      "asset_id": "P-503",
+      "asset_type": "Centrifugal Pump",
+      "unit": "TKF",
+      "service": "Diesel Transfer Pump",
+      "criticality": "MEDIUM",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Rotating_Equipment_Startup.pdf",
+          "sops/SOP_Rotating_Equipment_Shutdown.pdf",
+          "sops/SOP_Rotating_Equipment_Abnormal_Operation.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/P-503_pm_schedule.xlsx",
+          "maintenance/work_orders/P-503_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/P-503_inspection_history.pdf"
+        ],
+        "specifications": [
+          "specs/P-503_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/rotating_equipment/P-503_operation_maintenance_manual.pdf"
+        ],
+        "instrumentation": [
+          "instrumentation/condition_monitoring/P-503_vibration_monitoring.csv",
+          "instrumentation/condition_monitoring/P-503_temperature_monitoring.csv"
+        ],
+        "procurement": [
+          "procurement/spare_parts/P-503_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/MechFlow_Industries_vendor_profile.json"
+        ],
+        "historical_records": []
+      }
+    },
+    "P-504": {
+      "asset_id": "P-504",
+      "asset_type": "Centrifugal Pump",
+      "unit": "TKF",
+      "service": "Naphtha Transfer Pump",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Rotating_Equipment_Startup.pdf",
+          "sops/SOP_Rotating_Equipment_Shutdown.pdf",
+          "sops/SOP_Rotating_Equipment_Abnormal_Operation.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/P-504_pm_schedule.xlsx",
+          "maintenance/work_orders/P-504_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/P-504_inspection_history.pdf",
+          "quality/risk_based_inspection/P-504_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/P-504_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/rotating_equipment/P-504_operation_maintenance_manual.pdf"
+        ],
+        "instrumentation": [
+          "instrumentation/condition_monitoring/P-504_vibration_monitoring.csv",
+          "instrumentation/condition_monitoring/P-504_temperature_monitoring.csv"
+        ],
+        "procurement": [
+          "procurement/spare_parts/P-504_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/MechFlow_Industries_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/P-504_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "TR-101": {
+      "asset_id": "TR-101",
+      "asset_type": "Power Transformer",
+      "unit": "ELEC",
+      "service": "Main Refinery Transformer A",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Electrical_Equipment_Operation.pdf",
+          "sops/SOP_Electrical_Isolation_LOTO.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/TR-101_pm_schedule.xlsx",
+          "maintenance/work_orders/TR-101_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/TR-101_inspection_history.pdf",
+          "quality/electrical/TR-101_electrical_inspection_report.pdf",
+          "quality/risk_based_inspection/TR-101_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/TR-101_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/TR-101_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/VoltGrid_Systems_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/TR-101_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "TR-102": {
+      "asset_id": "TR-102",
+      "asset_type": "Power Transformer",
+      "unit": "ELEC",
+      "service": "Main Refinery Transformer B",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Electrical_Equipment_Operation.pdf",
+          "sops/SOP_Electrical_Isolation_LOTO.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/TR-102_pm_schedule.xlsx",
+          "maintenance/work_orders/TR-102_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/TR-102_inspection_history.pdf",
+          "quality/electrical/TR-102_electrical_inspection_report.pdf",
+          "quality/risk_based_inspection/TR-102_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/TR-102_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/TR-102_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/VoltGrid_Systems_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/TR-102_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "TR-103": {
+      "asset_id": "TR-103",
+      "asset_type": "Power Transformer",
+      "unit": "CDU-4",
+      "service": "CDU-4 Transformer",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Electrical_Equipment_Operation.pdf",
+          "sops/SOP_Electrical_Isolation_LOTO.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/TR-103_pm_schedule.xlsx",
+          "maintenance/work_orders/TR-103_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/TR-103_inspection_history.pdf",
+          "quality/electrical/TR-103_electrical_inspection_report.pdf",
+          "quality/risk_based_inspection/TR-103_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/TR-103_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/TR-103_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/VoltGrid_Systems_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/TR-103_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "TR-104": {
+      "asset_id": "TR-104",
+      "asset_type": "Power Transformer",
+      "unit": "HDS-1",
+      "service": "HDS-1 Transformer",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Electrical_Equipment_Operation.pdf",
+          "sops/SOP_Electrical_Isolation_LOTO.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/TR-104_pm_schedule.xlsx",
+          "maintenance/work_orders/TR-104_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/TR-104_inspection_history.pdf",
+          "quality/electrical/TR-104_electrical_inspection_report.pdf",
+          "quality/risk_based_inspection/TR-104_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/TR-104_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/TR-104_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/VoltGrid_Systems_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/TR-104_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "TR-105": {
+      "asset_id": "TR-105",
+      "asset_type": "Power Transformer",
+      "unit": "UTY",
+      "service": "Utility Transformer",
+      "criticality": "MEDIUM",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Electrical_Equipment_Operation.pdf",
+          "sops/SOP_Electrical_Isolation_LOTO.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/TR-105_pm_schedule.xlsx",
+          "maintenance/work_orders/TR-105_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/TR-105_inspection_history.pdf",
+          "quality/electrical/TR-105_electrical_inspection_report.pdf"
+        ],
+        "specifications": [
+          "specs/TR-105_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/TR-105_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/VoltGrid_Systems_vendor_profile.json"
+        ],
+        "historical_records": []
+      }
+    },
+    "MCC-101": {
+      "asset_id": "MCC-101",
+      "asset_type": "MCC Panel",
+      "unit": "CDU-4",
+      "service": "CDU-4 Motor Control Center",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Electrical_Equipment_Operation.pdf",
+          "sops/SOP_Electrical_Isolation_LOTO.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/MCC-101_pm_schedule.xlsx",
+          "maintenance/work_orders/MCC-101_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/MCC-101_inspection_history.pdf",
+          "quality/electrical/MCC-101_electrical_inspection_report.pdf",
+          "quality/risk_based_inspection/MCC-101_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/MCC-101_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/MCC-101_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/ControlGrid_Automation_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/MCC-101_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "MCC-102": {
+      "asset_id": "MCC-102",
+      "asset_type": "MCC Panel",
+      "unit": "HDS-1",
+      "service": "HDS-1 Motor Control Center",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Electrical_Equipment_Operation.pdf",
+          "sops/SOP_Electrical_Isolation_LOTO.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/MCC-102_pm_schedule.xlsx",
+          "maintenance/work_orders/MCC-102_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/MCC-102_inspection_history.pdf",
+          "quality/electrical/MCC-102_electrical_inspection_report.pdf",
+          "quality/risk_based_inspection/MCC-102_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/MCC-102_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/MCC-102_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/ControlGrid_Automation_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/MCC-102_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "MCC-103": {
+      "asset_id": "MCC-103",
+      "asset_type": "MCC Panel",
+      "unit": "UTY",
+      "service": "Utility Motor Control Center",
+      "criticality": "MEDIUM",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Electrical_Equipment_Operation.pdf",
+          "sops/SOP_Electrical_Isolation_LOTO.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/MCC-103_pm_schedule.xlsx",
+          "maintenance/work_orders/MCC-103_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/MCC-103_inspection_history.pdf",
+          "quality/electrical/MCC-103_electrical_inspection_report.pdf"
+        ],
+        "specifications": [
+          "specs/MCC-103_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/MCC-103_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/ControlGrid_Automation_vendor_profile.json"
+        ],
+        "historical_records": []
+      }
+    },
+    "FWP-101": {
+      "asset_id": "FWP-101",
+      "asset_type": "Electric Firewater Pump",
+      "unit": "FIRE",
+      "service": "Firewater Pump A",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Rotating_Equipment_Startup.pdf",
+          "sops/SOP_Rotating_Equipment_Shutdown.pdf",
+          "sops/SOP_Rotating_Equipment_Abnormal_Operation.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/FWP-101_pm_schedule.xlsx",
+          "maintenance/work_orders/FWP-101_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/FWP-101_inspection_history.pdf",
+          "quality/risk_based_inspection/FWP-101_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/FWP-101_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/rotating_equipment/FWP-101_operation_maintenance_manual.pdf"
+        ],
+        "instrumentation": [
+          "instrumentation/condition_monitoring/FWP-101_vibration_monitoring.csv",
+          "instrumentation/condition_monitoring/FWP-101_temperature_monitoring.csv"
+        ],
+        "procurement": [
+          "procurement/spare_parts/FWP-101_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/FireSafe_Engineering_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/FWP-101_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "FWP-102": {
+      "asset_id": "FWP-102",
+      "asset_type": "Electric Firewater Pump",
+      "unit": "FIRE",
+      "service": "Firewater Pump B",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Rotating_Equipment_Startup.pdf",
+          "sops/SOP_Rotating_Equipment_Shutdown.pdf",
+          "sops/SOP_Rotating_Equipment_Abnormal_Operation.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/FWP-102_pm_schedule.xlsx",
+          "maintenance/work_orders/FWP-102_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/FWP-102_inspection_history.pdf",
+          "quality/risk_based_inspection/FWP-102_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/FWP-102_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/rotating_equipment/FWP-102_operation_maintenance_manual.pdf"
+        ],
+        "instrumentation": [
+          "instrumentation/condition_monitoring/FWP-102_vibration_monitoring.csv",
+          "instrumentation/condition_monitoring/FWP-102_temperature_monitoring.csv"
+        ],
+        "procurement": [
+          "procurement/spare_parts/FWP-102_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/FireSafe_Engineering_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/FWP-102_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "FWP-103": {
+      "asset_id": "FWP-103",
+      "asset_type": "Diesel Firewater Pump",
+      "unit": "FIRE",
+      "service": "Diesel Firewater Pump",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Rotating_Equipment_Startup.pdf",
+          "sops/SOP_Rotating_Equipment_Shutdown.pdf",
+          "sops/SOP_Rotating_Equipment_Abnormal_Operation.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/FWP-103_pm_schedule.xlsx",
+          "maintenance/work_orders/FWP-103_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/FWP-103_inspection_history.pdf",
+          "quality/risk_based_inspection/FWP-103_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/FWP-103_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/rotating_equipment/FWP-103_operation_maintenance_manual.pdf"
+        ],
+        "instrumentation": [
+          "instrumentation/condition_monitoring/FWP-103_vibration_monitoring.csv",
+          "instrumentation/condition_monitoring/FWP-103_temperature_monitoring.csv"
+        ],
+        "procurement": [
+          "procurement/spare_parts/FWP-103_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/FireSafe_Engineering_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/FWP-103_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "PT-101": {
+      "asset_id": "PT-101",
+      "asset_type": "Pressure Transmitter",
+      "unit": "CDU-4",
+      "service": "CDU-4 Column Overhead Pressure Transmitter",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Process_Unit_Startup.pdf",
+          "sops/SOP_Process_Unit_Shutdown.pdf",
+          "sops/SOP_Process_Upset_Response.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/PT-101_pm_schedule.xlsx",
+          "maintenance/work_orders/PT-101_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/PT-101_inspection_history.pdf",
+          "quality/risk_based_inspection/PT-101_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/PT-101_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/process_equipment/PT-101_operation_manual.pdf"
+        ],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/PT-101_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/SenseCore_Instruments_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/PT-101_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "PT-201": {
+      "asset_id": "PT-201",
+      "asset_type": "Pressure Transmitter",
+      "unit": "HDS-1",
+      "service": "HDS Reactor Pressure Transmitter",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Process_Unit_Startup.pdf",
+          "sops/SOP_Process_Unit_Shutdown.pdf",
+          "sops/SOP_Process_Upset_Response.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/PT-201_pm_schedule.xlsx",
+          "maintenance/work_orders/PT-201_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/PT-201_inspection_history.pdf",
+          "quality/risk_based_inspection/PT-201_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/PT-201_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/process_equipment/PT-201_operation_manual.pdf"
+        ],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/PT-201_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/SenseCore_Instruments_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/PT-201_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "PT-202": {
+      "asset_id": "PT-202",
+      "asset_type": "Pressure Transmitter",
+      "unit": "HDS-1",
+      "service": "HDS Separator Pressure Transmitter",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Process_Unit_Startup.pdf",
+          "sops/SOP_Process_Unit_Shutdown.pdf",
+          "sops/SOP_Process_Upset_Response.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/PT-202_pm_schedule.xlsx",
+          "maintenance/work_orders/PT-202_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/PT-202_inspection_history.pdf",
+          "quality/risk_based_inspection/PT-202_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/PT-202_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/process_equipment/PT-202_operation_manual.pdf"
+        ],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/PT-202_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/SenseCore_Instruments_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/PT-202_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "PT-301": {
+      "asset_id": "PT-301",
+      "asset_type": "Pressure Transmitter",
+      "unit": "HGU-1",
+      "service": "HGU Hydrogen Header Pressure Transmitter",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Instrument_Calibration_and_Verification.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/PT-301_pm_schedule.xlsx",
+          "maintenance/work_orders/PT-301_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/PT-301_inspection_history.pdf",
+          "quality/risk_based_inspection/PT-301_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/PT-301_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [
+          "instrumentation/calibration/PT-301_calibration_history.xlsx"
+        ],
+        "procurement": [
+          "procurement/spare_parts/PT-301_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/SenseCore_Instruments_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/PT-301_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "TT-101": {
+      "asset_id": "TT-101",
+      "asset_type": "Temperature Transmitter",
+      "unit": "CDU-4",
+      "service": "CDU-4 Heater Outlet Temperature Transmitter",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Instrument_Calibration_and_Verification.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/TT-101_pm_schedule.xlsx",
+          "maintenance/work_orders/TT-101_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/TT-101_inspection_history.pdf",
+          "quality/risk_based_inspection/TT-101_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/TT-101_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [
+          "instrumentation/calibration/TT-101_calibration_history.xlsx"
+        ],
+        "procurement": [
+          "procurement/spare_parts/TT-101_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/ThermoSense_Ltd_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/TT-101_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "TT-201": {
+      "asset_id": "TT-201",
+      "asset_type": "Temperature Transmitter",
+      "unit": "HDS-1",
+      "service": "HDS Reactor Temperature Transmitter",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Process_Unit_Startup.pdf",
+          "sops/SOP_Process_Unit_Shutdown.pdf",
+          "sops/SOP_Process_Upset_Response.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/TT-201_pm_schedule.xlsx",
+          "maintenance/work_orders/TT-201_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/TT-201_inspection_history.pdf",
+          "quality/risk_based_inspection/TT-201_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/TT-201_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/process_equipment/TT-201_operation_manual.pdf"
+        ],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/TT-201_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/ThermoSense_Ltd_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/TT-201_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "TT-202": {
+      "asset_id": "TT-202",
+      "asset_type": "Temperature Transmitter",
+      "unit": "HDS-1",
+      "service": "HDS Effluent Temperature Transmitter",
+      "criticality": "MEDIUM",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Instrument_Calibration_and_Verification.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/TT-202_pm_schedule.xlsx",
+          "maintenance/work_orders/TT-202_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/TT-202_inspection_history.pdf"
+        ],
+        "specifications": [
+          "specs/TT-202_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [
+          "instrumentation/calibration/TT-202_calibration_history.xlsx"
+        ],
+        "procurement": [
+          "procurement/spare_parts/TT-202_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/ThermoSense_Ltd_vendor_profile.json"
+        ],
+        "historical_records": []
+      }
+    },
+    "TT-301": {
+      "asset_id": "TT-301",
+      "asset_type": "Temperature Transmitter",
+      "unit": "HGU-1",
+      "service": "HGU Reformer Outlet Temperature Transmitter",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Process_Unit_Startup.pdf",
+          "sops/SOP_Process_Unit_Shutdown.pdf",
+          "sops/SOP_Process_Upset_Response.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/TT-301_pm_schedule.xlsx",
+          "maintenance/work_orders/TT-301_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/TT-301_inspection_history.pdf",
+          "quality/risk_based_inspection/TT-301_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/TT-301_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/process_equipment/TT-301_operation_manual.pdf"
+        ],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/TT-301_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/ThermoSense_Ltd_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/TT-301_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "FT-101": {
+      "asset_id": "FT-101",
+      "asset_type": "Flow Transmitter",
+      "unit": "CDU-4",
+      "service": "CDU-4 Crude Feed Flow Transmitter",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Instrument_Calibration_and_Verification.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/FT-101_pm_schedule.xlsx",
+          "maintenance/work_orders/FT-101_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/FT-101_inspection_history.pdf",
+          "quality/risk_based_inspection/FT-101_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/FT-101_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [
+          "instrumentation/calibration/FT-101_calibration_history.xlsx"
+        ],
+        "procurement": [
+          "procurement/spare_parts/FT-101_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/FlowMetric_Systems_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/FT-101_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "FT-102": {
+      "asset_id": "FT-102",
+      "asset_type": "Flow Transmitter",
+      "unit": "CDU-4",
+      "service": "CDU-4 Reflux Flow Transmitter",
+      "criticality": "MEDIUM",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Instrument_Calibration_and_Verification.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/FT-102_pm_schedule.xlsx",
+          "maintenance/work_orders/FT-102_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/FT-102_inspection_history.pdf"
+        ],
+        "specifications": [
+          "specs/FT-102_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [
+          "instrumentation/calibration/FT-102_calibration_history.xlsx"
+        ],
+        "procurement": [
+          "procurement/spare_parts/FT-102_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/FlowMetric_Systems_vendor_profile.json"
+        ],
+        "historical_records": []
+      }
+    },
+    "FT-201": {
+      "asset_id": "FT-201",
+      "asset_type": "Flow Transmitter",
+      "unit": "HDS-1",
+      "service": "HDS Feed Flow Transmitter",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Instrument_Calibration_and_Verification.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/FT-201_pm_schedule.xlsx",
+          "maintenance/work_orders/FT-201_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/FT-201_inspection_history.pdf",
+          "quality/risk_based_inspection/FT-201_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/FT-201_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [
+          "instrumentation/calibration/FT-201_calibration_history.xlsx"
+        ],
+        "procurement": [
+          "procurement/spare_parts/FT-201_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/FlowMetric_Systems_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/FT-201_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "FT-202": {
+      "asset_id": "FT-202",
+      "asset_type": "Flow Transmitter",
+      "unit": "HDS-1",
+      "service": "HDS Hydrogen Flow Transmitter",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Instrument_Calibration_and_Verification.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/FT-202_pm_schedule.xlsx",
+          "maintenance/work_orders/FT-202_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/FT-202_inspection_history.pdf",
+          "quality/risk_based_inspection/FT-202_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/FT-202_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [
+          "instrumentation/calibration/FT-202_calibration_history.xlsx"
+        ],
+        "procurement": [
+          "procurement/spare_parts/FT-202_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/FlowMetric_Systems_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/FT-202_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "LT-101": {
+      "asset_id": "LT-101",
+      "asset_type": "Level Transmitter",
+      "unit": "CDU-4",
+      "service": "CDU-4 Reflux Drum Level Transmitter",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Instrument_Calibration_and_Verification.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/LT-101_pm_schedule.xlsx",
+          "maintenance/work_orders/LT-101_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/LT-101_inspection_history.pdf",
+          "quality/risk_based_inspection/LT-101_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/LT-101_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [
+          "instrumentation/calibration/LT-101_calibration_history.xlsx"
+        ],
+        "procurement": [
+          "procurement/spare_parts/LT-101_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/LevelTech_Controls_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/LT-101_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "LT-102": {
+      "asset_id": "LT-102",
+      "asset_type": "Level Transmitter",
+      "unit": "CDU-4",
+      "service": "CDU-4 Bottoms Drum Level Transmitter",
+      "criticality": "MEDIUM",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Instrument_Calibration_and_Verification.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/LT-102_pm_schedule.xlsx",
+          "maintenance/work_orders/LT-102_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/LT-102_inspection_history.pdf"
+        ],
+        "specifications": [
+          "specs/LT-102_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [
+          "instrumentation/calibration/LT-102_calibration_history.xlsx"
+        ],
+        "procurement": [
+          "procurement/spare_parts/LT-102_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/LevelTech_Controls_vendor_profile.json"
+        ],
+        "historical_records": []
+      }
+    },
+    "LT-201": {
+      "asset_id": "LT-201",
+      "asset_type": "Level Transmitter",
+      "unit": "HDS-1",
+      "service": "HDS High Pressure Separator Level Transmitter",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Process_Unit_Startup.pdf",
+          "sops/SOP_Process_Unit_Shutdown.pdf",
+          "sops/SOP_Process_Upset_Response.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/LT-201_pm_schedule.xlsx",
+          "maintenance/work_orders/LT-201_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/LT-201_inspection_history.pdf",
+          "quality/risk_based_inspection/LT-201_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/LT-201_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/process_equipment/LT-201_operation_manual.pdf"
+        ],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/LT-201_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/LevelTech_Controls_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/LT-201_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "LT-202": {
+      "asset_id": "LT-202",
+      "asset_type": "Level Transmitter",
+      "unit": "HDS-1",
+      "service": "HDS Low Pressure Separator Level Transmitter",
+      "criticality": "MEDIUM",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Process_Unit_Startup.pdf",
+          "sops/SOP_Process_Unit_Shutdown.pdf",
+          "sops/SOP_Process_Upset_Response.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/LT-202_pm_schedule.xlsx",
+          "maintenance/work_orders/LT-202_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/LT-202_inspection_history.pdf"
+        ],
+        "specifications": [
+          "specs/LT-202_technical_specification.pdf"
+        ],
+        "manuals": [
+          "manuals/process_equipment/LT-202_operation_manual.pdf"
+        ],
+        "instrumentation": [],
+        "procurement": [
+          "procurement/spare_parts/LT-202_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/LevelTech_Controls_vendor_profile.json"
+        ],
+        "historical_records": []
+      }
+    },
+    "GD-101": {
+      "asset_id": "GD-101",
+      "asset_type": "Gas Detector",
+      "unit": "CDU-4",
+      "service": "CDU-4 Hydrocarbon Gas Detector North",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Instrument_Calibration_and_Verification.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/GD-101_pm_schedule.xlsx",
+          "maintenance/work_orders/GD-101_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/GD-101_inspection_history.pdf",
+          "quality/risk_based_inspection/GD-101_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/GD-101_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [
+          "instrumentation/calibration/GD-101_calibration_history.xlsx"
+        ],
+        "procurement": [
+          "procurement/spare_parts/GD-101_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/SafeSense_Detection_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/GD-101_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "GD-102": {
+      "asset_id": "GD-102",
+      "asset_type": "Gas Detector",
+      "unit": "CDU-4",
+      "service": "CDU-4 Hydrocarbon Gas Detector South",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Instrument_Calibration_and_Verification.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/GD-102_pm_schedule.xlsx",
+          "maintenance/work_orders/GD-102_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/GD-102_inspection_history.pdf",
+          "quality/risk_based_inspection/GD-102_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/GD-102_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [
+          "instrumentation/calibration/GD-102_calibration_history.xlsx"
+        ],
+        "procurement": [
+          "procurement/spare_parts/GD-102_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/SafeSense_Detection_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/GD-102_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "GD-103": {
+      "asset_id": "GD-103",
+      "asset_type": "Gas Detector",
+      "unit": "HDS-1",
+      "service": "HDS Hydrogen Gas Detector",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Instrument_Calibration_and_Verification.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/GD-103_pm_schedule.xlsx",
+          "maintenance/work_orders/GD-103_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/GD-103_inspection_history.pdf",
+          "quality/risk_based_inspection/GD-103_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/GD-103_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [
+          "instrumentation/calibration/GD-103_calibration_history.xlsx"
+        ],
+        "procurement": [
+          "procurement/spare_parts/GD-103_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/SafeSense_Detection_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/GD-103_failure_event_history.xlsx"
+        ]
+      }
+    },
+    "GD-104": {
+      "asset_id": "GD-104",
+      "asset_type": "Gas Detector",
+      "unit": "HGU-1",
+      "service": "HGU Hydrogen Gas Detector",
+      "criticality": "HIGH",
+      "relationships": {
+        "sops": [
+          "sops/SOP_Instrument_Calibration_and_Verification.pdf"
+        ],
+        "maintenance": [
+          "maintenance/preventive/GD-104_pm_schedule.xlsx",
+          "maintenance/work_orders/GD-104_work_order_history.xlsx"
+        ],
+        "inspection": [
+          "quality/inspection/GD-104_inspection_history.pdf",
+          "quality/risk_based_inspection/GD-104_rbi_assessment.pdf"
+        ],
+        "specifications": [
+          "specs/GD-104_technical_specification.pdf"
+        ],
+        "manuals": [],
+        "instrumentation": [
+          "instrumentation/calibration/GD-104_calibration_history.xlsx"
+        ],
+        "procurement": [
+          "procurement/spare_parts/GD-104_spare_parts_list.xlsx"
+        ],
+        "vendors": [
+          "vendors/SafeSense_Detection_vendor_profile.json"
+        ],
+        "historical_records": [
+          "historical_records/equipment_failures/GD-104_failure_event_history.xlsx"
+        ]
+      }
+    }
+  },
+  "notes": [
+    "This is a relationship index, not proof that every referenced document has already been generated.",
+    "Referenced paths define the target dataset contract for future data generation.",
+    "Paths follow the existing COMPANY_DATA directory structure and do not create a parallel structure."
+  ]
+}

@@ -1,5 +1,6 @@
 from typing import Dict, Any, List, Optional
 from app.agents.state import AgentState, AgentPlan, AgentStepModel, AgentPhase
+from app.agents.intent import classify_query, IntentAnalysis
 from app.llm.ollama_client import ollama_client
 from app.llm.router import model_router
 from app.tools.base import tool_registry
@@ -104,58 +105,217 @@ class Planner:
             return str(artifacts[0])
         return None
 
-    def _fallback_plan(self, state: AgentState) -> AgentPlan:
-        query_lower = state.query.lower()
-        steps = []
+    def _search_input(self, intent: IntentAnalysis, query: str = None, limit: int = 10, **overrides) -> Dict[str, Any]:
+        asset_ids = intent.get("asset_ids") or []
+        years = intent.get("years") or []
+        input_data = {
+            "query": query or intent.get("query") or "",
+            "limit": limit,
+            "asset_id": asset_ids[0] if asset_ids else None,
+            "document_type": intent.get("document_type"),
+            "year": years[0] if years else None,
+            "department": intent.get("department"),
+        }
+        input_data.update(overrides)
+        return input_data
 
-        wants_analysis = any(kw in query_lower for kw in self.ANALYSIS_KEYWORDS)
-        wants_doc = any(kw in query_lower for kw in self.CREATE_DOC_KEYWORDS)
-        wants_code = any(kw in query_lower for kw in self.CODE_KEYWORDS)
-        wants_update = any(kw in query_lower for kw in self.UPDATE_DOC_KEYWORDS) or bool(self.ADD_SECTION_RE.search(query_lower))
-        wants_convert = any(kw in query_lower for kw in self.CONVERT_DOC_KEYWORDS) or bool(self.CONVERT_RE.search(query_lower))
+    def _search_step(self, label: str, intent: IntentAnalysis, query: str = None, limit: int = 10, **overrides) -> AgentStepModel:
+        return AgentStepModel(
+            label=label,
+            tool="search_documents",
+            input_data=self._search_input(intent, query=query, limit=limit, **overrides),
+        )
 
-        if wants_update:
-            artifact_id = self._resolve_artifact_id(state.context)
+    def _complex_plan(self, state: AgentState, intent: IntentAnalysis) -> AgentPlan:
+        """Decompose a multi-task query into a visible ordered step list."""
+        ql = state.query.lower()
+        asset_ids = intent.get("asset_ids") or []
+        years = intent.get("years") or []
+        steps: List[AgentStepModel] = []
+
+        if intent.get("company_related"):
             steps.append(AgentStepModel(
-                label="Update generated artifact (new version)",
-                tool="update_artifact",
-                input_data={"artifact_id": artifact_id, "change_instruction": state.query},
+                label="Retrieve authoritative company information",
+                tool="company_info",
+                input_data={},
             ))
-        elif wants_convert:
-            artifact_id = self._resolve_artifact_id(state.context)
-            target = self._detect_convert_format(query_lower)
+
+        if asset_ids and ql.startswith("give me the"):
+            asset_labels = ", ".join(sorted(set(asset_ids)))
             steps.append(AgentStepModel(
-                label="Convert artifact to new format",
-                tool="convert_artifact",
-                input_data={"artifact_id": artifact_id, "format": target},
+                label=f"Retrieve asset information ({asset_labels})",
+                tool="get_asset",
+                input_data={"asset_id": asset_ids[0]},
             ))
-        elif wants_doc:
+
+        category_group = intent.get("document_type")
+        if category_group or asset_ids:
+            steps.append(self._search_step(
+                "Search knowledge base for relevant documents",
+                intent,
+                limit=10,
+                doc_ids=None,
+            ))
+
+        if intent.get("comparison") and len(years) >= 2:
+            for year in sorted(set(years)):
+                steps.append(self._search_step(
+                    f"Search documents recorded in {year}",
+                    intent,
+                    query=f"{state.query} {year}",
+                    limit=8,
+                    year=year,
+                ))
+
+        if intent.get("summary_level"):
             steps.append(AgentStepModel(
-                label="Generate company document",
+                label="Compile full document text for summarization",
+                tool="summarize_documents",
+                input_data={**self._search_input(intent, query=state.query), "limit": settings.summarization_max_chunks},
+            ))
+
+        if intent.get("comparison"):
+            steps.append(AgentStepModel(
+                label="Compare evidence across the retrieved documents",
+                tool=None,
+                input_data={},
+            ))
+
+        if "analysis" in (intent.get("task_signals") or []):
+            steps.append(AgentStepModel(
+                label="Run structured data analysis",
+                tool="analyze_data",
+                input_data={"query": state.query, "asset_id": asset_ids[0] if asset_ids else None},
+            ))
+
+        if "create_document" in (intent.get("task_signals") or []):
+            steps.append(AgentStepModel(
+                label="Generate the requested company document",
                 tool="generate_document",
                 input_data={"query": state.query, "template": None, "format": None},
             ))
-        elif wants_code:
+
+        if not any(s.tool for s in steps):
+            steps.append(self._search_step("Search knowledge base", intent, limit=10))
+
+        steps.append(AgentStepModel(label="Synthesize answer", tool=None, input_data={}))
+        plan = AgentPlan(steps=steps)
+        state.plan = plan
+        state.phase = AgentPhase.TOOL_EXECUTION
+        return plan
+
+    def _fallback_plan(self, state: AgentState) -> AgentPlan:
+        query_lower = state.query.lower()
+        intent: IntentAnalysis = state.context.get("intent") or classify_query(state.query)
+        state.context["intent"] = intent
+
+        steps: List[AgentStepModel] = []
+
+        wants_analysis = "analysis" in (intent.get("task_signals") or [])
+        wants_doc = any(kw in query_lower for kw in self.CREATE_DOC_KEYWORDS) or intent["category"] in ("create_document",)
+        wants_code = any(kw in query_lower for kw in self.CODE_KEYWORDS) or intent["category"] == "code"
+        wants_update = any(kw in query_lower for kw in self.UPDATE_DOC_KEYWORDS) or bool(self.ADD_SECTION_RE.search(query_lower)) or intent["category"] == "update_artifact"
+        wants_convert = any(kw in query_lower for kw in self.CONVERT_DOC_KEYWORDS) or bool(self.CONVERT_RE.search(query_lower)) or intent["category"] == "convert_artifact"
+
+        # Intent-aware plan branches (the classifier is the primary signal; the
+        # keyword branches below remain as a compatibility backstop).
+        if intent["category"] == "complex":
+            return self._complex_plan(state, intent)
+        if intent["category"] == "summarization":
             steps.append(AgentStepModel(
-                label="Write and run Python in the sandbox",
-                tool="coding_agent",
-                input_data={"query": state.query, "timeout": 30},
+                label="Compile full document text for summarization",
+                tool="summarize_documents",
+                input_data={**self._search_input(intent, query=state.query), "limit": settings.summarization_max_chunks},
             ))
-        else:
-            if any(kw in query_lower for kw in ["pressure", "corrosion", "vibration", "inspection", "p-102", "asset"]):
-                steps.append(AgentStepModel(
-                    label="Search for relevant documents",
-                    tool="search_documents",
-                    input_data={"query": state.query, "limit": 10},
-                ))
-
-                if "pressure" in query_lower or "calculate" in query_lower:
-                    steps.append(AgentStepModel(
-                        label="Calculate pressure deviation",
-                        tool="calculate",
-                        input_data={"expression": "42 - 40", "variables": {}},
+        elif intent["category"] == "comparison":
+            years = sorted(set(intent.get("years") or []))
+            if len(years) >= 2:
+                for year in years:
+                    steps.append(self._search_step(
+                        f"Search documents recorded in {year}",
+                        intent,
+                        query=f"{state.query} {year}",
+                        limit=8,
+                        year=year,
                     ))
+            else:
+                steps.append(self._search_step(
+                    "Search documents to compare", intent, limit=10,
+                ))
+            steps.append(AgentStepModel(label="Compare evidence across documents", tool=None, input_data={}))
+        elif intent["category"] == "company_info":
+            steps.append(AgentStepModel(
+                label="Retrieve authoritative company information",
+                tool="company_info",
+                input_data={"include_assets": True, "include_departments": True},
+            ))
+            if intent.get("asset_ids") or intent.get("document_type"):
+                steps.append(self._search_step("Search knowledge base for related documents", intent, limit=8))
+        elif intent["category"] == "analysis":
+            steps.append(self._search_step("Search for relevant documents", intent, limit=10))
+            steps.append(AgentStepModel(
+                label="Run structured data analysis",
+                tool="analyze_data",
+                input_data={"query": state.query, "asset_id": (intent.get("asset_ids") or [None])[0]},
+            ))
+        else:  # knowledge (the common RAG path)
+            if wants_update:
+                artifact_id = self._resolve_artifact_id(state.context)
+                steps.append(AgentStepModel(
+                    label="Update generated artifact (new version)",
+                    tool="update_artifact",
+                    input_data={"artifact_id": artifact_id, "change_instruction": state.query},
+                ))
+                steps.append(AgentStepModel(label="Synthesize answer", tool=None, input_data={}))
+                plan = AgentPlan(steps=steps)
+                state.plan = plan
+                state.phase = AgentPhase.TOOL_EXECUTION
+                return plan
+            if wants_convert:
+                artifact_id = self._resolve_artifact_id(state.context)
+                target = self._detect_convert_format(query_lower)
+                steps.append(AgentStepModel(
+                    label="Convert artifact to new format",
+                    tool="convert_artifact",
+                    input_data={"artifact_id": artifact_id, "format": target},
+                ))
+                steps.append(AgentStepModel(label="Synthesize answer", tool=None, input_data={}))
+                plan = AgentPlan(steps=steps)
+                state.plan = plan
+                state.phase = AgentPhase.TOOL_EXECUTION
+                return plan
+            if wants_doc:
+                steps.append(AgentStepModel(
+                    label="Generate company document",
+                    tool="generate_document",
+                    input_data={"query": state.query, "template": None, "format": None},
+                ))
+                steps.append(AgentStepModel(label="Synthesize answer", tool=None, input_data={}))
+                plan = AgentPlan(steps=steps)
+                state.plan = plan
+                state.phase = AgentPhase.TOOL_EXECUTION
+                return plan
+            if wants_code:
+                steps.append(AgentStepModel(
+                    label="Write and run Python in the sandbox",
+                    tool="coding_agent",
+                    input_data={"query": state.query, "timeout": 30},
+                ))
+                steps.append(AgentStepModel(label="Synthesize answer", tool=None, input_data={}))
+                plan = AgentPlan(steps=steps)
+                state.plan = plan
+                state.phase = AgentPhase.TOOL_EXECUTION
+                return plan
 
+            # The classifier said knowledge; build a targeted search. The
+            # search tool itself relaxes filters when a document carries only
+            # SOME of the requested attributes (e.g. SOP text lives inside the
+            # P-102 inspection reports).
+            steps.append(self._search_step(
+                "Search knowledge base for relevant documents",
+                intent,
+                limit=10,
+            ))
             if wants_analysis:
                 steps.append(AgentStepModel(
                     label="Run structured data analysis",
@@ -163,12 +323,12 @@ class Planner:
                     input_data={"query": state.query, "asset_id": None},
                 ))
 
-            if not steps:
-                steps.append(AgentStepModel(
-                    label="Search knowledge base",
-                    tool="search_documents",
-                    input_data={"query": state.query, "limit": 5},
-                ))
+        if not any(s.tool for s in steps):
+            steps.append(AgentStepModel(
+                label="Search knowledge base",
+                tool="search_documents",
+                input_data={"query": state.query, "limit": 10},
+            ))
 
         steps.append(AgentStepModel(
             label="Synthesize answer",

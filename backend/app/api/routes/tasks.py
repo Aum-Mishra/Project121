@@ -40,8 +40,8 @@ class TaskResponse(BaseModel):
     owner_id: Optional[int]
     due_date: Optional[str]
     asset: Optional[str]
-    created_at: str
-    updated_at: str
+    created_at: datetime
+    updated_at: datetime
 
     class Config:
         from_attributes = True

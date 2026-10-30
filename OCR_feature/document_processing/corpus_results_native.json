@@ -1,0 +1,263 @@
+{
+  "corpus": "E:\\SIH\\PS117\\OCR_feature\\ApexPetro_Test_Corpus\\ApexPetro_Test_Corpus",
+  "summary": {
+    "pass": 9,
+    "fail": 0,
+    "skipped": 7
+  },
+  "ground_truth": {
+    "status": "PASS",
+    "facts_found": {
+      "P-102": true,
+      "315": true,
+      "1485": true,
+      "475": true,
+      "4.5": true,
+      "5.6": true,
+      "3.9": true,
+      "438": true
+    },
+    "decimal_integrity_ok": true,
+    "asset_id": "P-102",
+    "motor_power_kw": 315,
+    "design_flow_m3h": 475
+  },
+  "categories": [
+    {
+      "category": "01_Digital_PDF",
+      "file": "P-102_Operating_and_Inspection_Report.pdf",
+      "status": "PASS",
+      "processing_status": "success",
+      "file_type": "pdf",
+      "ocr_used": false,
+      "vlm_used": false,
+      "pages": 2,
+      "tables": 6,
+      "images": 0,
+      "chars": 955,
+      "route": [
+        "file_detection",
+        "pdf_digital",
+        "docling",
+        "normalization"
+      ],
+      "warnings": [],
+      "error": null,
+      "elapsed_ms": 152206.0,
+      "preview": "ApexPetro Refining Complex Coastal Refinery - Unit 2 P-102 Operating and Inspection Report table[1] 1. Asset Information table[2] 2. Operating Limits table[3] 3. Historical Inspection Table table[4] table[5] 4. March 2026 Vibration Inciden"
+    },
+    {
+      "category": "02_Scanned_PDF",
+      "status": "SKIPPED",
+      "reason": "skip-ocr"
+    },
+    {
+      "category": "03_Mixed_PDF",
+      "status": "SKIPPED",
+      "reason": "skip-ocr"
+    },
+    {
+      "category": "04_Images",
+      "status": "SKIPPED",
+      "reason": "skip-ocr"
+    },
+    {
+      "category": "05_DOCX",
+      "file": "P-102_Maintenance_Inspection_Report.docx",
+      "status": "PASS",
+      "processing_status": "success",
+      "file_type": "docx",
+      "ocr_used": false,
+      "vlm_used": false,
+      "pages": 1,
+      "tables": 2,
+      "images": 0,
+      "chars": 1768,
+      "route": [
+        "file_detection",
+        "office_native",
+        "normalization"
+      ],
+      "warnings": [],
+      "error": null,
+      "elapsed_ms": 493.9,
+      "preview": "ApexPetro Refining Complex Coastal Refinery - Unit 2 Maintenance Inspection Report Document ID: MNT-P102-2026-0307 Asset ID: P-102 (Feed Transfer Pump) Date: 07 March 2026 Department: Maintenance / Inspection & Integrity 1. Incident Descrip"
+    },
+    {
+      "category": "06_PPTX",
+      "file": "ApexPetro_P-102_Management_Briefing.pptx",
+      "status": "PASS",
+      "processing_status": "success",
+      "file_type": "pptx",
+      "ocr_used": false,
+      "vlm_used": false,
+      "pages": 8,
+      "tables": 5,
+      "images": 0,
+      "chars": 1235,
+      "route": [
+        "file_detection",
+        "office_native",
+        "normalization"
+      ],
+      "warnings": [],
+      "error": null,
+      "elapsed_ms": 125.0,
+      "preview": "P-102 Asset Overview ApexPetro Refining Complex | Coastal Refinery, Unit 2 Departments involved: Operations, Maintenance, Engineering, Inspection & Integrity, Reliability Operating Parameters and Limits 2025 Inspection History 2026 Inspe"
+    },
+    {
+      "category": "07_XLSX",
+      "file": "P-102_Historical_Inspection_Data.xlsx",
+      "status": "PASS",
+      "processing_status": "success",
+      "file_type": "xlsx",
+      "ocr_used": false,
+      "vlm_used": false,
+      "pages": 3,
+      "tables": 3,
+      "images": 0,
+      "chars": 1766,
+      "route": [
+        "file_detection",
+        "office_native",
+        "normalization"
+      ],
+      "warnings": [],
+      "error": null,
+      "elapsed_ms": 385.9,
+      "preview": "Inspection_History Date Asset_ID Parameter Value Unit Operating_Limit Status Department Remarks 2025-01-15 P-102 Discharge Pressure 18.4 bar 18-22 bar Normal Operations Routine inspection reading within range 2025-04-18 P-102 DE Vibration 4"
+    },
+    {
+      "category": "08_CSV",
+      "file": "P-102_Inspection_History.csv",
+      "status": "PASS",
+      "processing_status": "success",
+      "file_type": "csv",
+      "ocr_used": false,
+      "vlm_used": false,
+      "pages": 1,
+      "tables": 1,
+      "images": 0,
+      "chars": 1170,
+      "route": [
+        "file_detection",
+        "office_native",
+        "normalization"
+      ],
+      "warnings": [],
+      "error": null,
+      "elapsed_ms": 83.8,
+      "preview": "Date Asset_ID Parameter Value Unit Operating_Limit Status Department Remarks 2025-01-15 P-102 Discharge Pressure 18.4 bar 18-22 bar Normal Operations Routine inspection reading within range 2025-04-18 P-102 DE Vibration 4.8 mm/s <=4.5 mm/s "
+    },
+    {
+      "category": "09_TXT",
+      "file": "P-102_Maintenance_Notes.txt",
+      "status": "PASS",
+      "processing_status": "success",
+      "file_type": "txt",
+      "ocr_used": false,
+      "vlm_used": false,
+      "pages": 1,
+      "tables": 0,
+      "images": 0,
+      "chars": 1974,
+      "route": [
+        "file_detection",
+        "native_text",
+        "normalization"
+      ],
+      "warnings": [],
+      "error": null,
+      "elapsed_ms": 43.7,
+      "preview": "ApexPetro Refining Complex - Coastal Refinery, Unit 2 Maintenance Notes - Asset P-102 (Feed Transfer Pump) Location: Pump Bay 2 / Unit 2 Department: Maintenance / Inspection & Integrity Date: 07 March 2026 Note: During routine condition "
+    },
+    {
+      "category": "10_Markdown",
+      "file": "P-102_Operating_Procedure.md",
+      "status": "PASS",
+      "processing_status": "success",
+      "file_type": "markdown",
+      "ocr_used": false,
+      "vlm_used": false,
+      "pages": 1,
+      "tables": 2,
+      "images": 0,
+      "chars": 2681,
+      "route": [
+        "file_detection",
+        "native_markup",
+        "normalization"
+      ],
+      "warnings": [],
+      "error": null,
+      "elapsed_ms": 32.5,
+      "preview": "P-102 Feed Transfer Pump - Operating Procedure **ApexPetro Refining Complex \u2014 Coastal Refinery, Unit 2** **Document type:** Internal Operating Procedure **Asset ID:** P-102 **Department:** Operations 1. Purpose This procedure defines the no"
+    },
+    {
+      "category": "11_HTML",
+      "file": "P-102_Engineering_Guidance.html",
+      "status": "PASS",
+      "processing_status": "success",
+      "file_type": "html",
+      "ocr_used": false,
+      "vlm_used": false,
+      "pages": 1,
+      "tables": 3,
+      "images": 0,
+      "chars": 1411,
+      "route": [
+        "file_detection",
+        "native_markup",
+        "normalization"
+      ],
+      "warnings": [],
+      "error": null,
+      "elapsed_ms": 90.2,
+      "preview": "P-102 Engineering Guidance - ApexPetro Refining Complex P-102 Engineering Guidance ApexPetro Refining Complex \u2014 Coastal Refinery, Unit 2 Document Type: Internal Engineering Guidance | Department: Engineering / Process Engineering 1. Asset S"
+    },
+    {
+      "category": "12_Handwritten",
+      "status": "SKIPPED",
+      "reason": "skip-ocr"
+    },
+    {
+      "category": "13_Engineering_Drawing",
+      "status": "SKIPPED",
+      "reason": "skip-ocr"
+    },
+    {
+      "category": "14_Charts",
+      "status": "SKIPPED",
+      "reason": "skip-ocr"
+    },
+    {
+      "category": "15_Photographs",
+      "status": "SKIPPED",
+      "reason": "skip-ocr"
+    },
+    {
+      "category": "16_URL_Test",
+      "file": "P-102_Internal_Engineering_Knowledge.html",
+      "status": "PASS",
+      "processing_status": "success",
+      "file_type": "html",
+      "ocr_used": false,
+      "vlm_used": false,
+      "pages": 1,
+      "tables": 3,
+      "images": 0,
+      "chars": 1267,
+      "route": [
+        "url_input",
+        "url_local_path",
+        "file_detection",
+        "native_markup",
+        "normalization"
+      ],
+      "warnings": [],
+      "error": null,
+      "elapsed_ms": 34.6,
+      "preview": "Internal Engineering Knowledge Base - P-102 P-102 \u2014 Feed Transfer Pump Coastal Refinery, Unit 2 | Engineering Knowledge Page | Owning Department: Engineering Specifications Operating Limits Maintenance History March 2026 Vibration Incident "
+    }
+  ]
+}

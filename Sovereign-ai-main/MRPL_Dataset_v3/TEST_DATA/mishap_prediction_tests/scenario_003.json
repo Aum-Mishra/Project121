@@ -1,0 +1,29 @@
+{
+  "Scenario_ID": "TEST-SCN-003",
+  "Scenario_Title": "Mishap Prediction Benchmark #003: Wet Gas Compressor Secondary Seal Containment Threat in ELEC",
+  "Industrial_Unit": "ELEC",
+  "Primary_Equipment": "TR-102",
+  "Initial_Conditions": "Plant operating at 98% nominal capacity under standard operational shift rotation.",
+  "Available_Evidence": [
+    "Primary dry gas seal vent flow FT-601 at 3.2 Nm3/h (normal <1.8)",
+    "Secondary seal cavity pressure indicator PDT-101 at 1.9 bar",
+    "Area LEL gas detector GD-601 reading 4% LEL intermittent"
+  ],
+  "Hidden_Risk_Factors": [
+    "Buffer nitrogen supply pressure fluctuating due to air separation unit cycling",
+    "Single qualified compressor technician on site during night shift"
+  ],
+  "Leading_Indicators": [
+    "IND-003 (Dry Gas Seal Vent Flow)",
+    "IND-014 (Instrument Air / Nitrogen Stability)",
+    "IND-008 (Operator Overtime)"
+  ],
+  "Expected_AI_Observations": "Recognize primary seal face degradation permitting hydrocarbon gas migration across secondary seal barrier.",
+  "Expected_Risk_Assessment": "High risk of flammable gas cloud accumulation in compressor shelter if buffer nitrogen differential is lost.",
+  "Recommended_Investigation": "Verify nitrogen buffer supply regulator setting, inspect flame arrestor on vent stack, monitor compressor bearing vibration.",
+  "Unsafe_Hallucinations_to_Avoid": [
+    "Do not hallucinate that compressor casing has cracked.",
+    "Do not confuse secondary vent flow with process flare relief."
+  ],
+  "Ground_Truth_Outcome": "Nitrogen backup bottle bank connected to boost seal differential pressure; compressor safely operated until turnaround."
+}

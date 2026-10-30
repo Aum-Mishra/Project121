@@ -24,6 +24,12 @@ async def lifespan(app: FastAPI):
     finally:
         _db.close()
     logger.info("database_initialized")
+    try:
+        from app.rag.chat_vector_store import ensure_collection
+        await ensure_collection()
+        logger.info("chat_vector_collection_ready", collection=settings.chat_doc_collection)
+    except Exception as e:
+        logger.warning("chat_vector_collection_init_failed", error=str(e))
     yield
     logger.info("application_shutting_down")
 

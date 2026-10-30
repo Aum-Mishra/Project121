@@ -1,0 +1,27 @@
+unit_design_parameters:
+  CDU-4:
+    atmospheric_column:
+      height_m: 58.5
+      diameter_m: 7.2
+      total_trays: 52
+      tray_type: Structured Packing & Sieve Trays
+      metallurgy: CS with 3 mm 316L SS Cladding
+    desalter_vessel_D410:
+      type: Dual Grid Electrostatic
+      voltage_kv: 22.0
+      operating_temp_c: 135
+      water_cut_retention_time_min: 25
+    fired_heater_F401:
+      coils: 4
+      burners: 16
+      efficiency_pct: 89.5
+      draft_type: Balanced Forced & Induced Draft
+  HCU-1:
+    hydrocracker_reactor:
+      catalyst: Ni-Mo on Zeolite/Alumina
+      beds: 3
+      bed_quench_medium: Cold Hydrogen Gas
+      design_pressure_bar: 180
+    separator_vessels:
+      V-501_volume_m3: 31
+      design_pressure_bar: 78

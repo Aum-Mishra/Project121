@@ -1,0 +1,78 @@
+{
+  "document_id": "afbfdd205949469ea516a1a53b6db879",
+  "filename": "hello_ocr.png",
+  "file_type": "image",
+  "processing_status": "success",
+  "metadata": {
+    "page_count": 1,
+    "title": null,
+    "author": null,
+    "language": null,
+    "detected_mime": "image/png",
+    "file_size_bytes": 1584,
+    "extra": {
+      "detection_confidence": "high",
+      "detection_notes": []
+    }
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "text": "HELLOOCR PHASE2",
+      "elements": [
+        {
+          "type": "ocr_text",
+          "text": "HELLOOCR PHASE2",
+          "bbox": [
+            21.0,
+            48.0,
+            121.0,
+            64.0
+          ],
+          "confidence": 0.98881,
+          "source": "rapidocr",
+          "metadata": {}
+        }
+      ],
+      "tables": [],
+      "images": [
+        {
+          "page_number": 1,
+          "caption": null,
+          "bbox": null,
+          "width": 480,
+          "height": 140,
+          "ocr_text": "HELLOOCR PHASE2",
+          "visual_description": null,
+          "source": "rapidocr",
+          "metadata": {
+            "ocr_engine": "rapidocr",
+            "line_count": 1,
+            "mean_confidence": 0.98881
+          }
+        }
+      ],
+      "metadata": {
+        "ocr_engine": "rapidocr",
+        "mean_confidence": 0.98881
+      }
+    }
+  ],
+  "full_text": "HELLOOCR PHASE2",
+  "markdown": "HELLOOCR PHASE2",
+  "tables": [],
+  "processing_metadata": {
+    "ocr_used": true,
+    "vision_used": false,
+    "ocr_engine": "rapidocr",
+    "vision_model": null,
+    "processing_route": [
+      "file_detection",
+      "rapidocr",
+      "normalization"
+    ],
+    "warnings": [],
+    "elapsed_ms": 17364.42799999986
+  },
+  "error": null
+}

@@ -1,0 +1,38 @@
+{
+  "document_id": "38df7711bbb64c42a41b264ecee33586",
+  "filename": "P-102_Operating_and_Inspection_Report.pdf",
+  "file_type": "unknown",
+  "source": "P-102_Operating_and_Inspection_Report.pdf",
+  "processing_status": "failed",
+  "metadata": {
+    "page_count": 0,
+    "title": null,
+    "author": null,
+    "language": null,
+    "detected_mime": null,
+    "file_size_bytes": null,
+    "extra": {}
+  },
+  "pages": [],
+  "full_text": "",
+  "markdown": "",
+  "tables": [],
+  "processing_metadata": {
+    "ocr_used": false,
+    "vision_used": false,
+    "ocr_engine": null,
+    "vision_model": null,
+    "processing_route": [
+      "error"
+    ],
+    "warnings": [],
+    "elapsed_ms": null
+  },
+  "error": {
+    "code": "INVALID_INPUT_PATH",
+    "message": "Path traversal is not allowed.",
+    "details": {
+      "path": "..\\ApexPetro_Test_Corpus\\ApexPetro_Test_Corpus\\01_Digital_PDF\\P-102_Operating_and_Inspection_Report.pdf"
+    }
+  }
+}

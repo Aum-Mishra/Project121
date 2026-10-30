@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "dataset_version": "3.0",
+  "registered_artifacts": 61,
+  "pdf_count": 57,
+  "checks": [
+    "All multi-page PDFs use distinct page-specific content.",
+    "Core company, policy, SOP, manual, asset, maintenance, HSE, project and vendor documents are interconnected.",
+    "P-102 values are consistent across master data, SOP, datasheet, inspection and maintenance records.",
+    "Design pressure, approved operating limit and PSV set pressure are distinct.",
+    "Vendor conflict is explicit.",
+    "Test data is isolated in TEST_DATA_REMOVE_LATER.",
+    "LLM content generation is separated from deterministic document rendering."
+  ]
+}

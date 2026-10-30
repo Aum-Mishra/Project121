@@ -1,0 +1,402 @@
+{
+  "pack_name": "Sovereign AI Workbench — Diverse Hands-On UI Seed Pack",
+  "purpose": "Directly seed representative conversations, execution traces and generated artifacts into the UI.",
+  "grounding": "ApexPetro Sovereign Dataset v3.0, supplied Sovereign AI Workbench specification, and the project's supplied 500-case benchmark results.",
+  "important_rule": "Do not fabricate facts, approval identities, security guarantees, engineering dimensions, supplier scores or missing limits.",
+  "questions": [
+    {
+      "id": "Q01",
+      "title": "Company and operating footprint",
+      "execution_size": "Small",
+      "complexity": "Simple",
+      "question": "What is ApexPetro Energy Limited, where is it headquartered, what facilities does it operate, and what are the main refinery and process units in the enterprise?",
+      "answer": {
+        "summary": "ApexPetro Energy Limited (APEL) is an integrated refining and petrochemicals company in the synthetic v3.0 enterprise dataset. Its headquarters is in Mumbai, Maharashtra, India, and its primary site is the Jamnagar Refinery Complex in Gujarat.",
+        "details": [
+          "Company: ApexPetro Energy Limited; established 1987; 8,500 employees; annual capacity 34 MMBPA.",
+          "Facilities: Jamnagar Refinery Complex (refining, utilities, storage and dispatch); Corporate Headquarters in Mumbai; Regulatory Liaison Office in New Delhi.",
+          "Main process units: CDU-1, CDU-2, CDU-3 and CDU-4 for atmospheric crude fractionation; HCU-1 for heavy-fraction conversion; HDS-1 for diesel sulfur reduction.",
+          "Supporting units include Utilities Complex, Tank Farm East, Tank Farm West and Product Dispatch Terminal."
+        ]
+      },
+      "execution_steps": [
+        "Authenticate and resolve company tenant.",
+        "Retrieve company master and master specification.",
+        "Answer from structured company/facility/unit records.",
+        "Cite the relevant company/master records."
+      ],
+      "artifacts": [],
+      "sources": [
+        "company.json",
+        "specs/apexpetro_master.yaml"
+      ]
+    },
+    {
+      "id": "Q02",
+      "title": "Confidential data and AI security",
+      "execution_size": "Medium",
+      "complexity": "Medium / RAG",
+      "question": "Can confidential engineering or inspection information be sent to public cloud AI? Explain the classification levels, the AI policy, the retrieval rule, and the security/audit controls that should apply.",
+      "answer": {
+        "summary": "No. The supplied AI Usage Policy states that confidential information stays inside approved infrastructure and external AI APIs are not used for confidential workflows. Local model inference and local retrieval are approved platform capabilities.",
+        "details": [
+          "Classification levels are PUBLIC, INTERNAL, CONFIDENTIAL and RESTRICTED.",
+          "Inspection reports and engineering calculations are classified CONFIDENTIAL; security architecture may be RESTRICTED.",
+          "Classification metadata remains attached to records and is used as a retrieval filter.",
+          "Recipients must be authorized for the classification, and confidential material must not be pasted into public AI services.",
+          "Confidential workflows use local inference; tool permissions are allow-listed; agent actions are logged; high-risk recommendations require human review.",
+          "Auditable events include task creation, model selection, retrieval, tool calls, artifact generation and approval decisions."
+        ]
+      },
+      "execution_steps": [
+        "Resolve user identity and role.",
+        "Read classification metadata.",
+        "Retrieve AI usage, data classification and information security policies.",
+        "Apply classification-aware retrieval and external-AI policy.",
+        "Return the policy answer and security state.",
+        "Record the query/retrieval event in the audit trail."
+      ],
+      "artifacts": [
+        "Security_Control_Diagram.png"
+      ],
+      "sources": [
+        "policies/ai_usage_policy.pdf",
+        "policies/data_classification_policy.pdf",
+        "policies/information_security_policy.pdf"
+      ]
+    },
+    {
+      "id": "Q03",
+      "title": "CDU-4 production trend",
+      "execution_size": "Medium",
+      "complexity": "Medium / data analysis",
+      "question": "Analyze the 2026 CDU-4 monthly production data from January through July. Show a bar chart for CDU-4 production, identify the highest and lowest months, explain the July change, and provide the data as CSV.",
+      "answer": {
+        "summary": "CDU-4 production rose from 139 kbd in January to 146 kbd in June, then fell to 141 kbd in July.",
+        "details": [
+          "January: 139 kbd; February: 142; March: 144; April: 145; May: 143; June: 146; July: 141.",
+          "Highest recorded month in the supplied January–July data: June at 146 kbd.",
+          "Lowest recorded month: January at 139 kbd.",
+          "July decreased by 5 kbd from June (146 → 141), and the source lists 'P-102 condition review' as the July constraint.",
+          "The average CDU-4 production across January–July is 142.9 kbd."
+        ]
+      },
+      "execution_steps": [
+        "Load production_monthly_summary_2026.xlsx.",
+        "Filter the CDU-4 column for Jan–Jul.",
+        "Calculate min, max, average and month-to-month change.",
+        "Generate a bar chart.",
+        "Export the same source rows to CSV.",
+        "Return the chart and numerical interpretation."
+      ],
+      "artifacts": [
+        "CDU4_Monthly_Production_Bar_Chart.png",
+        "CDU4_production_2026.csv"
+      ],
+      "sources": [
+        "operations/production_monthly_summary_2026.xlsx"
+      ],
+      "graph_analysis": "CDU-4 rises 139→146 kbd from Jan to Jun, then falls to 141 kbd in Jul. June is the peak; January is the minimum. July's source constraint is P-102 condition review."
+    },
+    {
+      "id": "Q04",
+      "title": "Open P2 work-order review",
+      "execution_size": "Medium",
+      "complexity": "Medium / data retrieval",
+      "question": "Find all currently open P2 work orders, group them by asset and owner, explain what each work order is for, and create a CSV that can be shown in the work-order dashboard.",
+      "answer": {
+        "summary": "The supplied open-work-order register contains three OPEN P2 work orders.",
+        "details": [
+          "WO-6021 — P-102 — Mechanical/Engineering — Integrity review — Owner: Inspection & Integrity.",
+          "WO-6050 — F-401 — Mechanical — Burner inspection — Owner: Maintenance.",
+          "WO-6058 — PT-102 — Instrumentation — Calibration verification — Owner: Instrumentation.",
+          "The work-order register also contains planned P3 items, but those are excluded because the request asked specifically for OPEN P2 work orders."
+        ]
+      },
+      "execution_steps": [
+        "Read maintenance/work_order_register.xlsx.",
+        "Filter Priority = P2 and Status = OPEN.",
+        "Group/display by asset and owner.",
+        "Preserve work-order descriptions exactly from the source.",
+        "Export the filtered records as CSV."
+      ],
+      "artifacts": [
+        "Open_P2_Work_Orders.csv",
+        "Open_P2_Work_Order_Chart.png"
+      ],
+      "sources": [
+        "maintenance/work_order_register.xlsx"
+      ],
+      "graph_analysis": "The chart represents two currently OPEN P2 work orders: WO-6021 and WO-6050? Correction: the source contains three OPEN P2 work orders: WO-6021, WO-6050 and WO-6058. The chart uses one bar per work order."
+    },
+    {
+      "id": "Q05",
+      "title": "CDU-4 startup procedure",
+      "execution_size": "Medium",
+      "complexity": "Medium / RAG",
+      "question": "What is the approved CDU-4 startup sequence? Explain pre-start readiness, warm-up, monitoring points, hold conditions and handover, and generate a practical startup checklist document.",
+      "answer": {
+        "summary": "The startup SOP divides the process into pre-start readiness, controlled warm-up, monitoring, hold conditions and handover.",
+        "details": [
+          "Before start: confirm maintenance handback, verify utilities, check line-up, review permits and confirm control-room/field communications.",
+          "Warm-up: establish circulation, begin controlled heating, stabilize column pressure, introduce crude at reduced rate and increase feed in planned steps.",
+          "Monitor furnace outlet temperature, column pressure, feed flow, desalter differential pressure and reflux stability.",
+          "Hold conditions include loss of instrument air, unstable pressure, hydrocarbon leak, critical instrument failure and utility instability.",
+          "During handover, record startup time and deviations, remove/control temporary overrides and transfer stable operation to normal monitoring."
+        ]
+      },
+      "execution_steps": [
+        "Retrieve APEL-SOP-OPS-201.",
+        "Extract the five procedure sections.",
+        "Preserve the order of operations.",
+        "Convert the procedure into a checklist without adding unsupported steps.",
+        "Generate DOCX with traceable source ID."
+      ],
+      "artifacts": [
+        "CDU4_Startup_Readiness_Checklist.docx"
+      ],
+      "sources": [
+        "sops/operations/cdu4_startup.pdf"
+      ]
+    },
+    {
+      "id": "Q06",
+      "title": "Permit-to-work and energy isolation",
+      "execution_size": "Large",
+      "complexity": "Complex / cross-document workflow",
+      "question": "For planned maintenance on a pump, explain how permit-to-work and energy isolation should work together. Cover permit selection, hazards, P-102 isolation boundaries, zero-energy verification, lockout and restoration, and produce a one-page procedural PDF with a flow diagram.",
+      "answer": {
+        "summary": "Permit-to-work identifies the work authorization and field controls; energy isolation identifies and controls the hazardous energy sources. They must be coordinated before work begins and verified before personnel are exposed.",
+        "details": [
+          "Permit selection depends on the work type: hot work, confined space, electrical work, line breaking or work at height.",
+          "Hazard identification includes hydrocarbon release, pressure, temperature, electrical energy, stored mechanical energy and toxic exposure.",
+          "For P-102, the energy-isolation boundary includes M-102 electrical supply, process suction isolation, process discharge isolation, drain/vent as required and stored rotational energy.",
+          "Lockout uses individual locks where required, with a group lockbox for multi-person work and a formal exception process for lock removal.",
+          "Zero-energy verification includes absence-of-voltage testing, pressure confirmation, drain verification and an approved try-start where safe.",
+          "Restoration requires work completion, guards installed, tools removed, locks cleared, line-up restored and operations acceptance."
+        ]
+      },
+      "execution_steps": [
+        "Identify the maintenance task and required permit type.",
+        "Retrieve Permit-to-Work SOP and Energy Isolation SOP.",
+        "Resolve P-102-specific isolation boundary from process/tag records.",
+        "Build a combined permit/isolation sequence.",
+        "Generate PDF and flow diagram.",
+        "Do not invent site-specific permit numbers or approvals."
+      ],
+      "artifacts": [
+        "P-102_Permit_and_Energy_Isolation_Guide.pdf",
+        "permit_energy_isolation_flow.png"
+      ],
+      "sources": [
+        "sops/safety/permit_to_work.pdf",
+        "sops/safety/energy_isolation.pdf",
+        "assets/CDU-4/engineering/P-102_process_diagram.pdf"
+      ]
+    },
+    {
+      "id": "Q07",
+      "title": "Vendor evaluation for critical spares",
+      "execution_size": "Medium",
+      "complexity": "Medium / RAG + structured output",
+      "question": "What criteria should be used to evaluate a supplier for a critical P-102 mechanical seal cartridge? Use only the procurement policy and vendor-evaluation procedure, and create an evaluation checklist without inventing supplier scores.",
+      "answer": {
+        "summary": "The procurement sources require technical and commercial evaluation. The evaluation should check technical capability, datasheet compliance, materials, performance requirements, documentation, spare support, quality certifications, past performance, price, delivery, payment terms, warranty and contract exceptions.",
+        "details": [
+          "Technical qualification covers capability, quality certifications, service capacity, past performance and financial suitability.",
+          "Technical scoring includes datasheet compliance, materials, performance requirements, documentation and spare support.",
+          "Commercial scoring includes price, delivery, payment terms, warranty and contract exceptions.",
+          "Performance review considers on-time delivery, defect rate, response time, documentation quality and warranty closure.",
+          "The AI should compare structured supplier data, cite source documents and not invent supplier facts or negotiation data."
+        ]
+      },
+      "execution_steps": [
+        "Retrieve Procurement Policy and Vendor Evaluation Procedure.",
+        "Extract technical, commercial and performance criteria.",
+        "Create a structured checklist.",
+        "Leave supplier score/value fields blank until evidence is provided.",
+        "Generate XLSX with source/basis columns."
+      ],
+      "artifacts": [
+        "Vendor_Evaluation_Checklist.xlsx"
+      ],
+      "sources": [
+        "policies/procurement_policy.pdf",
+        "procurement/vendor_evaluation_procedure.pdf",
+        "procurement/spare_parts_catalogue.pdf"
+      ]
+    },
+    {
+      "id": "Q08",
+      "title": "Management of Change workflow",
+      "execution_size": "Medium",
+      "complexity": "Medium / RAG",
+      "question": "When does a Management of Change process apply, what screening and technical review are required, and how is the change closed? Explain the full workflow and generate a process diagram and DOCX checklist.",
+      "answer": {
+        "summary": "The MOC procedure applies to defined change triggers such as equipment replacement, control-logic modification, operating-limit change, chemical change and process reroute.",
+        "details": [
+          "Screen the change for safety, environment, production, integrity and training impacts.",
+          "Technical review covers design basis, drawings, calculations, operating procedure and inspection implications.",
+          "Implementation requires approval, construction or logic change, testing, documentation update and operator briefing.",
+          "Closure requires verification of the result, removal of temporary controls, master-data update, evidence archiving and MOC closure."
+        ]
+      },
+      "execution_steps": [
+        "Retrieve APEL-QA-341.",
+        "Identify the trigger type.",
+        "Run screening categories.",
+        "Prepare technical-review checklist.",
+        "Generate a process diagram and DOCX workflow."
+      ],
+      "artifacts": [
+        "Management_of_Change_Workflow.docx",
+        "MOC_Process_Diagram.png"
+      ],
+      "sources": [
+        "quality/management_of_change_procedure.pdf"
+      ]
+    },
+    {
+      "id": "Q09",
+      "title": "Engineering tag relationship drawing",
+      "execution_size": "Large",
+      "complexity": "Complex / multimodal + diagram",
+      "question": "Using the controlled P-102 process/tag information, explain how P-102 is connected to M-102, PT-102, TT-102, FT-210, PSV-102 and XV-410, and generate an engineering-style relationship schematic. Clearly state what the drawing is and is not.",
+      "answer": {
+        "summary": "The controlled tag records identify P-102 as a centrifugal process pump in CDU-4. M-102 drives it; PT-102 measures discharge pressure; TT-102 measures discharge temperature; FT-210 provides crude-flow context; PSV-102 provides pressure protection; and XV-410 is the crude-feed isolation interface.",
+        "details": [
+          "Process sequence: T-401 → XV-410 → P-102 suction → P-102 discharge → CDU-4 feed header.",
+          "PT-102: P-102 discharge pressure.",
+          "TT-102: P-102 discharge temperature.",
+          "FT-210: crude flow context.",
+          "PSV-102: pressure protection with 47.5 bar set pressure.",
+          "XV-410: crude-feed isolation.",
+          "The supplied process diagram explicitly states that it is synthetic and is not an engineering-for-construction drawing or replacement for a controlled plant P&ID. The generated UI schematic therefore must carry the same limitation."
+        ]
+      },
+      "execution_steps": [
+        "Retrieve the controlled process diagram and asset register/datasheet.",
+        "Resolve tag relationships.",
+        "Render only supported relationships.",
+        "Label the result as illustrative.",
+        "Do not add fabrication dimensions, materials or construction tolerances."
+      ],
+      "artifacts": [
+        "P-102_Engineering_Tag_Schematic.png"
+      ],
+      "sources": [
+        "assets/CDU-4/engineering/P-102_process_diagram.pdf",
+        "assets/CDU-4/equipment/P-102/P-102_detailed_datasheet.pdf",
+        "assets/asset_register.xlsx"
+      ]
+    },
+    {
+      "id": "Q10",
+      "title": "Sovereign AI Workbench management summary",
+      "execution_size": "Large",
+      "complexity": "Complex / multi-capability",
+      "question": "Prepare a management-level explanation of the Sovereign AI Workbench: explain how it handles confidential data, how Simple/Medium/Complex routing works, what local AI capabilities are available, how agents and sandbox tools are controlled, and summarize the 500-case benchmark. Generate a 6-slide PPTX.",
+      "answer": {
+        "summary": "The workbench is designed as a local enterprise AI platform that combines governed knowledge, adaptive routing, specialized local models, controlled tools, verification, approval and auditability.",
+        "details": [
+          "Security: confidential workflows use local inference; classification-aware access and retrieval are applied; external AI APIs are prohibited for confidential workflows; tool permissions are allow-listed; high-risk recommendations require human review.",
+          "Routing: Simple requests use a Fast Path; Medium requests use Knowledge/RAG; Complex requests use Agent/DAG orchestration with tools and verification.",
+          "Local AI capabilities include text reasoning, advanced reasoning, vision/document understanding, industrial vision, multimodal image/audio/video/text, speech-to-text, embeddings and reranking.",
+          "Agent execution follows plan → select model/tools → retrieve evidence → execute tools → verify → generate artifact → request approval.",
+          "Sandbox controls include isolation and network restriction; audit events retain task, model, retrieval, tool, artifact and approval activity.",
+          "500-case benchmark: 500 cases across nine workload groups with an overall reported pass rate of 84.2%. The benchmark contains workload-specific pass rates and quality values and should be read together with the case counts."
+        ]
+      },
+      "execution_steps": [
+        "Retrieve the Sovereign AI Workbench manual/specification.",
+        "Retrieve the 500-case benchmark record supplied for the project.",
+        "Build a management-level narrative without adding unsupported security guarantees.",
+        "Create six slides with architecture, security, routing, benchmark and operational outcome.",
+        "Generate PPTX."
+      ],
+      "artifacts": [
+        "Sovereign_AI_Workbench_Management_Summary.pptx"
+      ],
+      "sources": [
+        "Sovereign AI Workbench specification",
+        "Sovereign AI Workbench Operations Manual",
+        "Project 500-case benchmark results"
+      ],
+      "graph_analysis": "The PPTX summarizes the architecture and benchmark at management level; it does not present the 84.2% result as a production SLA."
+    }
+  ],
+  "artifact_index": [
+    {
+      "name": "CDU4_Monthly_Production_Bar_Chart.png",
+      "type": "PNG",
+      "path": "artifacts/CDU4_Monthly_Production_Bar_Chart.png"
+    },
+    {
+      "name": "CDU4_Startup_Readiness_Checklist.docx",
+      "type": "DOCX",
+      "path": "artifacts/CDU4_Startup_Readiness_Checklist.docx"
+    },
+    {
+      "name": "CDU4_production_2026.csv",
+      "type": "CSV",
+      "path": "artifacts/CDU4_production_2026.csv"
+    },
+    {
+      "name": "MOC_Process_Diagram.png",
+      "type": "PNG",
+      "path": "artifacts/MOC_Process_Diagram.png"
+    },
+    {
+      "name": "Management_of_Change_Workflow.docx",
+      "type": "DOCX",
+      "path": "artifacts/Management_of_Change_Workflow.docx"
+    },
+    {
+      "name": "Open_P2_Work_Order_Chart.png",
+      "type": "PNG",
+      "path": "artifacts/Open_P2_Work_Order_Chart.png"
+    },
+    {
+      "name": "Open_P2_Work_Orders.csv",
+      "type": "CSV",
+      "path": "artifacts/Open_P2_Work_Orders.csv"
+    },
+    {
+      "name": "P-102_Engineering_Tag_Schematic.png",
+      "type": "PNG",
+      "path": "artifacts/P-102_Engineering_Tag_Schematic.png"
+    },
+    {
+      "name": "P-102_Permit_and_Energy_Isolation_Guide.pdf",
+      "type": "PDF",
+      "path": "artifacts/P-102_Permit_and_Energy_Isolation_Guide.pdf"
+    },
+    {
+      "name": "Security_Control_Diagram.png",
+      "type": "PNG",
+      "path": "artifacts/Security_Control_Diagram.png"
+    },
+    {
+      "name": "Sovereign_AI_Workbench_Management_Summary.pptx",
+      "type": "PPTX",
+      "path": "artifacts/Sovereign_AI_Workbench_Management_Summary.pptx"
+    },
+    {
+      "name": "Vendor_Evaluation_Checklist.xlsx",
+      "type": "XLSX",
+      "path": "artifacts/Vendor_Evaluation_Checklist.xlsx"
+    }
+  ],
+  "recommended_statuses": {
+    "Q01": "COMPLETED",
+    "Q02": "COMPLETED",
+    "Q03": "COMPLETED",
+    "Q04": "COMPLETED",
+    "Q05": "COMPLETED",
+    "Q06": "READY FOR REVIEW",
+    "Q07": "DRAFT / DATA REQUIRED",
+    "Q08": "COMPLETED",
+    "Q09": "COMPLETED — ILLUSTRATIVE",
+    "Q10": "COMPLETED"
+  }
+}

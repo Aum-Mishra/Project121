@@ -1,0 +1,112 @@
+{
+  "document_id": "1094e9c6aff1437892db5a9d68f3b137",
+  "filename": "mixed_hello.pdf",
+  "file_type": "pdf",
+  "processing_status": "success",
+  "metadata": {
+    "page_count": 2,
+    "title": "mixed_hello",
+    "author": null,
+    "language": null,
+    "detected_mime": "application/pdf",
+    "file_size_bytes": 5002,
+    "extra": {
+      "detection_confidence": "high",
+      "detection_notes": [],
+      "pdf_kind": "mixed",
+      "page_modes": {
+        "1": "native",
+        "2": "ocr"
+      }
+    }
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "text": "Inspection Report Digital PDF Phase1",
+      "elements": [
+        {
+          "type": "paragraph",
+          "text": "Inspection Report Digital PDF Phase1",
+          "bbox": [
+            72.0,
+            732.924,
+            375.12,
+            716.274
+          ],
+          "confidence": null,
+          "source": "docling",
+          "metadata": {}
+        }
+      ],
+      "tables": [],
+      "images": [],
+      "metadata": {
+        "extraction_mode": "native",
+        "provenance": "docling"
+      }
+    },
+    {
+      "page_number": 2,
+      "text": "SCANNED PAGE OCR TEXT",
+      "elements": [
+        {
+          "type": "ocr_text",
+          "text": "SCANNED PAGE OCR TEXT",
+          "bbox": [
+            26.0,
+            74.0,
+            150.0,
+            91.0
+          ],
+          "confidence": 0.97644,
+          "source": "rapidocr",
+          "metadata": {}
+        }
+      ],
+      "tables": [],
+      "images": [
+        {
+          "page_number": 2,
+          "caption": null,
+          "bbox": null,
+          "width": 576,
+          "height": 192,
+          "ocr_text": "SCANNED PAGE OCR TEXT",
+          "visual_description": null,
+          "source": "rapidocr",
+          "metadata": {
+            "ocr_engine": "rapidocr",
+            "line_count": 1,
+            "mean_confidence": 0.97644
+          }
+        }
+      ],
+      "metadata": {
+        "extraction_mode": "ocr",
+        "provenance": "rapidocr",
+        "ocr_engine": "rapidocr",
+        "ocr_mean_confidence": 0.97644
+      }
+    }
+  ],
+  "full_text": "Inspection Report Digital PDF Phase1\n\nSCANNED PAGE OCR TEXT",
+  "markdown": "Inspection Report Digital PDF Phase1\n\nSCANNED PAGE OCR TEXT",
+  "tables": [],
+  "processing_metadata": {
+    "ocr_used": true,
+    "vision_used": false,
+    "ocr_engine": "rapidocr",
+    "vision_model": null,
+    "processing_route": [
+      "file_detection",
+      "pdf_mixed",
+      "docling",
+      "rapidocr",
+      "normalization"
+    ],
+    "warnings": [],
+    "elapsed_ms": 352927.6816000001
+  },
+  "error": null
+}

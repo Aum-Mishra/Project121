@@ -1,0 +1,7 @@
+{
+  "source_of_truth": "specs/apexpetro_master.yaml",
+  "asset_join_key": "asset_id",
+  "document_join_key": "document_id",
+  "work_order_join_key": "work_order_id",
+  "synthetic": true
+}

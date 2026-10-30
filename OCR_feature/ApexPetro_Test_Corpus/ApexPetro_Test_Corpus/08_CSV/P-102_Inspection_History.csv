@@ -1,0 +1,9 @@
+Date,Asset_ID,Parameter,Value,Unit,Operating_Limit,Status,Department,Remarks
+2025-01-15,P-102,Discharge Pressure,18.4,bar,18-22 bar,Normal,Operations,Routine inspection reading within range
+2025-04-18,P-102,DE Vibration,4.8,mm/s,<=4.5 mm/s,High,Inspection & Integrity,Reading exceeded action threshold; flagged for monitoring
+2025-07-22,P-102,Bearing Temperature,78,degC,<=85 degC,Normal,Operations,Routine inspection reading within range
+2025-10-11,P-102,Flow Rate,462,m3/h,450-500 m3/h,Normal,Operations,Routine inspection reading within range
+2026-01-19,P-102,Discharge Pressure,17.2,bar,18-22 bar,Low,Operations,Reading below operating range; suction conditions reviewed
+2026-03-07,P-102,DE Vibration,5.6,mm/s,<=4.5 mm/s,High,Inspection & Integrity,Exceeded threshold; repeat measurement confirmed high reading; maintenance inspection requested; coupling alignment issue identified and corrected; post-maintenance reading 3.9 mm/s
+2026-05-14,P-102,Bearing Temperature,82,degC,<=85 degC,Normal,Operations,Routine inspection reading within range
+2026-08-21,P-102,Flow Rate,438,m3/h,450-500 m3/h,Low,Operations,Reading below operating range; process demand under review

@@ -28,8 +28,9 @@ class AnalyzeDataTool(BaseTool):
             return ToolOutput(success=False, error="Missing db or company_id in context")
 
         query = input_data.get("query", "")
+        asset_id = input_data.get("asset_id") or None
         engine = AnalysisEngine(db, company_id)
-        envelope = await engine.run(query)
+        envelope = await engine.run(query, asset_id=asset_id)
 
         return ToolOutput(success=True, data={
             "query": query,

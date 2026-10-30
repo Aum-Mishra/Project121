@@ -1,0 +1,58 @@
+{
+  "degradation_models": [
+    {
+      "Mode": "Rolling Element Bearing Fatigue Spalling",
+      "Applicable_Assets": [
+        "Pumps (P-102A/B, P-201A/B)",
+        "Electric Motors",
+        "Fin-Fan Cooler Drives"
+      ],
+      "Mathematical_Model": "Weibull Fatigue Life: R(t) = exp(-(t/eta)^beta), where beta=2.8 (wearout phase)",
+      "Telemetry_Signature": [
+        "Demodulated gE energy rises first (4-8 weeks before failure)",
+        "1X and BPFI harmonics appear in velocity spectrum",
+        "Bearing metal temperature elevates (+10 C) in final 48 hours"
+      ],
+      "Critical_Thresholds": {
+        "warning_rms_mm_s": 4.5,
+        "trip_rms_mm_s": 7.1,
+        "warning_ge": 1.5,
+        "trip_ge": 3.5
+      }
+    },
+    {
+      "Mode": "Heat Exchanger Asphaltene Fouling",
+      "Applicable_Assets": [
+        "Crude Preheat Exchanger E-102",
+        "Reboilers E-101"
+      ],
+      "Mathematical_Model": "Kern-Seaton Deposition Rate: dRf/dt = phi - psi*Rf, where Rf is fouling resistance",
+      "Telemetry_Signature": [
+        "Gradual decrease in overall heat transfer coefficient U",
+        "Increase in tube-side pressure drop delta-P",
+        "Compensating fuel gas increase in fired heater F-101"
+      ],
+      "Critical_Thresholds": {
+        "warning_u_deficit_pct": 15.0,
+        "critical_u_deficit_pct": 28.0
+      }
+    },
+    {
+      "Mode": "Centrifugal Compressor Dry Gas Seal Degradation",
+      "Applicable_Assets": [
+        "Gas Compressor C-101",
+        "Recycle Gas Compressor K-201"
+      ],
+      "Mathematical_Model": "Exponential Leakage Growth: Q_vent(t) = Q_0 * exp(alpha * t)",
+      "Telemetry_Signature": [
+        "Primary vent flow FT-601 increase",
+        "Secondary seal cavity pressure PDT-101 rise",
+        "Elevated seal gland skin temperature"
+      ],
+      "Critical_Thresholds": {
+        "warning_vent_flow_Nm3_h": 2.5,
+        "trip_vent_flow_Nm3_h": 4.5
+      }
+    }
+  ]
+}

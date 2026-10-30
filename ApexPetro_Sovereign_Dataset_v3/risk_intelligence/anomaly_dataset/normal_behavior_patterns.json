@@ -1,0 +1,67 @@
+{
+  "units": {
+    "CDU-4": {
+      "crude_feed_rate_normal_range": {
+        "min": 180000,
+        "max": 220000,
+        "unit": "BPD"
+      },
+      "column_top_temp_normal_range": {
+        "min": 105,
+        "max": 118,
+        "unit": "deg C"
+      },
+      "furnace_outlet_temp_normal_range": {
+        "min": 345,
+        "max": 360,
+        "unit": "deg C"
+      },
+      "reflux_ratio_normal_range": {
+        "min": 1.8,
+        "max": 2.6,
+        "unit": "ratio"
+      },
+      "vibration_rms_normal_range": {
+        "min": 0.8,
+        "max": 2.5,
+        "unit": "mm/s"
+      }
+    },
+    "HCU-1": {
+      "reactor_pressure_normal_range": {
+        "min": 140,
+        "max": 165,
+        "unit": "barg"
+      },
+      "reactor_inlet_temp_normal_range": {
+        "min": 380,
+        "max": 415,
+        "unit": "deg C"
+      },
+      "hydrogen_gas_purity_range": {
+        "min": 92.5,
+        "max": 99.0,
+        "unit": "% mol"
+      },
+      "recycle_gas_compressor_vibration": {
+        "min": 1.2,
+        "max": 3.0,
+        "unit": "mm/s"
+      }
+    }
+  },
+  "correlation_bounds": {
+    "crude_flow_vs_reflux_flow": {
+      "min_corr": 0.82,
+      "max_corr": 0.98
+    },
+    "furnace_firing_vs_coil_outlet_temp": {
+      "min_corr": 0.88,
+      "max_corr": 0.99
+    },
+    "pump_motor_current_vs_discharge_pressure": {
+      "min_corr": 0.75,
+      "max_corr": 0.95
+    }
+  }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>P-102 Engineering Guidance - ApexPetro Refining Complex</title>
+<style>
+  body { font-family: Arial, Helvetica, sans-serif; margin: 40px; color: #222; }
+  h1 { color: #1f3864; border-bottom: 2px solid #1f3864; padding-bottom: 8px; }
+  h2 { color: #2f5496; margin-top: 30px; }
+  table { border-collapse: collapse; width: 100%; margin: 15px 0; }
+  th, td { border: 1px solid #999; padding: 8px 12px; text-align: left; }
+  th { background-color: #2f5496; color: white; }
+  .meta { color: #555; font-size: 0.9em; }
+  ul { line-height: 1.6; }
+</style>
+</head>
+<body>
+
+<h1>P-102 Engineering Guidance</h1>
+<p class="meta">ApexPetro Refining Complex &mdash; Coastal Refinery, Unit 2<br>
+Document Type: Internal Engineering Guidance | Department: Engineering / Process Engineering</p>
+
+<h2>1. Asset Specifications</h2>
+<table>
+<tr><th>Field</th><th>Value</th></tr>
+<tr><td>Asset ID</td><td>P-102</td></tr>
+<tr><td>Service</td><td>Feed Transfer Pump</td></tr>
+<tr><td>Location</td><td>Pump Bay 2 / Unit 2</td></tr>
+<tr><td>Motor Power</td><td>315 kW</td></tr>
+<tr><td>Speed</td><td>1485 RPM</td></tr>
+<tr><td>Design Flow</td><td>475 m3/h</td></tr>
+</table>
+
+<h2>2. Operating Limits</h2>
+<table>
+<tr><th>Parameter</th><th>Operating Limit</th><th>Unit</th></tr>
+<tr><td>Discharge Pressure</td><td>18 - 22</td><td>bar</td></tr>
+<tr><td>DE Vibration</td><td>&le; 4.5</td><td>mm/s</td></tr>
+<tr><td>Bearing Temperature</td><td>&le; 85</td><td>degC</td></tr>
+<tr><td>Flow Rate</td><td>450 - 500</td><td>m3/h</td></tr>
+</table>
+
+<h2>3. Abnormal Condition Guidance</h2>
+<p>If Discharge Pressure is outside 18-22 bar:</p>
+<ul>
+  <li>Verify suction conditions</li>
+  <li>Inspect control valve</li>
+  <li>Check pump condition</li>
+</ul>
+
+<p>If DE Vibration exceeds 4.5 mm/s:</p>
+<ul>
+  <li>Inspect alignment</li>
+  <li>Inspect coupling</li>
+  <li>Inspect bearings</li>
+  <li>Inspect foundation</li>
+</ul>
+
+<p>If Bearing Temperature exceeds 85 degC:</p>
+<ul>
+  <li>Check lubrication</li>
+  <li>Check bearing condition</li>
+  <li>Escalate if temperature continues increasing</li>
+</ul>
+
+<p>If Flow Rate is outside 450-500 m3/h:</p>
+<ul>
+  <li>Check process demand</li>
+  <li>Check suction conditions</li>
+  <li>Review pump performance</li>
+</ul>
+
+<h2>4. March 2026 Vibration Incident Summary</h2>
+<p>On 7 March 2026, P-102 DE vibration was recorded at 5.6 mm/s, exceeding the
+4.5 mm/s action threshold. A repeat measurement confirmed the elevated reading.
+A maintenance inspection was requested and identified a coupling alignment issue.
+The coupling alignment was corrected, and post-maintenance vibration was measured
+at 3.9 mm/s, within the operating limit. The pump was returned to service with a
+monitoring period.</p>
+
+<h2>5. Historical Inspection Summary</h2>
+<table>
+<tr><th>Date</th><th>Parameter</th><th>Value</th><th>Status</th></tr>
+<tr><td>15 Jan 2025</td><td>Discharge Pressure</td><td>18.4 bar</td><td>Normal</td></tr>
+<tr><td>18 Apr 2025</td><td>DE Vibration</td><td>4.8 mm/s</td><td>High</td></tr>
+<tr><td>22 Jul 2025</td><td>Bearing Temperature</td><td>78 degC</td><td>Normal</td></tr>
+<tr><td>11 Oct 2025</td><td>Flow Rate</td><td>462 m3/h</td><td>Normal</td></tr>
+<tr><td>19 Jan 2026</td><td>Discharge Pressure</td><td>17.2 bar</td><td>Low</td></tr>
+<tr><td>07 Mar 2026</td><td>DE Vibration</td><td>5.6 mm/s (post-maintenance 3.9 mm/s)</td><td>High</td></tr>
+<tr><td>14 May 2026</td><td>Bearing Temperature</td><td>82 degC</td><td>Normal</td></tr>
+<tr><td>21 Aug 2026</td><td>Flow Rate</td><td>438 m3/h</td><td>Low</td></tr>
+</table>
+
+<p class="meta">This document is fictional test data generated for evaluating an
+on-premise sovereign AI document-processing pipeline. It contains no real company
+information.</p>
+
+</body>
+</html>

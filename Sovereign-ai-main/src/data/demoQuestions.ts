@@ -1,0 +1,715 @@
+import { P102 } from "./demoCore";
+import type { AnalysisEnvelope } from "../components/AnalysisCard";
+import type { ApprovalInfo } from "../components/ApprovalPanel";
+
+export type DemoFileRef = string;
+export type DemoSourceRef = string;
+export type DemoChartRef = string;
+
+export type DemoLiveFile = {
+  id?: string;
+  name: string;
+  type: string;
+  size?: string;
+  url?: string;
+  title?: string;
+  doc_type?: string;
+  format?: string;
+  status?: "READY" | "FAILED";
+  error?: string;
+};
+
+export type DemoQuestion = {
+  id: string;
+  title: string;
+  question: string;
+  keywords: string[];
+  complexity: "simple" | "medium" | "complex";
+  path: "fast" | "knowledge" | "complex";
+  agent: string;
+  model: string;
+  verdict: string;
+  answer: string;
+  findings: { label: string; value: string; status: "good" | "warning" | "critical" }[];
+  plan: string[];
+  steps: string[];
+  proc_lines?: string[];
+  verified: string[];
+  sources: DemoSourceRef[];
+  files: (DemoFileRef | DemoLiveFile)[];
+  charts: DemoChartRef[];
+  analysis?: AnalysisEnvelope;
+  approval?: ApprovalInfo;
+};
+
+const D = (q: Omit<DemoQuestion, "model">): DemoQuestion => ({ ...q, model: "KNOVIA-1 (Local)" });
+
+export const demoQuestions: DemoQuestion[] = [
+  D({
+    id: "Q_C1",
+    title: "Multi-year P-102 Inspection Review",
+    question: "Give me the company information, provide all relevant information about P-102, retrieve the 2024, 2025 and 2026 inspection reports, retrieve the applicable pump inspection SOP, compare the inspection history, identify changes in pressure, corrosion and vibration, calculate the percentage changes, determine whether any operating limits have been exceeded, identify the current risk level, explain the evidence supporting the risk assessment, and create a detailed inspection report for engineering review.",
+    keywords: ["company", "information", "p-102", "2024", "2025", "2026", "inspection", "reports"],
+    complexity: "complex",
+    path: "complex",
+    agent: "Planning Agent",
+    verdict: "Risk level: HIGH",
+    answer: 'The analysis focuses on P-102, retrieving inspection reports for 2024, 2025, and 2026, and the 2026 inspection report. It also includes the pump inspection SOP and cross-references with the 2026 inspection report to identify changes in pressure, corrosion, and vibration. The percentage changes are calculated, and the risk level is determined based on the findings.\n\n### Key Metrics\n\nPressure Changes\nCalculated percentage changes\nNORMAL\n\nCorrosion Changes\nCalculated percentage changes\nNORMAL\n\nVibration Changes\nCalculated percentage changes\nNORMAL\n\nCurrent Pressure\n42.0 bar\nCRITICAL\n\nCurrent Corrosion\n3.8 mm\nCRITICAL\n\nCurrent Vibration\n7.2 mm/s\nCRITICAL\n\n### Findings\n\nP-102 Inspection History\nHIGH\nThe 2024, 2025, and 2026 inspection reports were retrieved and summarize the relevant findings.\n\nPump Inspection SOP\nHIGH\nThe applicable pump inspection SOP was retrieved and compared against the inspection findings.\n\nRisk Level Determination\nHIGH\nThe evidence used for the risk assessment includes the 2026 inspection report and the 2026 pump inspection SOP.\n\nPressure Trend\n2024 → 2026\n34.0 → 37.0 → 42.0 bar\n2025 vs 2024:\n+8.8%\n2026 vs 2025:\n+13.5%\nOverall 2024 → 2026:\n+23.5%\n\nCorrosion Trend\n1.2 → 2.4 → 3.8 mm\n2025 vs 2024:\n+100%\n2026 vs 2025:\n+58.3%\nOverall 2024 → 2026:\n+216.7%\n\nVibration Trend\n4.1 → 5.3 → 7.2 mm/s\n2025 vs 2024:\n+29.3%\n2026 vs 2025:\n+35.8%\nOverall 2024 → 2026:\n+75.6%\n\nOperating Limit\nLatest pressure:\n42.0 bar\nApproved maximum:\n35.0 bar\nThe latest pressure is above the documented maximum operating pressure, based on the supplied source data.\n\n### P-102 INSPECTION READINGS\n\n| Year | Pressure (bar) | Corrosion (mm) | Vibration (mm/s) | Seal Temp (°C) |\n|------|----------------|----------------|------------------|----------------|\n| 2024 | 34.0 | 1.2 | 4.1 | 74.0 |\n| 2025 | 37.0 | 2.4 | 5.3 | 79.0 |\n| 2026 | 42.0 | 3.8 | 7.2 | 84.0 |\n\n### Structured Analysis\n\n**Analysis Summary**\n\n- Pressure Changes: Calculated percentage changes in pressure (NORMAL)\n- Corrosion Changes: Calculated percentage changes in corrosion (NORMAL)\n- Vibration Changes: Calculated percentage changes in vibration (NORMAL)\n- Pressure: 42.0 bar (CRITICAL)\n- Corrosion: 3.8 mm (CRITICAL)\n- Vibration: 7.2 mm/s (CRITICAL)\n\n### Recommendations\n\n- Review and implement the recommended actions from the 2026 inspection report and the applicable pump inspection SOP.\n- Review the 2026 P-102 inspection findings before continued operation based on the supplied risk assessment.',
+    findings: [
+      { label: "P-102 Inspection History", value: "Findings confirmed", status: "critical" },
+      { label: "Pump Inspection SOP", value: "Deviations found", status: "critical" },
+      { label: "Risk Level Determination", value: "HIGH RISK", status: "critical" },
+      { label: "Pressure trend (2024 → 2026)", value: "+23.5%", status: "critical" },
+      { label: "Corrosion trend (2024 → 2026)", value: "+216.7%", status: "critical" },
+      { label: "Vibration trend (2024 → 2026)", value: "+75.6%", status: "critical" },
+      { label: "Operating limit exceeded", value: "42.0 bar > 35.0", status: "critical" }
+    ],
+    plan: [],
+    steps: [
+      "Retrieve authoritative company information",
+      "Retrieve asset information for P-102",
+      "Search the knowledge base for relevant P-102 documents",
+      "Retrieve the 2024 P-102 inspection report",
+      "Retrieve the 2025 P-102 inspection report",
+      "Retrieve the 2026 P-102 inspection report",
+      "Retrieve the applicable pump inspection SOP",
+      "Compile and normalize the retrieved inspection evidence",
+      "Compare pressure, corrosion, and vibration across 2024–2026",
+      "Calculate absolute and percentage changes",
+      "Verify operating limits and determine the current risk level",
+      "Validate the evidence supporting the findings",
+      "Generate the detailed P-102 engineering inspection report",
+      "Synthesize the final engineering response"
+    ],
+    verified: ["Evidence validated", "Sources cited", "Policy checked"],
+    sources: [
+      "metadata_document_registry", "APEL-INS-P102-2024", "operations_process_upset_history",
+      "metadata_relationship_registry", "historical_records_2024_equipment_inspection_summary_2024",
+      "maintenance_maintenance_history_asset_maintenance_history", "instrumentation_instrument_maintenance_history",
+      "APEL-INS-P102-2025", "instrumentation_alarm_event_history", "historical_records_2025_reliability_events_2025",
+      "process_safety_safety_barrier_register", "hse_safety_observation_register",
+      "historical_records_2025_equipment_inspection_summary_2025", "hse_permit_to_work_register",
+      "operations_shift_logs_detailed_shift_log_register", "sops_operations_SOP-OPS-201_abnormal_pressure_response",
+      "APEL-SOP-INS-221", "insp2608", "insp2507", "sop", "datasheet", "cdu4-report"
+    ],
+    files: ["memo-docx"],
+    charts: ["levels-24-26", "pressure-changes", "corrosion-changes", "vibration-changes"]
+  }),
+  D({
+    id: "Q_S1",
+    title: "Current Operating Pressure",
+    question: 'What is the current operating pressure of pump P-102?',
+    keywords: ["operating", "pressure", "p-102", "current"],
+    complexity: "simple",
+    path: "fast",
+    agent: "Knowledge Agent",
+    verdict: "42.0 bar",
+    answer: 'Current operating pressure of P-102: 42.0 bar',
+    findings: [],
+    plan: [],
+    steps: [
+      "Retrieve the latest authorized operating data for P-102",
+      "Verify the current pressure and return the result"
+    ],
+    verified: ["Evidence validated"],
+    sources: [],
+    files: [],
+    charts: []
+  }),
+  D({
+    id: "Q_M1",
+    title: "Pressure & Vibration Comparison",
+    question: 'Compare the operating pressure and vibration of pump P-102 between 2024 and 2026, and explain the changes with the relevant inspection data.',
+    keywords: ["compare", "operating", "pressure", "vibration", "p-102", "2024", "2026"],
+    complexity: "medium",
+    path: "knowledge",
+    agent: "Analysis Agent",
+    verdict: "Significant increases detected",
+    answer: 'Pressure:\n34.0 → 42.0 bar\nChange: +8.0 bar\nPercentage change: +23.5%\n\nVibration:\n4.1 → 7.2 mm/s\nChange: +3.1 mm/s\nPercentage change: +75.6%',
+    findings: [
+      { label: "Pressure 2024", value: "34.0 bar", status: "good" },
+      { label: "Pressure 2026", value: "42.0 bar", status: "critical" },
+      { label: "Vibration 2024", value: "4.1 mm/s", status: "good" },
+      { label: "Vibration 2026", value: "7.2 mm/s", status: "critical" }
+    ],
+    plan: [],
+    steps: [
+      "Retrieve P-102 inspection data for 2024",
+      "Retrieve P-102 inspection data for 2026",
+      "Compare pressure and vibration readings",
+      "Calculate the changes and analyze the trend",
+      "Prepare the comparison and explanation"
+    ],
+    verified: ["Evidence validated", "Sources cited"],
+    sources: ["APEL-INS-P102-2024", "insp2608"],
+    files: [],
+    charts: []
+  }),
+  D({
+    id: "DQ01",
+    title: 'What is the current health status of the',
+    question: 'What is the current health status of the P-102 feed transfer pump on CDU-4?',
+    keywords: ["what", "current", "health", "status", "feed", "transfer", "pump"],
+    complexity: "medium",
+    path: "knowledge",
+    agent: "KNOVIA AI Router",
+    verdict: 'DEGRADED — DE bearing vibration 8.2 mm/s exceeds SOP limit, seal weeping.',
+    answer: 'P-102 is currently DEGRADED against the approved Inspection SOP.\\n\\n- DE bearing vibration is 8.2 mm/s vs the 7.1 mm/s limit.\\n- Mechanical seal weeping since 18 Aug 2026.\\n- Risk assessment places P-102 at HIGH.',
+    findings: [
+      { label: "DE bearing vibration", value: "8.2 mm/s", status: "critical" },
+      { label: "Seal weeping", value: "Yes", status: "critical" }
+    ],
+    plan: ["Analyze question", "Retrieve recent data", "Formulate findings"],
+    steps: ["Analyze question", "Retrieve recent data", "Check limits", "Formulate findings"],
+    verified: ["Evidence validated", "Sources cited", "Policy checked"],
+    sources: ["insp2608", "sop"],
+    files: ["insp-aug26"],
+    charts: ["vibration-trend"]
+  }),
+  D({
+    id: "DQ02",
+    title: 'What is the latest P',
+    question: 'What is the latest P-102 bearing vibration reading and is it within the limit?',
+    keywords: ["what", "latest", "bearing", "vibration", "reading", "within", "limit"],
+    complexity: "medium",
+    path: "knowledge",
+    agent: "KNOVIA AI Router",
+    verdict: 'DE bearing 8.2 mm/s vs 7.1 mm/s SOP limit — OUT OF LIMIT (+15.5%).',
+    answer: 'The latest P-102 reading (18 Aug 2026) is:\\n\\n- DE bearing: 8.2 mm/s\\n- NDE bearing: 6.6 mm/s\\nThe limit is 7.1 mm/s. The DE reading is above the action limit.',
+    findings: [{ label: "DE bearing", value: "8.2 mm/s", status: "critical" }],
+    plan: ["Analyze question", "Retrieve recent data", "Formulate findings"],
+    steps: ["Analyze question", "Retrieve recent data", "Check limits", "Formulate findings"],
+    verified: ["Evidence validated", "Sources cited", "Policy checked"],
+    sources: ["insp2608", "sop"],
+    files: [],
+    charts: []
+  }),
+  D({
+    id: "DQ03",
+    title: 'Compare the latest P',
+    question: 'Compare the latest P-102 inspection report with the approved inspection SOP.',
+    keywords: ["compare", "latest", "inspection", "report", "with", "approved", "inspection", "sop."],
+    complexity: "medium",
+    path: "knowledge",
+    agent: "KNOVIA AI Router",
+    verdict: '2 deviations from SOP: vibration above action limit + seal leak.',
+    answer: 'Comparing to SOP v3.2, there are two deviations:\\n1. Vibration at 8.2 mm/s exceeds the 7.1 limit.\\n2. Seal weeping requires inspection, which is 8 days overdue.',
+    findings: [],
+    plan: ["Analyze question", "Retrieve recent data", "Formulate findings"],
+    steps: ["Analyze question", "Retrieve recent data", "Check limits", "Formulate findings"],
+    verified: ["Evidence validated", "Sources cited", "Policy checked"],
+    sources: ["insp2608", "sop"],
+    files: [],
+    charts: []
+  }),
+  D({
+    id: "DQ04",
+    title: 'Can you show me the Jan–Aug trend and ex',
+    question: 'Can you show me the Jan–Aug trend and explain the pattern?',
+    keywords: ["show", "jan\u2013aug", "trend", "explain", "pattern"],
+    complexity: "medium",
+    path: "knowledge",
+    agent: "KNOVIA AI Router",
+    verdict: 'Consistent upward trend from Jan to Aug.',
+    answer: 'The vibration trend shows a consistent upward trajectory from January (5.0 mm/s) to August (8.2 mm/s).',
+    findings: [],
+    plan: ["Analyze question", "Retrieve recent data", "Formulate findings"],
+    steps: ["Analyze question", "Retrieve recent data", "Check limits", "Formulate findings"],
+    verified: ["Evidence validated", "Sources cited", "Policy checked"],
+    sources: ["insp2608", "sop"],
+    files: [],
+    charts: ["vibration-trend"]
+  }),
+  D({
+    id: "DQ05",
+    title: 'Also',
+    question: 'Also — when did it first cross the 7.1 mm/s threshold?',
+    keywords: ["also", "when", "first", "cross", "mm/s", "threshold"],
+    complexity: "medium",
+    path: "knowledge",
+    agent: "KNOVIA AI Router",
+    verdict: 'First crossed 7.1 mm/s in June 2026.',
+    answer: 'The 7.1 mm/s threshold was first exceeded on June 15th, 2026, when it recorded 7.2 mm/s.',
+    findings: [],
+    plan: ["Analyze question", "Retrieve recent data", "Formulate findings"],
+    steps: ["Analyze question", "Retrieve recent data", "Check limits", "Formulate findings"],
+    verified: ["Evidence validated", "Sources cited", "Policy checked"],
+    sources: ["insp2608", "sop"],
+    files: [],
+    charts: ["vibration-trend"]
+  }),
+  D({
+    id: "DQ06",
+    title: 'Analyze the P',
+    question: 'Analyze the P-102 DE bearing temperature trend — is it approaching the alarm limit?',
+    keywords: ["analyze", "bearing", "temperature", "trend", "approaching", "alarm", "limit"],
+    complexity: "medium",
+    path: "knowledge",
+    agent: "KNOVIA AI Router",
+    verdict: 'Temperature is 79°C, approaching 82°C alarm limit.',
+    answer: 'The DE bearing temperature is currently at 79°C. While it is below the 82°C alarm limit, the upward trend suggests it will cross it soon.',
+    findings: [],
+    plan: ["Analyze question", "Retrieve recent data", "Formulate findings"],
+    steps: ["Analyze question", "Retrieve recent data", "Check limits", "Formulate findings"],
+    verified: ["Evidence validated", "Sources cited", "Policy checked"],
+    sources: ["insp2608", "sop"],
+    files: [],
+    charts: ["temperature-trend"]
+  }),
+  D({
+    id: "DQ07",
+    title: 'Is there any seal leakage on P',
+    question: 'Is there any seal leakage on P-102 and what should we do?',
+    keywords: ["there", "seal", "leakage", "what", "should"],
+    complexity: "medium",
+    path: "knowledge",
+    agent: "KNOVIA AI Router",
+    verdict: 'Seal leakage detected on Aug 18.',
+    answer: 'Yes, mechanical seal weeping was observed on 18 Aug 2026. A seal inspection is required immediately.',
+    findings: [],
+    plan: ["Analyze question", "Retrieve recent data", "Formulate findings"],
+    steps: ["Analyze question", "Retrieve recent data", "Check limits", "Formulate findings"],
+    verified: ["Evidence validated", "Sources cited", "Policy checked"],
+    sources: ["insp2608", "sop"],
+    files: ["anomaly-pdf"],
+    charts: []
+  }),
+  D({
+    id: "DQ08",
+    title: 'Analyze discharge pressure and flow over',
+    question: 'Analyze discharge pressure and flow over the last 8 months — is performance degrading?',
+    keywords: ["analyze", "discharge", "pressure", "flow", "over", "last", "months", "performance", "degrading"],
+    complexity: "medium",
+    path: "knowledge",
+    agent: "KNOVIA AI Router",
+    verdict: 'Discharge pressure slightly below limit.',
+    answer: 'Discharge pressure is 7.9 kg/cm², slightly below the 8.0 minimum limit. Flow remains steady.',
+    findings: [],
+    plan: ["Analyze question", "Retrieve recent data", "Formulate findings"],
+    steps: ["Analyze question", "Retrieve recent data", "Check limits", "Formulate findings"],
+    verified: ["Evidence validated", "Sources cited", "Policy checked"],
+    sources: ["insp2608", "sop"],
+    files: [],
+    charts: ["pressure-flow"]
+  }),
+  D({
+    id: "DQ09",
+    title: 'What is the remaining corrosion allowanc',
+    question: 'What is the remaining corrosion allowance on the P-102 pump casing?',
+    keywords: ["what", "remaining", "corrosion", "allowance", "pump", "casing"],
+    complexity: "medium",
+    path: "knowledge",
+    agent: "KNOVIA AI Router",
+    verdict: '2.1 mm remaining allowance.',
+    answer: 'The latest UT scan shows casing wall thickness has 2.1 mm of corrosion allowance remaining.',
+    findings: [],
+    plan: ["Analyze question", "Retrieve recent data", "Formulate findings"],
+    steps: ["Analyze question", "Retrieve recent data", "Check limits", "Formulate findings"],
+    verified: ["Evidence validated", "Sources cited", "Policy checked"],
+    sources: ["insp2608", "sop"],
+    files: [],
+    charts: ["corrosion-trend"]
+  }),
+  D({
+    id: "DQ10",
+    title: 'Now compare current measurements against',
+    question: 'Now compare current measurements against the baseline (new condition) — quantify the change.',
+    keywords: ["compare", "current", "measurements", "against", "baseline", "(new", "condition)", "quantify", "change."],
+    complexity: "medium",
+    path: "knowledge",
+    agent: "KNOVIA AI Router",
+    verdict: 'Significant deviation from baseline.',
+    answer: 'Compared to the new condition baseline (vibration 2.5 mm/s), current readings (8.2 mm/s) show severe degradation.',
+    findings: [],
+    plan: ["Analyze question", "Retrieve recent data", "Formulate findings"],
+    steps: ["Analyze question", "Retrieve recent data", "Check limits", "Formulate findings"],
+    verified: ["Evidence validated", "Sources cited", "Policy checked"],
+    sources: ["insp2608", "sop"],
+    files: [],
+    charts: ["baseline-current"]
+  }),
+  D({
+    id: "DQ11",
+    title: 'Detect any anomalies in the Aug 2026 tel',
+    question: 'Detect any anomalies in the Aug 2026 telemetry dataset.',
+    keywords: ["detect", "anomalies", "2026", "telemetry", "dataset."],
+    complexity: "medium",
+    path: "knowledge",
+    agent: "KNOVIA AI Router",
+    verdict: 'Anomalies detected in vibration and seal integrity.',
+    answer: 'The Aug 2026 dataset shows two major anomalies:\\n- High DE vibration (8.2 mm/s)\\n- Loss of seal integrity (weeping)',
+    findings: [],
+    plan: ["Analyze question", "Retrieve recent data", "Formulate findings"],
+    steps: ["Analyze question", "Retrieve recent data", "Check limits", "Formulate findings"],
+    verified: ["Evidence validated", "Sources cited", "Policy checked"],
+    sources: ["insp2608", "sop"],
+    files: [],
+    charts: []
+  }),
+  D({
+    id: "DQ12",
+    title: 'And export the trend as a CSV for my per',
+    question: 'And export the trend as a CSV for my personal record.',
+    keywords: ["export", "trend", "personal", "record."],
+    complexity: "medium",
+    path: "knowledge",
+    agent: "KNOVIA AI Router",
+    verdict: 'Trend exported successfully.',
+    answer: 'The Jan-Aug 2026 vibration trend has been compiled and is ready for download.',
+    findings: [],
+    plan: ["Analyze question", "Retrieve recent data", "Formulate findings"],
+    steps: ["Analyze question", "Retrieve recent data", "Check limits", "Formulate findings"],
+    verified: ["Evidence validated", "Sources cited", "Policy checked"],
+    sources: ["insp2608", "sop"],
+    files: ["trend-csv"],
+    charts: []
+  }),
+  D({
+    id: "DQ13",
+    title: 'Recommend a preventive maintenance plan ',
+    question: 'Recommend a preventive maintenance plan for P-102 for the next 90 days.',
+    keywords: ["recommend", "preventive", "maintenance", "plan", "next", "days."],
+    complexity: "medium",
+    path: "knowledge",
+    agent: "KNOVIA AI Router",
+    verdict: 'Recommend Guarded-Run and seal replacement.',
+    answer: 'For the next 90 days:\\n1. Maintain guarded-run mode.\\n2. Plan for seal replacement.\\n3. Increase monitoring frequency to weekly.',
+    findings: [],
+    plan: ["Analyze question", "Retrieve recent data", "Formulate findings"],
+    steps: ["Analyze question", "Retrieve recent data", "Check limits", "Formulate findings"],
+    verified: ["Evidence validated", "Sources cited", "Policy checked"],
+    sources: ["insp2608", "sop"],
+    files: [],
+    charts: []
+  }),
+  D({
+    id: "DQ14",
+    title: 'What maintenance work order should I rai',
+    question: 'What maintenance work order should I raise for P-102?',
+    keywords: ["what", "maintenance", "work", "order", "should", "raise"],
+    complexity: "medium",
+    path: "knowledge",
+    agent: "KNOVIA AI Router",
+    verdict: 'Raise a Corrective Maintenance (CM) order.',
+    answer: 'You should raise a Priority 2 Corrective Maintenance (CM) work order to replace the mechanical seal and inspect the DE bearing.',
+    findings: [],
+    plan: ["Analyze question", "Retrieve recent data", "Formulate findings"],
+    steps: ["Analyze question", "Retrieve recent data", "Check limits", "Formulate findings"],
+    verified: ["Evidence validated", "Sources cited", "Policy checked"],
+    sources: ["insp2608", "sop"],
+    files: ["wo-summary"],
+    charts: []
+  }),
+  D({
+    id: "DQ15",
+    title: 'What do you think is the root cause of t',
+    question: 'What do you think is the root cause of the rising vibration?',
+    keywords: ["what", "think", "root", "cause", "rising", "vibration"],
+    complexity: "medium",
+    path: "knowledge",
+    agent: "KNOVIA AI Router",
+    verdict: 'Root cause likely bearing fatigue or misalignment.',
+    answer: 'The monotonic rise in both vibration and temperature points toward progressive bearing fatigue or a developing shaft misalignment.',
+    findings: [],
+    plan: ["Analyze question", "Retrieve recent data", "Formulate findings"],
+    steps: ["Analyze question", "Retrieve recent data", "Check limits", "Formulate findings"],
+    verified: ["Evidence validated", "Sources cited", "Policy checked"],
+    sources: ["insp2608", "sop"],
+    files: [],
+    charts: []
+  }),
+  D({
+    id: "DQ16",
+    title: 'What is the P',
+    question: 'What is the P-102 reliability risk score and the plant impact?',
+    keywords: ["what", "reliability", "risk", "score", "plant", "impact"],
+    complexity: "medium",
+    path: "knowledge",
+    agent: "KNOVIA AI Router",
+    verdict: 'Risk score is HIGH (76/100).',
+    answer: 'The reliability risk score is 76/100 (HIGH). Plant impact includes potential CDU-4 feed reduction if the pump trips unexpectedly.',
+    findings: [],
+    plan: ["Analyze question", "Retrieve recent data", "Formulate findings"],
+    steps: ["Analyze question", "Retrieve recent data", "Check limits", "Formulate findings"],
+    verified: ["Evidence validated", "Sources cited", "Policy checked"],
+    sources: ["risk"],
+    files: [],
+    charts: []
+  }),
+  D({
+    id: "DQ17",
+    title: 'Compare the CX',
+    question: 'Compare the CX-4 vendor proposals for a P-102 replacement pump.',
+    keywords: ["compare", "vendor", "proposals", "replacement", "pump."],
+    complexity: "medium",
+    path: "knowledge",
+    agent: "KNOVIA AI Router",
+    verdict: 'Vendor B offers best lead time.',
+    answer: 'Comparing CX-4 vendors, Vendor B meets all technical specs with a 6-week lead time, whereas Vendor A has a 12-week lead time.',
+    findings: [],
+    plan: ["Analyze question", "Retrieve recent data", "Formulate findings"],
+    steps: ["Analyze question", "Retrieve recent data", "Check limits", "Formulate findings"],
+    verified: ["Evidence validated", "Sources cited", "Policy checked"],
+    sources: ["insp2608", "sop"],
+    files: ["cx4-xlsx", "vendor"],
+    charts: []
+  }),
+  D({
+    id: "DQ18",
+    title: 'If we replace P',
+    question: 'If we replace P-102 during the 2027 turnaround, what is the estimated timeline and cost?',
+    keywords: ["replace", "during", "2027", "turnaround", "what", "estimated", "timeline", "cost"],
+    complexity: "medium",
+    path: "knowledge",
+    agent: "KNOVIA AI Router",
+    verdict: 'Timeline: 14 days, Cost: $120k.',
+    answer: 'During the 2027 turnaround, pump replacement will take 14 days on the critical path, at an estimated material/labor cost of $120k.',
+    findings: [],
+    plan: ["Analyze question", "Retrieve recent data", "Formulate findings"],
+    steps: ["Analyze question", "Retrieve recent data", "Check limits", "Formulate findings"],
+    verified: ["Evidence validated", "Sources cited", "Policy checked"],
+    sources: ["insp2608", "sop"],
+    files: ["ta-schedule", "ta-scope"],
+    charts: []
+  }),
+  D({
+    id: "DQ19",
+    title: 'Draft an engineering action memo summari',
+    question: 'Draft an engineering action memo summarizing the P-102 inspection findings.',
+    keywords: ["draft", "engineering", "action", "memo", "summarizing", "inspection", "findings."],
+    complexity: "medium",
+    path: "knowledge",
+    agent: "KNOVIA AI Router",
+    verdict: 'Draft memo generated.',
+    answer: 'The engineering action memo has been drafted, summarizing the 8.2 mm/s vibration findings and recommending a guarded run.',
+    findings: [],
+    plan: ["Analyze question", "Retrieve recent data", "Formulate findings"],
+    steps: ["Analyze question", "Retrieve recent data", "Check limits", "Formulate findings"],
+    verified: ["Evidence validated", "Sources cited", "Policy checked"],
+    sources: ["insp2608", "sop"],
+    files: ["memo-docx"],
+    charts: []
+  }),
+  D({
+    id: "DQ20",
+    title: 'What is the recommended shutdown / prior',
+    question: 'What is the recommended shutdown / priority recommendation based on current findings?',
+    keywords: ["what", "recommended", "shutdown", "priority", "recommendation", "based", "current", "findings"],
+    complexity: "medium",
+    path: "knowledge",
+    agent: "KNOVIA AI Router",
+    verdict: 'Do not shut down immediately; plan maintenance.',
+    answer: 'An immediate shutdown is not required as vibration (8.2) is below the trip limit (8.5). Plan a controlled shutdown within 14 days.',
+    findings: [],
+    plan: ["Analyze question", "Retrieve recent data", "Formulate findings"],
+    steps: ["Analyze question", "Retrieve recent data", "Check limits", "Formulate findings"],
+    verified: ["Evidence validated", "Sources cited", "Policy checked"],
+    sources: ["insp2608", "sop"],
+    files: [],
+    charts: []
+  }),
+  D({
+    id: "Q01",
+    title: 'Company and operating footprint',
+    question: 'What is MRPL Energy Limited, where is it headquartered, what facilities does it operate, and what are the main refinery and process units in the enterprise?',
+    keywords: ['what', 'is', 'MRPL', 'energy', 'limited', 'where', 'is', 'it', 'headquartered', 'what', 'facilities', 'does', 'it', 'operate', 'and', 'what', 'are', 'the', 'main', 'refinery', 'and', 'process', 'units', 'in', 'the', 'enterprise'],
+    complexity: "simple",
+    path: "fast",
+    agent: "KNOVIA AI Router",
+    verdict: 'MRPL Energy Limited (APEL) is an integrated refining and petrochemicals company in the synthetic v3.0 enterprise dataset. Its headquarters is in Mumbai, Maharashtra, India, and its primary site is the Jamnagar Refinery Complex in Gujarat.',
+    answer: 'MRPL Energy Limited (APEL) is an integrated refining and petrochemicals company in the synthetic v3.0 enterprise dataset. Its headquarters is in Mumbai, Maharashtra, India, and its primary site is the Jamnagar Refinery Complex in Gujarat.\\n\\n- Company: MRPL Energy Limited; established 1987; 8,500 employees; annual capacity 34 MMBPA.\\n- Facilities: Jamnagar Refinery Complex (refining, utilities, storage and dispatch); Corporate Headquarters in Mumbai; Regulatory Liaison Office in New Delhi.\\n- Main process units: CDU-1, CDU-2, CDU-3 and CDU-4 for atmospheric crude fractionation; HCU-1 for heavy-fraction conversion; HDS-1 for diesel sulfur reduction.\\n- Supporting units include Utilities Complex, Tank Farm East, Tank Farm West and Product Dispatch Terminal.',
+    findings: [],
+    plan: ["Authenticate and resolve company tenant.", "Retrieve company master and master specification.", "Answer from structured company/facility/unit records.", "Cite the relevant company/master records."],
+    steps: ["Authenticate and resolve company tenant.", "Retrieve company master and master specification.", "Answer from structured company/facility/unit records.", "Cite the relevant company/master records."],
+    verified: ["Evidence validated", "Sources cited", "Policy checked"],
+    sources: ["company.json", "specs/MRPL_master.yaml"],
+    files: [],
+    charts: []
+  }),
+  D({
+    id: "Q02",
+    title: 'Confidential data and AI security',
+    question: 'Can confidential engineering or inspection information be sent to public cloud AI? Explain the classification levels, the AI policy, the retrieval rule, and the security/audit controls that should apply.',
+    keywords: ['can', 'confidential', 'engineering', 'or', 'inspection', 'information', 'be', 'sent', 'to', 'public', 'cloud', 'ai', 'explain', 'the', 'classification', 'levels', 'the', 'ai', 'policy', 'the', 'retrieval', 'rule', 'and', 'the', 'security/audit', 'controls', 'that', 'should', 'apply.'],
+    complexity: "medium",
+    path: "knowledge",
+    agent: "KNOVIA AI Router",
+    verdict: 'No. The supplied AI Usage Policy states that confidential information stays inside approved infrastructure and external AI APIs are not used for confidential workflows. Local model inference and local retrieval are approved platform capabilities.',
+    answer: 'No. The supplied AI Usage Policy states that confidential information stays inside approved infrastructure and external AI APIs are not used for confidential workflows. Local model inference and local retrieval are approved platform capabilities.\\n\\n- Classification levels are PUBLIC, INTERNAL, CONFIDENTIAL and RESTRICTED.\\n- Inspection reports and engineering calculations are classified CONFIDENTIAL; security architecture may be RESTRICTED.\\n- Classification metadata remains attached to records and is used as a retrieval filter.\\n- Recipients must be authorized for the classification, and confidential material must not be pasted into public AI services.\\n- Confidential workflows use local inference; tool permissions are allow-listed; agent actions are logged; high-risk recommendations require human review.\\n- Auditable events include task creation, model selection, retrieval, tool calls, artifact generation and approval decisions.',
+    findings: [],
+    plan: ["Resolve user identity and role.", "Read classification metadata.", "Retrieve AI usage, data classification and information security policies.", "Apply classification-aware retrieval and external-AI policy."],
+    steps: ["Resolve user identity and role.", "Read classification metadata.", "Retrieve AI usage, data classification and information security policies.", "Apply classification-aware retrieval and external-AI policy.", "Return the policy answer and security state.", "Record the query/retrieval event in the audit trail."],
+    verified: ["Evidence validated", "Sources cited", "Policy checked"],
+    sources: ["policies/ai_usage_policy.pdf", "policies/data_classification_policy.pdf", "policies/information_security_policy.pdf"],
+    files: ["Security_Control_Diagram.png"],
+    charts: []
+  }),
+  D({
+    id: "Q03",
+    title: 'CDU-4 production trend',
+    question: 'Analyze the 2026 CDU-4 monthly production data from January through July. Show a bar chart for CDU-4 production, identify the highest and lowest months, explain the July change, and provide the data as CSV.',
+    keywords: ['analyze', 'the', '2026', 'cdu-4', 'monthly', 'production', 'data', 'from', 'january', 'through', 'july.', 'show', 'a', 'bar', 'chart', 'for', 'cdu-4', 'production', 'identify', 'the', 'highest', 'and', 'lowest', 'months', 'explain', 'the', 'july', 'change', 'and', 'provide', 'the', 'data', 'as', 'csv.'],
+    complexity: "medium",
+    path: "knowledge",
+    agent: "KNOVIA AI Router",
+    verdict: 'CDU-4 production rose from 139 kbd in January to 146 kbd in June, then fell to 141 kbd in July.',
+    answer: "CDU-4 production rose from 139 kbd in January to 146 kbd in June, then fell to 141 kbd in July.\\n\\n- January: 139 kbd; February: 142; March: 144; April: 145; May: 143; June: 146; July: 141.\\n- Highest recorded month in the supplied January–July data: June at 146 kbd.\\n- Lowest recorded month: January at 139 kbd.\\n- July decreased by 5 kbd from June (146 → 141), and the source lists 'P-102 condition review' as the July constraint.\\n- The average CDU-4 production across January–July is 142.9 kbd.",
+    findings: [],
+    plan: ["Load production_monthly_summary_2026.xlsx.", "Filter the CDU-4 column for Jan\u2013Jul.", "Calculate min, max, average and month-to-month change.", "Generate a bar chart."],
+    steps: ["Load production_monthly_summary_2026.xlsx.", "Filter the CDU-4 column for Jan\u2013Jul.", "Calculate min, max, average and month-to-month change.", "Generate a bar chart.", "Export the same source rows to CSV.", "Return the chart and numerical interpretation."],
+    verified: ["Evidence validated", "Sources cited", "Policy checked"],
+    sources: ["operations/production_monthly_summary_2026.xlsx"],
+    files: ["CDU4_Monthly_Production_Bar_Chart.png", "CDU4_production_2026.csv"],
+    charts: []
+  }),
+  D({
+    id: "Q04",
+    title: 'Open P2 work-order review',
+    question: 'Find all currently open P2 work orders, group them by asset and owner, explain what each work order is for, and create a CSV that can be shown in the work-order dashboard.',
+    keywords: ['find', 'all', 'currently', 'open', 'p2', 'work', 'orders', 'group', 'them', 'by', 'asset', 'and', 'owner', 'explain', 'what', 'each', 'work', 'order', 'is', 'for', 'and', 'create', 'a', 'csv', 'that', 'can', 'be', 'shown', 'in', 'the', 'work-order', 'dashboard.'],
+    complexity: "medium",
+    path: "knowledge",
+    agent: "KNOVIA AI Router",
+    verdict: 'The supplied open-work-order register contains three OPEN P2 work orders.',
+    answer: 'The supplied open-work-order register contains three OPEN P2 work orders.\\n\\n- WO-6021 — P-102 — Mechanical/Engineering — Integrity review — Owner: Inspection & Integrity.\\n- WO-6050 — F-401 — Mechanical — Burner inspection — Owner: Maintenance.\\n- WO-6058 — PT-102 — Instrumentation — Calibration verification — Owner: Instrumentation.\\n- The work-order register also contains planned P3 items, but those are excluded because the request asked specifically for OPEN P2 work orders.',
+    findings: [],
+    plan: ["Read maintenance/work_order_register.xlsx.", "Filter Priority = P2 and Status = OPEN.", "Group/display by asset and owner.", "Preserve work-order descriptions exactly from the source."],
+    steps: ["Read maintenance/work_order_register.xlsx.", "Filter Priority = P2 and Status = OPEN.", "Group/display by asset and owner.", "Preserve work-order descriptions exactly from the source.", "Export the filtered records as CSV."],
+    verified: ["Evidence validated", "Sources cited", "Policy checked"],
+    sources: ["maintenance/work_order_register.xlsx"],
+    files: ["Open_P2_Work_Orders.csv", "Open_P2_Work_Order_Chart.png"],
+    charts: []
+  }),
+  D({
+    id: "Q05",
+    title: 'CDU-4 startup procedure',
+    question: 'What is the approved CDU-4 startup sequence? Explain pre-start readiness, warm-up, monitoring points, hold conditions and handover, and generate a practical startup checklist document.',
+    keywords: ['what', 'is', 'the', 'approved', 'cdu-4', 'startup', 'sequence', 'explain', 'pre-start', 'readiness', 'warm-up', 'monitoring', 'points', 'hold', 'conditions', 'and', 'handover', 'and', 'generate', 'a', 'practical', 'startup', 'checklist', 'document.'],
+    complexity: "medium",
+    path: "knowledge",
+    agent: "KNOVIA AI Router",
+    verdict: 'The startup SOP divides the process into pre-start readiness, controlled warm-up, monitoring, hold conditions and handover.',
+    answer: 'The startup SOP divides the process into pre-start readiness, controlled warm-up, monitoring, hold conditions and handover.\\n\\n- Before start: confirm maintenance handback, verify utilities, check line-up, review permits and confirm control-room/field communications.\\n- Warm-up: establish circulation, begin controlled heating, stabilize column pressure, introduce crude at reduced rate and increase feed in planned steps.\\n- Monitor furnace outlet temperature, column pressure, feed flow, desalter differential pressure and reflux stability.\\n- Hold conditions include loss of instrument air, unstable pressure, hydrocarbon leak, critical instrument failure and utility instability.\\n- During handover, record startup time and deviations, remove/control temporary overrides and transfer stable operation to normal monitoring.',
+    findings: [],
+    plan: ["Retrieve APEL-SOP-OPS-201.", "Extract the five procedure sections.", "Preserve the order of operations.", "Convert the procedure into a checklist without adding unsupported steps."],
+    steps: ["Retrieve APEL-SOP-OPS-201.", "Extract the five procedure sections.", "Preserve the order of operations.", "Convert the procedure into a checklist without adding unsupported steps.", "Generate DOCX with traceable source ID."],
+    verified: ["Evidence validated", "Sources cited", "Policy checked"],
+    sources: ["sops/operations/cdu4_startup.pdf"],
+    files: ["CDU4_Startup_Readiness_Checklist.docx"],
+    charts: []
+  }),
+  D({
+    id: "Q06",
+    title: 'Permit-to-work and energy isolation',
+    question: 'For planned maintenance on a pump, explain how permit-to-work and energy isolation should work together. Cover permit selection, hazards, P-102 isolation boundaries, zero-energy verification, lockout and restoration, and produce a one-page procedural PDF with a flow diagram.',
+    keywords: ['for', 'planned', 'maintenance', 'on', 'a', 'pump', 'explain', 'how', 'permit-to-work', 'and', 'energy', 'isolation', 'should', 'work', 'together.', 'cover', 'permit', 'selection', 'hazards', 'p-102', 'isolation', 'boundaries', 'zero-energy', 'verification', 'lockout', 'and', 'restoration', 'and', 'produce', 'a', 'one-page', 'procedural', 'pdf', 'with', 'a', 'flow', 'diagram.'],
+    complexity: "complex",
+    path: "complex",
+    agent: "KNOVIA AI Router",
+    verdict: 'Permit-to-work identifies the work authorization and field controls; energy isolation identifies and controls the hazardous energy sources. They must be coordinated before work begins and verified before personnel are exposed.',
+    answer: 'Permit-to-work identifies the work authorization and field controls; energy isolation identifies and controls the hazardous energy sources. They must be coordinated before work begins and verified before personnel are exposed.\\n\\n- Permit selection depends on the work type: hot work, confined space, electrical work, line breaking or work at height.\\n- Hazard identification includes hydrocarbon release, pressure, temperature, electrical energy, stored mechanical energy and toxic exposure.\\n- For P-102, the energy-isolation boundary includes M-102 electrical supply, process suction isolation, process discharge isolation, drain/vent as required and stored rotational energy.\\n- Lockout uses individual locks where required, with a group lockbox for multi-person work and a formal exception process for lock removal.\\n- Zero-energy verification includes absence-of-voltage testing, pressure confirmation, drain verification and an approved try-start where safe.\\n- Restoration requires work completion, guards installed, tools removed, locks cleared, line-up restored and operations acceptance.',
+    findings: [],
+    plan: ["Identify the maintenance task and required permit type.", "Retrieve Permit-to-Work SOP and Energy Isolation SOP.", "Resolve P-102-specific isolation boundary from process/tag records.", "Build a combined permit/isolation sequence."],
+    steps: ["Identify the maintenance task and required permit type.", "Retrieve Permit-to-Work SOP and Energy Isolation SOP.", "Resolve P-102-specific isolation boundary from process/tag records.", "Build a combined permit/isolation sequence.", "Generate PDF and flow diagram.", "Do not invent site-specific permit numbers or approvals."],
+    verified: ["Evidence validated", "Sources cited", "Policy checked"],
+    sources: ["sops/safety/permit_to_work.pdf", "sops/safety/energy_isolation.pdf", "assets/CDU-4/engineering/P-102_process_diagram.pdf"],
+    files: ["P-102_Permit_and_Energy_Isolation_Guide.pdf", "permit_energy_isolation_flow.png"],
+    charts: []
+  }),
+  D({
+    id: "Q07",
+    title: 'Vendor evaluation for critical spares',
+    question: 'What criteria should be used to evaluate a supplier for a critical P-102 mechanical seal cartridge? Use only the procurement policy and vendor-evaluation procedure, and create an evaluation checklist without inventing supplier scores.',
+    keywords: ['what', 'criteria', 'should', 'be', 'used', 'to', 'evaluate', 'a', 'supplier', 'for', 'a', 'critical', 'p-102', 'mechanical', 'seal', 'cartridge', 'use', 'only', 'the', 'procurement', 'policy', 'and', 'vendor-evaluation', 'procedure', 'and', 'create', 'an', 'evaluation', 'checklist', 'without', 'inventing', 'supplier', 'scores.'],
+    complexity: "medium",
+    path: "knowledge",
+    agent: "KNOVIA AI Router",
+    verdict: 'The procurement sources require technical and commercial evaluation. The evaluation should check technical capability, datasheet compliance, materials, performance requirements, documentation, spare support, quality certifications, past performance, price, delivery, payment terms, warranty and contract exceptions.',
+    answer: 'The procurement sources require technical and commercial evaluation. The evaluation should check technical capability, datasheet compliance, materials, performance requirements, documentation, spare support, quality certifications, past performance, price, delivery, payment terms, warranty and contract exceptions.\\n\\n- Technical qualification covers capability, quality certifications, service capacity, past performance and financial suitability.\\n- Technical scoring includes datasheet compliance, materials, performance requirements, documentation and spare support.\\n- Commercial scoring includes price, delivery, payment terms, warranty and contract exceptions.\\n- Performance review considers on-time delivery, defect rate, response time, documentation quality and warranty closure.\\n- The AI should compare structured supplier data, cite source documents and not invent supplier facts or negotiation data.',
+    findings: [],
+    plan: ["Retrieve Procurement Policy and Vendor Evaluation Procedure.", "Extract technical, commercial and performance criteria.", "Create a structured checklist.", "Leave supplier score/value fields blank until evidence is provided."],
+    steps: ["Retrieve Procurement Policy and Vendor Evaluation Procedure.", "Extract technical, commercial and performance criteria.", "Create a structured checklist.", "Leave supplier score/value fields blank until evidence is provided.", "Generate XLSX with source/basis columns."],
+    verified: ["Evidence validated", "Sources cited", "Policy checked"],
+    sources: ["policies/procurement_policy.pdf", "procurement/vendor_evaluation_procedure.pdf", "procurement/spare_parts_catalogue.pdf"],
+    files: ["Vendor_Evaluation_Checklist.xlsx"],
+    charts: []
+  }),
+  D({
+    id: "Q08",
+    title: 'Management of Change workflow',
+    question: 'When does a Management of Change process apply, what screening and technical review are required, and how is the change closed? Explain the full workflow and generate a process diagram and DOCX checklist.',
+    keywords: ['when', 'does', 'a', 'management', 'of', 'change', 'process', 'apply', 'what', 'screening', 'and', 'technical', 'review', 'are', 'required', 'and', 'how', 'is', 'the', 'change', 'closed', 'explain', 'the', 'full', 'workflow', 'and', 'generate', 'a', 'process', 'diagram', 'and', 'docx', 'checklist.'],
+    complexity: "medium",
+    path: "knowledge",
+    agent: "KNOVIA AI Router",
+    verdict: 'The MOC procedure applies to defined change triggers such as equipment replacement, control-logic modification, operating-limit change, chemical change and process reroute.',
+    answer: 'The MOC procedure applies to defined change triggers such as equipment replacement, control-logic modification, operating-limit change, chemical change and process reroute.\\n\\n- Screen the change for safety, environment, production, integrity and training impacts.\\n- Technical review covers design basis, drawings, calculations, operating procedure and inspection implications.\\n- Implementation requires approval, construction or logic change, testing, documentation update and operator briefing.\\n- Closure requires verification of the result, removal of temporary controls, master-data update, evidence archiving and MOC closure.',
+    findings: [],
+    plan: ["Retrieve APEL-QA-341.", "Identify the trigger type.", "Run screening categories.", "Prepare technical-review checklist."],
+    steps: ["Retrieve APEL-QA-341.", "Identify the trigger type.", "Run screening categories.", "Prepare technical-review checklist.", "Generate a process diagram and DOCX workflow."],
+    verified: ["Evidence validated", "Sources cited", "Policy checked"],
+    sources: ["quality/management_of_change_procedure.pdf"],
+    files: ["Management_of_Change_Workflow.docx", "MOC_Process_Diagram.png"],
+    charts: []
+  }),
+  D({
+    id: "Q09",
+    title: 'Engineering tag relationship drawing',
+    question: 'Using the controlled P-102 process/tag information, explain how P-102 is connected to M-102, PT-102, TT-102, FT-210, PSV-102 and XV-410, and generate an engineering-style relationship schematic. Clearly state what the drawing is and is not.',
+    keywords: ['using', 'the', 'controlled', 'p-102', 'process/tag', 'information', 'explain', 'how', 'p-102', 'is', 'connected', 'to', 'm-102', 'pt-102', 'tt-102', 'ft-210', 'psv-102', 'and', 'xv-410', 'and', 'generate', 'an', 'engineering-style', 'relationship', 'schematic.', 'clearly', 'state', 'what', 'the', 'drawing', 'is', 'and', 'is', 'not.'],
+    complexity: "complex",
+    path: "complex",
+    agent: "KNOVIA AI Router",
+    verdict: 'The controlled tag records identify P-102 as a centrifugal process pump in CDU-4. M-102 drives it; PT-102 measures discharge pressure; TT-102 measures discharge temperature; FT-210 provides crude-flow context; PSV-102 provides pressure protection; and XV-410 is the crude-feed isolation interface.',
+    answer: 'The controlled tag records identify P-102 as a centrifugal process pump in CDU-4. M-102 drives it; PT-102 measures discharge pressure; TT-102 measures discharge temperature; FT-210 provides crude-flow context; PSV-102 provides pressure protection; and XV-410 is the crude-feed isolation interface.\\n\\n- Process sequence: T-401 → XV-410 → P-102 suction → P-102 discharge → CDU-4 feed header.\\n- PT-102: P-102 discharge pressure.\\n- TT-102: P-102 discharge temperature.\\n- FT-210: crude flow context.\\n- PSV-102: pressure protection with 47.5 bar set pressure.\\n- XV-410: crude-feed isolation.\\n- The supplied process diagram explicitly states that it is synthetic and is not an engineering-for-construction drawing or replacement for a controlled plant P&ID. The generated UI schematic therefore must carry the same limitation.',
+    findings: [],
+    plan: ["Retrieve the controlled process diagram and asset register/datasheet.", "Resolve tag relationships.", "Render only supported relationships.", "Label the result as illustrative."],
+    steps: ["Retrieve the controlled process diagram and asset register/datasheet.", "Resolve tag relationships.", "Render only supported relationships.", "Label the result as illustrative.", "Do not add fabrication dimensions, materials or construction tolerances."],
+    verified: ["Evidence validated", "Sources cited", "Policy checked"],
+    sources: ["assets/CDU-4/engineering/P-102_process_diagram.pdf", "assets/CDU-4/equipment/P-102/P-102_detailed_datasheet.pdf", "assets/asset_register.xlsx"],
+    files: ["P-102_Engineering_Tag_Schematic.png"],
+    charts: []
+  }),
+  D({
+    id: "Q10",
+    title: 'KNOVIA AI Workbench management summary',
+    question: 'Prepare a management-level explanation of the KNOVIA AI Workbench: explain how it handles confidential data, how Simple/Medium/Complex routing works, what local AI capabilities are available, how agents and sandbox tools are controlled, and summarize the 500-case benchmark. Generate a 6-slide PPTX.',
+    keywords: ['prepare', 'a', 'management-level', 'explanation', 'of', 'the', 'KNOVIA', 'ai', 'workbench:', 'explain', 'how', 'it', 'handles', 'confidential', 'data', 'how', 'simple/medium/complex', 'routing', 'works', 'what', 'local', 'ai', 'capabilities', 'are', 'available', 'how', 'agents', 'and', 'sandbox', 'tools', 'are', 'controlled', 'and', 'summarize', 'the', '500-case', 'benchmark.', 'generate', 'a', '6-slide', 'pptx.'],
+    complexity: "complex",
+    path: "complex",
+    agent: "KNOVIA AI Router",
+    verdict: 'The workbench is designed as a local enterprise AI platform that combines governed knowledge, adaptive routing, specialized local models, controlled tools, verification, approval and auditability.',
+    answer: 'The workbench is designed as a local enterprise AI platform that combines governed knowledge, adaptive routing, specialized local models, controlled tools, verification, approval and auditability.\\n\\n- Security: confidential workflows use local inference; classification-aware access and retrieval are applied; external AI APIs are prohibited for confidential workflows; tool permissions are allow-listed; high-risk recommendations require human review.\\n- Routing: Simple requests use a Fast Path; Medium requests use Knowledge/RAG; Complex requests use Agent/DAG orchestration with tools and verification.\\n- Local AI capabilities include text reasoning, advanced reasoning, vision/document understanding, industrial vision, multimodal image/audio/video/text, speech-to-text, embeddings and reranking.\\n- Agent execution follows plan → select model/tools → retrieve evidence → execute tools → verify → generate artifact → request approval.\\n- Sandbox controls include isolation and network restriction; audit events retain task, model, retrieval, tool, artifact and approval activity.\\n- 500-case benchmark: 500 cases across nine workload groups with an overall reported pass rate of 84.2%. The benchmark contains workload-specific pass rates and quality values and should be read together with the case counts.',
+    findings: [],
+    plan: ["Retrieve the KNOVIA AI Workbench manual/specification.", "Retrieve the 500-case benchmark record supplied for the project.", "Build a management-level narrative without adding unsupported security guarantees.", "Create six slides with architecture, security, routing, benchmark and operational outcome."],
+    steps: ["Retrieve the KNOVIA AI Workbench manual/specification.", "Retrieve the 500-case benchmark record supplied for the project.", "Build a management-level narrative without adding unsupported security guarantees.", "Create six slides with architecture, security, routing, benchmark and operational outcome.", "Generate PPTX."],
+    verified: ["Evidence validated", "Sources cited", "Policy checked"],
+    sources: ["KNOVIA AI Workbench specification", "KNOVIA AI Workbench Operations Manual", "Project 500-case benchmark results"],
+    files: ["KNOVIA_AI_Workbench_Management_Summary.pptx"],
+    charts: []
+  }),
+];
+
+export const getQuestionById = (id: string): DemoQuestion | undefined =>
+  demoQuestions.find((q) => q.id === id);
+
+export const matchDemoQuestion = (text: string): DemoQuestion | null => {
+  const t = text.trim().toLowerCase();
+  
+  for (const q of demoQuestions) {
+    if (t === q.question.toLowerCase().trim() || t.includes(q.question.toLowerCase().trim())) {
+      return q;
+    }
+  }
+
+  let best: { q: DemoQuestion; score: number } | null = null;
+  for (const q of demoQuestions) {
+    let score = 0;
+    const meaningfulKws = q.keywords.filter(k => k.length > 3);
+    for (const kw of meaningfulKws) if (t.includes(kw)) score += 1;
+    if (score > 0 && (!best || score > best.score)) best = { q, score };
+  }
+  if (best && best.score >= Math.min(3, best.q.keywords.length)) return best.q;
+  return null;
+};
+export const DATA_NOTICE = "Data is synthetic for demonstration.";

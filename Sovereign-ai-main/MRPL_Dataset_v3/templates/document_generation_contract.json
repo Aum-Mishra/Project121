@@ -1,0 +1,68 @@
+{
+  "approval_note": {
+    "format": "DOCX/PDF",
+    "sections": [
+      "Document Control",
+      "Subject",
+      "Background",
+      "Evidence",
+      "Technical Assessment",
+      "Risk",
+      "Recommendation",
+      "Approval Requested",
+      "References",
+      "AI Provenance"
+    ]
+  },
+  "technical_review": {
+    "format": "DOCX/PDF",
+    "sections": [
+      "Problem Statement",
+      "Asset Context",
+      "Inputs",
+      "Applicable Documents",
+      "Historical Comparison",
+      "Calculations",
+      "Conflicts and Uncertainty",
+      "Conclusion",
+      "Recommendation",
+      "Reviewer"
+    ]
+  },
+  "inspection_report": {
+    "format": "DOCX/PDF",
+    "sections": [
+      "Document Control",
+      "Scope",
+      "Method",
+      "Measurements",
+      "Findings",
+      "Historical Comparison",
+      "Assessment",
+      "Recommendation",
+      "Sign-off"
+    ]
+  },
+  "risk_assessment": {
+    "format": "XLSX",
+    "sheets": [
+      "Summary",
+      "Hazards",
+      "Controls",
+      "Risk Matrix",
+      "Approvals"
+    ]
+  },
+  "management_summary": {
+    "format": "PPTX",
+    "slides": [
+      "Executive Summary",
+      "Key Findings",
+      "Historical Trend",
+      "Risk",
+      "Recommendation",
+      "Decision Required",
+      "Evidence"
+    ]
+  }
+}

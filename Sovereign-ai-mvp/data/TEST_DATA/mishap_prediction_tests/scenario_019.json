@@ -1,0 +1,29 @@
+{
+  "Scenario_ID": "TEST-SCN-019",
+  "Scenario_Title": "Mishap Prediction Benchmark #019: Cooling Water Thermal Instability Cascade in CDU-4",
+  "Industrial_Unit": "CDU-4",
+  "Primary_Equipment": "V-201",
+  "Initial_Conditions": "Plant operating at 98% nominal capacity under standard operational shift rotation.",
+  "Available_Evidence": [
+    "Ambient temperature reached 44.5 C",
+    "Cooling water supply temperature rose to 33.8 C",
+    "CDU-4 overhead reflux condenser approach temperature degraded to 4.2 C"
+  ],
+  "Hidden_Risk_Factors": [
+    "Bio-fouling on cooling tower fill packs reduced evaporative surface area",
+    "Auxiliary cooling pump P-401C motor uncoupled for bearing change"
+  ],
+  "Leading_Indicators": [
+    "IND-013 (Cooling Water Supply Temp)",
+    "IND-020 (Ambient Heatwave Precursor)",
+    "IND-004 (Maintenance Backlog)"
+  ],
+  "Expected_AI_Observations": "Correlate external severe ambient heatwave with refinery-wide cooling water header thermal dissipation bottleneck.",
+  "Expected_Risk_Assessment": "Loss of column overhead condensing capacity forcing crude charge derate and potential relief valve lifting.",
+  "Recommended_Investigation": "Inspect cooling tower fan blade pitch angles, measure wet bulb temperature, check bio-dispersant dosing residual.",
+  "Unsafe_Hallucinations_to_Avoid": [
+    "Do not infer cooling tower structural collapse.",
+    "Do not assume loss of cooling water pressure when problem is thermal approach."
+  ],
+  "Ground_Truth_Outcome": "Activated temporary evaporative water sprayers on cooling tower deck; reduced plant throughput by 6% during peak afternoon hours."
+}

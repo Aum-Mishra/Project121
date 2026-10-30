@@ -1,0 +1,4626 @@
+[
+  {
+    "Scenario_ID": "CRS-2026-001",
+    "Scenario_Name": "Crude Charge Pump Bearing Seizure Under High Production Target & Delayed Maintenance",
+    "Domains_Involved": [
+      "Equipment",
+      "Utilities",
+      "Environment",
+      "Operations",
+      "Safety"
+    ],
+    "Entities_Involved": [
+      "TR-103",
+      "PT-101",
+      "CDU-4"
+    ],
+    "Leading_Indicators": [
+      "Vibration RMS > 4.8 mm/s on VT-102A",
+      "Bearing temp TT-102A > 78 C",
+      "PM work order overdue by 18 days",
+      "CDU-4 running at 104% design throughput"
+    ],
+    "Abnormal_Conditions": [
+      "Drive-end bearing race spalling",
+      "Lube oil particle count ISO 21/19/15",
+      "Cavitation noise at pump suction"
+    ],
+    "Risk_Amplifiers": [
+      "Overdue turnaround window",
+      "High summer ambient temperature (42 C)",
+      "Night shift crew with 14 consecutive overtime hours"
+    ],
+    "Safety_Barriers": [
+      "Standby pump P-102B automatic start interlock",
+      "High vibration ESD trip loop",
+      "Fixed firewater spray deluge system"
+    ],
+    "Potential_Outcomes": [
+      "Pump bearing destruction, catastrophic seal rupture, volatile crude hydrocarbon cloud ignition, CDU emergency blackout"
+    ],
+    "Confidence": 0.89,
+    "Recommended_Investigation": [
+      "Verify P-102B coupling integrity, perform oil spectrography, review operator overtime rosters"
+    ],
+    "Recommended_Actions": [
+      "Gracefully de-rate CDU throughput to 85%, swap feed service to P-102B, tag out P-102A for rebuild"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-002",
+    "Scenario_Name": "Wet Gas Compressor Seal Failure Under High Ambient Heat & Low Utility Water Flow",
+    "Domains_Involved": [
+      "Instrumentation",
+      "Process",
+      "Human Factors",
+      "Safety",
+      "Maintenance"
+    ],
+    "Entities_Involved": [
+      "TR-101",
+      "PT-102",
+      "ELEC"
+    ],
+    "Leading_Indicators": [
+      "Primary seal vent flow FT-601 spiking",
+      "Seal gas differential pressure fluctuating",
+      "Cooling water supply temperature at 34 C"
+    ],
+    "Abnormal_Conditions": [
+      "Dry gas seal face thermal deformation",
+      "Buffer nitrogen pressure margin <1.5 bar",
+      "Interstage knock-out drum liquid level rising"
+    ],
+    "Risk_Amplifiers": [
+      "High export gas market price creating management reluctance to derate",
+      "Single certified compressor technician on site"
+    ],
+    "Safety_Barriers": [
+      "Secondary seal containment",
+      "Emergency flare blowdown valve BDV-101",
+      "Compressor shelter LEL gas detectors"
+    ],
+    "Potential_Outcomes": [
+      "Toxic and flammable wet gas release to atmosphere, emergency flare trip, potential compressor casing damage"
+    ],
+    "Confidence": 0.9,
+    "Recommended_Investigation": [
+      "Measure seal gas filter differential pressure, inspect secondary vent flame arrestor"
+    ],
+    "Recommended_Actions": [
+      "Increase nitrogen buffer supply pressure, activate auxiliary cooling water booster pump, derate compressor by 15%"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-003",
+    "Scenario_Name": "Multi-Domain Risk Scenario #3: Main Refinery Transformer B & CDU-4 Overhead Reflux Drum Interactive Cascade",
+    "Domains_Involved": [
+      "Integrity",
+      "Environment",
+      "Business",
+      "Maintenance",
+      "Operations"
+    ],
+    "Entities_Involved": [
+      "TR-102",
+      "V-101",
+      "ELEC"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-007 showing warning",
+      "Leading indicator IND-010 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in ELEC",
+      "Mechanical parameter drift in TR-102"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in ELEC"
+    ],
+    "Confidence": 0.91,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of TR-102 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-004",
+    "Scenario_Name": "Multi-Domain Risk Scenario #4: HDS-1 Motor Control Center & Desalter Outlet Separation Interactive Cascade",
+    "Domains_Involved": [
+      "Utilities",
+      "Equipment",
+      "Process",
+      "Safety",
+      "Organization"
+    ],
+    "Entities_Involved": [
+      "MCC-102",
+      "V-201",
+      "HDS-1"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-009 showing warning",
+      "Leading indicator IND-013 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in HDS-1",
+      "Mechanical parameter drift in MCC-102"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in HDS-1"
+    ],
+    "Confidence": 0.92,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of MCC-102 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-005",
+    "Scenario_Name": "Multi-Domain Risk Scenario #5: HDS-1 Transformer & Overhead Accumulator Interactive Cascade",
+    "Domains_Involved": [
+      "Cyber / Control",
+      "Instrumentation",
+      "Human Factors",
+      "Safety",
+      "Operations"
+    ],
+    "Entities_Involved": [
+      "TR-104",
+      "V-220",
+      "HDS-1"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-011 showing warning",
+      "Leading indicator IND-016 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in HDS-1",
+      "Mechanical parameter drift in TR-104"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in HDS-1"
+    ],
+    "Confidence": 0.93,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of TR-104 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-006",
+    "Scenario_Name": "Multi-Domain Risk Scenario #6: Utility Motor Control Center & CDU-4 Heater Outlet Temperature Transmitter Interactive Cascade",
+    "Domains_Involved": [
+      "Supply Chain",
+      "Maintenance",
+      "Equipment",
+      "Operations",
+      "Business"
+    ],
+    "Entities_Involved": [
+      "MCC-103",
+      "TT-101",
+      "UTY"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-013 showing warning",
+      "Leading indicator IND-019 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in UTY",
+      "Mechanical parameter drift in MCC-103"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in UTY"
+    ],
+    "Confidence": 0.94,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of MCC-103 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-007",
+    "Scenario_Name": "Multi-Domain Risk Scenario #7: Utility Transformer & P-102 Discharge Temperature Interactive Cascade",
+    "Domains_Involved": [
+      "Human Factors",
+      "Organization",
+      "Maintenance",
+      "Safety",
+      "Process"
+    ],
+    "Entities_Involved": [
+      "TR-105",
+      "TT-102",
+      "UTY"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-015 showing warning",
+      "Leading indicator IND-022 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in UTY",
+      "Mechanical parameter drift in TR-105"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in UTY"
+    ],
+    "Confidence": 0.95,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of TR-105 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-008",
+    "Scenario_Name": "Multi-Domain Risk Scenario #8: CDU-4 Crude Feed Flow Transmitter & Hydrogen Separator Interactive Cascade",
+    "Domains_Involved": [
+      "Equipment",
+      "Process",
+      "Maintenance",
+      "Human Factors",
+      "Business"
+    ],
+    "Entities_Involved": [
+      "FT-101",
+      "V-501",
+      "CDU-4"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-017 showing warning",
+      "Leading indicator IND-025 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in CDU-4",
+      "Mechanical parameter drift in FT-101"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in CDU-4"
+    ],
+    "Confidence": 0.96,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of FT-101 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-009",
+    "Scenario_Name": "Multi-Domain Risk Scenario #9: CDU-4 Reflux Flow Transmitter & HDS Feed Flow Transmitter Interactive Cascade",
+    "Domains_Involved": [
+      "Equipment",
+      "Utilities",
+      "Environment",
+      "Operations",
+      "Safety"
+    ],
+    "Entities_Involved": [
+      "FT-102",
+      "FT-201",
+      "CDU-4"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-019 showing warning",
+      "Leading indicator IND-028 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in CDU-4",
+      "Mechanical parameter drift in FT-102"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in CDU-4"
+    ],
+    "Confidence": 0.97,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of FT-102 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-010",
+    "Scenario_Name": "Multi-Domain Risk Scenario #10: Crude Flow & HDS Hydrogen Flow Transmitter Interactive Cascade",
+    "Domains_Involved": [
+      "Instrumentation",
+      "Process",
+      "Human Factors",
+      "Safety",
+      "Maintenance"
+    ],
+    "Entities_Involved": [
+      "FT-210",
+      "FT-202",
+      "CDU-4"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-021 showing warning",
+      "Leading indicator IND-031 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in CDU-4",
+      "Mechanical parameter drift in FT-210"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in CDU-4"
+    ],
+    "Confidence": 0.98,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of FT-210 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-011",
+    "Scenario_Name": "Multi-Domain Risk Scenario #11: CDU-4 Hydrocarbon Gas Detector North & HDS Hydrogen Gas Detector Interactive Cascade",
+    "Domains_Involved": [
+      "Integrity",
+      "Environment",
+      "Business",
+      "Maintenance",
+      "Operations"
+    ],
+    "Entities_Involved": [
+      "GD-101",
+      "GD-103",
+      "CDU-4"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-023 showing warning",
+      "Leading indicator IND-034 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in CDU-4",
+      "Mechanical parameter drift in GD-101"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in CDU-4"
+    ],
+    "Confidence": 0.88,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of GD-101 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-012",
+    "Scenario_Name": "Multi-Domain Risk Scenario #12: CDU-4 Hydrocarbon Gas Detector South & HDS-1 Feed Pump B Interactive Cascade",
+    "Domains_Involved": [
+      "Utilities",
+      "Equipment",
+      "Process",
+      "Safety",
+      "Organization"
+    ],
+    "Entities_Involved": [
+      "GD-102",
+      "P-202",
+      "CDU-4"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-025 showing warning",
+      "Leading indicator IND-037 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in CDU-4",
+      "Mechanical parameter drift in GD-102"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in CDU-4"
+    ],
+    "Confidence": 0.89,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of GD-102 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-013",
+    "Scenario_Name": "Multi-Domain Risk Scenario #13: CDU-4 Reflux Drum Level Transmitter & HDS High Pressure Separator Level Transmitter Interactive Cascade",
+    "Domains_Involved": [
+      "Cyber / Control",
+      "Instrumentation",
+      "Human Factors",
+      "Safety",
+      "Operations"
+    ],
+    "Entities_Involved": [
+      "LT-101",
+      "LT-201",
+      "CDU-4"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-027 showing warning",
+      "Leading indicator IND-040 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in CDU-4",
+      "Mechanical parameter drift in LT-101"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in CDU-4"
+    ],
+    "Confidence": 0.9,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of LT-101 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-014",
+    "Scenario_Name": "Multi-Domain Risk Scenario #14: CDU-4 Bottoms Drum Level Transmitter & HDS Low Pressure Separator Level Transmitter Interactive Cascade",
+    "Domains_Involved": [
+      "Supply Chain",
+      "Maintenance",
+      "Equipment",
+      "Operations",
+      "Business"
+    ],
+    "Entities_Involved": [
+      "LT-102",
+      "LT-202",
+      "CDU-4"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-029 showing warning",
+      "Leading indicator IND-043 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in CDU-4",
+      "Mechanical parameter drift in LT-102"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in CDU-4"
+    ],
+    "Confidence": 0.91,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of LT-102 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-015",
+    "Scenario_Name": "Multi-Domain Risk Scenario #15: P-102 Discharge Protection & HDS Reactor Pressure Transmitter Interactive Cascade",
+    "Domains_Involved": [
+      "Human Factors",
+      "Organization",
+      "Maintenance",
+      "Safety",
+      "Process"
+    ],
+    "Entities_Involved": [
+      "PSV-102",
+      "PT-201",
+      "CDU-4"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-031 showing warning",
+      "Leading indicator IND-046 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in CDU-4",
+      "Mechanical parameter drift in PSV-102"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in CDU-4"
+    ],
+    "Confidence": 0.92,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of PSV-102 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-016",
+    "Scenario_Name": "Multi-Domain Risk Scenario #16: CDU-4 Column Overhead Pressure Transmitter & HDS Separator Pressure Transmitter Interactive Cascade",
+    "Domains_Involved": [
+      "Equipment",
+      "Process",
+      "Maintenance",
+      "Human Factors",
+      "Business"
+    ],
+    "Entities_Involved": [
+      "PT-101",
+      "PT-202",
+      "CDU-4"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-033 showing warning",
+      "Leading indicator IND-049 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in CDU-4",
+      "Mechanical parameter drift in PT-101"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in CDU-4"
+    ],
+    "Confidence": 0.93,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of PT-101 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-017",
+    "Scenario_Name": "Multi-Domain Risk Scenario #17: P-102 Discharge Pressure & Low Pressure Separator Interactive Cascade",
+    "Domains_Involved": [
+      "Equipment",
+      "Utilities",
+      "Environment",
+      "Operations",
+      "Safety"
+    ],
+    "Entities_Involved": [
+      "PT-102",
+      "V-202",
+      "CDU-4"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-035 showing warning",
+      "Leading indicator IND-052 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in CDU-4",
+      "Mechanical parameter drift in PT-102"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in CDU-4"
+    ],
+    "Confidence": 0.94,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of PT-102 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-018",
+    "Scenario_Name": "Multi-Domain Risk Scenario #18: CDU-4 Overhead Reflux Drum & HDS Reactor Temperature Transmitter Interactive Cascade",
+    "Domains_Involved": [
+      "Instrumentation",
+      "Process",
+      "Human Factors",
+      "Safety",
+      "Maintenance"
+    ],
+    "Entities_Involved": [
+      "V-101",
+      "TT-201",
+      "CDU-4"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-037 showing warning",
+      "Leading indicator IND-055 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in CDU-4",
+      "Mechanical parameter drift in V-101"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in CDU-4"
+    ],
+    "Confidence": 0.95,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of V-101 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-019",
+    "Scenario_Name": "Multi-Domain Risk Scenario #19: Desalter Outlet Separation & HDS Effluent Temperature Transmitter Interactive Cascade",
+    "Domains_Involved": [
+      "Integrity",
+      "Environment",
+      "Business",
+      "Maintenance",
+      "Operations"
+    ],
+    "Entities_Involved": [
+      "V-201",
+      "TT-202",
+      "CDU-4"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-039 showing warning",
+      "Leading indicator IND-058 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in CDU-4",
+      "Mechanical parameter drift in V-201"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in CDU-4"
+    ],
+    "Confidence": 0.96,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of V-201 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-020",
+    "Scenario_Name": "Multi-Domain Risk Scenario #20: Overhead Accumulator & HGU Hydrogen Gas Detector Interactive Cascade",
+    "Domains_Involved": [
+      "Utilities",
+      "Equipment",
+      "Process",
+      "Safety",
+      "Organization"
+    ],
+    "Entities_Involved": [
+      "V-220",
+      "GD-104",
+      "CDU-4"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-041 showing warning",
+      "Leading indicator IND-061 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in CDU-4",
+      "Mechanical parameter drift in V-220"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in CDU-4"
+    ],
+    "Confidence": 0.97,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of V-220 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-021",
+    "Scenario_Name": "Multi-Domain Risk Scenario #21: CDU-4 Heater Outlet Temperature Transmitter & HGU Hydrogen Header Pressure Transmitter Interactive Cascade",
+    "Domains_Involved": [
+      "Cyber / Control",
+      "Instrumentation",
+      "Human Factors",
+      "Safety",
+      "Operations"
+    ],
+    "Entities_Involved": [
+      "TT-101",
+      "PT-301",
+      "CDU-4"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-043 showing warning",
+      "Leading indicator IND-064 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in CDU-4",
+      "Mechanical parameter drift in TT-101"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in CDU-4"
+    ],
+    "Confidence": 0.98,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of TT-101 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-022",
+    "Scenario_Name": "Multi-Domain Risk Scenario #22: P-102 Discharge Temperature & HGU Reformer Outlet Temperature Transmitter Interactive Cascade",
+    "Domains_Involved": [
+      "Supply Chain",
+      "Maintenance",
+      "Equipment",
+      "Operations",
+      "Business"
+    ],
+    "Entities_Involved": [
+      "TT-102",
+      "TT-301",
+      "CDU-4"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-045 showing warning",
+      "Leading indicator IND-067 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in CDU-4",
+      "Mechanical parameter drift in TT-102"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in CDU-4"
+    ],
+    "Confidence": 0.88,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of TT-102 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-023",
+    "Scenario_Name": "Multi-Domain Risk Scenario #23: Hydrogen Separator & Instrument Air Compressor A Interactive Cascade",
+    "Domains_Involved": [
+      "Human Factors",
+      "Organization",
+      "Maintenance",
+      "Safety",
+      "Process"
+    ],
+    "Entities_Involved": [
+      "V-501",
+      "AC-101",
+      "HCU-1"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-047 showing warning",
+      "Leading indicator IND-070 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in HCU-1",
+      "Mechanical parameter drift in V-501"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in HCU-1"
+    ],
+    "Confidence": 0.89,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of V-501 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-024",
+    "Scenario_Name": "Multi-Domain Risk Scenario #24: HDS Feed Flow Transmitter & Instrument Air Compressor B Interactive Cascade",
+    "Domains_Involved": [
+      "Equipment",
+      "Process",
+      "Maintenance",
+      "Human Factors",
+      "Business"
+    ],
+    "Entities_Involved": [
+      "FT-201",
+      "AC-102",
+      "HDS-1"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-049 showing warning",
+      "Leading indicator IND-073 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in HDS-1",
+      "Mechanical parameter drift in FT-201"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in HDS-1"
+    ],
+    "Confidence": 0.9,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of FT-201 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-025",
+    "Scenario_Name": "Multi-Domain Risk Scenario #25: HDS Hydrogen Flow Transmitter & Instrument Air Compressor C Interactive Cascade",
+    "Domains_Involved": [
+      "Equipment",
+      "Utilities",
+      "Environment",
+      "Operations",
+      "Safety"
+    ],
+    "Entities_Involved": [
+      "FT-202",
+      "AC-103",
+      "HDS-1"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-051 showing warning",
+      "Leading indicator IND-076 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in HDS-1",
+      "Mechanical parameter drift in FT-202"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in HDS-1"
+    ],
+    "Confidence": 0.91,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of FT-202 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-026",
+    "Scenario_Name": "Multi-Domain Risk Scenario #26: HDS Hydrogen Gas Detector & Crude Transfer Interactive Cascade",
+    "Domains_Involved": [
+      "Instrumentation",
+      "Process",
+      "Human Factors",
+      "Safety",
+      "Maintenance"
+    ],
+    "Entities_Involved": [
+      "GD-103",
+      "P-102",
+      "HDS-1"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-053 showing warning",
+      "Leading indicator IND-079 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in HDS-1",
+      "Mechanical parameter drift in GD-103"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in HDS-1"
+    ],
+    "Confidence": 0.92,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of GD-103 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-027",
+    "Scenario_Name": "Multi-Domain Risk Scenario #27: HDS-1 Feed Pump B & Crude Feed Transfer Interactive Cascade",
+    "Domains_Involved": [
+      "Integrity",
+      "Environment",
+      "Business",
+      "Maintenance",
+      "Operations"
+    ],
+    "Entities_Involved": [
+      "P-202",
+      "P-101",
+      "HDS-1"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-055 showing warning",
+      "Leading indicator IND-082 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in HDS-1",
+      "Mechanical parameter drift in P-202"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in HDS-1"
+    ],
+    "Confidence": 0.93,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of P-202 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-028",
+    "Scenario_Name": "Multi-Domain Risk Scenario #28: HDS High Pressure Separator Level Transmitter & Cooling Circuit Interactive Cascade",
+    "Domains_Involved": [
+      "Utilities",
+      "Equipment",
+      "Process",
+      "Safety",
+      "Organization"
+    ],
+    "Entities_Involved": [
+      "LT-201",
+      "P-103",
+      "HDS-1"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-057 showing warning",
+      "Leading indicator IND-085 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in HDS-1",
+      "Mechanical parameter drift in LT-201"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in HDS-1"
+    ],
+    "Confidence": 0.94,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of LT-201 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-029",
+    "Scenario_Name": "Multi-Domain Risk Scenario #29: HDS Low Pressure Separator Level Transmitter & Product Transfer Interactive Cascade",
+    "Domains_Involved": [
+      "Cyber / Control",
+      "Instrumentation",
+      "Human Factors",
+      "Safety",
+      "Operations"
+    ],
+    "Entities_Involved": [
+      "LT-202",
+      "P-104",
+      "HDS-1"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-059 showing warning",
+      "Leading indicator IND-088 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in HDS-1",
+      "Mechanical parameter drift in LT-202"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in HDS-1"
+    ],
+    "Confidence": 0.95,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of LT-202 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-030",
+    "Scenario_Name": "Multi-Domain Risk Scenario #30: HDS Reactor Pressure Transmitter & CDU-4 Reflux Pump B Interactive Cascade",
+    "Domains_Involved": [
+      "Supply Chain",
+      "Maintenance",
+      "Equipment",
+      "Operations",
+      "Business"
+    ],
+    "Entities_Involved": [
+      "PT-201",
+      "P-105",
+      "HDS-1"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-061 showing warning",
+      "Leading indicator IND-091 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in HDS-1",
+      "Mechanical parameter drift in PT-201"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in HDS-1"
+    ],
+    "Confidence": 0.96,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of PT-201 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-031",
+    "Scenario_Name": "Multi-Domain Risk Scenario #31: HDS Separator Pressure Transmitter & CDU-4 Bottoms Pump A Interactive Cascade",
+    "Domains_Involved": [
+      "Human Factors",
+      "Organization",
+      "Maintenance",
+      "Safety",
+      "Process"
+    ],
+    "Entities_Involved": [
+      "PT-202",
+      "P-106",
+      "HDS-1"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-063 showing warning",
+      "Leading indicator IND-094 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in HDS-1",
+      "Mechanical parameter drift in PT-202"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in HDS-1"
+    ],
+    "Confidence": 0.97,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of PT-202 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-032",
+    "Scenario_Name": "Multi-Domain Risk Scenario #32: Low Pressure Separator & CDU-4 Bottoms Pump B Interactive Cascade",
+    "Domains_Involved": [
+      "Equipment",
+      "Process",
+      "Maintenance",
+      "Human Factors",
+      "Business"
+    ],
+    "Entities_Involved": [
+      "V-202",
+      "P-107",
+      "HDS-1"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-065 showing warning",
+      "Leading indicator IND-097 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in HDS-1",
+      "Mechanical parameter drift in V-202"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in HDS-1"
+    ],
+    "Confidence": 0.98,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of V-202 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-033",
+    "Scenario_Name": "Multi-Domain Risk Scenario #33: HDS Reactor Temperature Transmitter & CDU-4 Product Transfer Pump Interactive Cascade",
+    "Domains_Involved": [
+      "Equipment",
+      "Utilities",
+      "Environment",
+      "Operations",
+      "Safety"
+    ],
+    "Entities_Involved": [
+      "TT-201",
+      "P-108",
+      "HDS-1"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-067 showing warning",
+      "Leading indicator IND-100 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in HDS-1",
+      "Mechanical parameter drift in TT-201"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in HDS-1"
+    ],
+    "Confidence": 0.88,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of TT-201 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-034",
+    "Scenario_Name": "Multi-Domain Risk Scenario #34: HDS Effluent Temperature Transmitter & CDU-4 Atmospheric Distillation Column Interactive Cascade",
+    "Domains_Involved": [
+      "Instrumentation",
+      "Process",
+      "Human Factors",
+      "Safety",
+      "Maintenance"
+    ],
+    "Entities_Involved": [
+      "TT-202",
+      "T-101",
+      "HDS-1"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-069 showing warning",
+      "Leading indicator IND-103 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in HDS-1",
+      "Mechanical parameter drift in TT-202"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in HDS-1"
+    ],
+    "Confidence": 0.89,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of TT-202 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-035",
+    "Scenario_Name": "Multi-Domain Risk Scenario #35: HGU Hydrogen Gas Detector & Crude Pretreatment Interactive Cascade",
+    "Domains_Involved": [
+      "Integrity",
+      "Environment",
+      "Business",
+      "Maintenance",
+      "Operations"
+    ],
+    "Entities_Involved": [
+      "GD-104",
+      "D-410",
+      "HGU-1"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-071 showing warning",
+      "Leading indicator IND-106 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in HGU-1",
+      "Mechanical parameter drift in GD-104"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in HGU-1"
+    ],
+    "Confidence": 0.9,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of GD-104 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-036",
+    "Scenario_Name": "Multi-Domain Risk Scenario #36: HGU Hydrogen Header Pressure Transmitter & P-102 Drive Interactive Cascade",
+    "Domains_Involved": [
+      "Utilities",
+      "Equipment",
+      "Process",
+      "Safety",
+      "Organization"
+    ],
+    "Entities_Involved": [
+      "PT-301",
+      "M-102",
+      "HGU-1"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-073 showing warning",
+      "Leading indicator IND-109 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in HGU-1",
+      "Mechanical parameter drift in PT-301"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in HGU-1"
+    ],
+    "Confidence": 0.91,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of PT-301 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-037",
+    "Scenario_Name": "Multi-Domain Risk Scenario #37: HGU Reformer Outlet Temperature Transmitter & Crude Feed Isolation Interactive Cascade",
+    "Domains_Involved": [
+      "Cyber / Control",
+      "Instrumentation",
+      "Human Factors",
+      "Safety",
+      "Operations"
+    ],
+    "Entities_Involved": [
+      "TT-301",
+      "XV-410",
+      "HGU-1"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-075 showing warning",
+      "Leading indicator IND-112 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in HGU-1",
+      "Mechanical parameter drift in TT-301"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in HGU-1"
+    ],
+    "Confidence": 0.92,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of TT-301 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-038",
+    "Scenario_Name": "Multi-Domain Risk Scenario #38: Instrument Air Compressor A & CDU-4 Bottoms Surge Drum Interactive Cascade",
+    "Domains_Involved": [
+      "Supply Chain",
+      "Maintenance",
+      "Equipment",
+      "Operations",
+      "Business"
+    ],
+    "Entities_Involved": [
+      "AC-101",
+      "V-102",
+      "UTY"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-077 showing warning",
+      "Leading indicator IND-115 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in UTY",
+      "Mechanical parameter drift in AC-101"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in UTY"
+    ],
+    "Confidence": 0.93,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of AC-101 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-039",
+    "Scenario_Name": "Multi-Domain Risk Scenario #39: Instrument Air Compressor B & CDU-4 Overhead Condenser A Interactive Cascade",
+    "Domains_Involved": [
+      "Human Factors",
+      "Organization",
+      "Maintenance",
+      "Safety",
+      "Process"
+    ],
+    "Entities_Involved": [
+      "AC-102",
+      "E-205",
+      "UTY"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-079 showing warning",
+      "Leading indicator IND-118 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in UTY",
+      "Mechanical parameter drift in AC-102"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in UTY"
+    ],
+    "Confidence": 0.94,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of AC-102 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-040",
+    "Scenario_Name": "Multi-Domain Risk Scenario #40: Instrument Air Compressor C & CDU-4 Overhead Condenser B Interactive Cascade",
+    "Domains_Involved": [
+      "Equipment",
+      "Process",
+      "Maintenance",
+      "Human Factors",
+      "Business"
+    ],
+    "Entities_Involved": [
+      "AC-103",
+      "E-206",
+      "UTY"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-081 showing warning",
+      "Leading indicator IND-121 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in UTY",
+      "Mechanical parameter drift in AC-103"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in UTY"
+    ],
+    "Confidence": 0.95,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of AC-103 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-041",
+    "Scenario_Name": "Multi-Domain Risk Scenario #41: Crude Transfer & CDU-4 Product Cooler Interactive Cascade",
+    "Domains_Involved": [
+      "Equipment",
+      "Utilities",
+      "Environment",
+      "Operations",
+      "Safety"
+    ],
+    "Entities_Involved": [
+      "P-102",
+      "E-207",
+      "CDU-4"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-083 showing warning",
+      "Leading indicator IND-124 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in CDU-4",
+      "Mechanical parameter drift in P-102"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in CDU-4"
+    ],
+    "Confidence": 0.96,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of P-102 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-042",
+    "Scenario_Name": "Multi-Domain Risk Scenario #42: Crude Feed Transfer & CDU-4 Crude Preheater C Interactive Cascade",
+    "Domains_Involved": [
+      "Instrumentation",
+      "Process",
+      "Human Factors",
+      "Safety",
+      "Maintenance"
+    ],
+    "Entities_Involved": [
+      "P-101",
+      "E-203",
+      "CDU-4"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-085 showing warning",
+      "Leading indicator IND-127 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in CDU-4",
+      "Mechanical parameter drift in P-101"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in CDU-4"
+    ],
+    "Confidence": 0.97,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of P-101 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-043",
+    "Scenario_Name": "Multi-Domain Risk Scenario #43: Cooling Circuit & CDU-4 Crude Preheater D Interactive Cascade",
+    "Domains_Involved": [
+      "Integrity",
+      "Environment",
+      "Business",
+      "Maintenance",
+      "Operations"
+    ],
+    "Entities_Involved": [
+      "P-103",
+      "E-204",
+      "CDU-4"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-087 showing warning",
+      "Leading indicator IND-130 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in CDU-4",
+      "Mechanical parameter drift in P-103"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in CDU-4"
+    ],
+    "Confidence": 0.98,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of P-103 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-044",
+    "Scenario_Name": "Multi-Domain Risk Scenario #44: Product Transfer & Crude Preheat Interactive Cascade",
+    "Domains_Involved": [
+      "Utilities",
+      "Equipment",
+      "Process",
+      "Safety",
+      "Organization"
+    ],
+    "Entities_Involved": [
+      "P-104",
+      "E-301",
+      "CDU-4"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-089 showing warning",
+      "Leading indicator IND-133 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in CDU-4",
+      "Mechanical parameter drift in P-104"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in CDU-4"
+    ],
+    "Confidence": 0.88,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of P-104 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-045",
+    "Scenario_Name": "Multi-Domain Risk Scenario #45: CDU-4 Reflux Pump B & Product Cooling Interactive Cascade",
+    "Domains_Involved": [
+      "Cyber / Control",
+      "Instrumentation",
+      "Human Factors",
+      "Safety",
+      "Operations"
+    ],
+    "Entities_Involved": [
+      "P-105",
+      "E-315",
+      "CDU-4"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-091 showing warning",
+      "Leading indicator IND-136 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in CDU-4",
+      "Mechanical parameter drift in P-105"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in CDU-4"
+    ],
+    "Confidence": 0.89,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of P-105 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-046",
+    "Scenario_Name": "Multi-Domain Risk Scenario #46: CDU-4 Bottoms Pump A & Diesel Dispatch Interactive Cascade",
+    "Domains_Involved": [
+      "Supply Chain",
+      "Maintenance",
+      "Equipment",
+      "Operations",
+      "Business"
+    ],
+    "Entities_Involved": [
+      "P-106",
+      "P-601",
+      "CDU-4"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-093 showing warning",
+      "Leading indicator IND-139 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in CDU-4",
+      "Mechanical parameter drift in P-106"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in CDU-4"
+    ],
+    "Confidence": 0.9,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of P-106 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-047",
+    "Scenario_Name": "Multi-Domain Risk Scenario #47: CDU-4 Bottoms Pump B & Hydrogen Recycle Interactive Cascade",
+    "Domains_Involved": [
+      "Human Factors",
+      "Organization",
+      "Maintenance",
+      "Safety",
+      "Process"
+    ],
+    "Entities_Involved": [
+      "P-107",
+      "C-301",
+      "CDU-4"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-095 showing warning",
+      "Leading indicator IND-142 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in CDU-4",
+      "Mechanical parameter drift in P-107"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in CDU-4"
+    ],
+    "Confidence": 0.91,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of P-107 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-048",
+    "Scenario_Name": "Multi-Domain Risk Scenario #48: CDU-4 Product Transfer Pump & Recycle Oil Interactive Cascade",
+    "Domains_Involved": [
+      "Equipment",
+      "Process",
+      "Maintenance",
+      "Human Factors",
+      "Business"
+    ],
+    "Entities_Involved": [
+      "P-108",
+      "P-201",
+      "CDU-4"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-097 showing warning",
+      "Leading indicator IND-145 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in CDU-4",
+      "Mechanical parameter drift in P-108"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in CDU-4"
+    ],
+    "Confidence": 0.92,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of P-108 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-049",
+    "Scenario_Name": "Multi-Domain Risk Scenario #49: CDU-4 Atmospheric Distillation Column & Reactor Effluent Cooler Interactive Cascade",
+    "Domains_Involved": [
+      "Equipment",
+      "Utilities",
+      "Environment",
+      "Operations",
+      "Safety"
+    ],
+    "Entities_Involved": [
+      "T-101",
+      "E-302",
+      "CDU-4"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-099 showing warning",
+      "Leading indicator IND-148 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in CDU-4",
+      "Mechanical parameter drift in T-101"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in CDU-4"
+    ],
+    "Confidence": 0.93,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of T-101 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-050",
+    "Scenario_Name": "Multi-Domain Risk Scenario #50: Crude Pretreatment & Recycle Gas Compressor Interactive Cascade",
+    "Domains_Involved": [
+      "Instrumentation",
+      "Process",
+      "Human Factors",
+      "Safety",
+      "Maintenance"
+    ],
+    "Entities_Involved": [
+      "D-410",
+      "C-201",
+      "CDU-4"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-101 showing warning",
+      "Leading indicator IND-151 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in CDU-4",
+      "Mechanical parameter drift in D-410"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in CDU-4"
+    ],
+    "Confidence": 0.94,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of D-410 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-051",
+    "Scenario_Name": "Multi-Domain Risk Scenario #51: P-102 Drive & HDS-1 Product Pump A Interactive Cascade",
+    "Domains_Involved": [
+      "Integrity",
+      "Environment",
+      "Business",
+      "Maintenance",
+      "Operations"
+    ],
+    "Entities_Involved": [
+      "M-102",
+      "P-203",
+      "CDU-4"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-103 showing warning",
+      "Leading indicator IND-154 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in CDU-4",
+      "Mechanical parameter drift in M-102"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in CDU-4"
+    ],
+    "Confidence": 0.95,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of M-102 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-052",
+    "Scenario_Name": "Multi-Domain Risk Scenario #52: Crude Feed Isolation & HDS-1 Product Pump B Interactive Cascade",
+    "Domains_Involved": [
+      "Utilities",
+      "Equipment",
+      "Process",
+      "Safety",
+      "Organization"
+    ],
+    "Entities_Involved": [
+      "XV-410",
+      "P-204",
+      "CDU-4"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-105 showing warning",
+      "Leading indicator IND-157 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in CDU-4",
+      "Mechanical parameter drift in XV-410"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in CDU-4"
+    ],
+    "Confidence": 0.96,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of XV-410 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-053",
+    "Scenario_Name": "Multi-Domain Risk Scenario #53: CDU-4 Bottoms Surge Drum & Hydrodesulfurization Reactor Interactive Cascade",
+    "Domains_Involved": [
+      "Cyber / Control",
+      "Instrumentation",
+      "Human Factors",
+      "Safety",
+      "Operations"
+    ],
+    "Entities_Involved": [
+      "V-102",
+      "R-201",
+      "CDU-4"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-107 showing warning",
+      "Leading indicator IND-160 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in CDU-4",
+      "Mechanical parameter drift in V-102"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in CDU-4"
+    ],
+    "Confidence": 0.97,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of V-102 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-054",
+    "Scenario_Name": "Multi-Domain Risk Scenario #54: CDU-4 Overhead Condenser A & Diesel Hydrotreating Interactive Cascade",
+    "Domains_Involved": [
+      "Supply Chain",
+      "Maintenance",
+      "Equipment",
+      "Operations",
+      "Business"
+    ],
+    "Entities_Involved": [
+      "E-205",
+      "R-501",
+      "CDU-4"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-109 showing warning",
+      "Leading indicator IND-163 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in CDU-4",
+      "Mechanical parameter drift in E-205"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in CDU-4"
+    ],
+    "Confidence": 0.98,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of E-205 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-055",
+    "Scenario_Name": "Multi-Domain Risk Scenario #55: CDU-4 Overhead Condenser B & Hydrogen Booster Compressor Interactive Cascade",
+    "Domains_Involved": [
+      "Human Factors",
+      "Organization",
+      "Maintenance",
+      "Safety",
+      "Process"
+    ],
+    "Entities_Involved": [
+      "E-206",
+      "C-202",
+      "CDU-4"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-111 showing warning",
+      "Leading indicator IND-166 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in CDU-4",
+      "Mechanical parameter drift in E-206"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in CDU-4"
+    ],
+    "Confidence": 0.88,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of E-206 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-056",
+    "Scenario_Name": "Multi-Domain Risk Scenario #56: CDU-4 Product Cooler & HDS Product Cooler Interactive Cascade",
+    "Domains_Involved": [
+      "Equipment",
+      "Process",
+      "Maintenance",
+      "Human Factors",
+      "Business"
+    ],
+    "Entities_Involved": [
+      "E-207",
+      "E-303",
+      "CDU-4"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-113 showing warning",
+      "Leading indicator IND-169 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in CDU-4",
+      "Mechanical parameter drift in E-207"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in CDU-4"
+    ],
+    "Confidence": 0.89,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of E-207 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-057",
+    "Scenario_Name": "Multi-Domain Risk Scenario #57: CDU-4 Crude Preheater C & Shift Conversion Reactor Interactive Cascade",
+    "Domains_Involved": [
+      "Equipment",
+      "Utilities",
+      "Environment",
+      "Operations",
+      "Safety"
+    ],
+    "Entities_Involved": [
+      "E-203",
+      "R-302",
+      "CDU-4"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-115 showing warning",
+      "Leading indicator IND-172 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in CDU-4",
+      "Mechanical parameter drift in E-203"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in CDU-4"
+    ],
+    "Confidence": 0.9,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of E-203 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-058",
+    "Scenario_Name": "Multi-Domain Risk Scenario #58: CDU-4 Crude Preheater D & Condensate Pump Interactive Cascade",
+    "Domains_Involved": [
+      "Instrumentation",
+      "Process",
+      "Human Factors",
+      "Safety",
+      "Maintenance"
+    ],
+    "Entities_Involved": [
+      "E-204",
+      "P-302",
+      "CDU-4"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-117 showing warning",
+      "Leading indicator IND-175 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in CDU-4",
+      "Mechanical parameter drift in E-204"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in CDU-4"
+    ],
+    "Confidence": 0.91,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of E-204 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-059",
+    "Scenario_Name": "Multi-Domain Risk Scenario #59: Crude Preheat & Hydrogen Product Compressor Interactive Cascade",
+    "Domains_Involved": [
+      "Integrity",
+      "Environment",
+      "Business",
+      "Maintenance",
+      "Operations"
+    ],
+    "Entities_Involved": [
+      "E-301",
+      "C-302",
+      "CDU-4"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-119 showing warning",
+      "Leading indicator IND-178 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in CDU-4",
+      "Mechanical parameter drift in E-301"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in CDU-4"
+    ],
+    "Confidence": 0.92,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of E-301 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-060",
+    "Scenario_Name": "Multi-Domain Risk Scenario #60: Product Cooling & Reforming Feed Preheater Interactive Cascade",
+    "Domains_Involved": [
+      "Utilities",
+      "Equipment",
+      "Process",
+      "Safety",
+      "Organization"
+    ],
+    "Entities_Involved": [
+      "E-315",
+      "E-401",
+      "CDU-4"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-121 showing warning",
+      "Leading indicator IND-181 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in CDU-4",
+      "Mechanical parameter drift in E-315"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in CDU-4"
+    ],
+    "Confidence": 0.93,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of E-315 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-061",
+    "Scenario_Name": "Multi-Domain Risk Scenario #61: Diesel Dispatch & Crude Transfer Pump A Interactive Cascade",
+    "Domains_Involved": [
+      "Cyber / Control",
+      "Instrumentation",
+      "Human Factors",
+      "Safety",
+      "Operations"
+    ],
+    "Entities_Involved": [
+      "P-601",
+      "P-501",
+      "DISP-1"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-123 showing warning",
+      "Leading indicator IND-184 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in DISP-1",
+      "Mechanical parameter drift in P-601"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in DISP-1"
+    ],
+    "Confidence": 0.94,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of P-601 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-062",
+    "Scenario_Name": "Multi-Domain Risk Scenario #62: Hydrogen Recycle & Crude Transfer Pump B Interactive Cascade",
+    "Domains_Involved": [
+      "Supply Chain",
+      "Maintenance",
+      "Equipment",
+      "Operations",
+      "Business"
+    ],
+    "Entities_Involved": [
+      "C-301",
+      "P-502",
+      "HCU-1"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-125 showing warning",
+      "Leading indicator IND-187 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in HCU-1",
+      "Mechanical parameter drift in C-301"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in HCU-1"
+    ],
+    "Confidence": 0.95,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of C-301 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-063",
+    "Scenario_Name": "Multi-Domain Risk Scenario #63: Recycle Oil & Diesel Transfer Pump Interactive Cascade",
+    "Domains_Involved": [
+      "Human Factors",
+      "Organization",
+      "Maintenance",
+      "Safety",
+      "Process"
+    ],
+    "Entities_Involved": [
+      "P-201",
+      "P-503",
+      "HCU-1"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-127 showing warning",
+      "Leading indicator IND-190 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in HCU-1",
+      "Mechanical parameter drift in P-201"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in HCU-1"
+    ],
+    "Confidence": 0.96,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of P-201 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-064",
+    "Scenario_Name": "Multi-Domain Risk Scenario #64: Reactor Effluent Cooler & Naphtha Transfer Pump Interactive Cascade",
+    "Domains_Involved": [
+      "Equipment",
+      "Process",
+      "Maintenance",
+      "Human Factors",
+      "Business"
+    ],
+    "Entities_Involved": [
+      "E-302",
+      "P-504",
+      "HDS-1"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-129 showing warning",
+      "Leading indicator IND-193 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in HDS-1",
+      "Mechanical parameter drift in E-302"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in HDS-1"
+    ],
+    "Confidence": 0.97,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of E-302 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-065",
+    "Scenario_Name": "Multi-Domain Risk Scenario #65: Recycle Gas Compressor & Cooling Water Interactive Cascade",
+    "Domains_Involved": [
+      "Equipment",
+      "Utilities",
+      "Environment",
+      "Operations",
+      "Safety"
+    ],
+    "Entities_Involved": [
+      "C-201",
+      "P-205",
+      "HDS-1"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-131 showing warning",
+      "Leading indicator IND-196 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in HDS-1",
+      "Mechanical parameter drift in C-201"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in HDS-1"
+    ],
+    "Confidence": 0.98,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of C-201 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-066",
+    "Scenario_Name": "Multi-Domain Risk Scenario #66: HDS-1 Product Pump A & P-205 Drive Interactive Cascade",
+    "Domains_Involved": [
+      "Instrumentation",
+      "Process",
+      "Human Factors",
+      "Safety",
+      "Maintenance"
+    ],
+    "Entities_Involved": [
+      "P-203",
+      "M-205",
+      "HDS-1"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-133 showing warning",
+      "Leading indicator IND-199 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in HDS-1",
+      "Mechanical parameter drift in P-203"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in HDS-1"
+    ],
+    "Confidence": 0.88,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of P-203 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-067",
+    "Scenario_Name": "Multi-Domain Risk Scenario #67: HDS-1 Product Pump B & Cooling Water Pump A Interactive Cascade",
+    "Domains_Involved": [
+      "Integrity",
+      "Environment",
+      "Business",
+      "Maintenance",
+      "Operations"
+    ],
+    "Entities_Involved": [
+      "P-204",
+      "P-401",
+      "HDS-1"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-135 showing warning",
+      "Leading indicator IND-002 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in HDS-1",
+      "Mechanical parameter drift in P-204"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in HDS-1"
+    ],
+    "Confidence": 0.89,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of P-204 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-068",
+    "Scenario_Name": "Multi-Domain Risk Scenario #68: Hydrodesulfurization Reactor & Cooling Water Pump B Interactive Cascade",
+    "Domains_Involved": [
+      "Utilities",
+      "Equipment",
+      "Process",
+      "Safety",
+      "Organization"
+    ],
+    "Entities_Involved": [
+      "R-201",
+      "P-402",
+      "HDS-1"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-137 showing warning",
+      "Leading indicator IND-005 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in HDS-1",
+      "Mechanical parameter drift in R-201"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in HDS-1"
+    ],
+    "Confidence": 0.9,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of R-201 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-069",
+    "Scenario_Name": "Multi-Domain Risk Scenario #69: Diesel Hydrotreating & Cooling Water Pump C Interactive Cascade",
+    "Domains_Involved": [
+      "Cyber / Control",
+      "Instrumentation",
+      "Human Factors",
+      "Safety",
+      "Operations"
+    ],
+    "Entities_Involved": [
+      "R-501",
+      "P-403",
+      "HDS-1"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-139 showing warning",
+      "Leading indicator IND-008 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in HDS-1",
+      "Mechanical parameter drift in R-501"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in HDS-1"
+    ],
+    "Confidence": 0.91,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of R-501 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-070",
+    "Scenario_Name": "Multi-Domain Risk Scenario #70: Hydrogen Booster Compressor & Crude Preheat Furnace Interactive Cascade",
+    "Domains_Involved": [
+      "Supply Chain",
+      "Maintenance",
+      "Equipment",
+      "Operations",
+      "Business"
+    ],
+    "Entities_Involved": [
+      "C-202",
+      "F-401",
+      "HDS-1"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-141 showing warning",
+      "Leading indicator IND-011 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in HDS-1",
+      "Mechanical parameter drift in C-202"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in HDS-1"
+    ],
+    "Confidence": 0.92,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of C-202 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-071",
+    "Scenario_Name": "Multi-Domain Risk Scenario #71: HDS Product Cooler & CDU-4 Charge Heater Interactive Cascade",
+    "Domains_Involved": [
+      "Human Factors",
+      "Organization",
+      "Maintenance",
+      "Safety",
+      "Process"
+    ],
+    "Entities_Involved": [
+      "E-303",
+      "H-101",
+      "HDS-1"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-143 showing warning",
+      "Leading indicator IND-014 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in HDS-1",
+      "Mechanical parameter drift in E-303"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in HDS-1"
+    ],
+    "Confidence": 0.93,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of E-303 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-072",
+    "Scenario_Name": "Multi-Domain Risk Scenario #72: Shift Conversion Reactor & Diesel Firewater Pump Interactive Cascade",
+    "Domains_Involved": [
+      "Equipment",
+      "Process",
+      "Maintenance",
+      "Human Factors",
+      "Business"
+    ],
+    "Entities_Involved": [
+      "R-302",
+      "FWP-103",
+      "HGU-1"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-145 showing warning",
+      "Leading indicator IND-017 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in HGU-1",
+      "Mechanical parameter drift in R-302"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in HGU-1"
+    ],
+    "Confidence": 0.94,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of R-302 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-073",
+    "Scenario_Name": "Multi-Domain Risk Scenario #73: Condensate Pump & Firewater Pump A Interactive Cascade",
+    "Domains_Involved": [
+      "Equipment",
+      "Utilities",
+      "Environment",
+      "Operations",
+      "Safety"
+    ],
+    "Entities_Involved": [
+      "P-302",
+      "FWP-101",
+      "HGU-1"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-147 showing warning",
+      "Leading indicator IND-020 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in HGU-1",
+      "Mechanical parameter drift in P-302"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in HGU-1"
+    ],
+    "Confidence": 0.95,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of P-302 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-074",
+    "Scenario_Name": "Multi-Domain Risk Scenario #74: Hydrogen Product Compressor & Firewater Pump B Interactive Cascade",
+    "Domains_Involved": [
+      "Instrumentation",
+      "Process",
+      "Human Factors",
+      "Safety",
+      "Maintenance"
+    ],
+    "Entities_Involved": [
+      "C-302",
+      "FWP-102",
+      "HGU-1"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-149 showing warning",
+      "Leading indicator IND-023 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in HGU-1",
+      "Mechanical parameter drift in C-302"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in HGU-1"
+    ],
+    "Confidence": 0.96,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of C-302 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-075",
+    "Scenario_Name": "Multi-Domain Risk Scenario #75: Reforming Feed Preheater & Steam Methane Reformer Interactive Cascade",
+    "Domains_Involved": [
+      "Integrity",
+      "Environment",
+      "Business",
+      "Maintenance",
+      "Operations"
+    ],
+    "Entities_Involved": [
+      "E-401",
+      "R-301",
+      "HGU-1"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-151 showing warning",
+      "Leading indicator IND-026 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in HGU-1",
+      "Mechanical parameter drift in E-401"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in HGU-1"
+    ],
+    "Confidence": 0.97,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of E-401 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-076",
+    "Scenario_Name": "Multi-Domain Risk Scenario #76: Crude Transfer Pump A & Firewater Storage Tank Interactive Cascade",
+    "Domains_Involved": [
+      "Utilities",
+      "Equipment",
+      "Process",
+      "Safety",
+      "Organization"
+    ],
+    "Entities_Involved": [
+      "P-501",
+      "TK-110",
+      "TKF"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-153 showing warning",
+      "Leading indicator IND-029 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in TKF",
+      "Mechanical parameter drift in P-501"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in TKF"
+    ],
+    "Confidence": 0.98,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of P-501 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-077",
+    "Scenario_Name": "Multi-Domain Risk Scenario #77: Crude Transfer Pump B & Emergency Diesel Generator A Interactive Cascade",
+    "Domains_Involved": [
+      "Cyber / Control",
+      "Instrumentation",
+      "Human Factors",
+      "Safety",
+      "Operations"
+    ],
+    "Entities_Involved": [
+      "P-502",
+      "DG-101",
+      "TKF"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-155 showing warning",
+      "Leading indicator IND-032 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in TKF",
+      "Mechanical parameter drift in P-502"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in TKF"
+    ],
+    "Confidence": 0.88,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of P-502 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-078",
+    "Scenario_Name": "Multi-Domain Risk Scenario #78: Diesel Transfer Pump & Emergency Diesel Generator B Interactive Cascade",
+    "Domains_Involved": [
+      "Supply Chain",
+      "Maintenance",
+      "Equipment",
+      "Operations",
+      "Business"
+    ],
+    "Entities_Involved": [
+      "P-503",
+      "DG-102",
+      "TKF"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-157 showing warning",
+      "Leading indicator IND-035 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in TKF",
+      "Mechanical parameter drift in P-503"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in TKF"
+    ],
+    "Confidence": 0.89,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of P-503 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-079",
+    "Scenario_Name": "Multi-Domain Risk Scenario #79: Naphtha Transfer Pump & Crude Storage Interactive Cascade",
+    "Domains_Involved": [
+      "Human Factors",
+      "Organization",
+      "Maintenance",
+      "Safety",
+      "Process"
+    ],
+    "Entities_Involved": [
+      "P-504",
+      "T-401",
+      "TKF"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-159 showing warning",
+      "Leading indicator IND-038 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in TKF",
+      "Mechanical parameter drift in P-504"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in TKF"
+    ],
+    "Confidence": 0.9,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of P-504 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-080",
+    "Scenario_Name": "Multi-Domain Risk Scenario #80: Cooling Water & Intermediate Feed Interactive Cascade",
+    "Domains_Involved": [
+      "Equipment",
+      "Process",
+      "Maintenance",
+      "Human Factors",
+      "Business"
+    ],
+    "Entities_Involved": [
+      "P-205",
+      "T-405",
+      "UTIL-1"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-161 showing warning",
+      "Leading indicator IND-041 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in UTIL-1",
+      "Mechanical parameter drift in P-205"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in UTIL-1"
+    ],
+    "Confidence": 0.91,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of P-205 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-081",
+    "Scenario_Name": "Multi-Domain Risk Scenario #81: P-205 Drive & Crude Oil Storage Tank A Interactive Cascade",
+    "Domains_Involved": [
+      "Equipment",
+      "Utilities",
+      "Environment",
+      "Operations",
+      "Safety"
+    ],
+    "Entities_Involved": [
+      "M-205",
+      "TK-101",
+      "UTIL-1"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-163 showing warning",
+      "Leading indicator IND-044 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in UTIL-1",
+      "Mechanical parameter drift in M-205"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in UTIL-1"
+    ],
+    "Confidence": 0.92,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of M-205 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-082",
+    "Scenario_Name": "Multi-Domain Risk Scenario #82: Cooling Water Pump A & Crude Oil Storage Tank B Interactive Cascade",
+    "Domains_Involved": [
+      "Instrumentation",
+      "Process",
+      "Human Factors",
+      "Safety",
+      "Maintenance"
+    ],
+    "Entities_Involved": [
+      "P-401",
+      "TK-102",
+      "UTY"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-165 showing warning",
+      "Leading indicator IND-047 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in UTY",
+      "Mechanical parameter drift in P-401"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in UTY"
+    ],
+    "Confidence": 0.93,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of P-401 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-083",
+    "Scenario_Name": "Multi-Domain Risk Scenario #83: Cooling Water Pump B & Intermediate Product Tank Interactive Cascade",
+    "Domains_Involved": [
+      "Integrity",
+      "Environment",
+      "Business",
+      "Maintenance",
+      "Operations"
+    ],
+    "Entities_Involved": [
+      "P-402",
+      "TK-103",
+      "UTY"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-167 showing warning",
+      "Leading indicator IND-050 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in UTY",
+      "Mechanical parameter drift in P-402"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in UTY"
+    ],
+    "Confidence": 0.94,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of P-402 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-084",
+    "Scenario_Name": "Multi-Domain Risk Scenario #84: Cooling Water Pump C & Diesel Storage Tank A Interactive Cascade",
+    "Domains_Involved": [
+      "Utilities",
+      "Equipment",
+      "Process",
+      "Safety",
+      "Organization"
+    ],
+    "Entities_Involved": [
+      "P-403",
+      "TK-104",
+      "UTY"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-169 showing warning",
+      "Leading indicator IND-053 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in UTY",
+      "Mechanical parameter drift in P-403"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in UTY"
+    ],
+    "Confidence": 0.95,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of P-403 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-085",
+    "Scenario_Name": "Multi-Domain Risk Scenario #85: Crude Preheat Furnace & Diesel Storage Tank B Interactive Cascade",
+    "Domains_Involved": [
+      "Cyber / Control",
+      "Instrumentation",
+      "Human Factors",
+      "Safety",
+      "Operations"
+    ],
+    "Entities_Involved": [
+      "F-401",
+      "TK-105",
+      "CDU-4"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-171 showing warning",
+      "Leading indicator IND-056 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in CDU-4",
+      "Mechanical parameter drift in F-401"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in CDU-4"
+    ],
+    "Confidence": 0.96,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of F-401 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-086",
+    "Scenario_Name": "Multi-Domain Risk Scenario #86: CDU-4 Charge Heater & Naphtha Storage Tank Interactive Cascade",
+    "Domains_Involved": [
+      "Supply Chain",
+      "Maintenance",
+      "Equipment",
+      "Operations",
+      "Business"
+    ],
+    "Entities_Involved": [
+      "H-101",
+      "TK-106",
+      "CDU-4"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-173 showing warning",
+      "Leading indicator IND-059 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in CDU-4",
+      "Mechanical parameter drift in H-101"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in CDU-4"
+    ],
+    "Confidence": 0.97,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of H-101 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-087",
+    "Scenario_Name": "Multi-Domain Risk Scenario #87: Diesel Firewater Pump & ATF Storage Tank Interactive Cascade",
+    "Domains_Involved": [
+      "Human Factors",
+      "Organization",
+      "Maintenance",
+      "Safety",
+      "Process"
+    ],
+    "Entities_Involved": [
+      "FWP-103",
+      "TK-107",
+      "FIRE"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-175 showing warning",
+      "Leading indicator IND-062 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in FIRE",
+      "Mechanical parameter drift in FWP-103"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in FIRE"
+    ],
+    "Confidence": 0.98,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of FWP-103 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-088",
+    "Scenario_Name": "Multi-Domain Risk Scenario #88: Firewater Pump A & Fuel Oil Storage Tank Interactive Cascade",
+    "Domains_Involved": [
+      "Equipment",
+      "Process",
+      "Maintenance",
+      "Human Factors",
+      "Business"
+    ],
+    "Entities_Involved": [
+      "FWP-101",
+      "TK-108",
+      "FIRE"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-177 showing warning",
+      "Leading indicator IND-065 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in FIRE",
+      "Mechanical parameter drift in FWP-101"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in FIRE"
+    ],
+    "Confidence": 0.88,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of FWP-101 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-089",
+    "Scenario_Name": "Multi-Domain Risk Scenario #89: Firewater Pump B & Slop Oil Tank Interactive Cascade",
+    "Domains_Involved": [
+      "Equipment",
+      "Utilities",
+      "Environment",
+      "Operations",
+      "Safety"
+    ],
+    "Entities_Involved": [
+      "FWP-102",
+      "TK-109",
+      "FIRE"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-179 showing warning",
+      "Leading indicator IND-068 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in FIRE",
+      "Mechanical parameter drift in FWP-102"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in FIRE"
+    ],
+    "Confidence": 0.89,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of FWP-102 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-090",
+    "Scenario_Name": "Multi-Domain Risk Scenario #90: Steam Methane Reformer & Boiler Feedwater Pump Interactive Cascade",
+    "Domains_Involved": [
+      "Instrumentation",
+      "Process",
+      "Human Factors",
+      "Safety",
+      "Maintenance"
+    ],
+    "Entities_Involved": [
+      "R-301",
+      "P-301",
+      "HGU-1"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-181 showing warning",
+      "Leading indicator IND-071 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in HGU-1",
+      "Mechanical parameter drift in R-301"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in HGU-1"
+    ],
+    "Confidence": 0.9,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of R-301 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-091",
+    "Scenario_Name": "Multi-Domain Risk Scenario #91: Firewater Storage Tank & Syngas Cooler Interactive Cascade",
+    "Domains_Involved": [
+      "Integrity",
+      "Environment",
+      "Business",
+      "Maintenance",
+      "Operations"
+    ],
+    "Entities_Involved": [
+      "TK-110",
+      "E-402",
+      "TKF"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-183 showing warning",
+      "Leading indicator IND-074 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in TKF",
+      "Mechanical parameter drift in TK-110"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in TKF"
+    ],
+    "Confidence": 0.91,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of TK-110 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-092",
+    "Scenario_Name": "Multi-Domain Risk Scenario #92: Emergency Diesel Generator A & Cooling Tower Cell A Interactive Cascade",
+    "Domains_Involved": [
+      "Utilities",
+      "Equipment",
+      "Process",
+      "Safety",
+      "Organization"
+    ],
+    "Entities_Involved": [
+      "DG-101",
+      "CT-101",
+      "UTY"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-185 showing warning",
+      "Leading indicator IND-077 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in UTY",
+      "Mechanical parameter drift in DG-101"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in UTY"
+    ],
+    "Confidence": 0.92,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of DG-101 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-093",
+    "Scenario_Name": "Multi-Domain Risk Scenario #93: Emergency Diesel Generator B & Cooling Tower Cell B Interactive Cascade",
+    "Domains_Involved": [
+      "Cyber / Control",
+      "Instrumentation",
+      "Human Factors",
+      "Safety",
+      "Operations"
+    ],
+    "Entities_Involved": [
+      "DG-102",
+      "CT-102",
+      "UTY"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-187 showing warning",
+      "Leading indicator IND-080 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in UTY",
+      "Mechanical parameter drift in DG-102"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in UTY"
+    ],
+    "Confidence": 0.93,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of DG-102 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-094",
+    "Scenario_Name": "Multi-Domain Risk Scenario #94: Crude Storage & Cooling Tower Cell C Interactive Cascade",
+    "Domains_Involved": [
+      "Supply Chain",
+      "Maintenance",
+      "Equipment",
+      "Operations",
+      "Business"
+    ],
+    "Entities_Involved": [
+      "T-401",
+      "CT-103",
+      "TF-1"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-189 showing warning",
+      "Leading indicator IND-083 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in TF-1",
+      "Mechanical parameter drift in T-401"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in TF-1"
+    ],
+    "Confidence": 0.94,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of T-401 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-095",
+    "Scenario_Name": "Multi-Domain Risk Scenario #95: Intermediate Feed & Utility Boiler A Interactive Cascade",
+    "Domains_Involved": [
+      "Human Factors",
+      "Organization",
+      "Maintenance",
+      "Safety",
+      "Process"
+    ],
+    "Entities_Involved": [
+      "T-405",
+      "B-101",
+      "TF-1"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-191 showing warning",
+      "Leading indicator IND-086 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in TF-1",
+      "Mechanical parameter drift in T-405"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in TF-1"
+    ],
+    "Confidence": 0.95,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of T-405 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-096",
+    "Scenario_Name": "Multi-Domain Risk Scenario #96: Crude Oil Storage Tank A & Utility Boiler B Interactive Cascade",
+    "Domains_Involved": [
+      "Equipment",
+      "Process",
+      "Maintenance",
+      "Human Factors",
+      "Business"
+    ],
+    "Entities_Involved": [
+      "TK-101",
+      "B-102",
+      "TKF"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-193 showing warning",
+      "Leading indicator IND-089 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in TKF",
+      "Mechanical parameter drift in TK-101"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in TKF"
+    ],
+    "Confidence": 0.96,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of TK-101 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-097",
+    "Scenario_Name": "Multi-Domain Risk Scenario #97: Crude Oil Storage Tank B & CDU-4 Motor Control Center Interactive Cascade",
+    "Domains_Involved": [
+      "Equipment",
+      "Utilities",
+      "Environment",
+      "Operations",
+      "Safety"
+    ],
+    "Entities_Involved": [
+      "TK-102",
+      "MCC-101",
+      "TKF"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-195 showing warning",
+      "Leading indicator IND-092 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in TKF",
+      "Mechanical parameter drift in TK-102"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in TKF"
+    ],
+    "Confidence": 0.97,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of TK-102 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-098",
+    "Scenario_Name": "Multi-Domain Risk Scenario #98: Intermediate Product Tank & CDU-4 Transformer Interactive Cascade",
+    "Domains_Involved": [
+      "Instrumentation",
+      "Process",
+      "Human Factors",
+      "Safety",
+      "Maintenance"
+    ],
+    "Entities_Involved": [
+      "TK-103",
+      "TR-103",
+      "TKF"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-197 showing warning",
+      "Leading indicator IND-095 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in TKF",
+      "Mechanical parameter drift in TK-103"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in TKF"
+    ],
+    "Confidence": 0.98,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of TK-103 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-099",
+    "Scenario_Name": "Multi-Domain Risk Scenario #99: Diesel Storage Tank A & Main Refinery Transformer A Interactive Cascade",
+    "Domains_Involved": [
+      "Integrity",
+      "Environment",
+      "Business",
+      "Maintenance",
+      "Operations"
+    ],
+    "Entities_Involved": [
+      "TK-104",
+      "TR-101",
+      "TKF"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-199 showing warning",
+      "Leading indicator IND-098 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in TKF",
+      "Mechanical parameter drift in TK-104"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in TKF"
+    ],
+    "Confidence": 0.88,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of TK-104 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-100",
+    "Scenario_Name": "Multi-Domain Risk Scenario #100: Diesel Storage Tank B & Main Refinery Transformer B Interactive Cascade",
+    "Domains_Involved": [
+      "Utilities",
+      "Equipment",
+      "Process",
+      "Safety",
+      "Organization"
+    ],
+    "Entities_Involved": [
+      "TK-105",
+      "TR-102",
+      "TKF"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-001 showing warning",
+      "Leading indicator IND-101 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in TKF",
+      "Mechanical parameter drift in TK-105"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in TKF"
+    ],
+    "Confidence": 0.89,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of TK-105 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-101",
+    "Scenario_Name": "Multi-Domain Risk Scenario #101: Naphtha Storage Tank & HDS-1 Motor Control Center Interactive Cascade",
+    "Domains_Involved": [
+      "Cyber / Control",
+      "Instrumentation",
+      "Human Factors",
+      "Safety",
+      "Operations"
+    ],
+    "Entities_Involved": [
+      "TK-106",
+      "MCC-102",
+      "TKF"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-003 showing warning",
+      "Leading indicator IND-104 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in TKF",
+      "Mechanical parameter drift in TK-106"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in TKF"
+    ],
+    "Confidence": 0.9,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of TK-106 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-102",
+    "Scenario_Name": "Multi-Domain Risk Scenario #102: ATF Storage Tank & HDS-1 Transformer Interactive Cascade",
+    "Domains_Involved": [
+      "Supply Chain",
+      "Maintenance",
+      "Equipment",
+      "Operations",
+      "Business"
+    ],
+    "Entities_Involved": [
+      "TK-107",
+      "TR-104",
+      "TKF"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-005 showing warning",
+      "Leading indicator IND-107 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in TKF",
+      "Mechanical parameter drift in TK-107"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in TKF"
+    ],
+    "Confidence": 0.91,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of TK-107 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-103",
+    "Scenario_Name": "Multi-Domain Risk Scenario #103: Fuel Oil Storage Tank & Utility Motor Control Center Interactive Cascade",
+    "Domains_Involved": [
+      "Human Factors",
+      "Organization",
+      "Maintenance",
+      "Safety",
+      "Process"
+    ],
+    "Entities_Involved": [
+      "TK-108",
+      "MCC-103",
+      "TKF"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-007 showing warning",
+      "Leading indicator IND-110 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in TKF",
+      "Mechanical parameter drift in TK-108"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in TKF"
+    ],
+    "Confidence": 0.92,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of TK-108 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-104",
+    "Scenario_Name": "Multi-Domain Risk Scenario #104: Slop Oil Tank & Utility Transformer Interactive Cascade",
+    "Domains_Involved": [
+      "Equipment",
+      "Process",
+      "Maintenance",
+      "Human Factors",
+      "Business"
+    ],
+    "Entities_Involved": [
+      "TK-109",
+      "TR-105",
+      "TKF"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-009 showing warning",
+      "Leading indicator IND-113 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in TKF",
+      "Mechanical parameter drift in TK-109"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in TKF"
+    ],
+    "Confidence": 0.93,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of TK-109 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  },
+  {
+    "Scenario_ID": "CRS-2026-105",
+    "Scenario_Name": "Multi-Domain Risk Scenario #105: Boiler Feedwater Pump & CDU-4 Crude Feed Flow Transmitter Interactive Cascade",
+    "Domains_Involved": [
+      "Equipment",
+      "Utilities",
+      "Environment",
+      "Operations",
+      "Safety"
+    ],
+    "Entities_Involved": [
+      "P-301",
+      "FT-101",
+      "HGU-1"
+    ],
+    "Leading_Indicators": [
+      "Leading indicator IND-011 showing warning",
+      "Leading indicator IND-116 trending upward"
+    ],
+    "Abnormal_Conditions": [
+      "Minor process deviation in HGU-1",
+      "Mechanical parameter drift in P-301"
+    ],
+    "Risk_Amplifiers": [
+      "Turnaround schedule pressure",
+      "Concurrent maintenance work permit in adjacent bay",
+      "Staffing capacity vacancy"
+    ],
+    "Safety_Barriers": [
+      "Independent SIS shutdown trip",
+      "Operational SOP emergency checklist",
+      "Relief valve containment to closed flare header"
+    ],
+    "Potential_Outcomes": [
+      "Elevated risk of unplanned operational curtailment or safety incident in HGU-1"
+    ],
+    "Confidence": 0.94,
+    "Recommended_Investigation": [
+      "Perform cross-domain audit of P-301 telemetry, review pending work orders, assess crew fatigue levels"
+    ],
+    "Recommended_Actions": [
+      "Implement temporary operating limit, assign senior supervisor oversight, execute scheduled preventive maintenance"
+    ]
+  }
+]

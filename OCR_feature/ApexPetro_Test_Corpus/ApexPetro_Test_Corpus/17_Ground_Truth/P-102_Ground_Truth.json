@@ -1,0 +1,95 @@
+{
+  "document_purpose": "Authoritative ground-truth reference for evaluating OCR/document-intelligence and RAG extraction against the ApexPetro P-102 synthetic test corpus. This file is fictional test data and is NOT intended to be ingested as a normal user document.",
+  "company": {
+    "name": "ApexPetro Refining Complex",
+    "site": "Coastal Refinery - Unit 2",
+    "note": "Fictional company created exclusively for document-intelligence testing."
+  },
+  "asset_metadata": {
+    "asset_id": "P-102",
+    "asset_name": "Feed Transfer Pump",
+    "service": "Feed Transfer Pump",
+    "location": "Pump Bay 2 / Unit 2",
+    "motor_power_kw": 315,
+    "speed_rpm": 1485,
+    "design_flow_m3h": 475
+  },
+  "operating_limits": {
+    "discharge_pressure_bar": {"min": 18, "max": 22, "unit": "bar", "guidance_if_out_of_range": ["Verify suction conditions", "Inspect control valve", "Check pump condition"]},
+    "de_vibration_mm_s": {"max": 4.5, "unit": "mm/s", "guidance_if_above": ["Inspect alignment", "Inspect coupling", "Inspect bearings", "Inspect foundation"]},
+    "bearing_temperature_c": {"max": 85, "unit": "degC", "guidance_if_above": ["Check lubrication", "Check bearing condition", "Escalate if temperature continues increasing"]},
+    "flow_rate_m3h": {"min": 450, "max": 500, "unit": "m3/h", "guidance_if_out_of_range": ["Check process demand", "Check suction conditions", "Review pump performance"]}
+  },
+  "historical_inspection_data": [
+    {"date": "2025-01-15", "parameter": "Discharge pressure", "value": 18.4, "unit": "bar", "status": "Normal"},
+    {"date": "2025-04-18", "parameter": "DE vibration", "value": 4.8, "unit": "mm/s", "status": "High"},
+    {"date": "2025-07-22", "parameter": "Bearing temperature", "value": 78, "unit": "degC", "status": "Normal"},
+    {"date": "2025-10-11", "parameter": "Flow rate", "value": 462, "unit": "m3/h", "status": "Normal"},
+    {"date": "2026-01-19", "parameter": "Discharge pressure", "value": 17.2, "unit": "bar", "status": "Low"},
+    {"date": "2026-03-07", "parameter": "DE vibration", "value": 5.6, "unit": "mm/s", "status": "High"},
+    {"date": "2026-05-14", "parameter": "Bearing temperature", "value": 82, "unit": "degC", "status": "Normal"},
+    {"date": "2026-08-21", "parameter": "Flow rate", "value": 438, "unit": "m3/h", "status": "Low"}
+  ],
+  "march_2026_vibration_incident": {
+    "date": "2026-03-07",
+    "asset_id": "P-102",
+    "initial_reading_mm_s": 5.6,
+    "applicable_limit_mm_s": 4.5,
+    "causal_chain": [
+      "High vibration reading of 5.6 mm/s recorded, exceeding the 4.5 mm/s action threshold",
+      "Repeat measurement taken and remained above the limit",
+      "Maintenance inspection requested",
+      "Inspection identified a coupling alignment issue",
+      "Coupling alignment corrected",
+      "Post-maintenance vibration measured at 3.9 mm/s",
+      "Equipment returned to service with a monitoring period"
+    ],
+    "cause": "Coupling alignment issue",
+    "corrective_action": "Coupling alignment corrected",
+    "post_maintenance_reading_mm_s": 3.9,
+    "post_maintenance_within_limit": true,
+    "outcome": "Returned to service with monitoring period"
+  },
+  "expected_answers_to_test_questions": {
+    "q1_latest_flow_rate": "438 m3/h (recorded 21 Aug 2026)",
+    "q2_latest_flow_within_limit": "No. 438 m3/h is below the 450-500 m3/h operating limit; status recorded as Low.",
+    "q3_de_vibration_operating_limit": "Less than or equal to 4.5 mm/s",
+    "q4_parameters_that_exceeded_limits": "DE vibration exceeded the limit on 18 Apr 2025 (4.8 mm/s) and 7 Mar 2026 (5.6 mm/s); discharge pressure was below range on 19 Jan 2026 (17.2 bar); flow rate was below range on 21 Aug 2026 (438 m3/h).",
+    "q5_vibration_2025_vs_2026": "2025: 4.8 mm/s on 18 Apr 2025 (High). 2026: 5.6 mm/s on 7 Mar 2026 (High), later reduced to 3.9 mm/s after corrective maintenance. The 2026 reading was higher than the 2025 reading before maintenance.",
+    "q6_march_2026_incident_summary": "On 7 Mar 2026, P-102 DE vibration was recorded at 5.6 mm/s, above the 4.5 mm/s limit. A repeat measurement confirmed the high reading, prompting a maintenance inspection.",
+    "q7_cause_of_march_2026_issue": "A coupling alignment issue.",
+    "q8_corrective_action_taken": "Coupling alignment was corrected.",
+    "q9_post_maintenance_vibration": "3.9 mm/s",
+    "q10_post_maintenance_within_limit": "Yes, 3.9 mm/s is within the 4.5 mm/s limit.",
+    "q11_recommended_actions_above_4_5_mm_s": "Inspect alignment, inspect coupling, inspect bearings, inspect foundation.",
+    "q12_design_flow": "475 m3/h",
+    "q13_motor_power": "315 kW",
+    "q14_department_owning_maintenance_activity": "Maintenance (with support from Inspection & Integrity and Reliability)",
+    "q15_latest_bearing_temperature": "82 degC (recorded 14 May 2026)",
+    "q16_latest_bearing_temperature_within_limit": "Yes, 82 degC is within the 85 degC limit.",
+    "q17_lowest_discharge_pressure_recorded": "17.2 bar (recorded 19 Jan 2026, status Low)",
+    "q18_2025_inspection_events": "15 Jan 2025 discharge pressure 18.4 bar (Normal); 18 Apr 2025 DE vibration 4.8 mm/s (High); 22 Jul 2025 bearing temperature 78 degC (Normal); 11 Oct 2025 flow rate 462 m3/h (Normal).",
+    "q19_2026_inspection_events": "19 Jan 2026 discharge pressure 17.2 bar (Low); 7 Mar 2026 DE vibration 5.6 mm/s (High), corrected to 3.9 mm/s after maintenance; 14 May 2026 bearing temperature 82 degC (Normal); 21 Aug 2026 flow rate 438 m3/h (Low).",
+    "q20_chronological_condition_monitoring_summary": "15 Jan 2025: discharge pressure normal at 18.4 bar. 18 Apr 2025: DE vibration high at 4.8 mm/s. 22 Jul 2025: bearing temperature normal at 78 degC. 11 Oct 2025: flow rate normal at 462 m3/h. 19 Jan 2026: discharge pressure low at 17.2 bar. 7 Mar 2026: DE vibration high at 5.6 mm/s, leading to a coupling alignment repair and reduction to 3.9 mm/s. 14 May 2026: bearing temperature normal at 82 degC. 21 Aug 2026: flow rate low at 438 m3/h."
+  },
+  "departments_referenced": ["Operations", "Maintenance", "Engineering", "Inspection & Integrity", "HSE", "Reliability", "Process Engineering", "Projects", "IT / OT", "Management"],
+  "corpus_files": [
+    "01_Digital_PDF/P-102_Operating_and_Inspection_Report.pdf",
+    "02_Scanned_PDF/P-102_Scanned_Inspection_Record.pdf",
+    "03_Mixed_PDF/P-102_Mixed_Inspection_and_Maintenance_Report.pdf",
+    "04_Images/P-102_Inspection_Nameplate_and_Readings.png",
+    "05_DOCX/P-102_Maintenance_Inspection_Report.docx",
+    "06_PPTX/ApexPetro_P-102_Management_Briefing.pptx",
+    "07_XLSX/P-102_Historical_Inspection_Data.xlsx",
+    "08_CSV/P-102_Inspection_History.csv",
+    "09_TXT/P-102_Maintenance_Notes.txt",
+    "10_Markdown/P-102_Operating_Procedure.md",
+    "11_HTML/P-102_Engineering_Guidance.html",
+    "12_Handwritten/P-102_Handwritten_Inspection_Note.png",
+    "13_Engineering_Drawing/P-102_Pump_Bay_2_Engineering_Drawing.png",
+    "14_Charts/P-102_Vibration_Trend_Chart.png",
+    "15_Photographs/P-102_Coupling_Alignment_Inspection.png",
+    "16_URL_Test/P-102_Internal_Engineering_Knowledge.html",
+    "17_Ground_Truth/P-102_Ground_Truth.json"
+  ]
+}

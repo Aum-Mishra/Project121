@@ -1,0 +1,527 @@
+[
+  {
+    "question_id": "EQ-Q-001",
+    "asset_id": "P-102",
+    "question": "What is the equipment type and service of asset P-102?",
+    "expected_answer": "Centrifugal Process Pump in Crude Transfer service in CDU-4",
+    "authoritative_sources": "specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-002",
+    "asset_id": "P-102",
+    "question": "What is the original design pressure and design temperature of P-102?",
+    "expected_answer": "Design pressure 50.0 bar(g); design temperature 210 \u00b0C",
+    "authoritative_sources": "specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-003",
+    "asset_id": "P-102",
+    "question": "Who is the manufacturer and what is the model number of P-102?",
+    "expected_answer": "ApexFlow Engineering, Model AF-450C",
+    "authoritative_sources": "specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-004",
+    "asset_id": "P-102",
+    "question": "What is the normal design operating capacity of P-102?",
+    "expected_answer": "560 m\u00b3/h",
+    "authoritative_sources": "specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-005",
+    "asset_id": "P-102",
+    "question": "What is the set pressure of safety relief valve PSV-102 protecting P-102?",
+    "expected_answer": "47.5 bar(g)",
+    "authoritative_sources": "specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-006",
+    "asset_id": "P-102",
+    "question": "What is the electric drive motor associated with P-102 and its rated power?",
+    "expected_answer": "Motor M-102, rated at 450 kW, 6.6 kV, 2980 rpm",
+    "authoritative_sources": "specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-007",
+    "asset_id": "P-102",
+    "question": "What was the measured vibration and casing thickness of P-102 in 2024?",
+    "expected_answer": "Vibration 4.1 mm/s; casing thickness 12.8 mm",
+    "authoritative_sources": "historical_records/2024/equipment_inspection_summary_2024.xlsx"
+  },
+  {
+    "question_id": "EQ-Q-008",
+    "asset_id": "P-102",
+    "question": "What was the measured vibration and casing thickness of P-102 in 2025?",
+    "expected_answer": "Vibration 5.3 mm/s; casing thickness 8.2 mm",
+    "authoritative_sources": "historical_records/2025/equipment_inspection_summary_2025.xlsx"
+  },
+  {
+    "question_id": "EQ-Q-009",
+    "asset_id": "P-102",
+    "question": "What was the measured vibration and casing thickness of P-102 in 2026?",
+    "expected_answer": "Vibration 7.2 mm/s; casing thickness 3.8 mm",
+    "authoritative_sources": "historical_records/2026/equipment_inspection_summary_2026.xlsx"
+  },
+  {
+    "question_id": "EQ-Q-010",
+    "asset_id": "P-102",
+    "question": "What is the minimum allowable retirement wall thickness for the P-102 casing?",
+    "expected_answer": "3.5 mm",
+    "authoritative_sources": "specs/operating_limits.yaml"
+  },
+  {
+    "question_id": "EQ-Q-011",
+    "asset_id": "P-102",
+    "question": "What interim discharge pressure cap was recommended for P-102 in 2025?",
+    "expected_answer": "40.0 bar(g)",
+    "authoritative_sources": "specs/operating_limits.yaml"
+  },
+  {
+    "question_id": "EQ-Q-012",
+    "asset_id": "P-101",
+    "question": "What is the role and criticality of pump P-101 in CDU-4?",
+    "expected_answer": "Centrifugal pump in Crude Feed Transfer service; Criticality: MEDIUM; serves as backup to P-102",
+    "authoritative_sources": "assets/asset_hierarchy.json"
+  },
+  {
+    "question_id": "EQ-Q-013",
+    "asset_id": "E-301",
+    "question": "What type of heat exchanger is E-301 and what unit is it located in?",
+    "expected_answer": "Shell-and-Tube Heat Exchanger in CDU-4 Crude Preheat service",
+    "authoritative_sources": "specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-014",
+    "asset_id": "E-301",
+    "question": "What is the surface heat transfer area and design pressure of E-301?",
+    "expected_answer": "920 m\u00b2 surface area; design pressure 34.0 bar(g)",
+    "authoritative_sources": "specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-015",
+    "asset_id": "C-301",
+    "question": "What is the service and capacity of compressor C-301 in HCU-1?",
+    "expected_answer": "Centrifugal Compressor in Hydrogen Recycle service; capacity 18,000 Nm\u00b3/h",
+    "authoritative_sources": "specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-016",
+    "asset_id": "C-301",
+    "question": "What is the design discharge pressure of C-301?",
+    "expected_answer": "82.0 bar(g)",
+    "authoritative_sources": "specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-017",
+    "asset_id": "D-410",
+    "question": "What equipment is D-410 and what is its operational function?",
+    "expected_answer": "Electrostatic Desalter in CDU-4 for crude oil desalting and dehydration",
+    "authoritative_sources": "specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-018",
+    "asset_id": "F-401",
+    "question": "What is the fuel service and duty of fired heater F-401?",
+    "expected_answer": "Crude Preheat Furnace in CDU-4 with 180 MW duty",
+    "authoritative_sources": "specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-019",
+    "asset_id": "V-201",
+    "question": "What is the service and volume of vessel V-201?",
+    "expected_answer": "Desalter Outlet Separation Pressure Vessel, 38 m\u00b3 capacity, design pressure 18 bar(g)",
+    "authoritative_sources": "specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-020",
+    "asset_id": "V-220",
+    "question": "What is vessel V-220 and where is it located?",
+    "expected_answer": "Overhead Accumulator Pressure Vessel in CDU-4, 52 m\u00b3 capacity",
+    "authoritative_sources": "specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-021",
+    "asset_id": "P-201",
+    "question": "What unit and service does pump P-201 belong to?",
+    "expected_answer": "Recycle Oil Pump in Hydrocracker Unit 1 (HCU-1)",
+    "authoritative_sources": "specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-022",
+    "asset_id": "P-601",
+    "question": "What product does pump P-601 dispatch in unit DISP-1?",
+    "expected_answer": "Commercial Finished High Speed Diesel (BS-VI)",
+    "authoritative_sources": "specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-023",
+    "asset_id": "V-501",
+    "question": "What is the service, unit, and criticality rating of asset V-501?",
+    "expected_answer": "Asset V-501 is a Pressure Vessel located in HCU-1 in Hydrogen Separator service with criticality HIGH.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-024",
+    "asset_id": "FT-201",
+    "question": "What is the service, unit, and criticality rating of asset FT-201?",
+    "expected_answer": "Asset FT-201 is a Flow Transmitter located in HDS-1 in HDS Feed Flow Transmitter service with criticality HIGH.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-025",
+    "asset_id": "FT-202",
+    "question": "What is the service, unit, and criticality rating of asset FT-202?",
+    "expected_answer": "Asset FT-202 is a Flow Transmitter located in HDS-1 in HDS Hydrogen Flow Transmitter service with criticality HIGH.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-026",
+    "asset_id": "GD-103",
+    "question": "What is the service, unit, and criticality rating of asset GD-103?",
+    "expected_answer": "Asset GD-103 is a Gas Detector located in HDS-1 in HDS Hydrogen Gas Detector service with criticality HIGH.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-027",
+    "asset_id": "P-202",
+    "question": "What is the service, unit, and criticality rating of asset P-202?",
+    "expected_answer": "Asset P-202 is a High Pressure Centrifugal Pump located in HDS-1 in HDS-1 Feed Pump B service with criticality HIGH.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-028",
+    "asset_id": "LT-201",
+    "question": "What is the service, unit, and criticality rating of asset LT-201?",
+    "expected_answer": "Asset LT-201 is a Level Transmitter located in HDS-1 in HDS High Pressure Separator Level Transmitter service with criticality HIGH.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-029",
+    "asset_id": "LT-202",
+    "question": "What is the service, unit, and criticality rating of asset LT-202?",
+    "expected_answer": "Asset LT-202 is a Level Transmitter located in HDS-1 in HDS Low Pressure Separator Level Transmitter service with criticality MEDIUM.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-030",
+    "asset_id": "PT-201",
+    "question": "What is the service, unit, and criticality rating of asset PT-201?",
+    "expected_answer": "Asset PT-201 is a Pressure Transmitter located in HDS-1 in HDS Reactor Pressure Transmitter service with criticality HIGH.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-031",
+    "asset_id": "PT-202",
+    "question": "What is the service, unit, and criticality rating of asset PT-202?",
+    "expected_answer": "Asset PT-202 is a Pressure Transmitter located in HDS-1 in HDS Separator Pressure Transmitter service with criticality HIGH.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-032",
+    "asset_id": "V-202",
+    "question": "What is the service, unit, and criticality rating of asset V-202?",
+    "expected_answer": "Asset V-202 is a Pressure Vessel located in HDS-1 in Low Pressure Separator service with criticality MEDIUM.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-033",
+    "asset_id": "TT-201",
+    "question": "What is the service, unit, and criticality rating of asset TT-201?",
+    "expected_answer": "Asset TT-201 is a Temperature Transmitter located in HDS-1 in HDS Reactor Temperature Transmitter service with criticality HIGH.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-034",
+    "asset_id": "TT-202",
+    "question": "What is the service, unit, and criticality rating of asset TT-202?",
+    "expected_answer": "Asset TT-202 is a Temperature Transmitter located in HDS-1 in HDS Effluent Temperature Transmitter service with criticality MEDIUM.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-035",
+    "asset_id": "GD-104",
+    "question": "What is the service, unit, and criticality rating of asset GD-104?",
+    "expected_answer": "Asset GD-104 is a Gas Detector located in HGU-1 in HGU Hydrogen Gas Detector service with criticality HIGH.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-036",
+    "asset_id": "PT-301",
+    "question": "What is the service, unit, and criticality rating of asset PT-301?",
+    "expected_answer": "Asset PT-301 is a Pressure Transmitter located in HGU-1 in HGU Hydrogen Header Pressure Transmitter service with criticality HIGH.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-037",
+    "asset_id": "TT-301",
+    "question": "What is the service, unit, and criticality rating of asset TT-301?",
+    "expected_answer": "Asset TT-301 is a Temperature Transmitter located in HGU-1 in HGU Reformer Outlet Temperature Transmitter service with criticality HIGH.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-038",
+    "asset_id": "AC-101",
+    "question": "What is the service, unit, and criticality rating of asset AC-101?",
+    "expected_answer": "Asset AC-101 is a Oil-Free Screw Compressor located in UTY in Instrument Air Compressor A service with criticality HIGH.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-039",
+    "asset_id": "AC-102",
+    "question": "What is the service, unit, and criticality rating of asset AC-102?",
+    "expected_answer": "Asset AC-102 is a Oil-Free Screw Compressor located in UTY in Instrument Air Compressor B service with criticality HIGH.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-040",
+    "asset_id": "AC-103",
+    "question": "What is the service, unit, and criticality rating of asset AC-103?",
+    "expected_answer": "Asset AC-103 is a Oil-Free Screw Compressor located in UTY in Instrument Air Compressor C service with criticality MEDIUM.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-041",
+    "asset_id": "P-102",
+    "question": "What is the service, unit, and criticality rating of asset P-102?",
+    "expected_answer": "Asset P-102 is a Centrifugal Process Pump located in CDU-4 in Crude Transfer service with criticality HIGH.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-042",
+    "asset_id": "P-101",
+    "question": "What is the service, unit, and criticality rating of asset P-101?",
+    "expected_answer": "Asset P-101 is a Centrifugal Pump located in CDU-4 in Crude Feed Transfer service with criticality MEDIUM.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-043",
+    "asset_id": "P-103",
+    "question": "What is the service, unit, and criticality rating of asset P-103?",
+    "expected_answer": "Asset P-103 is a Centrifugal Pump located in CDU-4 in Cooling Circuit service with criticality LOW.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-044",
+    "asset_id": "P-104",
+    "question": "What is the service, unit, and criticality rating of asset P-104?",
+    "expected_answer": "Asset P-104 is a Centrifugal Pump located in CDU-4 in Product Transfer service with criticality MEDIUM.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-045",
+    "asset_id": "P-105",
+    "question": "What is the service, unit, and criticality rating of asset P-105?",
+    "expected_answer": "Asset P-105 is a Centrifugal Pump located in CDU-4 in CDU-4 Reflux Pump B service with criticality HIGH.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-046",
+    "asset_id": "P-106",
+    "question": "What is the service, unit, and criticality rating of asset P-106?",
+    "expected_answer": "Asset P-106 is a Centrifugal Pump located in CDU-4 in CDU-4 Bottoms Pump A service with criticality HIGH.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-047",
+    "asset_id": "P-107",
+    "question": "What is the service, unit, and criticality rating of asset P-107?",
+    "expected_answer": "Asset P-107 is a Centrifugal Pump located in CDU-4 in CDU-4 Bottoms Pump B service with criticality HIGH.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-048",
+    "asset_id": "P-108",
+    "question": "What is the service, unit, and criticality rating of asset P-108?",
+    "expected_answer": "Asset P-108 is a Centrifugal Pump located in CDU-4 in CDU-4 Product Transfer Pump service with criticality MEDIUM.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-049",
+    "asset_id": "T-101",
+    "question": "What is the service, unit, and criticality rating of asset T-101?",
+    "expected_answer": "Asset T-101 is a Distillation Column located in CDU-4 in CDU-4 Atmospheric Distillation Column service with criticality HIGH.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-050",
+    "asset_id": "D-410",
+    "question": "What is the service, unit, and criticality rating of asset D-410?",
+    "expected_answer": "Asset D-410 is a Electrostatic Desalter located in CDU-4 in Crude Pretreatment service with criticality HIGH.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-051",
+    "asset_id": "M-102",
+    "question": "What is the service, unit, and criticality rating of asset M-102?",
+    "expected_answer": "Asset M-102 is a Motor located in CDU-4 in P-102 Drive service with criticality HIGH.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-052",
+    "asset_id": "XV-410",
+    "question": "What is the service, unit, and criticality rating of asset XV-410?",
+    "expected_answer": "Asset XV-410 is a Motor Operated Valve located in CDU-4 in Crude Feed Isolation service with criticality MEDIUM.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-053",
+    "asset_id": "V-102",
+    "question": "What is the service, unit, and criticality rating of asset V-102?",
+    "expected_answer": "Asset V-102 is a Process Vessel located in CDU-4 in CDU-4 Bottoms Surge Drum service with criticality MEDIUM.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-054",
+    "asset_id": "E-205",
+    "question": "What is the service, unit, and criticality rating of asset E-205?",
+    "expected_answer": "Asset E-205 is a Shell and Tube Condenser located in CDU-4 in CDU-4 Overhead Condenser A service with criticality MEDIUM.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-055",
+    "asset_id": "E-206",
+    "question": "What is the service, unit, and criticality rating of asset E-206?",
+    "expected_answer": "Asset E-206 is a Shell and Tube Condenser located in CDU-4 in CDU-4 Overhead Condenser B service with criticality MEDIUM.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-056",
+    "asset_id": "E-207",
+    "question": "What is the service, unit, and criticality rating of asset E-207?",
+    "expected_answer": "Asset E-207 is a Shell and Tube Cooler located in CDU-4 in CDU-4 Product Cooler service with criticality MEDIUM.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-057",
+    "asset_id": "E-203",
+    "question": "What is the service, unit, and criticality rating of asset E-203?",
+    "expected_answer": "Asset E-203 is a Shell and Tube Heat Exchanger located in CDU-4 in CDU-4 Crude Preheater C service with criticality HIGH.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-058",
+    "asset_id": "E-204",
+    "question": "What is the service, unit, and criticality rating of asset E-204?",
+    "expected_answer": "Asset E-204 is a Shell and Tube Heat Exchanger located in CDU-4 in CDU-4 Crude Preheater D service with criticality HIGH.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-059",
+    "asset_id": "E-301",
+    "question": "What is the service, unit, and criticality rating of asset E-301?",
+    "expected_answer": "Asset E-301 is a Shell-and-Tube Heat Exchanger located in CDU-4 in Crude Preheat service with criticality MEDIUM.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-060",
+    "asset_id": "E-315",
+    "question": "What is the service, unit, and criticality rating of asset E-315?",
+    "expected_answer": "Asset E-315 is a Shell-and-Tube Heat Exchanger located in CDU-4 in Product Cooling service with criticality MEDIUM.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-061",
+    "asset_id": "P-601",
+    "question": "What is the service, unit, and criticality rating of asset P-601?",
+    "expected_answer": "Asset P-601 is a Product Pump located in DISP-1 in Diesel Dispatch service with criticality MEDIUM.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-062",
+    "asset_id": "C-301",
+    "question": "What is the service, unit, and criticality rating of asset C-301?",
+    "expected_answer": "Asset C-301 is a Centrifugal Compressor located in HCU-1 in Hydrogen Recycle service with criticality HIGH.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-063",
+    "asset_id": "P-201",
+    "question": "What is the service, unit, and criticality rating of asset P-201?",
+    "expected_answer": "Asset P-201 is a Centrifugal Pump located in HCU-1 in Recycle Oil service with criticality HIGH.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-064",
+    "asset_id": "E-302",
+    "question": "What is the service, unit, and criticality rating of asset E-302?",
+    "expected_answer": "Asset E-302 is a Air Cooler located in HDS-1 in Reactor Effluent Cooler service with criticality HIGH.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-065",
+    "asset_id": "C-201",
+    "question": "What is the service, unit, and criticality rating of asset C-201?",
+    "expected_answer": "Asset C-201 is a Centrifugal Compressor located in HDS-1 in Recycle Gas Compressor service with criticality HIGH.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-066",
+    "asset_id": "P-203",
+    "question": "What is the service, unit, and criticality rating of asset P-203?",
+    "expected_answer": "Asset P-203 is a Centrifugal Pump located in HDS-1 in HDS-1 Product Pump A service with criticality MEDIUM.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-067",
+    "asset_id": "P-204",
+    "question": "What is the service, unit, and criticality rating of asset P-204?",
+    "expected_answer": "Asset P-204 is a Centrifugal Pump located in HDS-1 in HDS-1 Product Pump B service with criticality MEDIUM.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-068",
+    "asset_id": "R-201",
+    "question": "What is the service, unit, and criticality rating of asset R-201?",
+    "expected_answer": "Asset R-201 is a Fixed Bed Reactor located in HDS-1 in Hydrodesulfurization Reactor service with criticality HIGH.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-069",
+    "asset_id": "R-501",
+    "question": "What is the service, unit, and criticality rating of asset R-501?",
+    "expected_answer": "Asset R-501 is a Hydrotreating Reactor located in HDS-1 in Diesel Hydrotreating service with criticality HIGH.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-070",
+    "asset_id": "C-202",
+    "question": "What is the service, unit, and criticality rating of asset C-202?",
+    "expected_answer": "Asset C-202 is a Reciprocating Compressor located in HDS-1 in Hydrogen Booster Compressor service with criticality HIGH.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-071",
+    "asset_id": "E-303",
+    "question": "What is the service, unit, and criticality rating of asset E-303?",
+    "expected_answer": "Asset E-303 is a Shell and Tube Cooler located in HDS-1 in HDS Product Cooler service with criticality MEDIUM.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-072",
+    "asset_id": "R-302",
+    "question": "What is the service, unit, and criticality rating of asset R-302?",
+    "expected_answer": "Asset R-302 is a Catalytic Reactor located in HGU-1 in Shift Conversion Reactor service with criticality HIGH.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-073",
+    "asset_id": "P-302",
+    "question": "What is the service, unit, and criticality rating of asset P-302?",
+    "expected_answer": "Asset P-302 is a Centrifugal Pump located in HGU-1 in Condensate Pump service with criticality MEDIUM.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-074",
+    "asset_id": "C-302",
+    "question": "What is the service, unit, and criticality rating of asset C-302?",
+    "expected_answer": "Asset C-302 is a Reciprocating Compressor located in HGU-1 in Hydrogen Product Compressor service with criticality HIGH.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  },
+  {
+    "question_id": "EQ-Q-075",
+    "asset_id": "E-401",
+    "question": "What is the service, unit, and criticality rating of asset E-401?",
+    "expected_answer": "Asset E-401 is a Shell and Tube Exchanger located in HGU-1 in Reforming Feed Preheater service with criticality HIGH.",
+    "authoritative_sources": "assets/asset_hierarchy.json, specs/apexpetro_master.yaml"
+  }
+]

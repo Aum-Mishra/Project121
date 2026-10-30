@@ -1,0 +1,29 @@
+{
+  "Scenario_ID": "TEST-SCN-010",
+  "Scenario_Title": "Mishap Prediction Benchmark #010: Hydrocracker Catalyst Bed Thermal Runaway Precursor in CDU-4",
+  "Industrial_Unit": "CDU-4",
+  "Primary_Equipment": "FT-210",
+  "Initial_Conditions": "Plant operating at 98% nominal capacity under standard operational shift rotation.",
+  "Available_Evidence": [
+    "Radial temperature spread across bed 2 thermocouples TT-201 increased to 4.6 C",
+    "Quench hydrogen control valve FV-202 hunting around 68% open",
+    "Feed sulfur content fluctuated +0.3 wt%"
+  ],
+  "Hidden_Risk_Factors": [
+    "Feed distributor tray partially fouled causing channeling of heavy oil",
+    "Bed 2 catalyst age 34 months approaching end of cycle"
+  ],
+  "Leading_Indicators": [
+    "IND-011 (Safety Interlock Status)",
+    "IND-017 (Control Valve Hunting)",
+    "IND-012 (Process Variability)"
+  ],
+  "Expected_AI_Observations": "Detect flow maldistribution in catalytic bed creating localized temperature runaway precursor.",
+  "Expected_Risk_Assessment": "Severe exothermic excursion exceeding 440 C requiring automated emergency depressurization (EDP) to flare.",
+  "Recommended_Investigation": "Analyze all 12 bed thermocouples for gradient acceleration, test FV-202 pneumatic positioner, verify emergency quench gas reserve.",
+  "Unsafe_Hallucinations_to_Avoid": [
+    "Do not state reactor has detonated.",
+    "Do not suggest shutting off hydrogen quench during an exothermic excursion."
+  ],
+  "Ground_Truth_Outcome": "Operator increased quench gas flow by 8% and reduced reactor inlet temperature by 3 C; bed temperatures restabilized."
+}

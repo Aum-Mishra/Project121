@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Internal Engineering Knowledge Base - P-102</title>
+<style>
+  body { font-family: Arial, Helvetica, sans-serif; margin: 40px; color: #222; background: #fafafa; }
+  .banner { background: #1f3864; color: white; padding: 14px 20px; border-radius: 4px; margin-bottom: 20px; }
+  .banner code { background: rgba(255,255,255,0.15); padding: 2px 6px; border-radius: 3px; }
+  h1 { color: #1f3864; }
+  h2 { color: #2f5496; margin-top: 28px; }
+  table { border-collapse: collapse; width: 100%; margin: 15px 0; background: white; }
+  th, td { border: 1px solid #ccc; padding: 8px 12px; text-align: left; }
+  th { background-color: #2f5496; color: white; }
+  .card { background: white; border: 1px solid #ddd; border-radius: 6px; padding: 16px 20px; margin-bottom: 16px; }
+  .meta { color: #666; font-size: 0.85em; }
+</style>
+</head>
+<body>
+
+<div class="banner">
+  Internal ApexPetro Engineering Knowledge Base &mdash; simulated page for
+  <code>https://internal.apexpetro.local/engineering/p102</code> (fictional intranet URL;
+  not publicly reachable; for on-premise document-processing testing only)
+</div>
+
+<h1>P-102 &mdash; Feed Transfer Pump</h1>
+<p class="meta">Coastal Refinery, Unit 2 | Engineering Knowledge Page | Owning Department: Engineering</p>
+
+<div class="card">
+  <h2>Specifications</h2>
+  <table>
+    <tr><th>Field</th><th>Value</th></tr>
+    <tr><td>Asset ID</td><td>P-102</td></tr>
+    <tr><td>Service</td><td>Feed Transfer Pump</td></tr>
+    <tr><td>Location</td><td>Pump Bay 2 / Unit 2</td></tr>
+    <tr><td>Motor Power</td><td>315 kW</td></tr>
+    <tr><td>Speed</td><td>1485 RPM</td></tr>
+    <tr><td>Design Flow</td><td>475 m3/h</td></tr>
+  </table>
+</div>
+
+<div class="card">
+  <h2>Operating Limits</h2>
+  <table>
+    <tr><th>Parameter</th><th>Limit</th><th>Unit</th></tr>
+    <tr><td>Discharge Pressure</td><td>18 - 22</td><td>bar</td></tr>
+    <tr><td>DE Vibration</td><td>&le; 4.5</td><td>mm/s</td></tr>
+    <tr><td>Bearing Temperature</td><td>&le; 85</td><td>degC</td></tr>
+    <tr><td>Flow Rate</td><td>450 - 500</td><td>m3/h</td></tr>
+  </table>
+</div>
+
+<div class="card">
+  <h2>Maintenance History</h2>
+  <table>
+    <tr><th>Date</th><th>Parameter</th><th>Value</th><th>Status</th></tr>
+    <tr><td>15 Jan 2025</td><td>Discharge Pressure</td><td>18.4 bar</td><td>Normal</td></tr>
+    <tr><td>18 Apr 2025</td><td>DE Vibration</td><td>4.8 mm/s</td><td>High</td></tr>
+    <tr><td>22 Jul 2025</td><td>Bearing Temperature</td><td>78 degC</td><td>Normal</td></tr>
+    <tr><td>11 Oct 2025</td><td>Flow Rate</td><td>462 m3/h</td><td>Normal</td></tr>
+    <tr><td>19 Jan 2026</td><td>Discharge Pressure</td><td>17.2 bar</td><td>Low</td></tr>
+    <tr><td>07 Mar 2026</td><td>DE Vibration</td><td>5.6 mm/s</td><td>High (see incident below)</td></tr>
+    <tr><td>14 May 2026</td><td>Bearing Temperature</td><td>82 degC</td><td>Normal</td></tr>
+    <tr><td>21 Aug 2026</td><td>Flow Rate</td><td>438 m3/h</td><td>Low</td></tr>
+  </table>
+</div>
+
+<div class="card">
+  <h2>March 2026 Vibration Incident</h2>
+  <p>On 7 March 2026, DE vibration on P-102 reached 5.6 mm/s, exceeding the 4.5 mm/s
+  action threshold. A repeat measurement confirmed the sustained high reading, and a
+  maintenance inspection was requested. The inspection identified a coupling
+  alignment issue as the cause. The coupling alignment was corrected, and
+  post-maintenance vibration measured 3.9 mm/s &mdash; within the operating limit.
+  P-102 was returned to service with a monitoring period.</p>
+</div>
+
+<div class="card">
+  <h2>Engineering Guidance</h2>
+  <p><strong>DE Vibration above 4.5 mm/s:</strong> inspect alignment, inspect coupling,
+  inspect bearings, inspect foundation.</p>
+  <p><strong>Discharge Pressure outside 18-22 bar:</strong> verify suction conditions,
+  inspect control valve, check pump condition.</p>
+  <p><strong>Bearing Temperature above 85 degC:</strong> check lubrication, check
+  bearing condition, escalate if temperature continues increasing.</p>
+  <p><strong>Flow Rate outside 450-500 m3/h:</strong> check process demand, check
+  suction conditions, review pump performance.</p>
+</div>
+
+<p class="meta">This page is fictional content generated for testing a document
+intelligence / OCR / RAG pipeline. All data is synthetic.</p>
+
+</body>
+</html>

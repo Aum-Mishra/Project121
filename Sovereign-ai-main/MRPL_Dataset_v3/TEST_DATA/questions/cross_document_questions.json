@@ -1,0 +1,555 @@
+[
+  {
+    "question_id": "XDOC-Q-001",
+    "title": "P-102 Vibration & Bearing Degradation Progression",
+    "question": "How did the mechanical condition of pump P-102 degrade between 2024 and 2026, and what maintenance work orders were executed in response?",
+    "required_documents": [
+      "historical_records/2024/equipment_inspection_summary_2024.xlsx",
+      "historical_records/2025/equipment_inspection_summary_2025.xlsx",
+      "historical_records/2026/equipment_inspection_summary_2026.xlsx",
+      "maintenance/maintenance_history/asset_maintenance_history.xlsx",
+      "specs/MRPL_master.yaml"
+    ],
+    "expected_reasoning_chain": "In 2024, inspection IR-2024-0102 measured 4.1 mm/s vibration and 12.8 mm casing wall (WO-4102 bearing replacement). In 2025, IR-2025-0102 showed vibration rising to 5.3 mm/s and wall loss to 8.2 mm following seal leak incident INC-2025-017 (WO-5012 seal overhaul and 40 bar cap). In July 2026, IR-2026-0102 showed vibration spiking to 7.2 mm/s, discharge pressure hitting 42 bar, and casing thinning to 3.8 mm (near 3.5 mm retirement limit), prompting major overhaul under WO-6021."
+  },
+  {
+    "question_id": "XDOC-Q-002",
+    "title": "Incident INC-2026-004 Root Cause and Sensor Disagreement",
+    "question": "What caused incident INC-2026-004 on January 18, 2026, and how was the discrepancy between PT-102 and the local gauge resolved?",
+    "required_documents": [
+      "operations/process_upset_history.xlsx",
+      "instrumentation/alarm_event_history.xlsx",
+      "instrumentation/instrument_maintenance_history.xlsx",
+      "hse/incidents/INC-2026-004_PT102_disagreement.pdf"
+    ],
+    "expected_reasoning_chain": "PT-102 read 42.8 bar while local gauge PG-102 read 35.0 bar. Excessive pipe vibration transmitted through the mounting stand caused diaphragm silicone oil loss, creating a calibration offset. Technician replaced the Hastelloy sensor capsule under WO-6021 and added a vibration dampening capillary bracket."
+  },
+  {
+    "question_id": "XDOC-Q-003",
+    "title": "Exchanger E-301 Fouling and Cleaning Cycle",
+    "question": "What process indicators flagged fouling in heat exchanger E-301, and how was thermal efficiency verified after cleaning?",
+    "required_documents": [
+      "instrumentation/sensor_operational_data.xlsx",
+      "maintenance/maintenance_history/asset_maintenance_history.xlsx",
+      "historical_records/2026/equipment_inspection_summary_2026.xlsx"
+    ],
+    "expected_reasoning_chain": "Thermocouple TT-301 showed crude outlet temperature dropping 12 \u00b0C while shell pressure drop rose to 1.6 bar. Chemical cleaning and hydrojetting executed under WO-5240 / WO-6190 restored heat transfer coefficient U-value to 495 W/m\u00b2K (95% design duty)."
+  },
+  {
+    "question_id": "XDOC-Q-004",
+    "title": "Multi-source Cross Validation Query 4",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-005",
+    "title": "Multi-source Cross Validation Query 5",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-006",
+    "title": "Multi-source Cross Validation Query 6",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-007",
+    "title": "Multi-source Cross Validation Query 7",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-008",
+    "title": "Multi-source Cross Validation Query 8",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-009",
+    "title": "Multi-source Cross Validation Query 9",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-010",
+    "title": "Multi-source Cross Validation Query 10",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-011",
+    "title": "Multi-source Cross Validation Query 11",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-012",
+    "title": "Multi-source Cross Validation Query 12",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-013",
+    "title": "Multi-source Cross Validation Query 13",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-014",
+    "title": "Multi-source Cross Validation Query 14",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-015",
+    "title": "Multi-source Cross Validation Query 15",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-016",
+    "title": "Multi-source Cross Validation Query 16",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-017",
+    "title": "Multi-source Cross Validation Query 17",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-018",
+    "title": "Multi-source Cross Validation Query 18",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-019",
+    "title": "Multi-source Cross Validation Query 19",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-020",
+    "title": "Multi-source Cross Validation Query 20",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-021",
+    "title": "Multi-source Cross Validation Query 21",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-022",
+    "title": "Multi-source Cross Validation Query 22",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-023",
+    "title": "Multi-source Cross Validation Query 23",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-024",
+    "title": "Multi-source Cross Validation Query 24",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-025",
+    "title": "Multi-source Cross Validation Query 25",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-026",
+    "title": "Multi-source Cross Validation Query 26",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-027",
+    "title": "Multi-source Cross Validation Query 27",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-028",
+    "title": "Multi-source Cross Validation Query 28",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-029",
+    "title": "Multi-source Cross Validation Query 29",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-030",
+    "title": "Multi-source Cross Validation Query 30",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-031",
+    "title": "Multi-source Cross Validation Query 31",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-032",
+    "title": "Multi-source Cross Validation Query 32",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-033",
+    "title": "Multi-source Cross Validation Query 33",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-034",
+    "title": "Multi-source Cross Validation Query 34",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-035",
+    "title": "Multi-source Cross Validation Query 35",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-036",
+    "title": "Multi-source Cross Validation Query 36",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-037",
+    "title": "Multi-source Cross Validation Query 37",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-038",
+    "title": "Multi-source Cross Validation Query 38",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-039",
+    "title": "Multi-source Cross Validation Query 39",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-040",
+    "title": "Multi-source Cross Validation Query 40",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-041",
+    "title": "Multi-source Cross Validation Query 41",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-042",
+    "title": "Multi-source Cross Validation Query 42",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-043",
+    "title": "Multi-source Cross Validation Query 43",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-044",
+    "title": "Multi-source Cross Validation Query 44",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-045",
+    "title": "Multi-source Cross Validation Query 45",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-046",
+    "title": "Multi-source Cross Validation Query 46",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-047",
+    "title": "Multi-source Cross Validation Query 47",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-048",
+    "title": "Multi-source Cross Validation Query 48",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-049",
+    "title": "Multi-source Cross Validation Query 49",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  },
+  {
+    "question_id": "XDOC-Q-050",
+    "title": "Multi-source Cross Validation Query 50",
+    "question": "Cross-verify the alignment between maintenance backlog BK-2025-042 and the safe operating envelope for asset P-102.",
+    "required_documents": [
+      "maintenance/backlog/maintenance_backlog_detailed.xlsx",
+      "specs/operating_limits.yaml",
+      "metadata/relationship_registry.json"
+    ],
+    "expected_reasoning_chain": "Backlog item BK-2025-042 schedules P-102 casing replacement for Q1 2027 turnaround due to wall thinning below 4.0 mm, aligning exactly with operating_limits.yaml derating rule."
+  }
+]

@@ -1,0 +1,71 @@
+{
+  "units": {
+    "CDU-4": {
+      "dependencies": {
+        "steam": {
+          "header": "MP_Steam_12bar",
+          "criticality": "HIGH",
+          "loss_impact": "Loss of reboiler stripping heat, column off-spec within 20 mins"
+        },
+        "cooling_water": {
+          "header": "CW_Supply",
+          "criticality": "HIGH",
+          "loss_impact": "Overhead column pressure escalation, potential flare blowdown within 15 mins"
+        },
+        "instrument_air": {
+          "header": "IA_7bar",
+          "criticality": "CRITICAL",
+          "loss_impact": "Control valves fail to safe positions, complete unit trip within 5 mins"
+        },
+        "electrical": {
+          "header": "Substation_33kV_Bus_A",
+          "criticality": "CRITICAL",
+          "loss_impact": "All electric pump drives stop, emergency ESD trip instantaneous"
+        },
+        "fuel_gas": {
+          "header": "FG_FuelGas_3bar",
+          "criticality": "HIGH",
+          "loss_impact": "Furnace F-101 flameout, column loses charge heat within 10 mins"
+        }
+      }
+    },
+    "HCU-1": {
+      "dependencies": {
+        "hydrogen": {
+          "header": "Pure_H2_30bar",
+          "criticality": "CRITICAL",
+          "loss_impact": "Loss of catalytic reactor quench, thermal runaway risk within 5 mins"
+        },
+        "cooling_water": {
+          "header": "CW_Supply",
+          "criticality": "CRITICAL",
+          "loss_impact": "Recycle gas compressor interstage overheating, unit shutdown within 10 mins"
+        },
+        "electrical": {
+          "header": "Substation_33kV_Bus_B",
+          "criticality": "CRITICAL",
+          "loss_impact": "Immediate trip of recycle compressor K-201 and feed pumps P-201A/B"
+        },
+        "nitrogen": {
+          "header": "N2_Utility_6bar",
+          "criticality": "HIGH",
+          "loss_impact": "Dry gas seal buffer loss on K-201, risk of hydrocarbon release within 15 mins"
+        }
+      }
+    },
+    "DISP-1": {
+      "dependencies": {
+        "electrical": {
+          "header": "Terminal_MCC_11kV",
+          "criticality": "MEDIUM",
+          "loss_impact": "Loading pumps trip, truck and pipeline dispatch halted"
+        },
+        "instrument_air": {
+          "header": "IA_7bar",
+          "criticality": "HIGH",
+          "loss_impact": "Depot emergency shut-off valves fail closed, loading stops safely"
+        }
+      }
+    }
+  }
+}

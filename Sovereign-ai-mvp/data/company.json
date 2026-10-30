@@ -1,0 +1,14 @@
+{
+  "company_id": "apexpetro",
+  "name": "ApexPetro Energy Limited",
+  "short_name": "APEL",
+  "industry": "Integrated refining and petrochemicals",
+  "headquarters": "Mumbai, Maharashtra, India",
+  "primary_site": "Jamnagar Refinery Complex, Gujarat, India",
+  "established": 1987,
+  "employees": 8500,
+  "annual_capacity_mmbpa": 34,
+  "classification": "CONFIDENTIAL",
+  "synthetic": true,
+  "dataset_version": "3.0"
+}

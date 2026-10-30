@@ -40,8 +40,8 @@ class ProjectResponse(BaseModel):
     progress: int
     classification: str
     description: Optional[str]
-    created_at: str
-    updated_at: str
+    created_at: datetime
+    updated_at: datetime
 
     class Config:
         from_attributes = True

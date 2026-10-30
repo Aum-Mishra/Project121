@@ -27,6 +27,6 @@ def init_db() -> None:
         User, Company, Document, DocumentChunk, Asset,
         Project, Task, AgentRun, AgentStep, Artifact,
         Approval, WorkOrder, AuditEvent, ModelRegistry,
-        Conversation, Message
+        Conversation, Message, ChatDocument
     )
     Base.metadata.create_all(bind=engine)

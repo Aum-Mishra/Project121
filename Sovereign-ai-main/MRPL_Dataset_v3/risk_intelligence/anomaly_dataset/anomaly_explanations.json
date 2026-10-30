@@ -1,0 +1,25 @@
+{
+  "EXPLANATIONS": [
+    {
+      "Anomaly_ID": "ANM-EVT-00045",
+      "Asset": "P-102A",
+      "Physical_Mechanism": "Sub-surface fatigue micro-spalling in bearing inner race resulting in elevated high-frequency demodulation energy without immediate rise in overall RMS velocity.",
+      "Cross_Variable_Corroboration": "Corroborated by +8 C bearing metal temperature elevation and ISO 4406 particle count jump to 19/17/14.",
+      "Operational_Significance": "Early leading indicator allowing 4-6 week planned intervention before catastrophic seal failure."
+    },
+    {
+      "Anomaly_ID": "ANM-EVT-00120",
+      "Asset": "E-102",
+      "Physical_Mechanism": "Heavy asphaltene deposition on crude tube-side creating boundary layer insulation and elevating tube wall skin temperature.",
+      "Cross_Variable_Corroboration": "Corroborated by simultaneous 1.4 bar delta-P increase across preheat bank and 12 C furnace inlet temperature deficit.",
+      "Operational_Significance": "Forced increase in fuel gas consumption at F-101 furnace to maintain column flash zone target."
+    },
+    {
+      "Anomaly_ID": "ANM-EVT-00215",
+      "Asset": "C-101",
+      "Physical_Mechanism": "Dry gas seal face carbon transfer due to momentary reverse differential pressure transient during compressor speed ramp.",
+      "Cross_Variable_Corroboration": "Corroborated by primary vent flow transmitter FT-601 step change from 1.2 to 2.8 Nm3/h.",
+      "Operational_Significance": "Degraded secondary seal barrier requiring continuous nitrogen purge verification."
+    }
+  ]
+}

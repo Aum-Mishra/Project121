@@ -18,6 +18,7 @@ import KnowledgeScreen from "./screens/KnowledgeScreen";
 import ModelsScreen from "./screens/ModelsScreen";
 import SecurityScreen from "./screens/SecurityScreen";
 import FilesScreen from "./screens/FilesScreen";
+import CodingAgentScreen from "./screens/CodingAgentScreen";
 import DocumentViewerScreen from "./screens/DocumentViewerScreen";
 import ProfileScreen from "./screens/ProfileScreen";
 import ErrorStateScreen from "./screens/ErrorStateScreen";
@@ -35,12 +36,13 @@ type View =
   | "approvals"
   | "models"
   | "security"
+  | "coding-agent"
   | "profile"
   | "error-state";
 
-const sidebarViews = new Set<View>(["chat", "projects", "files", "knowledge", "tasks", "artifacts", "approvals", "models", "security"]);
+const sidebarViews = new Set<View>(["chat", "projects", "files", "knowledge", "tasks", "artifacts", "approvals", "models", "security", "coding-agent"]);
 
-type SidebarView = "chat" | "projects" | "files" | "knowledge" | "tasks" | "artifacts" | "approvals" | "models" | "security";
+type SidebarView = "chat" | "projects" | "files" | "knowledge" | "tasks" | "artifacts" | "approvals" | "models" | "security" | "coding-agent";
 
 function isSidebarView(v: View): v is SidebarView {
   return sidebarViews.has(v as SidebarView);
@@ -130,7 +132,7 @@ export default function App() {
   function renderScreen() {
     switch (view) {
       case "chat":
-        return <ChatScreen onOpenModelDrawer={() => setModelDrawerOpen(true)} />;
+        return <ChatScreen onOpenModelDrawer={() => setModelDrawerOpen(true)} onNavigate={(v) => setView(v as View)} />;
       case "projects":
         return <ProjectsScreen onSelectProject={(p) => { setSelectedProject(p); setView("project-detail"); }} />;
       case "project-detail":
@@ -151,6 +153,8 @@ export default function App() {
         return <ModelsScreen />;
       case "security":
         return <SecurityScreen />;
+      case "coding-agent":
+        return <CodingAgentScreen />;
       case "profile":
         return <ProfileScreen onBack={() => setView("chat")}/>;
       case "error-state":

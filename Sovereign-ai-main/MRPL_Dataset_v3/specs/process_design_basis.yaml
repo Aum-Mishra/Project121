@@ -1,0 +1,50 @@
+design_basis:
+  refinery: Jamnagar Refinery Complex
+  capacity_mmbpa: 34
+  crude_assay_basis:
+    design_crude: Arabian Light / Basrah Heavy 70:30 Blend
+    api_gravity: 32.4
+    sulfur_content_wt_pct: 2.15
+    tan_mg_koh_g: 0.85
+    reid_vapor_pressure_psi: 6.8
+    salt_content_ptb: 18.5
+  primary_units:
+    CDU-4:
+      name: Crude Distillation Unit 4
+      design_throughput_kbd: 150
+      min_turn_down_kbd: 90
+      furnace_heat_duty_mw: 180
+      fractionation_cuts:
+      - LPG & Light Naphtha
+      - Heavy Naphtha
+      - Kerosene / Jet A-1
+      - Light Gas Oil (LGO)
+      - Heavy Gas Oil (HGO)
+      - Atmospheric Residue
+    HCU-1:
+      name: Hydrocracker Unit 1
+      design_throughput_kbd: 95
+      reactor_design_pressure_bar: 165
+      hydrogen_consumption_nm3_m3: 240
+      conversion_efficiency_pct: 98.5
+    DISP-1:
+      name: Product Dispatch Terminal
+      handling_capacity_kbd: 220
+      pumping_skids:
+      - Diesel Export Skid
+      - Gasoline Export Skid
+      - Aviation Turbine Fuel Skid
+      pipeline_maop_bar: 24.0
+  utilities_header_conditions:
+    high_pressure_steam:
+      pressure_bar: 42.0
+      temp_c: 400
+    medium_pressure_steam:
+      pressure_bar: 16.0
+      temp_c: 260
+    cooling_water_supply:
+      pressure_bar: 4.5
+      temp_c: 32
+    instrument_air:
+      pressure_bar: 7.0
+      dew_point_c: -40
